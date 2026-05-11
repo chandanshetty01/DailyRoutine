@@ -188,3 +188,9 @@ If a section other than "Next 30 Days" has no items, write `_Nothing today._` �
 - Cite a source URL for every factual claim.
 - **URL verification (mandatory):** before including any URL in the report — in an item line OR in the "Top 3 links" list — verify it with `WebFetch`. The URL must (a) return HTTP 200 and (b) contain content that actually supports the claim. If verification fails: drop the URL, and if it was the only source for an item, drop the item entirely. Never guess, fabricate, or shorten URLs. The "Top 3 links" section must contain only URLs that already appear elsewhere in the doc — no extras.
 - If `WebSearch` returns nothing useful for a section, say so honestly rather than padding.
+- **Date arithmetic (mandatory):** before writing any relative date phrase ("today", "tomorrow", "this week", "next week"), explicitly compute the actual calendar date and day-of-week of today (the run date) by running `date -u +%Y-%m-%d` via Bash. Then:
+  - "today" → only if the referenced date equals today's date.
+  - "tomorrow" → only if the referenced date equals today + 1 day.
+  - For events 2+ days away, write the **weekday name + date** (e.g. "Wednesday, May 13") — do **not** use "tomorrow".
+  - For events in the past, use "yesterday" only for today − 1; otherwise use the explicit date.
+  After drafting the report, re-read every "today / tomorrow / yesterday" instance and verify the math; correct any mismatches before commit.
