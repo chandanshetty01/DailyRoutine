@@ -80,6 +80,29 @@ Sort rows by date ascending. Use a date range (e.g. `2026-05-20 – 22`) for pri
 ## Notable AI / quantum stock catalysts (informational only, not advice)
 - **[TICKER]** [Company] — <catalyst, one line> — <source>
 
+## Actions to consider (you decide — not recommendations)
+
+A personalized checklist derived from today's findings. Each item is a decision the user needs to make, a research task to pursue, or a date to put in the calendar. **Never** a buy/sell recommendation. Skip the section if nothing actionable came out of today's findings — write `_No actions surfaced today._`.
+
+Each bullet leads with one of these verbs and ends with a date if time-sensitive:
+- **Calendar:** dates worth tracking (IPO pricing, lockup expirations, earnings).
+- **Research:** filings or materials to read before forming a view (S-1, prospectus, IR deck).
+- **Decide:** a yes/no choice the user must make themselves (apply for retail allocation, set a price alert, adjust position sizing).
+- **Check:** something to verify with the user's own broker/account (IPO access, margin, settlement).
+- **Review:** a portfolio-level reflection prompted by news (concentration, exposure to sector, risk tolerance) — phrased as a prompt, not a directive.
+
+Format example (do NOT copy verbatim — generate real items from today's report):
+- **Calendar:** Cerebras (CBRS) — prices May 13, first trade May 14. Note in calendar if tracking first-day performance.
+- **Research:** Quantinuum S-1 (filed May 8) — read filing if considering quantum-pure-play exposure.
+- **Decide:** SpaceX retail allocation up to 30% of shares — verify broker supports IPO allocations by May 22 if interested in participating.
+- **Check:** NVDA Q1 FY27 earnings May 20 — confirm your alerts/risk-management setup if you hold the name.
+
+### Hard rules for this section
+- Never write "Buy X", "Sell X", "Now is a good time to invest in X", "X is undervalued/overvalued", or anything that names an action on a specific security.
+- Don't assume the user holds any specific position — phrase around *decisions and research*, not portfolio moves.
+- Every bullet must trace back to a fact stated elsewhere in this same report — no introducing new claims here.
+- If unsure whether something crosses into advice, leave it out.
+
 ## Sources
 - <flat list of every URL cited above, deduped>
 
