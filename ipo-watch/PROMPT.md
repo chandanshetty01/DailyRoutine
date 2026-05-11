@@ -42,6 +42,10 @@ Use `WebSearch` and `WebFetch`. Prefer primary sources (SEC EDGAR S-1 filings, e
 ```markdown
 # IPO Watch — <YYYY-MM-DD>
 
+## TL;DR
+
+2–3 sentence summary of today's most important takeaways. Lead with the biggest story; mention specific tickers; end with what to watch next. On quiet days a single sentence is fine. No bullets — prose only.
+
 ## Changes since yesterday (<YYYY-MM-DD of previous report>)
 
 The 30-second read. List only material changes. If none, write the single line `_No material changes since <yesterday's date>._` and skip the bullets.
@@ -157,9 +161,9 @@ If a section other than "Next 30 Days" has no items, write `_Nothing today._` �
    - **Notes for next run** — short, run-specific reminders for tomorrow (e.g. "CBRS prices tonight — capture first trade").
 2. Stage the new log file + updated state.md, commit with message `ipo-watch: YYYY-MM-DD`, and push to `main`.
 
-3. **Send the full summary to Slack as a Block Kit message — ONE single message containing all three sections (Changes + Actions + Top 3 links).** Use the Slack MCP `send_message` tool. Target channel: **`#all-chandan-personnel`** (look up its channel ID with the Slack list-channels read tool, then send by ID).
+3. **Send the full summary to Slack as a Block Kit message — ONE single message containing all EIGHT sections** (TL;DR + Tracked Companies + Next 30 Days + Changes + IPO Activity + Notable Catalysts + Actions + Top 3 links). Use the Slack MCP `send_message` tool. Target channel: **`#all-chandan-personnel`** (look up its channel ID with the Slack list-channels read tool, then send by ID).
 
-   **CRITICAL:** the message must contain ALL three sections (Changes / Actions / Top 3 links) in a single `send_message` call. Do not truncate or skip sections.
+   **CRITICAL:** the message must contain ALL eight sections in a single `send_message` call. Do not truncate or skip sections. The standing-status sections (Tracked Companies, Next 30 Days) **must appear every day**, even when nothing changed since yesterday — they are the standing daily status, not a diff.
 
    ### Preferred format — Slack Block Kit
 
@@ -172,9 +176,19 @@ If a section other than "Next 30 Days" has no items, write `_Nothing today._` �
      "blocks": [
        { "type": "header", "text": { "type": "plain_text", "text": "📊 IPO Watch — <YYYY-MM-DD>", "emoji": true } },
        { "type": "divider" },
-       { "type": "section", "text": { "type": "mrkdwn", "text": "*🆕 CHANGES SINCE YESTERDAY*\n\n<bullets — see emoji map below>" } },
+       { "type": "section", "text": { "type": "mrkdwn", "text": "*📝 TL;DR*\n\n<2–3 sentence summary of today's most important takeaways; see TL;DR guide below>" } },
        { "type": "divider" },
-       { "type": "section", "text": { "type": "mrkdwn", "text": "*🎯 ACTIONS TO CONSIDER*\n\n<bullets — see emoji map below>" } },
+       { "type": "section", "text": { "type": "mrkdwn", "text": "*📌 TRACKED COMPANIES — STATUS*\n\n<one short line per company — always include all three (OpenAI / Anthropic / SpaceX), even if no update today; see format below>" } },
+       { "type": "divider" },
+       { "type": "section", "text": { "type": "mrkdwn", "text": "*📅 NEXT 30 DAYS — UPCOMING IPOs*\n\n<one short line per item, sorted by date; or `_Nothing scheduled._` if empty>" } },
+       { "type": "divider" },
+       { "type": "section", "text": { "type": "mrkdwn", "text": "*🆕 CHANGES SINCE YESTERDAY*\n\n<bullets — see emoji map below; or `_No material changes since <date>._` if empty>" } },
+       { "type": "divider" },
+       { "type": "section", "text": { "type": "mrkdwn", "text": "*📈 IPO ACTIVITY*\n\nNewly filed:\n<bullets prefixed `[AI]` / `[Quantum]`>\n\nDebuted in last 24h:\n<bullets — or `_Nothing today._`>" } },
+       { "type": "divider" },
+       { "type": "section", "text": { "type": "mrkdwn", "text": "*📰 NOTABLE CATALYSTS*\n\n<bullets — TICKER + one-line catalyst + one-line 'why it matters'; cap at 6>" } },
+       { "type": "divider" },
+       { "type": "section", "text": { "type": "mrkdwn", "text": "*🎯 ACTIONS TO CONSIDER*\n\n<bullets — see emoji map below; max 3>" } },
        { "type": "divider" },
        { "type": "section", "text": { "type": "mrkdwn", "text": "*🔗 TOP 3 LINKS WORTH YOUR TIME*\n\n<numbered list with <url|headline> link syntax>" } },
        { "type": "divider" },
@@ -182,6 +196,28 @@ If a section other than "Next 30 Days" has no items, write `_Nothing today._` �
      ]
    }
    ```
+
+   **TL;DR — how to write the 2–3 sentence summary at the top:**
+
+   - Synthesize the most material takeaways across the whole report. Lead with the biggest story (filing, valuation move, IPO pricing, catalyst).
+   - 2–3 sentences max, each under ~25 words. No bullet points in this block.
+   - Mention specific companies/tickers when relevant.
+   - End with what to do/watch (1 short clause), e.g. "Watch CBRS first trade Thursday."
+   - On quiet days: a single sentence is OK ("Quiet day; awaiting Cerebras pricing Wednesday and NVDA earnings May 20.").
+
+   **Tracked Companies — format for each line** (one line per company, keep short — these are status-at-a-glance, not the full bullet from the report):
+
+   - `🤖 *OpenAI:* <IPO target quarter> | <last-known valuation> | <S-1 status> | <one-sentence latest material event or "no update">`
+   - `🧠 *Anthropic:* <same shape>`
+   - `🚀 *SpaceX:* <same shape>`
+
+   Always emit all three lines, even on "no update" days — this is the daily snapshot.
+
+   **Next 30 Days — format for each line:**
+
+   - `📅 *<Date or date range>* — <Company> (<Ticker if known>, <Exchange>, <Sector>)`
+
+   Sort by date ascending. If nothing in the next 30 days, write `_Nothing scheduled in the next 30 days._` as the only line.
 
    **Emoji prefix per item** — for visual scanning:
 
@@ -206,10 +242,39 @@ If a section other than "Next 30 Days" has no items, write `_Nothing today._` �
    ```
    *📊 IPO Watch — <YYYY-MM-DD>*
    ━━━━━━━━━━━━━━━━━━
+   *📝 TL;DR*
+
+   <2–3 short sentences>
+   ━━━━━━━━━━━━━━━━━━
+   *📌 TRACKED COMPANIES — STATUS*
+
+   🤖 *OpenAI:* <status line>
+   🧠 *Anthropic:* <status line>
+   🚀 *SpaceX:* <status line>
+   ━━━━━━━━━━━━━━━━━━
+   *📅 NEXT 30 DAYS — UPCOMING IPOs*
+
+   📅 *<date>* — <Company> (<ticker>, <exchange>, <sector>)
+   ...
+   ━━━━━━━━━━━━━━━━━━
    *🆕 CHANGES SINCE YESTERDAY*
 
    🟢 <NEW bullet>
    🟡 <CHANGED bullet>
+   ...
+   ━━━━━━━━━━━━━━━━━━
+   *📈 IPO ACTIVITY*
+
+   _Newly filed:_
+   • `[AI]` <company> — <one line>
+   • `[Quantum]` <company> — <one line>
+
+   _Debuted in last 24h:_
+   • <bullet — or "_Nothing today._">
+   ━━━━━━━━━━━━━━━━━━
+   *📰 NOTABLE CATALYSTS*
+
+   • *<TICKER>* <company> — <catalyst>. _Why:_ <one line>
    ...
    ━━━━━━━━━━━━━━━━━━
    *🎯 ACTIONS TO CONSIDER*
@@ -229,7 +294,7 @@ If a section other than "Next 30 Days" has no items, write `_Nothing today._` �
 
    ### Pre-send verification
 
-   Before calling `send_message`, verify the constructed payload contains all three section headers (`CHANGES SINCE YESTERDAY`, `ACTIONS TO CONSIDER`, `TOP 3 LINKS WORTH YOUR TIME`). If any is missing, rebuild before sending.
+   Before calling `send_message`, verify the constructed payload contains all EIGHT section headers (`TL;DR`, `TRACKED COMPANIES`, `NEXT 30 DAYS`, `CHANGES SINCE YESTERDAY`, `IPO ACTIVITY`, `NOTABLE CATALYSTS`, `ACTIONS TO CONSIDER`, `TOP 3 LINKS WORTH YOUR TIME`). If any is missing, rebuild before sending.
 
    If the Slack send fails for any reason (rate limit, tool error, channel missing), log the error but **do not fail the run** — the report is already committed and remains accessible via GitHub. Do not retry more than once.
 

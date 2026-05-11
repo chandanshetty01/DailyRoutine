@@ -18,6 +18,7 @@ You have three layers of memory. Read in order:
 
 A **monthly summary** that follows the **same section structure as the daily report**, but with each section aggregated across the month rather than the past 24 hours. Specifically:
 
+0. **TL;DR** — 2–3 sentence top-of-report summary of the month's most material developments. Lead with the biggest story, mention specific companies/tickers, end with what to watch next month.
 1. **Changes since last month** instead of "Changes since yesterday" — diff against last month's monthly summary, not yesterday's daily.
 2. **Tracked private companies** — month-end status, plus a short note on what changed *during the month* (e.g., "valuation guidance moved from $850B to $900B mid-month").
 3. **Next 30 Days — Upcoming IPOs** — forward-looking; identical semantics to the daily.
@@ -46,15 +47,20 @@ All other sections, formatting conventions, empty-state lines, and the disclaime
 2. Stage only the new monthly file, commit with message `ipo-watch-monthly: <YYYY-MM>`, and push to `main`.
 3. **Send the full summary to Slack as a Block Kit message.** Use the Slack MCP `send_message` tool. Target channel: **`#all-chandan-personnel`** (look up its channel ID with the Slack list-channels read tool, then send by ID).
 
-   Follow the **exact same Block Kit structure, emoji-prefix conventions, and fallback rules** documented in `ipo-watch/PROMPT.md` (section: "Preferred format — Slack Block Kit"), with these monthly-specific substitutions:
+   Follow the **exact same Block Kit structure (all eight sections), emoji-prefix conventions, and fallback rules** documented in `ipo-watch/PROMPT.md` (section: "Preferred format — Slack Block Kit"), with these monthly-specific substitutions:
 
    - Header text: `📈 IPO Watch — Monthly Summary — <YYYY-MM>` (uses 📈 not 📊)
-   - First content section header: `*🆕 CHANGES SINCE LAST MONTH*` (not "since yesterday")
+   - TL;DR section header: `*📝 TL;DR*` — month-level summary (2–3 sentences covering the biggest developments of the month).
+   - Tracked Companies section header: `*📌 TRACKED COMPANIES — STATUS (MONTH-END)*` — month-end status, with a brief note on what changed during the month.
+   - Next 30 Days section header: `*📅 NEXT 30 DAYS — UPCOMING IPOs*` — forward-looking from today (1st of new month).
+   - Changes section header: `*🆕 CHANGES SINCE LAST MONTH*` (not "since yesterday")
+   - IPO Activity section header: `*📈 IPO ACTIVITY (THIS MONTH)*` — split into "Filed this month" and "Priced / debuted this month".
+   - Notable Catalysts section header: `*📰 NOTABLE CATALYSTS (THIS MONTH)*` — the 3–6 most material moves of the whole month.
    - Actions section header: `*🎯 ACTIONS TO CONSIDER (THIS MONTH)*`
    - Top 3 links section header: same (`*🔗 TOP 3 LINKS WORTH YOUR TIME*`)
    - Footer link target: `https://github.com/chandanshetty01/DailyRoutine/blob/main/ipo-watch/monthly/<YYYY-MM>.md`
 
-   All emoji prefixes, divider blocks, mrkdwn formatting, pre-send verification, and fail-soft rules from PROMPT.md apply unchanged. Do not retry more than once.
+   All emoji prefixes, divider blocks, mrkdwn formatting, pre-send verification (all eight section headers present), and fail-soft rules from PROMPT.md apply unchanged. Do not retry more than once.
 
 ## Hard rules
 
