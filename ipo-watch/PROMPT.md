@@ -73,4 +73,5 @@ If a section other than "Next 30 Days" has no items, write `_Nothing today._` �
 - Never invent IPO dates, valuations, or filings — if unverified, say "rumored, unverified".
 - Never give buy/sell recommendations. Frame everything as information.
 - Cite a source URL for every factual claim.
+- **URL verification (mandatory):** before including any URL in the report — in an item line OR in the Sources list — verify it with `WebFetch`. The URL must (a) return HTTP 200 and (b) contain content that actually supports the claim. If verification fails: drop the URL, and if it was the only source for an item, drop the item entirely. Never guess, fabricate, or shorten URLs. The Sources section must contain only URLs that appear elsewhere in the doc — no extras.
 - If `WebSearch` returns nothing useful for a section, say so honestly rather than padding.
