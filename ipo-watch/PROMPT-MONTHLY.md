@@ -44,6 +44,24 @@ All other sections, formatting conventions, empty-state lines, and the disclaime
 
 1. **Do NOT modify `ipo-watch/state.md`.** State.md is owned by the daily routine. The monthly is a read-only consumer of it.
 2. Stage only the new monthly file, commit with message `ipo-watch-monthly: <YYYY-MM>`, and push to `main`.
+3. **Send a mobile-friendly Slack summary.** Use the Slack MCP `send_message` tool. Target: same as the daily routine (a DM with yourself; fall back to `#ipo-watch` channel). Format:
+
+   ```
+   *📈 IPO Watch — Monthly Summary — <YYYY-MM>*
+
+   *Changes since last month*
+   <verbatim bullets — or "_No material changes since <prev-month>._">
+
+   *🎯 Actions to consider (this month)*
+   <verbatim bullets — or "_No actions surfaced._">
+
+   *🔗 Top 5 links worth your time*
+   <verbatim numbered list>
+
+   📄 *Full report:* https://github.com/chandanshetty01/DailyRoutine/blob/main/ipo-watch/monthly/<YYYY-MM>.md
+   ```
+
+   If the Slack send fails, log and continue — the report is already committed. Do not retry more than once.
 
 ## Hard rules
 

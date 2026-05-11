@@ -145,6 +145,7 @@ If a section other than "Next 30 Days" has no items, write `_Nothing today._` �
 ## Before exit
 
 1. **Overwrite `ipo-watch/state.md` to reflect a 30-day rolling view, not just today's snapshot.** Specifically:
+
    - **Last run** — current ISO timestamp (UTC).
    - **Tracked companies table** — today's status + source + today's date for OpenAI, Anthropic, SpaceX.
    - **AI / quantum IPOs filed or upcoming** — every item with a forward-looking date, including:
@@ -155,6 +156,27 @@ If a section other than "Next 30 Days" has no items, write `_Nothing today._` �
    - **30-day rolling watch items** — a free-form list of patterns, recurring rumors, or context that today's findings imply (e.g. "OpenAI 2027 delay rumor — first surfaced 2026-05-11; recheck weekly", "Quantinuum mentioned 4× in last 7 days — sector momentum"). This is the section that gives the routine memory across more than a few days. Keep it tight (10 items max) and prune entries older than 30 days unless they're still active.
    - **Notes for next run** — short, run-specific reminders for tomorrow (e.g. "CBRS prices tonight — capture first trade").
 2. Stage the new log file + updated state.md, commit with message `ipo-watch: YYYY-MM-DD`, and push to `main`.
+
+3. **Send a mobile-friendly summary to Slack.** Use the Slack MCP `send_message` tool. Target: a DM with yourself (the authenticated Slack user, look it up with the Slack user-info read tool). If self-DM isn't possible, fall back to a channel named `#ipo-watch` (create it if needed).
+
+   Message body (Slack mrkdwn — use `*bold*` not `**bold**`):
+
+   ```
+   *📊 IPO Watch — <YYYY-MM-DD>*
+
+   *Changes since yesterday*
+   <verbatim bullets from "Changes since yesterday" section — or "_No material changes since <date>._">
+
+   *🎯 Actions to consider*
+   <verbatim bullets from "Actions to consider" section — or "_No actions surfaced today._">
+
+   *🔗 Top 5 links worth your time*
+   <verbatim numbered list from "Top 5 links" section>
+
+   📄 *Full report:* https://github.com/chandanshetty01/DailyRoutine/blob/main/ipo-watch/log/<YYYY-MM-DD>.md
+   ```
+
+   If the Slack send fails for any reason (rate limit, tool error, channel missing), log the error but **do not fail the run** — the report is already committed and remains accessible via GitHub. Do not retry more than once.
 
 ## Hard rules
 - Never invent IPO dates, valuations, or filings — if unverified, say "rumored, unverified".
