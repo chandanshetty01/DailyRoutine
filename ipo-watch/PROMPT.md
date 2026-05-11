@@ -157,7 +157,7 @@ If a section other than "Next 30 Days" has no items, write `_Nothing today._` �
    - **Notes for next run** — short, run-specific reminders for tomorrow (e.g. "CBRS prices tonight — capture first trade").
 2. Stage the new log file + updated state.md, commit with message `ipo-watch: YYYY-MM-DD`, and push to `main`.
 
-3. **Send a mobile-friendly summary to Slack.** Use the Slack MCP `send_message` tool. Target: a DM with yourself (the authenticated Slack user, look it up with the Slack user-info read tool). If self-DM isn't possible, fall back to a channel named `#ipo-watch` (create it if needed).
+3. **Send a mobile-friendly summary to Slack.** Use the Slack MCP `send_message` tool. Target channel: **`#all-chandan-personnel`** (look up its channel ID with the Slack list-channels read tool, then send by ID).
 
    Message body (Slack mrkdwn — use `*bold*` not `**bold**`):
 

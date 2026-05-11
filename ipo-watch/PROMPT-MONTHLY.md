@@ -44,7 +44,7 @@ All other sections, formatting conventions, empty-state lines, and the disclaime
 
 1. **Do NOT modify `ipo-watch/state.md`.** State.md is owned by the daily routine. The monthly is a read-only consumer of it.
 2. Stage only the new monthly file, commit with message `ipo-watch-monthly: <YYYY-MM>`, and push to `main`.
-3. **Send a mobile-friendly Slack summary.** Use the Slack MCP `send_message` tool. Target: same as the daily routine (a DM with yourself; fall back to `#ipo-watch` channel). Format:
+3. **Send a mobile-friendly Slack summary.** Use the Slack MCP `send_message` tool. Target channel: **`#all-chandan-personnel`** (look up its channel ID with the Slack list-channels read tool, then send by ID). Format:
 
    ```
    *📈 IPO Watch — Monthly Summary — <YYYY-MM>*
