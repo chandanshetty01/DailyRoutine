@@ -25,8 +25,8 @@ A **monthly summary** that follows the **same section structure as the daily rep
    - `Filed this month` (newly filed S-1 / F-1 during the month)
    - `Priced / debuted this month` (with first-day result if available)
 5. **Notable AI / quantum stock catalysts this month** — the 3–6 most material moves of the whole month (earnings, M&A, large contracts, regulatory action). One line per item plus a "why it mattered".
-6. **Actions to consider** — same rules as daily (Calendar / Research / Decide / Check / Review; never buy/sell recommendations). Focus on the month ahead, not just the next 24h.
-7. **Top 5 links worth your time** — exactly 5 (or fewer), curated from the month's worth of citations. Same ranking criteria as the daily.
+6. **Actions to consider** — same rules as daily, **max 3 items** ranked by urgency. Focus on the month ahead, not just the next 24h.
+7. **Top 3 links worth your time** — exactly 3 (or fewer), curated from the month's worth of citations. Same ranking criteria as the daily.
 
 ## Output — commit a new file `ipo-watch/monthly/YYYY-MM.md`
 
@@ -44,7 +44,11 @@ All other sections, formatting conventions, empty-state lines, and the disclaime
 
 1. **Do NOT modify `ipo-watch/state.md`.** State.md is owned by the daily routine. The monthly is a read-only consumer of it.
 2. Stage only the new monthly file, commit with message `ipo-watch-monthly: <YYYY-MM>`, and push to `main`.
-3. **Send a mobile-friendly Slack summary.** Use the Slack MCP `send_message` tool. Target channel: **`#all-chandan-personnel`** (look up its channel ID with the Slack list-channels read tool, then send by ID). Format:
+3. **Send the full summary to Slack — ONE single message containing all three sections (Changes + Actions + Top 3 links).** Use the Slack MCP `send_message` tool. Target channel: **`#all-chandan-personnel`** (look up its channel ID with the Slack list-channels read tool, then send by ID).
+
+   **CRITICAL:** the Slack message body must contain ALL of: (a) the Changes-since-last-month bullets, (b) the Actions-to-consider bullets, AND (c) the Top 3 links — in that order, in a single `send_message` call. Do not truncate. Do not skip sections.
+
+   Format (Slack mrkdwn — use `*bold*` not `**bold**`):
 
    ```
    *📈 IPO Watch — Monthly Summary — <YYYY-MM>*
@@ -55,11 +59,13 @@ All other sections, formatting conventions, empty-state lines, and the disclaime
    *🎯 Actions to consider (this month)*
    <verbatim bullets — or "_No actions surfaced._">
 
-   *🔗 Top 5 links worth your time*
+   *🔗 Top 3 links worth your time*
    <verbatim numbered list>
 
    📄 *Full report:* https://github.com/chandanshetty01/DailyRoutine/blob/main/ipo-watch/monthly/<YYYY-MM>.md
    ```
+
+   Before calling `send_message`, build the entire body in memory and verify it contains all three section headers — if any is missing, fix and rebuild before sending.
 
    If the Slack send fails, log and continue — the report is already committed. Do not retry more than once.
 
