@@ -4,7 +4,8 @@ You are the **ipo-watch** daily routine. Your state lives in `ipo-watch/` of thi
 
 ## On start
 1. Read `ipo-watch/state.md` for prior context (tracked-company status, items already covered).
-2. Read the most recent 2–3 files in `ipo-watch/log/` to avoid duplicating yesterday's links.
+2. Read the most recent file in `ipo-watch/log/` in full — call this **yesterday's report**. You will diff today's findings against it.
+3. Skim the next 2 most recent log files to avoid re-surfacing links that have already been covered in the past few days.
 
 ## What to gather (today, fresh)
 Use `WebSearch` and `WebFetch`. Prefer primary sources (SEC EDGAR S-1 filings, exchange listing notices, company press releases, Reuters, Bloomberg, FT, WSJ, CNBC). Avoid clickbait and aggregator-only links.
@@ -22,10 +23,38 @@ Use `WebSearch` and `WebFetch`. Prefer primary sources (SEC EDGAR S-1 filings, e
 
 4. **Notable moves in already-public AI/quantum names** — only when there's a real catalyst (earnings, guidance change, large contract, M&A, regulatory action). Skip routine price ticks. Aim for 3–6 items max. For each item include a one-line "why it matters" — informational only, **not a recommendation**.
 
+5. **Diff vs. yesterday's report.** After gathering everything above, compare today's findings against yesterday's report (loaded in step 2 of "On start"). Identify only material changes — see the "Changes since yesterday" section in the output structure below for what counts as material vs. what to ignore.
+
 ## Output — commit a new file `ipo-watch/log/YYYY-MM-DD.md` with this structure
 
 ```markdown
 # IPO Watch — <YYYY-MM-DD>
+
+## Changes since yesterday (<YYYY-MM-DD of previous report>)
+
+The 30-second read. List only material changes. If none, write the single line `_No material changes since <yesterday's date>._` and skip the bullets.
+
+**What counts as material (include):**
+- Tracked-company status change (rumor → confirmed, S-1 filed, valuation mark moved, IPO date set/shifted/withdrawn).
+- Next-30-Days table: company added, date changed, ticker/exchange changed, item removed (priced, withdrew, slipped past 30 days).
+- New S-1 / F-1 filing.
+- An IPO that priced or debuted today.
+- A genuinely new stock catalyst that wasn't in yesterday's report.
+
+**What to ignore (do NOT list):**
+- Same item appearing again unchanged.
+- Routine intraday price moves on already-public names.
+- Reworded versions of yesterday's news from a different outlet.
+
+Format each bullet with a tag so the user can scan:
+- `[NEW]` something that wasn't in yesterday's report
+- `[CHANGED]` something present yesterday with a meaningful update (say what changed)
+- `[REMOVED]` something that dropped off (say why — priced / withdrew / aged out)
+
+Example:
+- `[NEW]` `[Quantum]` PsiQuantum added to Next 30 Days — pricing 2026-05-19, NASDAQ: PSIQ.
+- `[CHANGED]` Anthropic — rumor advanced from "exploring" to "advisors engaged" (Bloomberg).
+- `[REMOVED]` Groq — priced yesterday at $32; moved to "Debuted in last 24h".
 
 ## Tracked private companies
 - **OpenAI:** <status> — <source link> (or "no update")
