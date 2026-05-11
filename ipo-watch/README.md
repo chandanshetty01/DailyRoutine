@@ -4,7 +4,9 @@
 
 **Schedule:** Every day at 09:00 IST (03:30 UTC).
 
-**Output:** Commits a Markdown report to `ipo-watch/log/YYYY-MM-DD.md` and overwrites `ipo-watch/state.md` with the latest tracked-company snapshot.
+**Output:**
+- Daily: commits a Markdown report to `ipo-watch/log/YYYY-MM-DD.md` and overwrites `ipo-watch/state.md` with the latest 30-day rolling snapshot.
+- Monthly (1st of each month, 10 AM SGT): commits a month-summary report to `ipo-watch/monthly/YYYY-MM.md` covering the previous calendar month. Same section structure as the daily, aggregated. See [`PROMPT-MONTHLY.md`](PROMPT-MONTHLY.md).
 
 **Disclaimer:** Informational only. Not investment advice. Always verify with primary sources (SEC filings, exchange announcements, company press releases) before acting.
 
