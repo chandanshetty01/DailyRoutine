@@ -15,14 +15,12 @@ Use `WebSearch` and `WebFetch`. Prefer primary sources (SEC EDGAR S-1 filings, e
 2. **Next 30 days — consolidated upcoming IPOs (AI + quantum).**
    Every AI or quantum IPO with an expected pricing date, listing date, or active roadshow within the next 30 calendar days. This is the headline section — be thorough. For each: company, sector tag (AI / Quantum), expected date, exchange + proposed ticker, and a primary-source link.
 
-3. **AI IPOs — other activity:**
-   - Newly filed S-1 / F-1 in the last 24h
+3. **IPO activity (AI + quantum) — everything not in Next 30 Days:**
+   - Newly filed S-1 / F-1 in the last 24h (no firm date yet)
    - First-day trades in the last 24h
-   (Skip "upcoming" here — it lives in the Next 30 Days section above.)
+   Include SPAC/de-SPAC for quantum-pure-play. Tag each item `[AI]` or `[Quantum]` so the sector is obvious without splitting into separate sections.
 
-4. **Quantum-computing IPOs — other activity:** same two buckets as AI IPOs above. Include SPAC/de-SPAC if quantum-pure-play.
-
-5. **Notable moves in already-public AI/quantum names** — only when there's a real catalyst (earnings, guidance change, large contract, M&A, regulatory action). Skip routine price ticks. Aim for 3–6 items max. For each item include a one-line "why it matters" — informational only, **not a recommendation**.
+4. **Notable moves in already-public AI/quantum names** — only when there's a real catalyst (earnings, guidance change, large contract, M&A, regulatory action). Skip routine price ticks. Aim for 3–6 items max. For each item include a one-line "why it matters" — informational only, **not a recommendation**.
 
 ## Output — commit a new file `ipo-watch/log/YYYY-MM-DD.md` with this structure
 
@@ -43,17 +41,12 @@ Use `WebSearch` and `WebFetch`. Prefer primary sources (SEC EDGAR S-1 filings, e
 
 Sort rows by date ascending. Use a date range (e.g. `2026-05-20 – 22`) for pricing windows. If nothing is scheduled, write a single line under the heading: `_Nothing scheduled in the next 30 days._` and omit the table.
 
-## AI IPOs
-### Newly filed
-- [Company] — <one line> — <source>
+## IPO activity
+### Newly filed (no firm date yet)
+- `[AI]` **[Company]** — <one line> — <source>
+- `[Quantum]` **[Company]** — <one line> — <source>
 ### Debuted in last 24h
-- ...
-
-## Quantum-computing IPOs
-### Newly filed
-- ...
-### Debuted in last 24h
-- ...
+- `[AI]` **[Company]** ([TICKER]) — <one line> — <source>
 
 ## Notable AI / quantum stock catalysts (informational only, not advice)
 - **[TICKER]** [Company] — <catalyst, one line> — <source>
