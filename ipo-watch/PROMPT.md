@@ -157,28 +157,79 @@ If a section other than "Next 30 Days" has no items, write `_Nothing today._` �
    - **Notes for next run** — short, run-specific reminders for tomorrow (e.g. "CBRS prices tonight — capture first trade").
 2. Stage the new log file + updated state.md, commit with message `ipo-watch: YYYY-MM-DD`, and push to `main`.
 
-3. **Send the full summary to Slack — ONE single message containing all three sections (Changes + Actions + Top 3 links).** Use the Slack MCP `send_message` tool. Target channel: **`#all-chandan-personnel`** (look up its channel ID with the Slack list-channels read tool, then send by ID).
+3. **Send the full summary to Slack as a Block Kit message — ONE single message containing all three sections (Changes + Actions + Top 3 links).** Use the Slack MCP `send_message` tool. Target channel: **`#all-chandan-personnel`** (look up its channel ID with the Slack list-channels read tool, then send by ID).
 
-   **CRITICAL:** the Slack message body must contain ALL of: (a) the Changes-since-yesterday bullets, (b) the Actions-to-consider bullets, AND (c) the Top 3 links — in that order, in a single `send_message` call. Do not truncate. Do not skip sections. Do not send only the first section.
+   **CRITICAL:** the message must contain ALL three sections (Changes / Actions / Top 3 links) in a single `send_message` call. Do not truncate or skip sections.
 
-   Build the message body by concatenating these blocks verbatim from the report you just committed (Slack mrkdwn — use `*bold*` not `**bold**`):
+   ### Preferred format — Slack Block Kit
+
+   If the Slack MCP's `send_message` accepts a `blocks` parameter, build the message as a `blocks` array with this structure (always include the `text` field as a plaintext fallback for notifications):
+
+   ```json
+   {
+     "channel": "<channel id>",
+     "text": "IPO Watch — <YYYY-MM-DD>",
+     "blocks": [
+       { "type": "header", "text": { "type": "plain_text", "text": "📊 IPO Watch — <YYYY-MM-DD>", "emoji": true } },
+       { "type": "divider" },
+       { "type": "section", "text": { "type": "mrkdwn", "text": "*🆕 CHANGES SINCE YESTERDAY*\n\n<bullets — see emoji map below>" } },
+       { "type": "divider" },
+       { "type": "section", "text": { "type": "mrkdwn", "text": "*🎯 ACTIONS TO CONSIDER*\n\n<bullets — see emoji map below>" } },
+       { "type": "divider" },
+       { "type": "section", "text": { "type": "mrkdwn", "text": "*🔗 TOP 3 LINKS WORTH YOUR TIME*\n\n<numbered list with <url|headline> link syntax>" } },
+       { "type": "divider" },
+       { "type": "context", "elements": [ { "type": "mrkdwn", "text": "📄 <https://github.com/chandanshetty01/DailyRoutine/blob/main/ipo-watch/log/<YYYY-MM-DD>.md|Full report on GitHub>" } ] }
+     ]
+   }
+   ```
+
+   **Emoji prefix per item** — for visual scanning:
+
+   - **Changes section bullets:** lead each bullet with the matching emoji:
+     - 🟢 for `[NEW]` items
+     - 🟡 for `[CHANGED]` items
+     - 🔴 for `[REMOVED]` items
+   - **Actions section bullets:** lead each bullet with the matching emoji:
+     - 📅 for **Calendar**
+     - 🔍 for **Research**
+     - 🤔 for **Decide**
+     - ✅ for **Check**
+     - 👀 for **Review**
+   - **Top 3 links:** use Slack's `<URL|headline text>` syntax to make titles clickable; put the one-line "why" on the next line in italics with `_..._`.
+
+   Keep each bullet to ~1 short paragraph max. Do NOT paste the long inline-source URLs in the middle of bullets in the Slack message — sources for facts live in the full GitHub report; the Slack version is the punch summary.
+
+   ### Fallback — plain mrkdwn
+
+   If `send_message` doesn't accept a `blocks` parameter, pass the message as a single `text` (or `message`) string using the same visual structure with `━━━━━━━━━━━━━━━━━━` (18 box-drawing chars) as the divider between sections:
 
    ```
    *📊 IPO Watch — <YYYY-MM-DD>*
+   ━━━━━━━━━━━━━━━━━━
+   *🆕 CHANGES SINCE YESTERDAY*
 
-   *Changes since yesterday*
-   <verbatim bullets from "Changes since yesterday" section — or "_No material changes since <date>._">
+   🟢 <NEW bullet>
+   🟡 <CHANGED bullet>
+   ...
+   ━━━━━━━━━━━━━━━━━━
+   *🎯 ACTIONS TO CONSIDER*
 
-   *🎯 Actions to consider*
-   <verbatim bullets from "Actions to consider" section — or "_No actions surfaced today._">
+   📅 *Calendar:* <bullet>
+   🔍 *Research:* <bullet>
+   ...
+   ━━━━━━━━━━━━━━━━━━
+   *🔗 TOP 3 LINKS WORTH YOUR TIME*
 
-   *🔗 Top 3 links worth your time*
-   <verbatim numbered list from "Top 3 links" section>
-
-   📄 *Full report:* https://github.com/chandanshetty01/DailyRoutine/blob/main/ipo-watch/log/<YYYY-MM-DD>.md
+   1. <https://...|Headline as link>
+      _<one-line why this is worth reading>_
+   ...
+   ━━━━━━━━━━━━━━━━━━
+   📄 <https://github.com/chandanshetty01/DailyRoutine/blob/main/ipo-watch/log/<YYYY-MM-DD>.md|Full report on GitHub>
    ```
 
-   Slack's per-message limit is ~40,000 characters — well above what this summary will use, so a single call is always sufficient. Before calling `send_message`, build the entire body in memory and verify it contains the three section headers (`Changes since yesterday`, `Actions to consider`, `Top 3 links`) — if any is missing, fix and rebuild before sending.
+   ### Pre-send verification
+
+   Before calling `send_message`, verify the constructed payload contains all three section headers (`CHANGES SINCE YESTERDAY`, `ACTIONS TO CONSIDER`, `TOP 3 LINKS WORTH YOUR TIME`). If any is missing, rebuild before sending.
 
    If the Slack send fails for any reason (rate limit, tool error, channel missing), log the error but **do not fail the run** — the report is already committed and remains accessible via GitHub. Do not retry more than once.
 
