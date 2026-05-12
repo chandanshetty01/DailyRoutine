@@ -221,6 +221,22 @@ If a section other than "Next 30 Days" has no items, write `_Nothing today._` �
    - **Tracked Companies:** one short pipe-separated line per company. Latest material event becomes the LAST clause, not a 3-line addendum.
    - The full report on GitHub holds the long-form context. Slack is the executive summary.
 
+   ### "Never lose the user" — one-line descriptor on every company mention
+
+   Every time a company name or ticker appears in the Slack message, on its **first appearance in each section** add a short italic parenthetical (≤ 6 words) describing what the company does. The user must never wonder "wait, what's that company?" while scanning.
+
+   Apply this rule everywhere — TL;DR, Tracked Companies, Changes, IPO Activity, Notable Catalysts, Actions, Top 3 links. Subsequent mentions in the same section can drop the descriptor (don't repeat noise).
+
+   Format examples:
+
+   - `*CBRS* (_wafer-scale AI accelerator chips_) prices Wed May 13.`
+   - `*RGTI* (_superconducting quantum hardware_) Q1 beat: $4.4M revenue.`
+   - `*NVDA* (_AI chips & data center GPUs_) Q1 FY27 earnings May 20.`
+   - `*Quantinuum* (_trapped-ion quantum, Honeywell-backed_) S-1 filed May 8.`
+   - `*Anthropic* (_Claude AI; closed-source LLM lab_) ~$50B raise close ~Thu May 14.`
+
+   Keep the descriptor factual ("AI infra REIT", "Finnish quantum unicorn") — not editorial ("hot stock", "must-watch IPO"). When the ticker is the company's only common name (e.g. NVDA = Nvidia is obvious), still include the descriptor — the descriptor is the *what they do*, not the *who they are*.
+
    **Tracked Companies — format for each line** (one line per company, keep short — these are status-at-a-glance, not the full bullet from the report):
 
    - `🤖 *OpenAI:* <IPO target quarter> | <last-known valuation> | <S-1 status> | <one-sentence latest material event or "no update">`
