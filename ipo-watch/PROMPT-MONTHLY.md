@@ -45,7 +45,7 @@ All other sections, formatting conventions, empty-state lines, and the disclaime
 
 1. **Do NOT modify `ipo-watch/state.md`.** State.md is owned by the daily routine. The monthly is a read-only consumer of it.
 2. Stage only the new monthly file, commit with message `ipo-watch-monthly: <YYYY-MM>`, and push to `main`.
-3. **Send the full summary to Slack as a Block Kit message.** Use the Slack MCP `send_message` tool. Target channel: **`#all-chandan-personnel`** (look up its channel ID with the Slack list-channels read tool, then send by ID).
+3. **Send the full summary to Slack as a Block Kit message.** Use the Slack MCP `send_message` tool. Target channel: **`#bpe-alerts`** (look up its channel ID with the Slack list-channels read tool, then send by ID).
 
    Follow the **exact same Block Kit structure (all eight sections), emoji-prefix conventions, and fallback rules** documented in `ipo-watch/PROMPT.md` (section: "Preferred format — Slack Block Kit"), with these monthly-specific substitutions:
 
