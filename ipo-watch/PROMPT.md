@@ -231,7 +231,9 @@ If a section other than "Next 30 Days" has no items, write `_Nothing today._` �
 
    **Next 30 Days — format for each line:**
 
-   - `📅 *<Date or date range>* — <Company> (<Ticker if known>, <Exchange>, <Sector>)`
+   - `📅 *<Date or date range>* — *<Company>* (<Ticker if known>, <Exchange>) — _<≤8-word business description>_`
+
+   The italic description is "what they actually do" so the user doesn't have to know each ticker. Keep it factual and concrete (e.g. "wafer-scale AI accelerator chips", "trapped-ion quantum hardware", "launch + Starlink + Grok/xAI"). Don't editorialize ("hot AI IPO" — no).
 
    Sort by date ascending. If nothing in the next 30 days, write `_Nothing scheduled in the next 30 days._` as the only line.
 
