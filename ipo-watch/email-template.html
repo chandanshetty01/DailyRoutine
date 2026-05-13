@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="x-apple-disable-message-reformatting">
+<title>IPO Watch — {{DATE}}</title>
+</head>
+<body style="margin:0; padding:0; background:#f3f4f6; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,sans-serif; color:#1f2937; -webkit-font-smoothing:antialiased;">
+
+<!--
+  IPO Watch — daily email template
+  ===================================
+  The routine MUST substitute every {{TOKEN}} below with HTML-escaped
+  content generated from the committed Markdown report. Keep all inline
+  styles as written; many mail clients strip <style> blocks. Use only
+  table-based layouts for outer scaffolding. Do NOT add JavaScript.
+  Maximum body width is 600px (mobile-safe).
+
+  Placeholder reference:
+    {{DATE}}                — 2026-05-13
+    {{REPORT_KIND_BADGE}}   — "DAILY REPORT" or "MONTHLY SUMMARY"
+    {{HEADER_EMOJI}}        — 📊 (daily) / 📈 (monthly)
+    {{TLDR_BULLETS_HTML}}   — <li>...</li><li>...</li> (max 3)
+    {{TRACKED_CARDS_HTML}}  — 3 <table>...</table> blocks (OpenAI/Anthropic/SpaceX)
+    {{NEXT_30_ROWS_HTML}}   — <tr>...</tr> rows for the upcoming-IPOs table
+    {{CHANGES_HTML}}        — pill-tagged list items (NEW/CHANGED/REMOVED)
+    {{IPO_ACTIVITY_HTML}}   — Newly filed + Debuted bullets
+    {{CATALYSTS_HTML}}      — ticker cards with "Why it matters"
+    {{ACTIONS_HTML}}        — verb-tagged action items
+    {{TOP_LINKS_HTML}}      — 3 link cards
+    {{GITHUB_URL}}          — link to the committed report on GitHub
+-->
+
+<!-- Email backdrop -->
+<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background:#f3f4f6;">
+<tr>
+<td align="center" style="padding:24px 12px;">
+
+<!-- Card container -->
+<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" style="max-width:600px; width:100%; background:#ffffff; border-radius:14px; overflow:hidden; box-shadow:0 1px 3px rgba(0,0,0,0.08);">
+
+  <!-- ============ HEADER ============ -->
+  <tr>
+    <td style="background:#1e3a8a; background-image:linear-gradient(135deg,#1e3a8a 0%,#3730a3 100%); padding:28px 24px; text-align:center;">
+      <div style="font-size:11px; letter-spacing:1.6px; color:#c7d2fe; text-transform:uppercase; font-weight:600; margin-bottom:6px;">{{REPORT_KIND_BADGE}}</div>
+      <div style="font-size:26px; font-weight:700; color:#ffffff; line-height:1.2;">{{HEADER_EMOJI}} IPO Watch</div>
+      <div style="font-size:14px; color:#a5b4fc; margin-top:6px;">{{DATE}}</div>
+    </td>
+  </tr>
+
+  <!-- ============ TL;DR — HIGHLIGHTED BOX ============ -->
+  <tr>
+    <td style="padding:24px 24px 0;">
+      <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background:#eef2ff; border-left:4px solid #4f46e5; border-radius:8px;">
+        <tr><td style="padding:16px 18px;">
+          <div style="font-size:11px; letter-spacing:1.2px; font-weight:700; color:#4338ca; text-transform:uppercase; margin-bottom:10px;">📝 TL;DR</div>
+          <ul style="margin:0; padding:0 0 0 20px; font-size:14px; line-height:1.55; color:#1f2937;">
+{{TLDR_BULLETS_HTML}}
+          </ul>
+        </td></tr>
+      </table>
+    </td>
+  </tr>
+
+  <!-- ============ TRACKED COMPANIES ============ -->
+  <tr>
+    <td style="padding:24px 24px 0;">
+      <div style="font-size:11px; letter-spacing:1.2px; font-weight:700; color:#475569; text-transform:uppercase; margin-bottom:12px;">📌 Tracked Companies</div>
+{{TRACKED_CARDS_HTML}}
+    </td>
+  </tr>
+
+  <!-- ============ NEXT 30 DAYS ============ -->
+  <tr>
+    <td style="padding:24px 24px 0;">
+      <div style="font-size:11px; letter-spacing:1.2px; font-weight:700; color:#475569; text-transform:uppercase; margin-bottom:12px;">📅 Next 30 Days — Upcoming IPOs</div>
+      <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="border-collapse:collapse; background:#ffffff; border:1px solid #e5e7eb; border-radius:8px; overflow:hidden;">
+        <tr style="background:#f8fafc;">
+          <th align="left" style="padding:10px 12px; font-size:10px; letter-spacing:1px; color:#6b7280; text-transform:uppercase; font-weight:700; border-bottom:1px solid #e5e7eb;">Date</th>
+          <th align="left" style="padding:10px 12px; font-size:10px; letter-spacing:1px; color:#6b7280; text-transform:uppercase; font-weight:700; border-bottom:1px solid #e5e7eb;">Company</th>
+          <th align="left" style="padding:10px 12px; font-size:10px; letter-spacing:1px; color:#6b7280; text-transform:uppercase; font-weight:700; border-bottom:1px solid #e5e7eb;">Listing</th>
+        </tr>
+{{NEXT_30_ROWS_HTML}}
+      </table>
+    </td>
+  </tr>
+
+  <!-- ============ CHANGES SINCE YESTERDAY ============ -->
+  <tr>
+    <td style="padding:24px 24px 0;">
+      <div style="font-size:11px; letter-spacing:1.2px; font-weight:700; color:#475569; text-transform:uppercase; margin-bottom:12px;">🆕 Changes Since Yesterday</div>
+{{CHANGES_HTML}}
+    </td>
+  </tr>
+
+  <!-- ============ IPO ACTIVITY ============ -->
+  <tr>
+    <td style="padding:24px 24px 0;">
+      <div style="font-size:11px; letter-spacing:1.2px; font-weight:700; color:#475569; text-transform:uppercase; margin-bottom:12px;">📈 IPO Activity</div>
+{{IPO_ACTIVITY_HTML}}
+    </td>
+  </tr>
+
+  <!-- ============ NOTABLE CATALYSTS ============ -->
+  <tr>
+    <td style="padding:24px 24px 0;">
+      <div style="font-size:11px; letter-spacing:1.2px; font-weight:700; color:#475569; text-transform:uppercase; margin-bottom:12px;">📰 Notable Catalysts</div>
+{{CATALYSTS_HTML}}
+    </td>
+  </tr>
+
+  <!-- ============ ACTIONS TO CONSIDER ============ -->
+  <tr>
+    <td style="padding:24px 24px 0;">
+      <div style="font-size:11px; letter-spacing:1.2px; font-weight:700; color:#475569; text-transform:uppercase; margin-bottom:12px;">🎯 Actions to Consider</div>
+      <div style="font-size:11px; color:#9ca3af; font-style:italic; margin-bottom:10px;">Informational — you decide. Not investment advice.</div>
+{{ACTIONS_HTML}}
+    </td>
+  </tr>
+
+  <!-- ============ TOP 3 LINKS ============ -->
+  <tr>
+    <td style="padding:24px 24px 8px;">
+      <div style="font-size:11px; letter-spacing:1.2px; font-weight:700; color:#475569; text-transform:uppercase; margin-bottom:12px;">🔗 Top 3 Links Worth Your Time</div>
+{{TOP_LINKS_HTML}}
+    </td>
+  </tr>
+
+  <!-- ============ FOOTER ============ -->
+  <tr>
+    <td style="padding:20px 24px 28px; text-align:center; background:#f8fafc; border-top:1px solid #e5e7eb;">
+      <a href="{{GITHUB_URL}}" style="display:inline-block; background:#1e3a8a; color:#ffffff; text-decoration:none; padding:11px 22px; border-radius:8px; font-weight:600; font-size:14px;">📄 View Full Report on GitHub</a>
+      <div style="font-size:11px; color:#9ca3af; margin-top:18px; line-height:1.5;">
+        Generated by the <strong>ipo-watch</strong> routine.<br>
+        Not investment advice. Verify with primary sources before acting.
+      </div>
+    </td>
+  </tr>
+
+</table>
+
+<!-- End padding -->
+<div style="height:24px; line-height:24px;">&nbsp;</div>
+
+</td>
+</tr>
+</table>
+
+</body>
+</html>
+
+
+<!-- =======================================================================
+     COMPONENT REFERENCE — how to render each placeholder
+     ======================================================================= -->
+
+<!--
+TLDR_BULLETS_HTML — max 3 <li> items:
+
+<li style="margin-bottom:6px;"><strong>RGTI</strong> Q1 beat: $4.4M revenue (+193% YoY); 108-qubit at GA.</li>
+<li style="margin-bottom:6px;"><strong>Musk v. Altman trial:</strong> Altman testifies Tue/Wed; verdict possible Thu May 15.</li>
+<li><strong>CBRS</strong> prices Wed May 13 at $150–160; first trade Thu May 14.</li>
+-->
+
+<!--
+TRACKED_CARDS_HTML — exactly 3 cards, OpenAI / Anthropic / SpaceX:
+
+<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin-bottom:8px;">
+<tr><td style="background:#f8fafc; border-left:3px solid #6366f1; padding:12px 14px; border-radius:6px;">
+  <div style="font-size:14px; color:#1f2937;">
+    <span style="font-weight:700;">🤖 OpenAI</span>
+    <span style="font-size:12px; color:#6b7280; font-weight:400;"> — GPT/ChatGPT lab</span>
+  </div>
+  <div style="font-size:13px; color:#475569; margin-top:5px; line-height:1.45;">
+    Q4 2026 target · $852B · no S-1 · trial week 3
+  </div>
+</td></tr>
+</table>
+
+(Use 🤖 for OpenAI, 🧠 for Anthropic, 🚀 for SpaceX. Use "·" middle-dot separator, not "|".)
+-->
+
+<!--
+NEXT_30_ROWS_HTML — one <tr> per upcoming IPO; sort by date asc:
+
+<tr>
+<td style="padding:11px 12px; font-size:13px; color:#1f2937; border-bottom:1px solid #f1f5f9; vertical-align:top;">May 13–14</td>
+<td style="padding:11px 12px; font-size:13px; border-bottom:1px solid #f1f5f9; vertical-align:top;">
+  <strong style="color:#1f2937;">Cerebras</strong><br>
+  <span style="font-size:11px; color:#6b7280;">wafer-scale AI chips</span>
+</td>
+<td style="padding:11px 12px; font-size:13px; border-bottom:1px solid #f1f5f9; vertical-align:top;">
+  <strong style="color:#1f2937;">CBRS</strong><br>
+  <span style="font-size:11px; color:#6b7280;">NASDAQ · AI</span>
+</td>
+</tr>
+
+If empty: a single full-width row that says
+<tr><td colspan="3" style="padding:14px; text-align:center; font-style:italic; color:#9ca3af; font-size:13px;">Nothing scheduled in the next 30 days.</td></tr>
+-->
+
+<!--
+CHANGES_HTML — colored pill per item (green NEW / amber CHANGED / red REMOVED):
+
+<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin-bottom:8px;">
+<tr><td style="background:#f0fdf4; border-left:3px solid #10b981; padding:10px 12px; border-radius:6px;">
+  <span style="display:inline-block; background:#10b981; color:#ffffff; padding:2px 8px; border-radius:10px; font-size:9px; font-weight:700; letter-spacing:0.6px; vertical-align:middle;">NEW</span>
+  <span style="margin-left:8px; font-size:13px; color:#1f2937; line-height:1.45;">
+    <strong>RGTI</strong> <em style="color:#6b7280;">(quantum hardware)</em> Q1 beat published; 108-qubit at GA.
+  </span>
+</td></tr>
+</table>
+
+For CHANGED: background:#fffbeb; border-left:#f59e0b; pill background:#f59e0b
+For REMOVED: background:#fef2f2; border-left:#ef4444; pill background:#ef4444
+
+If section is empty, render a single line:
+<div style="padding:10px; text-align:center; font-style:italic; color:#9ca3af; font-size:13px;">No material changes since &lt;date&gt;.</div>
+-->
+
+<!--
+IPO_ACTIVITY_HTML — two subsections in one block:
+
+<div style="font-size:12px; font-weight:600; color:#6b7280; margin-bottom:6px;">Newly filed (no firm date yet)</div>
+<ul style="margin:0 0 12px; padding:0 0 0 20px; font-size:13px; line-height:1.55; color:#1f2937;">
+<li><span style="background:#e0e7ff; color:#4338ca; padding:1px 6px; border-radius:4px; font-size:10px; font-weight:700;">QUANTUM</span> <strong>Quantinuum</strong> <em style="color:#6b7280;">(trapped-ion quantum, Honeywell-backed)</em> — S-1 filed May 8; mid-Jun pricing.</li>
+</ul>
+
+<div style="font-size:12px; font-weight:600; color:#6b7280; margin-bottom:6px;">Debuted in last 24h</div>
+<ul style="margin:0; padding:0 0 0 20px; font-size:13px; line-height:1.55; color:#1f2937;">
+<li><em style="color:#9ca3af;">Nothing today.</em></li>
+</ul>
+
+Sector tag colors:
+  [AI]      background:#dbeafe; color:#1d4ed8
+  [QUANTUM] background:#e0e7ff; color:#4338ca
+-->
+
+<!--
+CATALYSTS_HTML — list of ticker cards with "Why" line, max 6:
+
+<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin-bottom:8px;">
+<tr><td style="border:1px solid #e5e7eb; border-radius:8px; padding:12px 14px;">
+  <div style="font-size:14px; color:#1f2937;">
+    <strong style="color:#1e3a8a;">RGTI</strong> <em style="color:#6b7280; font-size:12px;">(quantum hardware)</em> — Q1 $4.4M beat; 108-qubit GA.
+  </div>
+  <div style="font-size:12px; color:#475569; margin-top:4px; line-height:1.45;">
+    <strong style="color:#9ca3af;">WHY:</strong> first quantum hardware revenue proof point in 2026.
+  </div>
+</td></tr>
+</table>
+-->
+
+<!--
+ACTIONS_HTML — max 3 verb-tagged action items:
+
+<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin-bottom:8px;">
+<tr><td style="background:#f8fafc; padding:11px 14px; border-radius:6px; border-left:3px solid #0ea5e9;">
+  <span style="display:inline-block; background:#0ea5e9; color:#ffffff; padding:2px 8px; border-radius:10px; font-size:9px; font-weight:700; letter-spacing:0.6px;">📅 CALENDAR</span>
+  <span style="margin-left:8px; font-size:13px; color:#1f2937;">
+    <strong>CBRS</strong> <em style="color:#6b7280;">(AI chips)</em> prices Wed May 13.
+  </span>
+</td></tr>
+</table>
+
+Verb colors (sky-blue / violet / rose / emerald / amber):
+  📅 CALENDAR  background:#0ea5e9
+  🔍 RESEARCH  background:#8b5cf6
+  🤔 DECIDE    background:#f43f5e
+  ✅ CHECK     background:#10b981
+  👀 REVIEW    background:#f59e0b
+-->
+
+<!--
+TOP_LINKS_HTML — 3 link cards (clickable headline + italic why):
+
+<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin-bottom:10px;">
+<tr><td style="border:1px solid #e5e7eb; border-radius:10px; padding:14px 16px;">
+  <div style="font-size:11px; color:#9ca3af; font-weight:600; letter-spacing:1px; margin-bottom:4px;">#1</div>
+  <a href="https://www.stocktitan.net/news/RGTI/rigetti-computing-reports-first-quarter-2026-financial-0ozmjy71iqbc.html" style="display:block; font-weight:600; font-size:14px; color:#1e3a8a; text-decoration:none; line-height:1.4;">RGTI Q1 2026: $4.4M revenue (+193% YoY), 108-qubit at GA</a>
+  <div style="font-size:12px; color:#6b7280; font-style:italic; margin-top:6px; line-height:1.45;">First clean hardware-revenue beat for a listed quantum company in 2026.</div>
+</td></tr>
+</table>
+-->

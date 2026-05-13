@@ -332,21 +332,39 @@ If a section other than "Next 30 Days" has no items, write `_Nothing today._` �
 
    If the Slack send fails for any reason (rate limit, tool error, channel missing), log the error but **do not fail the run** — the report is already committed and remains accessible via GitHub. Do not retry more than once.
 
-4. **Email the full report.** Use the Gmail MCP `send_email` tool. Send to **chandanshetty01@gmail.com**.
-
-   Email is the **archive / depth** channel — Slack is the punch summary. The email body should be the **full Markdown report** (the same one you just committed to `ipo-watch/log/<YYYY-MM-DD>.md`) rendered as HTML so it's readable in mobile and desktop mail clients.
+4. **Create a Gmail draft using the designed HTML template.** Use the Gmail MCP `create_draft` tool (this connector cannot send — only draft. That's fine: the draft lands in the user's Gmail Drafts folder where it can be read directly or sent on demand).
 
    **Fields:**
    - `to`: `chandanshetty01@gmail.com`
-   - `subject`: `IPO Watch — <YYYY-MM-DD>`
-   - `body` (HTML): convert the committed Markdown report to HTML. Most Markdown → HTML libraries are fine — render headings as `<h1>/<h2>/<h3>`, bullets as `<ul><li>`, tables as `<table>`, and all URLs as `<a href="...">link text</a>`. Preserve emoji prefixes (📊📝🆕🎯🔗 etc.) and the section divider lines (or convert them to `<hr>`).
-   - If the Gmail tool requires a plain-text fallback, also include the raw Markdown.
+   - `subject`: `IPO Watch — <YYYY-MM-DD>` (or `IPO Watch Monthly — <YYYY-MM>` for monthly)
+   - `body` (HTML): see template below
 
-   **Content rule:** the email contains the full report. Do NOT trim it to the Slack-style executive summary — the whole point is the email has more depth than Slack.
+   **HTML body — use the designed template, not raw Markdown:**
 
-   **Pre-send verification:** before calling `send_email`, verify the HTML body contains all the section headings from the committed report (TL;DR through Top 3 links). If any is missing, rebuild before sending.
+   Read `ipo-watch/email-template.html` from the repo. It is a UX-designed HTML email skeleton with `{{TOKEN}}` placeholders. Generate the email body by:
 
-   **Fail-soft:** if the email send fails (auth, rate limit, body too large, tool error), log the error but **do not fail the run** — the report is already committed to GitHub and (likely) already posted to Slack. Do not retry more than once.
+   1. Reading the template file in full.
+   2. Substituting every `{{TOKEN}}` with HTML-escaped, inline-styled content derived from the Markdown report you just committed. The component-reference comments at the bottom of the template show the exact HTML structure required for each placeholder (TL;DR list items, tracked-company cards, table rows, pill-tagged change items, verb-tagged action items, link cards, etc.).
+   3. Keeping every existing inline style verbatim. Mail clients are picky — do NOT strip or modify the styles in the skeleton.
+   4. Removing the component-reference HTML comments at the bottom before sending (they are documentation, not for delivery).
+
+   The placeholder list and their formats (in the template's top comment block):
+   - `{{DATE}}`, `{{REPORT_KIND_BADGE}}` (DAILY REPORT / MONTHLY SUMMARY), `{{HEADER_EMOJI}}` (📊 daily / 📈 monthly)
+   - `{{TLDR_BULLETS_HTML}}` — up to 3 `<li>` items
+   - `{{TRACKED_CARDS_HTML}}` — exactly 3 cards (OpenAI 🤖 / Anthropic 🧠 / SpaceX 🚀)
+   - `{{NEXT_30_ROWS_HTML}}` — `<tr>` rows sorted by date asc
+   - `{{CHANGES_HTML}}` — colored pill items (🟢 NEW green / 🟡 CHANGED amber / 🔴 REMOVED red)
+   - `{{IPO_ACTIVITY_HTML}}` — "Newly filed" + "Debuted in last 24h" subsections with sector pills
+   - `{{CATALYSTS_HTML}}` — ticker cards with `<strong>WHY:</strong>` line
+   - `{{ACTIONS_HTML}}` — verb-tagged items (📅 sky-blue, 🔍 violet, 🤔 rose, ✅ emerald, 👀 amber)
+   - `{{TOP_LINKS_HTML}}` — 3 link cards with clickable headline + italic why
+   - `{{GITHUB_URL}}` — full URL to today's committed report on GitHub
+
+   **Content rule:** include the full report content — the email is the archive/depth channel. Do not trim to Slack-style brevity.
+
+   **Pre-create verification:** before calling `create_draft`, verify the HTML body contains all eight section headings (TL;DR, Tracked Companies, Next 30 Days, Changes, IPO Activity, Notable Catalysts, Actions, Top 3 Links). If any is missing, rebuild before drafting.
+
+   **Fail-soft:** if Gmail draft creation fails (auth, rate limit, body too large, tool error), log the error but **do not fail the run** — the report is already committed to GitHub and (likely) already posted to Slack. Do not retry more than once.
 
 ## Hard rules
 - Never invent IPO dates, valuations, or filings — if unverified, say "rumored, unverified".
