@@ -22,7 +22,7 @@ If state.md is empty or stale (no entries in 7+ days), rebuild it from the most 
 ## What to gather (today, fresh)
 Use `WebSearch` and `WebFetch`. Prefer primary sources (SEC EDGAR S-1 filings, exchange listing notices, company press releases, Reuters, Bloomberg, FT, WSJ, CNBC). Avoid clickbait and aggregator-only links.
 
-1. **Tracked private-company IPO watch — OpenAI, Anthropic, SpaceX.**
+1. **Tracked private-company IPO watch — OpenAI, Anthropic, SpaceX, Databricks, Mistral.**
    For each: any news in the last 24h about IPO timing, S-1 filing, direct listing, secondary tender, or valuation marks from new funding rounds. If nothing new, say "no update" and carry forward the prior status.
 
 2. **Next 30 days — consolidated upcoming IPOs (AI + quantum).**
@@ -76,6 +76,8 @@ Example:
 - **OpenAI:** <status> — <source link> (or "no update")
 - **Anthropic:** <status> — <source link>
 - **SpaceX:** <status> — <source link>
+- **Databricks:** <status> — <source link>
+- **Mistral:** <status> — <source link>
 
 ## Next 30 Days — Upcoming IPOs
 
@@ -151,7 +153,7 @@ If a section other than "Next 30 Days" has no items, write `_Nothing today._` �
 1. **Overwrite `ipo-watch/state.md` to reflect a 30-day rolling view, not just today's snapshot.** Specifically:
 
    - **Last run** — current ISO timestamp (UTC).
-   - **Tracked companies table** — today's status + source + today's date for OpenAI, Anthropic, SpaceX.
+   - **Tracked companies table** — today's status + source + today's date for OpenAI, Anthropic, SpaceX, Databricks, Mistral.
    - **AI / quantum IPOs filed or upcoming** — every item with a forward-looking date, including:
      - Anything in today's Next 30 Days table.
      - Anything filed in the last 30 days that has no date yet.
@@ -178,7 +180,7 @@ If a section other than "Next 30 Days" has no items, write `_Nothing today._` �
        { "type": "divider" },
        { "type": "section", "text": { "type": "mrkdwn", "text": "*📝 TL;DR*\n\n<2–3 sentence summary of today's most important takeaways; see TL;DR guide below>" } },
        { "type": "divider" },
-       { "type": "section", "text": { "type": "mrkdwn", "text": "*📌 TRACKED COMPANIES — STATUS*\n\n<one short line per company — always include all three (OpenAI / Anthropic / SpaceX), even if no update today; see format below>" } },
+       { "type": "section", "text": { "type": "mrkdwn", "text": "*📌 TRACKED COMPANIES — STATUS*\n\n<one short line per company — always include all FIVE (OpenAI / Anthropic / SpaceX / Databricks / Mistral), even if no update today; see format below>" } },
        { "type": "divider" },
        { "type": "section", "text": { "type": "mrkdwn", "text": "*📅 NEXT 30 DAYS — UPCOMING IPOs*\n\n<one short line per item, sorted by date; or `_Nothing scheduled._` if empty>" } },
        { "type": "divider" },
@@ -242,8 +244,10 @@ If a section other than "Next 30 Days" has no items, write `_Nothing today._` �
    - `🤖 *OpenAI:* <IPO target quarter> | <last-known valuation> | <S-1 status> | <one-sentence latest material event or "no update">`
    - `🧠 *Anthropic:* <same shape>`
    - `🚀 *SpaceX:* <same shape>`
+   - `💎 *Databricks:* <same shape>`
+   - `🌬️ *Mistral:* <same shape>`
 
-   Always emit all three lines, even on "no update" days — this is the daily snapshot.
+   Always emit all FIVE lines, even on "no update" days — this is the daily snapshot.
 
    **Next 30 Days — format for each line:**
 
@@ -285,6 +289,8 @@ If a section other than "Next 30 Days" has no items, write `_Nothing today._` �
    🤖 *OpenAI:* <status line>
    🧠 *Anthropic:* <status line>
    🚀 *SpaceX:* <status line>
+   💎 *Databricks:* <status line>
+   🌬️ *Mistral:* <status line>
    ━━━━━━━━━━━━━━━━━━
    *📅 NEXT 30 DAYS — UPCOMING IPOs*
 
