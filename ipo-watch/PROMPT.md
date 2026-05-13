@@ -332,6 +332,22 @@ If a section other than "Next 30 Days" has no items, write `_Nothing today._` �
 
    If the Slack send fails for any reason (rate limit, tool error, channel missing), log the error but **do not fail the run** — the report is already committed and remains accessible via GitHub. Do not retry more than once.
 
+4. **Email the full report.** Use the Gmail MCP `send_email` tool. Send to **chandanshetty01@gmail.com**.
+
+   Email is the **archive / depth** channel — Slack is the punch summary. The email body should be the **full Markdown report** (the same one you just committed to `ipo-watch/log/<YYYY-MM-DD>.md`) rendered as HTML so it's readable in mobile and desktop mail clients.
+
+   **Fields:**
+   - `to`: `chandanshetty01@gmail.com`
+   - `subject`: `IPO Watch — <YYYY-MM-DD>`
+   - `body` (HTML): convert the committed Markdown report to HTML. Most Markdown → HTML libraries are fine — render headings as `<h1>/<h2>/<h3>`, bullets as `<ul><li>`, tables as `<table>`, and all URLs as `<a href="...">link text</a>`. Preserve emoji prefixes (📊📝🆕🎯🔗 etc.) and the section divider lines (or convert them to `<hr>`).
+   - If the Gmail tool requires a plain-text fallback, also include the raw Markdown.
+
+   **Content rule:** the email contains the full report. Do NOT trim it to the Slack-style executive summary — the whole point is the email has more depth than Slack.
+
+   **Pre-send verification:** before calling `send_email`, verify the HTML body contains all the section headings from the committed report (TL;DR through Top 3 links). If any is missing, rebuild before sending.
+
+   **Fail-soft:** if the email send fails (auth, rate limit, body too large, tool error), log the error but **do not fail the run** — the report is already committed to GitHub and (likely) already posted to Slack. Do not retry more than once.
+
 ## Hard rules
 - Never invent IPO dates, valuations, or filings — if unverified, say "rumored, unverified".
 - Never give buy/sell recommendations. Frame everything as information.

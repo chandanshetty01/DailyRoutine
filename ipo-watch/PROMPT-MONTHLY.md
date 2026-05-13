@@ -62,6 +62,11 @@ All other sections, formatting conventions, empty-state lines, and the disclaime
 
    All emoji prefixes, divider blocks, mrkdwn formatting, pre-send verification (all eight section headers present), and fail-soft rules from PROMPT.md apply unchanged. Do not retry more than once.
 
+4. **Email the full monthly report.** Follow the same email procedure documented in `ipo-watch/PROMPT.md` step 4, with these monthly-specific substitutions:
+   - `subject`: `IPO Watch Monthly — <YYYY-MM>`
+   - `body` (HTML): render the committed `ipo-watch/monthly/<YYYY-MM>.md` file as HTML.
+   - All other rules (to address, fail-soft, pre-send verification, full report not summary) apply unchanged.
+
 ## Hard rules
 
 All hard rules from the daily prompt (`ipo-watch/PROMPT.md`) apply unchanged:
