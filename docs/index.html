@@ -268,8 +268,55 @@
     border-radius: 0 8px 8px 0;
     margin-left: 0;
   }
-  /* NEW/CHANGED/REMOVED pill recognition */
-  #report-detail li code:first-child { background: transparent; padding: 0; font-weight: 600; }
+  /* Color-coded pills/tags/badges */
+  .pill {
+    display: inline-block;
+    padding: 1px 8px;
+    border-radius: 999px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    color: white;
+    vertical-align: middle;
+    margin-right: 4px;
+  }
+  .pill-new      { background: var(--green); }
+  .pill-changed  { background: var(--amber); }
+  .pill-removed  { background: var(--red); }
+  .tag {
+    display: inline-block;
+    padding: 1px 6px;
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    vertical-align: middle;
+    margin-right: 4px;
+  }
+  .tag-ai        { background: #dbeafe; color: #1d4ed8; }
+  .tag-quantum   { background: #e0e7ff; color: #4338ca; }
+  .badge-verb {
+    display: inline-block;
+    padding: 1px 7px;
+    border-radius: 999px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: white;
+    vertical-align: middle;
+    margin-right: 6px;
+  }
+  .verb-calendar { background: #0ea5e9; }
+  .verb-research { background: #8b5cf6; }
+  .verb-decide   { background: #f43f5e; }
+  .verb-check    { background: #10b981; }
+  .verb-review   { background: #f59e0b; }
+  /* Subtle row tinting per pill */
+  li.row-new      { background: var(--green-soft); padding: 6px 10px; border-left: 3px solid var(--green); border-radius: 0 6px 6px 0; margin-bottom: 8px; list-style: none; margin-left: -22px; padding-left: 12px; }
+  li.row-changed  { background: var(--amber-soft); padding: 6px 10px; border-left: 3px solid var(--amber); border-radius: 0 6px 6px 0; margin-bottom: 8px; list-style: none; margin-left: -22px; padding-left: 12px; }
+  li.row-removed  { background: var(--red-soft); padding: 6px 10px; border-left: 3px solid var(--red); border-radius: 0 6px 6px 0; margin-bottom: 8px; list-style: none; margin-left: -22px; padding-left: 12px; }
+  /* Strip the now-redundant inline backticks since pills replace them */
+  #report-detail li code:first-child { background: transparent; padding: 0; }
 
   /* VIEW STATES */
   body[data-view="index"] #report-detail { display: none; }
@@ -440,7 +487,8 @@
       const resp = await fetch(`${RAW_BASE}/${path}`);
       if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
       const md = await resp.text();
-      const html = marked.parse(md);
+      const rawHtml = marked.parse(md);
+      const html = colorize(rawHtml);
       detail.innerHTML = html + `<div style="text-align:center; margin-top:30px;"><a href="https://github.com/${REPO}/blob/main/${path}" target="_blank" style="font-size:12px; color:var(--slate-500);">View raw on GitHub ↗</a></div>`;
     } catch (err) {
       detail.innerHTML = `<div class="empty-state"><div class="emoji">⚠️</div><div>Couldn't load this report.</div><div style="font-size:12px; margin-top:6px;">${escapeHtml(err.message)}</div></div>`;
@@ -468,6 +516,36 @@
   }
 
   window.addEventListener("popstate", routeFromHash);
+
+  // ---------------------------------------------------------------
+  // Colorize: swap inline-code tags for styled pills/badges
+  // ---------------------------------------------------------------
+  function colorize(html) {
+    // 1) Status pills inside backticks: [NEW] / [CHANGED] / [REMOVED]
+    html = html.replace(/<code>\[NEW\]<\/code>/g,     '<span class="pill pill-new">NEW</span>');
+    html = html.replace(/<code>\[CHANGED\]<\/code>/g, '<span class="pill pill-changed">CHANGED</span>');
+    html = html.replace(/<code>\[REMOVED\]<\/code>/g, '<span class="pill pill-removed">REMOVED</span>');
+
+    // 2) Sector tags inside backticks: [AI], [AI / Space], [AI / Robotics], [Quantum], etc.
+    html = html.replace(/<code>\[(AI[^\]]*)\]<\/code>/g,
+                        (_, label) => `<span class="tag tag-ai">${label.toUpperCase()}</span>`);
+    html = html.replace(/<code>\[(Quantum[^\]]*)\]<\/code>/g,
+                        (_, label) => `<span class="tag tag-quantum">${label.toUpperCase()}</span>`);
+
+    // 3) Action verb badges — at the start of a list item: "<li><strong>Verb:</strong>"
+    const verbMap = { Calendar: 'verb-calendar', Research: 'verb-research', Decide: 'verb-decide', Check: 'verb-check', Review: 'verb-review' };
+    Object.entries(verbMap).forEach(([verb, cls]) => {
+      const re = new RegExp(`<li>\\s*<strong>${verb}:</strong>\\s*`, 'g');
+      html = html.replace(re, `<li><span class="badge-verb ${cls}">${verb.toUpperCase()}</span> `);
+    });
+
+    // 4) Row tinting per status pill — wrap parent <li> with row class so the
+    //    whole change-item gets a colored left border.
+    html = html.replace(/<li>(\s*<span class="pill pill-(new|changed|removed)">)/g,
+                        (_m, inner, kind) => `<li class="row-${kind}">${inner}`);
+
+    return html;
+  }
 
   // ---------------------------------------------------------------
   // Helpers

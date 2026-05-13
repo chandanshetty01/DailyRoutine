@@ -338,6 +338,12 @@ If a section other than "Next 30 Days" has no items, write `_Nothing today._` �
 - Cite a source URL for every factual claim.
 - **URL verification (mandatory):** before including any URL in the report — in an item line OR in the "Top 3 links" list — verify it with `WebFetch`. The URL must (a) return HTTP 200 and (b) contain content that actually supports the claim. If verification fails: drop the URL, and if it was the only source for an item, drop the item entirely. Never guess, fabricate, or shorten URLs. The "Top 3 links" section must contain only URLs that already appear elsewhere in the doc — no extras.
 - If `WebSearch` returns nothing useful for a section, say so honestly rather than padding.
+- **Report-wide brevity (mandatory):** the GitHub markdown report itself must also be tight, not just Slack. Rules:
+  - Every bullet is **one tight sentence**, max ~25 words. If a fact won't fit, split into a second bullet.
+  - **No multi-sentence paragraphs inside a bullet.** No "Key testimony: X; Y; Z..." nested context blocks. If a story has multiple developments, list each as its own bullet with the same `[NEW]`/`[CHANGED]` tag.
+  - Tracked Companies entries: pipe-separated facts on one short line; never a paragraph. Latest material event is the LAST clause, not a multi-clause addendum.
+  - Notable Catalysts items: ≤ 30 words including the "why it matters" clause.
+  - Long supporting context belongs in the cited source link, not the report.
 - **Date arithmetic (mandatory):** before writing any relative date phrase ("today", "tomorrow", "this week", "next week"), explicitly compute the actual calendar date and day-of-week of today (the run date) by running `date -u +%Y-%m-%d` via Bash. Then:
   - "today" → only if the referenced date equals today's date.
   - "tomorrow" → only if the referenced date equals today + 1 day.
