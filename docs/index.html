@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#1e3a8a">
+<title>IPO Watch — Daily AI & Quantum IPO Tracker</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%93%8A%3C/text%3E%3C/svg%3E">
+<script src="https://cdn.jsdelivr.net/npm/marked@12.0.0/marked.min.js"></script>
+<style>
+  :root {
+    --bg: #f3f4f6;
+    --card: #ffffff;
+    --primary: #1e3a8a;
+    --primary-light: #3730a3;
+    --indigo-soft: #eef2ff;
+    --indigo-accent: #4f46e5;
+    --green: #10b981;
+    --green-soft: #f0fdf4;
+    --amber: #f59e0b;
+    --amber-soft: #fffbeb;
+    --red: #ef4444;
+    --red-soft: #fef2f2;
+    --slate-900: #1f2937;
+    --slate-700: #374151;
+    --slate-500: #6b7280;
+    --slate-400: #9ca3af;
+    --slate-200: #e5e7eb;
+    --slate-100: #f1f5f9;
+    --slate-50: #f8fafc;
+    --shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--slate-900);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+  }
+
+  /* HEADER */
+  header.hero {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+    color: white;
+    padding: 32px 20px 40px;
+    text-align: center;
+  }
+  header .badge {
+    display: inline-block;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #c7d2fe;
+    background: rgba(255,255,255,0.08);
+    padding: 4px 12px;
+    border-radius: 999px;
+    margin-bottom: 12px;
+  }
+  header h1 {
+    font-size: 28px;
+    margin: 0;
+    font-weight: 700;
+  }
+  header .sub {
+    color: #a5b4fc;
+    margin-top: 6px;
+    font-size: 14px;
+  }
+  header .nav-back {
+    display: none;
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    background: rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.18);
+    padding: 6px 12px;
+    border-radius: 6px;
+    margin-bottom: 14px;
+    transition: background 0.15s;
+  }
+  header .nav-back:hover { background: rgba(255,255,255,0.22); }
+  body[data-view="detail"] header .nav-back { display: inline-block; }
+
+  /* LAYOUT */
+  main {
+    max-width: 760px;
+    margin: -16px auto 60px;
+    padding: 0 14px;
+  }
+
+  /* INDEX — REPORT CARDS */
+  #report-list {
+    display: grid;
+    gap: 12px;
+  }
+  .report-card {
+    background: var(--card);
+    border-radius: 12px;
+    padding: 16px 18px;
+    box-shadow: var(--shadow);
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    transition: transform 0.1s, box-shadow 0.15s;
+  }
+  .report-card:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.07), 0 2px 4px rgba(0,0,0,0.05);
+  }
+  .report-card .left {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    min-width: 0;
+  }
+  .report-card .date-badge {
+    flex-shrink: 0;
+    width: 52px;
+    height: 52px;
+    border-radius: 10px;
+    background: var(--indigo-soft);
+    color: var(--indigo-accent);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+  }
+  .report-card .date-badge .month {
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  .report-card .date-badge .day {
+    font-size: 18px;
+    line-height: 1;
+  }
+  .report-card .meta {
+    min-width: 0;
+  }
+  .report-card .meta .kind {
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: var(--slate-500);
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .report-card .meta .title {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--slate-900);
+    margin-top: 2px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .report-card .arrow {
+    color: var(--slate-400);
+    flex-shrink: 0;
+  }
+  .empty-state {
+    text-align: center;
+    color: var(--slate-500);
+    padding: 60px 20px;
+  }
+  .empty-state .emoji { font-size: 40px; opacity: 0.4; }
+
+  /* DETAIL — RENDERED REPORT */
+  #report-detail {
+    background: var(--card);
+    border-radius: 14px;
+    padding: 24px 22px 32px;
+    box-shadow: var(--shadow);
+  }
+  #report-detail h1 {
+    font-size: 22px;
+    margin: 0 0 18px;
+    color: var(--slate-900);
+  }
+  #report-detail h2 {
+    font-size: 11px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: var(--slate-500);
+    font-weight: 700;
+    margin: 28px 0 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--slate-200);
+  }
+  #report-detail h3 {
+    font-size: 13px;
+    color: var(--slate-700);
+    font-weight: 600;
+    margin: 16px 0 8px;
+  }
+  #report-detail p, #report-detail li {
+    font-size: 14px;
+    color: var(--slate-700);
+    line-height: 1.6;
+  }
+  #report-detail ul { padding-left: 22px; }
+  #report-detail li { margin-bottom: 6px; }
+  #report-detail code {
+    background: var(--slate-100);
+    padding: 1px 6px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-family: ui-monospace, SFMono-Regular, "SF Mono", Consolas, monospace;
+    color: var(--slate-700);
+  }
+  #report-detail a {
+    color: var(--primary-light);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(55, 48, 163, 0.25);
+  }
+  #report-detail a:hover {
+    border-bottom-color: var(--primary-light);
+  }
+  #report-detail table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0 16px;
+    font-size: 13px;
+    background: var(--slate-50);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  #report-detail th {
+    background: var(--slate-100);
+    padding: 10px 12px;
+    text-align: left;
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: var(--slate-500);
+    text-transform: uppercase;
+    font-weight: 700;
+    border-bottom: 1px solid var(--slate-200);
+  }
+  #report-detail td {
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--slate-100);
+    vertical-align: top;
+  }
+  #report-detail blockquote {
+    border-left: 3px solid var(--indigo-accent);
+    background: var(--indigo-soft);
+    margin: 12px 0;
+    padding: 10px 14px;
+    border-radius: 0 6px 6px 0;
+    color: var(--slate-700);
+  }
+  #report-detail hr {
+    border: none;
+    border-top: 1px solid var(--slate-200);
+    margin: 28px 0;
+  }
+  /* TL;DR pop */
+  #report-detail h2 + ul:first-of-type,
+  #report-detail h2[data-tldr] + ul {
+    background: var(--indigo-soft);
+    border-left: 4px solid var(--indigo-accent);
+    padding: 14px 18px 14px 36px;
+    border-radius: 0 8px 8px 0;
+    margin-left: 0;
+  }
+  /* NEW/CHANGED/REMOVED pill recognition */
+  #report-detail li code:first-child { background: transparent; padding: 0; font-weight: 600; }
+
+  /* VIEW STATES */
+  body[data-view="index"] #report-detail { display: none; }
+  body[data-view="detail"] #report-list { display: none; }
+  body[data-view="detail"] header h1::before { content: "📄 "; }
+
+  /* FOOTER */
+  footer {
+    text-align: center;
+    color: var(--slate-400);
+    font-size: 12px;
+    padding: 30px 20px 50px;
+    line-height: 1.7;
+  }
+  footer a {
+    color: var(--slate-500);
+    text-decoration: none;
+    border-bottom: 1px dotted var(--slate-300);
+  }
+
+  /* LOADING STATE */
+  .loading {
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--slate-500);
+    font-size: 14px;
+  }
+  .loading::before {
+    content: "⏳";
+    display: block;
+    font-size: 30px;
+    margin-bottom: 10px;
+    opacity: 0.5;
+  }
+
+  /* MOBILE */
+  @media (max-width: 520px) {
+    header.hero { padding: 24px 16px 32px; }
+    header h1 { font-size: 22px; }
+    .report-card { padding: 14px; }
+    .report-card .date-badge { width: 46px; height: 46px; }
+    #report-detail { padding: 18px 14px 24px; }
+    #report-detail table { font-size: 12px; }
+    #report-detail th, #report-detail td { padding: 8px 10px; }
+  }
+</style>
+</head>
+<body data-view="index">
+
+<header class="hero">
+  <a href="#" class="nav-back" onclick="goHome(); return false;">← All reports</a>
+  <div class="badge">AI · Quantum · IPO Tracker</div>
+  <h1>IPO Watch</h1>
+  <div class="sub">Daily AI & Quantum IPO intelligence — auto-generated</div>
+</header>
+
+<main>
+  <div id="report-list">
+    <div class="loading">Loading reports…</div>
+  </div>
+  <div id="report-detail"></div>
+</main>
+
+<footer>
+  Reports generated by the <a href="https://github.com/chandanshetty01/DailyRoutine/tree/main/ipo-watch" target="_blank">ipo-watch</a> routine — daily 09:00 SGT.<br>
+  Not investment advice. Verify with primary sources before acting.
+</footer>
+
+<script>
+  // ---------------------------------------------------------------
+  // Config
+  // ---------------------------------------------------------------
+  const REPO = "chandanshetty01/DailyRoutine";
+  const DAILY_PATH = "ipo-watch/log";
+  const MONTHLY_PATH = "ipo-watch/monthly";
+  const RAW_BASE = `https://raw.githubusercontent.com/${REPO}/main`;
+  const API_BASE = `https://api.github.com/repos/${REPO}/contents`;
+
+  // ---------------------------------------------------------------
+  // Markdown rendering
+  // ---------------------------------------------------------------
+  marked.setOptions({
+    breaks: false,
+    gfm: true,
+  });
+
+  // ---------------------------------------------------------------
+  // Index: fetch report listings from GitHub
+  // ---------------------------------------------------------------
+  async function loadIndex() {
+    try {
+      const [dailyResp, monthlyResp] = await Promise.allSettled([
+        fetch(`${API_BASE}/${DAILY_PATH}`),
+        fetch(`${API_BASE}/${MONTHLY_PATH}`),
+      ]);
+
+      let daily = [];
+      let monthly = [];
+      if (dailyResp.status === "fulfilled" && dailyResp.value.ok) {
+        const list = await dailyResp.value.json();
+        daily = list
+          .filter(f => f.type === "file" && f.name.endsWith(".md") && f.name !== ".gitkeep")
+          .map(f => ({ kind: "daily", date: f.name.replace(".md", ""), path: `${DAILY_PATH}/${f.name}`, name: f.name }));
+      }
+      if (monthlyResp.status === "fulfilled" && monthlyResp.value.ok) {
+        const list = await monthlyResp.value.json();
+        monthly = list
+          .filter(f => f.type === "file" && f.name.endsWith(".md") && f.name !== ".gitkeep")
+          .map(f => ({ kind: "monthly", date: f.name.replace(".md", ""), path: `${MONTHLY_PATH}/${f.name}`, name: f.name }));
+      }
+
+      const all = [...monthly, ...daily].sort((a, b) => b.date.localeCompare(a.date));
+      renderIndex(all);
+    } catch (err) {
+      document.getElementById("report-list").innerHTML =
+        `<div class="empty-state"><div class="emoji">⚠️</div><div>Couldn't load reports.</div><div style="font-size:12px; margin-top:6px;">${escapeHtml(err.message)}</div></div>`;
+    }
+  }
+
+  function renderIndex(items) {
+    const el = document.getElementById("report-list");
+    if (!items.length) {
+      el.innerHTML = `<div class="empty-state"><div class="emoji">📭</div><div>No reports yet.</div><div style="font-size:12px; margin-top:6px;">The first daily report will appear here once the routine runs.</div></div>`;
+      return;
+    }
+    el.innerHTML = items.map(item => {
+      const [y, m, d] = item.date.split("-");
+      const monthShort = monthLabel(parseInt(m, 10));
+      const dayLabel = d ? d : "—";
+      const kindLabel = item.kind === "monthly" ? "Monthly summary" : "Daily report";
+      const title = item.kind === "monthly"
+        ? `${monthLabel(parseInt(m, 10), true)} ${y}`
+        : `${monthLabel(parseInt(m, 10), true)} ${parseInt(d, 10)}, ${y}`;
+      return `
+        <a class="report-card" href="#${encodeURIComponent(item.path)}" onclick="openReport('${item.path}', '${item.kind}', '${item.date}'); return false;">
+          <div class="left">
+            <div class="date-badge">
+              <div class="month">${monthShort}</div>
+              <div class="day">${item.kind === "monthly" ? y.slice(2) : dayLabel.replace(/^0/, "")}</div>
+            </div>
+            <div class="meta">
+              <div class="kind">${kindLabel}</div>
+              <div class="title">${title}</div>
+            </div>
+          </div>
+          <div class="arrow">›</div>
+        </a>
+      `;
+    }).join("");
+  }
+
+  function monthLabel(m, full) {
+    const short = ["JAN","FEB","MAR","APR","MAY","JUN","JUL","AUG","SEP","OCT","NOV","DEC"];
+    const long = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+    return (full ? long : short)[m - 1] || "";
+  }
+
+  // ---------------------------------------------------------------
+  // Detail view
+  // ---------------------------------------------------------------
+  async function openReport(path, kind, date) {
+    document.body.dataset.view = "detail";
+    history.pushState({ path }, "", `#${encodeURIComponent(path)}`);
+    const detail = document.getElementById("report-detail");
+    detail.innerHTML = `<div class="loading">Loading report…</div>`;
+    window.scrollTo({ top: 0, behavior: "instant" });
+    try {
+      const resp = await fetch(`${RAW_BASE}/${path}`);
+      if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+      const md = await resp.text();
+      const html = marked.parse(md);
+      detail.innerHTML = html + `<div style="text-align:center; margin-top:30px;"><a href="https://github.com/${REPO}/blob/main/${path}" target="_blank" style="font-size:12px; color:var(--slate-500);">View raw on GitHub ↗</a></div>`;
+    } catch (err) {
+      detail.innerHTML = `<div class="empty-state"><div class="emoji">⚠️</div><div>Couldn't load this report.</div><div style="font-size:12px; margin-top:6px;">${escapeHtml(err.message)}</div></div>`;
+    }
+  }
+
+  function goHome() {
+    document.body.dataset.view = "index";
+    history.pushState({}, "", "#");
+    window.scrollTo({ top: 0, behavior: "instant" });
+  }
+
+  // ---------------------------------------------------------------
+  // Routing
+  // ---------------------------------------------------------------
+  function routeFromHash() {
+    const hash = decodeURIComponent(location.hash.replace(/^#/, ""));
+    if (hash && hash.startsWith("ipo-watch/")) {
+      const kind = hash.startsWith(`${MONTHLY_PATH}/`) ? "monthly" : "daily";
+      const date = hash.split("/").pop().replace(".md", "");
+      openReport(hash, kind, date);
+    } else {
+      document.body.dataset.view = "index";
+    }
+  }
+
+  window.addEventListener("popstate", routeFromHash);
+
+  // ---------------------------------------------------------------
+  // Helpers
+  // ---------------------------------------------------------------
+  function escapeHtml(s) {
+    return String(s)
+      .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+  }
+
+  // ---------------------------------------------------------------
+  // Init
+  // ---------------------------------------------------------------
+  loadIndex().then(routeFromHash);
+
+  // expose for inline handlers
+  window.openReport = openReport;
+  window.goHome = goHome;
+</script>
+
+</body>
+</html>
