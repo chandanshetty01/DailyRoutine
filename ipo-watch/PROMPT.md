@@ -16,6 +16,15 @@ This is idempotent — re-running is fast when packages are already cached. If t
 
 You have three layers of memory. Use them in order — don't skip:
 
+**Step 0 (before any memory load): score yesterday's predictions.**
+
+```bash
+python3 ipo-watch/lib/forecast_audit.py evaluate
+```
+
+This fills in the actual close on every prediction whose target date is past, so today's Buying Window section can reference "yesterday's call vs actual". Run this exactly once near the start of each routine — it's idempotent.
+
+
 1. **30-day rolling memory — `ipo-watch/state.md` (read in full).**
    This file is the curated summary of everything you've learned in the last 30 days: tracked-company status, upcoming pricing dates, open watch items, anything carried forward across runs. Treat it as your long-term context.
 
@@ -166,6 +175,34 @@ Use `WebSearch` and `WebFetch`. Prefer primary sources (SEC EDGAR S-1 filings, e
       - Anyone reading must understand this is a statistical envelope, not a price target.
       - If insufficient data, omit the bullet entirely — better silent than misleading.
 
+      **Step 4 — Log the prediction for future audit.** Immediately after writing the Tomorrow bullet for a ticker, persist it:
+
+      ```bash
+      python3 ipo-watch/lib/forecast_audit.py log <TICKER> \
+        --low <range_low> --high <range_high> \
+        --for-date <next-US-trading-day-YYYY-MM-DD> \
+        --method <options_iv|realized_vol|websearch> \
+        --skew "<catalyst1>" --skew "<catalyst2>"
+      ```
+
+      This appends to `ipo-watch/lib/forecast-log.jsonl` (committed to the repo for transparency). The next-trading-day calculation: if today is Fri/Sat/Sun, target = next Mon (skip weekends).
+
+   j. **Yesterday's call — surface in each stock's Buying Window block.** Pull the most-recent evaluated prediction:
+
+      ```bash
+      python3 ipo-watch/lib/forecast_audit.py latest <TICKER>
+      ```
+
+      If a record is returned with `actual_close` set, add a "Yesterday's call" line to that stock's Buying Window block (see display format below). If only `{"info": "no evaluated predictions yet"}`, omit the line — don't fabricate.
+
+   k. **Weekly self-audit — Mondays only.** On Mondays, after the standard report, run:
+
+      ```bash
+      python3 ipo-watch/lib/forecast_audit.py audit
+      ```
+
+      The script surfaces systematic biases (ranges too narrow/wide, asymmetric skew, weak catalyst handling). The routine MUST NOT auto-edit PROMPT.md based on these findings — instead, emit them as a `[NEW]` item in the Changes section titled "Self-audit findings (week of X)" and let the user/maintainer decide whether to update the prompt. **Auto-modifying the prompt is banned.**
+
    **Strict constraint:** this section provides math + factual context + reference levels only. It does **not** recommend buying, selling, or holding. Phrasing like "good entry", "buy zone", "wait until X" is **banned**. Use neutral language: "current price is N% above/below the IPO price", "at $X the multiple would be Y×", "Day N is when [event] occurs". Today's news is reported as observation ("G42 news raises concentration risk profile"), never as recommendation ("avoid until risk clears").
 
 6. **Diff vs. yesterday's report.** After gathering everything above, compare today's findings against yesterday's report (loaded in step 2 of "On start"). Identify only material changes — see the "Changes since yesterday" section in the output structure below for what counts as material vs. what to ignore.
@@ -247,6 +284,7 @@ For each tracked stock, emit a tight block — 4 bullets always, with 2 optional
 - **Next catalyst:** <YYYY-MM-DD> <event> — <one short clause why it matters>
 - **Risk:** <DYNAMIC — today's most-acute risk reflecting today's news; ≤15 words>
 - **Today:** <OPTIONAL — include ONLY on days when news materially shifts near-term direction; ≤15 words>
+- **Yesterday's call:** <OPTIONAL — from forecast_audit.py latest; "range was $X–$Y, actual $Z ✓ (hit, Q% into band)" or "✗ (missed by X%)"; omit if no evaluated prediction>
 - **Tomorrow:** <OPTIONAL — expected 1-σ range $X–$Y; about 2-out-of-3 chance of closing in this range; <skew factor if any>>
 ```
 
@@ -421,6 +459,7 @@ If a section other than "Next 30 Days" has no items, write `_Nothing today._` �
    • Next: <YYYY-MM-DD> <event>
    • Risk: <DYNAMIC — today's most-acute; ≤15 words>
    • Today: <OPTIONAL — news/sentiment moving the stock today; ≤15 words; skip on quiet days>
+   • Yesterday's call: <OPTIONAL — "range was $X–$Y, actual $Z ✓ (Q% into band)" or "✗ (missed by X%)"; omit if no evaluated prediction>
    • Tomorrow: <OPTIONAL — expected range $<X>–$<Y> (1-σ; ~2-of-3 chance to close in band); <skew if any>; skip if data thin>
    ```
 
