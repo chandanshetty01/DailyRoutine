@@ -89,19 +89,42 @@ Use `WebSearch` and `WebFetch`. Prefer primary sources (SEC EDGAR S-1 filings, e
       - Reorder the **"Next catalyst"** if today's news bumps the importance of an earlier event.
       - Emit an *optional* 5th bullet `**Today:**` ONLY on days when news materially affects near-term direction. On quiet news days, omit it entirely.
 
-   i. **Tomorrow's expected range (informational, NOT a prediction — applies to every tracked stock).** Compute a statistical 1-standard-deviation expected price band for the next trading day, plus identify any known asymmetric catalyst that could skew the distribution.
+   i. **Tomorrow's expected range (informational, NOT a prediction — applies to every tracked stock).** Compute a statistical 1-standard-deviation expected price band for the next trading day, plus identify any known asymmetric catalyst or calendar effect that could skew the distribution.
 
-      Methodology (use whichever inputs are available):
+      **Step 1 — Compute the base 1-σ range** (use whichever inputs are available):
       - **For mature public stocks (TSLA):** prefer options-implied move from front-month at-the-money straddle if WebSearch surfaces it (often quoted as "implied move %"). Failing that, compute realized 20-day daily volatility from recent close prices and apply: range = today_close × (1 ± σ_daily).
-      - **For newly-IPO'd stocks (CBRS, < 30 trading days):** options markets are illiquid and realized vol is unreliable. Use the wider of (a) the recent intraday range expressed as % of close, or (b) median Day-2-to-Day-30 daily volatility of analog IPOs in state.md.
-      - **Asymmetric skew:** flag if a binary catalyst is scheduled overnight or pre-market tomorrow (earnings, FDA, court ruling, major peer earnings). This expands the practical range beyond the statistical one.
+      - **For newly-IPO'd stocks (CBRS, < 30 trading days):** options markets are illiquid and realized vol is unreliable. Use the wider of (a) recent intraday range expressed as % of close, or (b) median Day-2-to-Day-30 daily volatility of analog IPOs in state.md.
 
-      Emit an *optional* 6th bullet `**Tomorrow:**` with:
+      **Step 2 — Identify skew factors that may shift or widen the range**:
+
+      (a) **Asymmetric catalysts** — flag if a binary event is scheduled overnight or pre-market tomorrow: earnings, FDA ruling, court verdict, major peer earnings, regulatory announcement. These expand the practical range beyond the statistical one and often skew direction.
+
+      (b) **Calendar / day-of-week context** — note tomorrow's day-of-week and any special-day status. Apply ONLY when the effect is reasonably documented; ignore weak/dubious effects. Real ones to consider:
+         - **Monday:** historically slight negative drift in pre-2000 markets ("Monday Effect"); much weaker post-2000. Mention only if accompanied by other risk signals.
+         - **Tuesday/Wednesday/Thursday:** earnings tend to cluster these days — if it's a known earnings day for a peer or the stock itself, flag it.
+         - **Wednesday (FOMC days only, ~8/year):** FOMC announcement at 2pm ET historically widens daily range 2–3×; flag any FOMC Wednesday.
+         - **Friday — first of month:** NFP / jobs report releases at 8:30am ET; widens range on rates-sensitive names.
+         - **Friday — third of month:** monthly options expiration ("opex"); typically affects vol not direction.
+         - **Holiday-shortened weeks:** half-day before US holidays — thinner liquidity, can amplify moves.
+         - **Earnings season clustering** (Jan/Apr/Jul/Oct mid-month): peer earnings nearby = sector vol up.
+
+         Do NOT over-claim day-of-week effects. They are weak signals in modern markets — news always dominates. Surface only the strongest, clearest calendar context in ≤8 words.
+
+      (c) **Stock-specific historical day-of-week pattern** — for mature stocks with enough history (TSLA), WebSearch for any noted stock-specific tendencies (e.g. "TSLA Monday returns historical"). Only mention if you find a credible cited pattern; do not infer one yourself.
+
+      **Step 3 — Emit an *optional* 6th bullet `**Tomorrow:**`** with:
       - The expected 1-σ price range (low–high)
       - Plain-language qualifier: "about 2-out-of-3 chance of closing in this range"
-      - Any known skew factor in ≤8 words
+      - Combined skew context in ≤12 words covering: (a) any binary catalyst, (b) day-of-week / calendar effect if material, (c) any documented stock-specific tendency. Examples:
+        - "Tomorrow: expected range $295–$325 (1-σ; ~2-of-3 chance); Wed FOMC may widen range 2–3×"
+        - "Tomorrow: expected range $310–$345 (1-σ; ~2-of-3 chance); Tuesday — Tesla earnings AMC; range nominal until report"
+        - "Tomorrow: expected range $305–$320 (1-σ; ~2-of-3 chance); quiet Friday; no scheduled catalysts"
 
-      **Hard rule:** the Tomorrow bullet must contain the literal phrase "expected range" (not "predicted" or "forecast"), and must include the qualifier about probability. Anyone reading must understand this is a statistical envelope, not a price target. If insufficient data is available, omit the bullet entirely — better silent than wrong.
+      **Hard rules:**
+      - Tomorrow bullet must contain the literal phrase **"expected range"** (not "predicted" or "forecast"), and must include the **probability qualifier**.
+      - The skew context must distinguish signal strength: use confident language only for binary catalysts (real, big); use hedged language for calendar effects ("historically", "may", "tends to").
+      - Anyone reading must understand this is a statistical envelope, not a price target.
+      - If insufficient data, omit the bullet entirely — better silent than misleading.
 
    **Strict constraint:** this section provides math + factual context + reference levels only. It does **not** recommend buying, selling, or holding. Phrasing like "good entry", "buy zone", "wait until X" is **banned**. Use neutral language: "current price is N% above/below the IPO price", "at $X the multiple would be Y×", "Day N is when [event] occurs". Today's news is reported as observation ("G42 news raises concentration risk profile"), never as recommendation ("avoid until risk clears").
 
