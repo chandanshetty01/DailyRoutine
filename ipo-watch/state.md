@@ -77,3 +77,24 @@ These are historical anchors used by the Buying Window Tracker section. They are
 - **Peer set for forward P/S comparison:** NVDA, PLTR, ASTR
 - **Historical IPO drawdown analogs:** ARM (-17% by week 4), KVYO (-22% by month 1), RDDT (-24% by week 3), CRWV (-12% by week 1)
 - **S-1 reference:** https://www.sec.gov/Archives/edgar/data/2021728/000162828026025762/cerebras-sx1april2026.htm
+
+### TSLA — Tesla, Inc.
+- **Classification:** Mature public stock (listed since 2010-06-29 NASDAQ; ~16 years public). Use 52-week low / 52-week high / 200-day moving average as reference levels — NOT IPO/Day 1/ATH. Ignore quiet period and lockup (long expired).
+- **Sector:** EV manufacturer + autonomy (FSD) + humanoid robotics (Optimus) + energy storage + AI compute (Dojo, plus xAI integration since the 2026-02 SpaceX merger)
+- **Multiple to use:** trailing P/E and forward P/E (Tesla is profitable; P/S is less informative). Routine should pull current trailing PE and FY+1 consensus PE each day.
+- **Peer set for valuation comparison:**
+  - Auto (capacity / scale): GM, Ford (F), Toyota (TM)
+  - EV-pure-play: BYD, Rivian (RIVN), Lucid (LCID)
+  - AI infra (for the autonomy/Dojo thesis): NVDA, PLTR, AVGO
+- **Key catalyst calendar (recurring):**
+  - Quarterly earnings (Q1 Apr / Q2 Jul / Q3 Oct / Q4 Jan-ish — confirm exact dates each run)
+  - Monthly China sales reports (mid-month) — moves stock 2-5%
+  - Annual shareholder meeting (June)
+  - Robotaxi / Optimus / FSD product event milestones — irregular, big mover when they happen
+- **Standing risks (use as fallback when no live news drives Risk bullet):**
+  - China demand / BYD competitive pressure
+  - FSD regulatory exposure (NHTSA, EU)
+  - Margin pressure from EV price wars
+  - Musk attention split (xAI/SpaceX integration since Feb 2026)
+- **Notes:** Tesla has highly liquid options — routine should always be able to find an implied-move number for the Tomorrow bullet. Tesla's average implied daily move runs 3-5% on quiet days, expanding to 6-10% on earnings.
+- **No IPO drawdown analogs apply** — long-public stock; use recent realized volatility + options-implied move for the Tomorrow bullet instead.

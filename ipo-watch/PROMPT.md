@@ -40,7 +40,13 @@ Use `WebSearch` and `WebFetch`. Prefer primary sources (SEC EDGAR S-1 filings, e
 
 5. **Buying Window Tracker — analytical entry-decision support for chosen public stocks.**
 
-   List of stocks tracked here (extensible by editing this prompt): **CBRS** (Cerebras Systems).
+   List of stocks tracked here (extensible by editing this prompt): **CBRS** (Cerebras Systems), **TSLA** (Tesla).
+
+   For each tracked stock, classify it first:
+   - **New IPO (< 90 trading days since listing):** use IPO / Day 1 / ATH as reference levels; track quiet-period end and lockup expiry.
+   - **Mature public (≥ 90 trading days):** use 52-week low / 52-week high / 200-day moving average as reference levels; ignore quiet period/lockup (long expired).
+
+   CBRS = new IPO. TSLA = mature.
 
    For each tracked stock, gather and compute (deep research expected — go beyond a single source):
 
@@ -71,7 +77,7 @@ Use `WebSearch` and `WebFetch`. Prefer primary sources (SEC EDGAR S-1 filings, e
 
    g. **Historical IPO drawdown context (concise).** Compare to median behavior of comparable recent AI/semi/tech IPOs in their Day-2 to Day-30 window. Cite the most useful 2–3 analog tickers (e.g. ARM, RDDT, CRWV, KVYO) and where they bottomed.
 
-   h. **Today's news + sentiment driving the stock (THIS IS THE LIVE INPUT).** For each tracked stock, deliberately WebSearch the last 24h for:
+   h. **Today's news + sentiment driving the stock (LIVE INPUT — applies to every tracked stock).** For each tracked stock, deliberately WebSearch the last 24h for:
       - Company-specific news: new contracts, executive changes, lawsuits, SEC filings, partnership announcements
       - Customer-specific news: anything affecting G42 / MBZUAI / OpenAI for CBRS (and analogous for other tickers)
       - Peer moves: how comparable stocks (NVDA, PLTR, AVGO, AMD, ASTR for CBRS) traded today and why
@@ -79,9 +85,23 @@ Use `WebSearch` and `WebFetch`. Prefer primary sources (SEC EDGAR S-1 filings, e
       - Analyst actions: any new price targets, upgrades/downgrades (especially around quiet-period-end dates)
 
       Use these findings to:
-      - Make the **"Risk"** bullet *dynamic* — reflect today's most-acute risk, not just the standing concentration risk. E.g., if a new diversifying contract was announced today, the concentration risk is *easing*; if G42 hit a regulatory snag, it's *elevated*. Static "86% from G42+MBZUAI" is the fallback only on quiet news days.
+      - Make the **"Risk"** bullet *dynamic* — reflect today's most-acute risk, not just the standing risk. E.g., if a new diversifying contract was announced today, concentration risk is *easing*; if a regulatory snag emerged, it's *elevated*. The static standing risk is fallback only on quiet news days.
       - Reorder the **"Next catalyst"** if today's news bumps the importance of an earlier event.
-      - Emit an *optional* 5th bullet `**Today:**` ONLY on days when today's news materially affects near-term direction. On quiet news days, omit the 5th bullet entirely.
+      - Emit an *optional* 5th bullet `**Today:**` ONLY on days when news materially affects near-term direction. On quiet news days, omit it entirely.
+
+   i. **Tomorrow's expected range (informational, NOT a prediction — applies to every tracked stock).** Compute a statistical 1-standard-deviation expected price band for the next trading day, plus identify any known asymmetric catalyst that could skew the distribution.
+
+      Methodology (use whichever inputs are available):
+      - **For mature public stocks (TSLA):** prefer options-implied move from front-month at-the-money straddle if WebSearch surfaces it (often quoted as "implied move %"). Failing that, compute realized 20-day daily volatility from recent close prices and apply: range = today_close × (1 ± σ_daily).
+      - **For newly-IPO'd stocks (CBRS, < 30 trading days):** options markets are illiquid and realized vol is unreliable. Use the wider of (a) the recent intraday range expressed as % of close, or (b) median Day-2-to-Day-30 daily volatility of analog IPOs in state.md.
+      - **Asymmetric skew:** flag if a binary catalyst is scheduled overnight or pre-market tomorrow (earnings, FDA, court ruling, major peer earnings). This expands the practical range beyond the statistical one.
+
+      Emit an *optional* 6th bullet `**Tomorrow:**` with:
+      - The expected 1-σ price range (low–high)
+      - Plain-language qualifier: "about 2-out-of-3 chance of closing in this range"
+      - Any known skew factor in ≤8 words
+
+      **Hard rule:** the Tomorrow bullet must contain the literal phrase "expected range" (not "predicted" or "forecast"), and must include the qualifier about probability. Anyone reading must understand this is a statistical envelope, not a price target. If insufficient data is available, omit the bullet entirely — better silent than wrong.
 
    **Strict constraint:** this section provides math + factual context + reference levels only. It does **not** recommend buying, selling, or holding. Phrasing like "good entry", "buy zone", "wait until X" is **banned**. Use neutral language: "current price is N% above/below the IPO price", "at $X the multiple would be Y×", "Day N is when [event] occurs". Today's news is reported as observation ("G42 news raises concentration risk profile"), never as recommendation ("avoid until risk clears").
 
@@ -153,19 +173,23 @@ Sort rows by date ascending. Use a date range (e.g. `2026-05-20 – 22`) for pri
 
 Per-stock entry-decision support. Reference levels are math, not recommendations. Currently tracking: **CBRS**. The list is set in the "Buying Window Tracker" item of "What to gather" — add tickers there to extend coverage.
 
-For each tracked stock, emit a tight block — usually 4 bullets, optional 5th when today's news materially shifts the picture. No tables, no nested context.
+For each tracked stock, emit a tight block — 4 bullets always, with 2 optional bullets (Today, Tomorrow). No tables, no nested context.
 
 ```markdown
-### <TICKER> — <Company> (<≤6-word business descriptor>) | Day <N> | $<close> (<±X%>)
+### <TICKER> — <Company> (<≤6-word business descriptor>) | <Day-N for new IPO OR Listed YYYY for mature> | $<close> (<±X%>)
 
-- **Range:** IPO $<IPO> · Day 1 close $<D1> · ATH $<ATH>
-- **Multiple:** ~<X>× trailing P/S | ~<X>× FY<N+1> forward
+- **Range:** <For new IPO: IPO $<IPO> · Day 1 $<D1> · ATH $<ATH>>
+              <For mature: 52w low $<L> · 52w high $<H> · 200d MA $<M>>
+- **Multiple:** ~<X>× trailing <P/S or P/E> | ~<X>× FY<N+1> forward
 - **Next catalyst:** <YYYY-MM-DD> <event> — <one short clause why it matters>
-- **Risk:** <DYNAMIC — today's most-acute risk reflecting today's news; falls back to standing risk on quiet days; ≤15 words>
-- **Today:** <OPTIONAL — include ONLY on days when company-specific news, peer moves, or sector sentiment materially shifts near-term direction; ≤15 words; omit entirely on quiet days>
+- **Risk:** <DYNAMIC — today's most-acute risk reflecting today's news; ≤15 words>
+- **Today:** <OPTIONAL — include ONLY on days when news materially shifts near-term direction; ≤15 words>
+- **Tomorrow:** <OPTIONAL — expected 1-σ range $X–$Y; about 2-out-of-3 chance of closing in this range; <skew factor if any>>
 ```
 
-The Risk bullet must be live and reactive — not just "86% revenue concentration" every day. If today's news eases or elevates the risk, that's reflected. The optional Today bullet captures news/sentiment context that isn't a risk per se but moves the stock (e.g. "Peer NVDA +5% on Blackwell demand; lifts sector sentiment").
+The Risk bullet is live and reactive — not just static facts every day. The Today bullet captures news/sentiment context. The Tomorrow bullet provides a statistical expected range (NOT a prediction) — phrasing must include "expected range" and the probability qualifier. Omit Tomorrow if data is insufficient (very new IPO, no options data, etc.) — better silent than misleading.
+
+**Use trailing P/E and forward P/E for profitable mature names like TSLA. Use trailing P/S and forward P/S for newly-IPO'd / high-growth names like CBRS where P/E isn't meaningful.**
 
 Deeper data (full peer set, zone table, drawdown analog table) lives in `ipo-watch/state.md` "Buying Window Tracker — anchor data" for the routine's reference — surface from there only when something materially shifts (e.g. a peer's multiple rerates, a new analog IPO appears) by putting that as a `[CHANGED]` item in the Changes section, not in this Buying Window block.
 
@@ -325,18 +349,19 @@ If a section other than "Next 30 Days" has no items, write `_Nothing today._` �
 
    Always emit all SIX lines, even on "no update" days — this is the daily snapshot.
 
-   **Buying Window Tracker — Slack format per stock** (4 bullets always + optional 5th on news days; never advice):
+   **Buying Window Tracker — Slack format per stock** (4 always + up to 2 optional; never advice):
 
    ```
-   *<TICKER>* (_<≤6-word descriptor>_) | Day <N> | $<close> (<±X%>)
-   • Range: IPO $<IPO> · Day 1 $<D1> · ATH $<ATH>
-   • Multiple: ~<X>× trailing | ~<X>× fwd
+   *<TICKER>* (_<≤6-word descriptor>_) | <Day N or Listed YYYY> | $<close> (<±X%>)
+   • Range: <IPO/D1/ATH for new IPO  OR  52w-L / 52w-H / 200d-MA for mature>
+   • Multiple: ~<X>× trailing <P/E or P/S> | ~<X>× fwd
    • Next: <YYYY-MM-DD> <event>
-   • Risk: <DYNAMIC — today's most-acute risk; falls back to standing risk on quiet days; ≤15 words>
-   • Today: <OPTIONAL — only on news days; news/sentiment shifting near-term direction; ≤15 words; omit on quiet days>
+   • Risk: <DYNAMIC — today's most-acute; ≤15 words>
+   • Today: <OPTIONAL — news/sentiment moving the stock today; ≤15 words; skip on quiet days>
+   • Tomorrow: <OPTIONAL — expected range $<X>–$<Y> (1-σ; ~2-of-3 chance to close in band); <skew if any>; skip if data thin>
    ```
 
-   Strict: every line is math or factual observation. No "buy", "sell", "entry zone", "wait" language anywhere. Risk bullet must react to today's news; Today bullet appears only when news materially moves the picture.
+   Strict: every line is math or factual observation. No "buy", "sell", "entry zone", "wait" language. The Tomorrow line must contain the literal phrase "expected range" and the probability qualifier — never "predicted" or "forecast".
 
    **Next 30 Days — format for each line:**
 
