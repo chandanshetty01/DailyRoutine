@@ -54,3 +54,26 @@ _Prior completed (outside 30-day window): Horizon Quantum HQ debuted March 20 vi
 - **IQM SPAC**: Monitor for RAAQ F-4 effectiveness notice and shareholder vote date.
 - **CBRS second-day performance**: Capture opening and close on Monday, May 18 — watch for post-debut drift or continued momentum.
 - **QBTS Investor Day**: Monday, June 1 at NYSE — pre-read any investor day materials released ahead of time.
+
+## Buying Window Tracker — anchor data (do not modify lightly)
+
+These are historical anchors used by the Buying Window Tracker section. They are facts (IPO price, Day 1 close, etc.) and should not be rewritten unless an actual corporate action (split, dividend) requires it.
+
+### CBRS — Cerebras Systems
+- **IPO price:** $185 (priced 2026-05-13, above $150–$160 marketed range)
+- **First trade date:** 2026-05-14 (Day 1)
+- **Day 1 open:** $350
+- **Day 1 intraday high:** $386
+- **Day 1 close:** $311.07 (+68.1% vs IPO price)
+- **Shares offered:** 30M Class A
+- **IPO gross proceeds:** $5.55B
+- **Day 1 market cap:** ~$95B (fully diluted ~305M shares)
+- **FY2025 revenue:** $510M (+76% YoY from $290M FY2024)
+- **FY2025 net margin:** 47%
+- **Customer concentration FY2025:** MBZUAI 62% + G42 24% = 86% total
+- **Notable contract:** $10B OpenAI deal Jan 2026 (750MW compute through 2028)
+- **Analyst quiet period ends:** ~2026-06-10 (Day 25 of trading; first sell-side coverage initiations)
+- **Lockup expiry:** ~2026-11-11 (Day 180; insider/employee selling pressure window)
+- **Peer set for forward P/S comparison:** NVDA, PLTR, ASTR
+- **Historical IPO drawdown analogs:** ARM (-17% by week 4), KVYO (-22% by month 1), RDDT (-24% by week 3), CRWV (-12% by week 1)
+- **S-1 reference:** https://www.sec.gov/Archives/edgar/data/2021728/000162828026025762/cerebras-sx1april2026.htm

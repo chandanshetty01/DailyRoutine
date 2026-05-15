@@ -38,7 +38,42 @@ Use `WebSearch` and `WebFetch`. Prefer primary sources (SEC EDGAR S-1 filings, e
 
 4. **Notable moves in already-public AI/quantum names** — only when there's a real catalyst (earnings, guidance change, large contract, M&A, regulatory action). Skip routine price ticks. Aim for 3–6 items max. For each item include a one-line "why it matters" — informational only, **not a recommendation**.
 
-5. **Diff vs. yesterday's report.** After gathering everything above, compare today's findings against yesterday's report (loaded in step 2 of "On start"). Identify only material changes — see the "Changes since yesterday" section in the output structure below for what counts as material vs. what to ignore.
+5. **Buying Window Tracker — analytical entry-decision support for chosen public stocks.**
+
+   List of stocks tracked here (extensible by editing this prompt): **CBRS** (Cerebras Systems).
+
+   For each tracked stock, gather and compute (deep research expected — go beyond a single source):
+
+   a. **Latest close + intraday detail.** Closing price, % change vs prior close, day's volume, and whether volume is meaningfully above/below recent average (a momentum/exit signal).
+
+   b. **Position vs reference levels.**
+      - IPO price (anchor)
+      - Day 1 close (post-IPO benchmark)
+      - All-time high (post-IPO peak)
+      - 52-week range once enough trading days have elapsed
+      For each, compute the % difference vs current price.
+
+   c. **Implied valuation multiples at current price.**
+      - Trailing P/S using last full-year revenue
+      - Forward P/S using best-available analyst consensus or company-guided FY+1 revenue
+      - Comparison to a 2–3 peer set (e.g. NVDA, PLTR, ASTR for CBRS)
+
+   d. **Reference price zones at common multiples.** A small table showing the price implied at 50× / 100× / 150× / 200× trailing (or whichever zone bracket makes sense for the stock).
+
+   e. **Upcoming catalysts (next 60 days).** Each with date and one short clause on why it matters for the entry-timing decision. Include: known earnings dates, analyst quiet-period end (Day 25 from IPO for newly-listed names), lockup expiry (Day 90/180 from IPO), product launches, regulatory rulings, sector earnings (e.g. NVDA's date as input to AI infra sentiment).
+
+   f. **Risk markers specific to entry timing.**
+      - Days since IPO
+      - Days to next major catalyst
+      - Customer / revenue concentration risk
+      - Insider/employee lockup status
+      - Any news suggesting concentration or contract risk has shifted
+
+   g. **Historical IPO drawdown context (concise).** Compare to median behavior of comparable recent AI/semi/tech IPOs in their Day-2 to Day-30 window. Cite the most useful 2–3 analog tickers (e.g. ARM, RDDT, CRWV, KVYO) and where they bottomed.
+
+   **Strict constraint:** this section provides math + factual context + reference levels only. It does **not** recommend buying, selling, or holding. Phrasing like "good entry", "buy zone", "wait until X" is **banned**. Use neutral language: "current price is N% above/below the IPO price", "at $X the multiple would be Y×", "Day N is when [event] occurs".
+
+6. **Diff vs. yesterday's report.** After gathering everything above, compare today's findings against yesterday's report (loaded in step 2 of "On start"). Identify only material changes — see the "Changes since yesterday" section in the output structure below for what counts as material vs. what to ignore.
 
 ## Output — commit a new file `ipo-watch/log/YYYY-MM-DD.md` with this structure
 
@@ -101,6 +136,54 @@ Sort rows by date ascending. Use a date range (e.g. `2026-05-20 – 22`) for pri
 
 ## Notable AI / quantum stock catalysts (informational only, not advice)
 - **[TICKER]** [Company] — <catalyst, one line> — <source>
+
+## 🪟 Buying Window Tracker (math + facts only, never advice)
+
+Per-stock entry-decision support. Reference levels are math, not recommendations. Currently tracking: **CBRS**. The list is set in the "Buying Window Tracker" item of "What to gather" — add tickers there to extend coverage.
+
+For each tracked stock, emit a sub-section with this exact shape (replace placeholders with computed values):
+
+```markdown
+### <TICKER> — <Company name> (<short business descriptor>)
+
+**Status:** Day <N> since IPO | $<close> (<+/-X%> day-on-day) | Volume <V> (<above/below/in-line> avg)
+
+**Position vs reference levels:**
+- IPO price: $<IPO> — current is <+/-X%>
+- Day 1 close: $<D1> — current is <+/-X%>
+- All-time high: $<ATH> — current is <-X%>
+- 52-wk range: <$L–$H> (or `n/a — too few trading days`)
+
+**Implied multiples now:**
+- Trailing P/S: <X>× (on $<rev>M FY<year> revenue)
+- Forward P/S: <X>× (on $<rev>B FY<year>+1 analyst consensus)
+- Peer set: <PEER1> <X>× fwd · <PEER2> <X>× fwd · <PEER3> <X>× fwd
+
+**Reference price zones (math, not targets):**
+| Multiple | Implied price |
+|---|---|
+| 200× trailing | $<X> |
+| 150× trailing | $<X> |
+| 100× trailing | $<X> |
+| 50× trailing | $<X> |
+
+**Catalyst calendar (next 60 days):**
+- <YYYY-MM-DD> — <event> — <one short clause why it matters for entry timing>
+- ...
+
+**Risk markers:**
+- Days to analyst quiet-period end: <N>
+- Days to lockup expiry (180): <N>
+- Customer concentration: <X% from N customers>
+- Recent news / contracts that shift risk: <one line, or "no change">
+
+**Historical IPO drawdown context:**
+- Comparable hot AI/tech IPOs (median Day 2–30 drawdown): <X% to Y%>
+- Closest analogs: <TICKER1> bottomed <-X%> on Day <N>; <TICKER2> bottomed <-X%> on Day <N>
+- Current CBRS position vs that analog pattern: <one neutral observation>
+```
+
+If the stock list is empty or none are publicly trading yet, write `_No publicly-trading watch-list stocks today._`
 
 ## Actions to consider (you decide — not recommendations)
 
@@ -167,9 +250,9 @@ If a section other than "Next 30 Days" has no items, write `_Nothing today._` �
    - **Notes for next run** — short, run-specific reminders for tomorrow (e.g. "CBRS prices tonight — capture first trade").
 2. Stage the new log file + updated state.md, commit with message `ipo-watch: YYYY-MM-DD`, and push to `main`.
 
-3. **Send the full summary to Slack as a Block Kit message — ONE single message containing all EIGHT sections** (TL;DR + Tracked Companies + Next 30 Days + Changes + IPO Activity + Notable Catalysts + Actions + Top 3 links). Use the Slack MCP `send_message` tool. Target channel: **`#bpe-alerts`** (look up its channel ID with the Slack list-channels read tool, then send by ID).
+3. **Send the full summary to Slack as a Block Kit message — ONE single message containing all NINE sections** (TL;DR + Tracked Companies + Next 30 Days + Changes + IPO Activity + Notable Catalysts + Buying Window Tracker + Actions + Top 3 links). Use the Slack MCP `send_message` tool. Target channel: **`#bpe-alerts`** (look up its channel ID with the Slack list-channels read tool, then send by ID).
 
-   **CRITICAL:** the message must contain ALL eight sections in a single `send_message` call. Do not truncate or skip sections. The standing-status sections (Tracked Companies, Next 30 Days) **must appear every day**, even when nothing changed since yesterday — they are the standing daily status, not a diff.
+   **CRITICAL:** the message must contain ALL nine sections in a single `send_message` call. Do not truncate or skip sections. The standing-status sections (Tracked Companies, Next 30 Days, Buying Window Tracker) **must appear every day**, even when nothing changed since yesterday — they are the standing daily status, not a diff.
 
    ### Preferred format — Slack Block Kit
 
@@ -193,6 +276,8 @@ If a section other than "Next 30 Days" has no items, write `_Nothing today._` �
        { "type": "section", "text": { "type": "mrkdwn", "text": "*📈 IPO ACTIVITY*\n\nNewly filed:\n<bullets prefixed `[AI]` / `[Quantum]`>\n\nDebuted in last 24h:\n<bullets — or `_Nothing today._`>" } },
        { "type": "divider" },
        { "type": "section", "text": { "type": "mrkdwn", "text": "*📰 NOTABLE CATALYSTS*\n\n<bullets — TICKER + one-line catalyst + one-line 'why it matters'; cap at 6>" } },
+       { "type": "divider" },
+       { "type": "section", "text": { "type": "mrkdwn", "text": "*🪟 BUYING WINDOW TRACKER*\n\n<one compact block per tracked stock — see Slack format below; never advice>" } },
        { "type": "divider" },
        { "type": "section", "text": { "type": "mrkdwn", "text": "*🎯 ACTIONS TO CONSIDER*\n\n<bullets — see emoji map below; max 3>" } },
        { "type": "divider" },
@@ -253,6 +338,20 @@ If a section other than "Next 30 Days" has no items, write `_Nothing today._` �
    - `🟦 *Cerebras:* <pre-IPO shape until debut; after debut: NASDAQ:CBRS | <close price> | <% day move> | <one-sentence latest material event or "no update">`
 
    Always emit all SIX lines, even on "no update" days — this is the daily snapshot.
+
+   **Buying Window Tracker — Slack format per stock** (compact; one block per ticker; never advice):
+
+   ```
+   *<TICKER>* (_<short business descriptor>_) | Day <N> | $<close> (<+/-X%>)
+   • Vs IPO $<IPO>: <+/-X%>  ·  Vs Day 1 $<D1>: <+/-X%>  ·  Vs ATH $<ATH>: <-X%>
+   • Implied: <X>× trailing  /  <X>× FY<N+1> fwd  (peers: <P1> <X>× · <P2> <X>×)
+   • Zones: 50× → $<X>  |  100× → $<X>  |  150× → $<X>  |  200× → $<X>
+   • Next catalysts: <YYYY-MM-DD> <event> · <YYYY-MM-DD> <event>
+   • Risk: lockup in <N>d · quiet period in <N>d · <one risk-marker clause>
+   • IPO drawdown analogs: <TICKER1> -<X>% by Day <N> · <TICKER2> -<X>% by Day <N>
+   ```
+
+   Strict: every line is math or factual. No "buy", "sell", "entry zone", "wait" language anywhere.
 
    **Next 30 Days — format for each line:**
 
@@ -323,6 +422,10 @@ If a section other than "Next 30 Days" has no items, write `_Nothing today._` �
    • *<TICKER>* <company> — <catalyst>. _Why:_ <one line>
    ...
    ━━━━━━━━━━━━━━━━━━
+   *🪟 BUYING WINDOW TRACKER*
+
+   <compact-per-stock block as documented above; one per tracked ticker>
+   ━━━━━━━━━━━━━━━━━━
    *🎯 ACTIONS TO CONSIDER*
 
    📅 *Calendar:* <bullet>
@@ -340,7 +443,7 @@ If a section other than "Next 30 Days" has no items, write `_Nothing today._` �
 
    ### Pre-send verification
 
-   Before calling `send_message`, verify the constructed payload contains all EIGHT section headers (`TL;DR`, `TRACKED COMPANIES`, `NEXT 30 DAYS`, `CHANGES SINCE YESTERDAY`, `IPO ACTIVITY`, `NOTABLE CATALYSTS`, `ACTIONS TO CONSIDER`, `TOP 3 LINKS WORTH YOUR TIME`). If any is missing, rebuild before sending.
+   Before calling `send_message`, verify the constructed payload contains all NINE section headers (`TL;DR`, `TRACKED COMPANIES`, `NEXT 30 DAYS`, `CHANGES SINCE YESTERDAY`, `IPO ACTIVITY`, `NOTABLE CATALYSTS`, `BUYING WINDOW TRACKER`, `ACTIONS TO CONSIDER`, `TOP 3 LINKS WORTH YOUR TIME`). If any is missing, rebuild before sending.
 
    If the Slack send fails for any reason (rate limit, tool error, channel missing), log the error but **do not fail the run** — the report is already committed and remains accessible via GitHub. Do not retry more than once.
 
