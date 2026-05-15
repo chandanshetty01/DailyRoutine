@@ -195,13 +195,26 @@ Use `WebSearch` and `WebFetch`. Prefer primary sources (SEC EDGAR S-1 filings, e
 
       If a record is returned with `actual_close` set, add a "Yesterday's call" line to that stock's Buying Window block (see display format below). If only `{"info": "no evaluated predictions yet"}`, omit the line — don't fabricate.
 
-   k. **Weekly self-audit — Mondays only.** On Mondays, after the standard report, run:
+   k. **Daily audit — compact footer always, full findings only when they shift.** Every run:
 
       ```bash
+      python3 ipo-watch/lib/forecast_audit.py stats --days 30
       python3 ipo-watch/lib/forecast_audit.py audit
       ```
 
-      The script surfaces systematic biases (ranges too narrow/wide, asymmetric skew, weak catalyst handling). The routine MUST NOT auto-edit PROMPT.md based on these findings — instead, emit them as a `[NEW]` item in the Changes section titled "Self-audit findings (week of X)" and let the user/maintainer decide whether to update the prompt. **Auto-modifying the prompt is banned.**
+      **Always emit** a one-line `Audit:` footer at the bottom of the Buying Window section, derived from the `stats` output:
+
+      ```
+      _Audit: N predictions evaluated · TSLA 71% hit · CBRS 50% hit · overall: <calibration_label>_
+      ```
+
+      **Surface the deeper findings** (from `audit` output) as a `[NEW]` item in the Changes section **only when**:
+      - It's been ≥ 7 days since the same findings were last surfaced, OR
+      - The set of findings has materially shifted vs the previous report (different pattern_type or evidence delta > 20%)
+
+      Determine "shifted" by reading yesterday's report and comparing audit-finding sections. If nothing changed, omit the findings from today's Changes section — the footer alone suffices for transparency.
+
+      The routine MUST NOT auto-edit PROMPT.md based on these findings — surface them and let the user/maintainer decide whether to update the prompt. **Auto-modifying the prompt is banned.**
 
    **Strict constraint:** this section provides math + factual context + reference levels only. It does **not** recommend buying, selling, or holding. Phrasing like "good entry", "buy zone", "wait until X" is **banned**. Use neutral language: "current price is N% above/below the IPO price", "at $X the multiple would be Y×", "Day N is when [event] occurs". Today's news is reported as observation ("G42 news raises concentration risk profile"), never as recommendation ("avoid until risk clears").
 
