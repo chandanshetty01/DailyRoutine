@@ -71,7 +71,19 @@ Use `WebSearch` and `WebFetch`. Prefer primary sources (SEC EDGAR S-1 filings, e
 
    g. **Historical IPO drawdown context (concise).** Compare to median behavior of comparable recent AI/semi/tech IPOs in their Day-2 to Day-30 window. Cite the most useful 2–3 analog tickers (e.g. ARM, RDDT, CRWV, KVYO) and where they bottomed.
 
-   **Strict constraint:** this section provides math + factual context + reference levels only. It does **not** recommend buying, selling, or holding. Phrasing like "good entry", "buy zone", "wait until X" is **banned**. Use neutral language: "current price is N% above/below the IPO price", "at $X the multiple would be Y×", "Day N is when [event] occurs".
+   h. **Today's news + sentiment driving the stock (THIS IS THE LIVE INPUT).** For each tracked stock, deliberately WebSearch the last 24h for:
+      - Company-specific news: new contracts, executive changes, lawsuits, SEC filings, partnership announcements
+      - Customer-specific news: anything affecting G42 / MBZUAI / OpenAI for CBRS (and analogous for other tickers)
+      - Peer moves: how comparable stocks (NVDA, PLTR, AVGO, AMD, ASTR for CBRS) traded today and why
+      - Sector sentiment: AI-infra capex commentary, regulatory/export news, macro
+      - Analyst actions: any new price targets, upgrades/downgrades (especially around quiet-period-end dates)
+
+      Use these findings to:
+      - Make the **"Risk"** bullet *dynamic* — reflect today's most-acute risk, not just the standing concentration risk. E.g., if a new diversifying contract was announced today, the concentration risk is *easing*; if G42 hit a regulatory snag, it's *elevated*. Static "86% from G42+MBZUAI" is the fallback only on quiet news days.
+      - Reorder the **"Next catalyst"** if today's news bumps the importance of an earlier event.
+      - Emit an *optional* 5th bullet `**Today:**` ONLY on days when today's news materially affects near-term direction. On quiet news days, omit the 5th bullet entirely.
+
+   **Strict constraint:** this section provides math + factual context + reference levels only. It does **not** recommend buying, selling, or holding. Phrasing like "good entry", "buy zone", "wait until X" is **banned**. Use neutral language: "current price is N% above/below the IPO price", "at $X the multiple would be Y×", "Day N is when [event] occurs". Today's news is reported as observation ("G42 news raises concentration risk profile"), never as recommendation ("avoid until risk clears").
 
 6. **Diff vs. yesterday's report.** After gathering everything above, compare today's findings against yesterday's report (loaded in step 2 of "On start"). Identify only material changes — see the "Changes since yesterday" section in the output structure below for what counts as material vs. what to ignore.
 
@@ -141,7 +153,7 @@ Sort rows by date ascending. Use a date range (e.g. `2026-05-20 – 22`) for pri
 
 Per-stock entry-decision support. Reference levels are math, not recommendations. Currently tracking: **CBRS**. The list is set in the "Buying Window Tracker" item of "What to gather" — add tickers there to extend coverage.
 
-For each tracked stock, emit a tight 4-bullet block — no tables, no nested context. The routine should do the deeper research (multiples, peers, drawdown analogs, zones, etc.) and use it to choose what to surface, but only the essentials appear in the report itself:
+For each tracked stock, emit a tight block — usually 4 bullets, optional 5th when today's news materially shifts the picture. No tables, no nested context.
 
 ```markdown
 ### <TICKER> — <Company> (<≤6-word business descriptor>) | Day <N> | $<close> (<±X%>)
@@ -149,10 +161,13 @@ For each tracked stock, emit a tight 4-bullet block — no tables, no nested con
 - **Range:** IPO $<IPO> · Day 1 close $<D1> · ATH $<ATH>
 - **Multiple:** ~<X>× trailing P/S | ~<X>× FY<N+1> forward
 - **Next catalyst:** <YYYY-MM-DD> <event> — <one short clause why it matters>
-- **Key risk:** <one most-material risk for entry timing, ≤15 words>
+- **Risk:** <DYNAMIC — today's most-acute risk reflecting today's news; falls back to standing risk on quiet days; ≤15 words>
+- **Today:** <OPTIONAL — include ONLY on days when company-specific news, peer moves, or sector sentiment materially shifts near-term direction; ≤15 words; omit entirely on quiet days>
 ```
 
-That's it. Four bullets, no extras. Deeper data (full peer set, zone table, drawdown analog table) lives in `ipo-watch/state.md` "Buying Window Tracker — anchor data" for the routine's reference — surface from there only when something materially shifts (e.g. a peer's multiple rerates, a new analog IPO appears) by putting that as a `[CHANGED]` item in the Changes section, not in this Buying Window block.
+The Risk bullet must be live and reactive — not just "86% revenue concentration" every day. If today's news eases or elevates the risk, that's reflected. The optional Today bullet captures news/sentiment context that isn't a risk per se but moves the stock (e.g. "Peer NVDA +5% on Blackwell demand; lifts sector sentiment").
+
+Deeper data (full peer set, zone table, drawdown analog table) lives in `ipo-watch/state.md` "Buying Window Tracker — anchor data" for the routine's reference — surface from there only when something materially shifts (e.g. a peer's multiple rerates, a new analog IPO appears) by putting that as a `[CHANGED]` item in the Changes section, not in this Buying Window block.
 
 If the stock list is empty or none are publicly trading yet, write `_No publicly-trading watch-list stocks today._`
 
@@ -310,17 +325,18 @@ If a section other than "Next 30 Days" has no items, write `_Nothing today._` �
 
    Always emit all SIX lines, even on "no update" days — this is the daily snapshot.
 
-   **Buying Window Tracker — Slack format per stock** (4 bullets, no tables, no extras; never advice):
+   **Buying Window Tracker — Slack format per stock** (4 bullets always + optional 5th on news days; never advice):
 
    ```
    *<TICKER>* (_<≤6-word descriptor>_) | Day <N> | $<close> (<±X%>)
    • Range: IPO $<IPO> · Day 1 $<D1> · ATH $<ATH>
    • Multiple: ~<X>× trailing | ~<X>× fwd
    • Next: <YYYY-MM-DD> <event>
-   • Risk: <one most-material risk for entry timing, ≤15 words>
+   • Risk: <DYNAMIC — today's most-acute risk; falls back to standing risk on quiet days; ≤15 words>
+   • Today: <OPTIONAL — only on news days; news/sentiment shifting near-term direction; ≤15 words; omit on quiet days>
    ```
 
-   Strict: every line is math or factual. No "buy", "sell", "entry zone", "wait" language anywhere.
+   Strict: every line is math or factual observation. No "buy", "sell", "entry zone", "wait" language anywhere. Risk bullet must react to today's news; Today bullet appears only when news materially moves the picture.
 
    **Next 30 Days — format for each line:**
 
