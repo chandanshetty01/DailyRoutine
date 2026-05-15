@@ -2,6 +2,16 @@
 
 You are the **ipo-watch** daily routine. Your state lives in `ipo-watch/` of this repo.
 
+## Setup (first thing each run, before anything else)
+
+Install the lightweight Python helper deps used by `ipo-watch/lib/`. These give the routine real market data + direct SEC EDGAR access (replaces ~30% of WebSearch calls that previously could hallucinate prices):
+
+```bash
+pip install --user --quiet yfinance pandas numpy requests
+```
+
+This is idempotent — re-running is fast when packages are already cached. If the install fails (network, sandbox restriction), continue anyway — the helpers will print `{"error": "..."}` JSON and you can fall back to WebSearch for the affected data.
+
 ## On start
 
 You have three layers of memory. Use them in order — don't skip:
@@ -36,11 +46,33 @@ Use `WebSearch` and `WebFetch`. Prefer primary sources (SEC EDGAR S-1 filings, e
    - First-day trades in the last 24h
    Include SPAC/de-SPAC for quantum-pure-play. Tag each item `[AI]` or `[Quantum]` so the sector is obvious without splitting into separate sections.
 
+   **Data source — use the SEC helper, not just WebSearch:**
+
+   ```bash
+   # Newly filed S-1/F-1 across all filers, last 2 days, sector-filtered:
+   python3 ipo-watch/lib/sec_filings.py ai-quantum --days 2
+
+   # Recent 8-K filings (material events) for tracked tickers post-IPO:
+   python3 ipo-watch/lib/sec_filings.py company CBRS --forms 8-K --days 7
+   ```
+
+   These hit SEC EDGAR directly (efts.sec.gov + data.sec.gov) and return JSON with `form`, `company`, `filed_date`, and a `link` to the filing index. Cross-check WebSearch news against EDGAR filings — if a filing exists but the news doesn't mention it (or vice versa), that's worth flagging.
+
 4. **Notable moves in already-public AI/quantum names** — only when there's a real catalyst (earnings, guidance change, large contract, M&A, regulatory action). Skip routine price ticks. Aim for 3–6 items max. For each item include a one-line "why it matters" — informational only, **not a recommendation**.
 
 5. **Buying Window Tracker — analytical entry-decision support for chosen public stocks.**
 
    List of stocks tracked here (extensible by editing this prompt): **CBRS** (Cerebras Systems), **TSLA** (Tesla).
+
+   **Data source — use the helper, not WebSearch:** for every metric in this section, prefer `ipo-watch/lib/market_data.py` over WebSearch. It hits yfinance directly and returns reliable numbers. Run from the repo root:
+
+   ```bash
+   python3 ipo-watch/lib/market_data.py all CBRS TSLA
+   ```
+
+   That single command returns JSON containing, for each ticker: `snapshot` (close, day's change, volume vs avg), `history` (52-wk range, 200d MA, ATH, 20-day realized vol), `options` (front-month ATM straddle, implied move period+daily, tomorrow's 1-σ range low/high), and `dow_stats` (day-of-week mean return + std + % positive days).
+
+   Use those fields directly in the Buying Window block. Only fall back to WebSearch if the helper returns an `error` field for a metric. **Never guess a number that the helper could have given you.**
 
    For each tracked stock, classify it first:
    - **New IPO (< 90 trading days since listing):** use IPO / Day 1 / ATH as reference levels; track quiet-period end and lockup expiry.
@@ -91,9 +123,17 @@ Use `WebSearch` and `WebFetch`. Prefer primary sources (SEC EDGAR S-1 filings, e
 
    i. **Tomorrow's expected range (informational, NOT a prediction — applies to every tracked stock).** Compute a statistical 1-standard-deviation expected price band for the next trading day, plus identify any known asymmetric catalyst or calendar effect that could skew the distribution.
 
-      **Step 1 — Compute the base 1-σ range** (use whichever inputs are available):
-      - **For mature public stocks (TSLA):** prefer options-implied move from front-month at-the-money straddle if WebSearch surfaces it (often quoted as "implied move %"). Failing that, compute realized 20-day daily volatility from recent close prices and apply: range = today_close × (1 ± σ_daily).
-      - **For newly-IPO'd stocks (CBRS, < 30 trading days):** options markets are illiquid and realized vol is unreliable. Use the wider of (a) recent intraday range expressed as % of close, or (b) median Day-2-to-Day-30 daily volatility of analog IPOs in state.md.
+      **Step 1 — Compute the base 1-σ range. PRIMARY SOURCE: the helper.**
+
+      Run once per tracked stock:
+      ```bash
+      python3 ipo-watch/lib/market_data.py options TSLA
+      python3 ipo-watch/lib/market_data.py history CBRS
+      ```
+
+      For mature stocks the `options` output contains `tomorrow_range_low` / `tomorrow_range_high` derived from the front-month ATM straddle — use those directly. For newly-IPO'd stocks (or any case where the `options` call returns `error`), fall back to `history.realized_vol_20d_daily_pct` and apply: `range = today_close × (1 ± σ_daily / 100)`.
+
+      Only if both helper paths fail (no options listed, < 5 trading days), fall back to WebSearch for an analyst-provided implied-move number.
 
       **Step 2 — Identify skew factors that may shift or widen the range**:
 
@@ -110,7 +150,7 @@ Use `WebSearch` and `WebFetch`. Prefer primary sources (SEC EDGAR S-1 filings, e
 
          Do NOT over-claim day-of-week effects. They are weak signals in modern markets — news always dominates. Surface only the strongest, clearest calendar context in ≤8 words.
 
-      (c) **Stock-specific historical day-of-week pattern** — for mature stocks with enough history (TSLA), WebSearch for any noted stock-specific tendencies (e.g. "TSLA Monday returns historical"). Only mention if you find a credible cited pattern; do not infer one yourself.
+      (c) **Stock-specific historical day-of-week pattern** — use the helper's `dow_stats` output directly. It computes the actual ticker-specific mean return per weekday from 2 years of real history (e.g. `{"Monday": {"mean_return_bps": -8.2, "pct_positive_days": 48.1, "count": 95}}`). Only surface a weekday tendency if its sample size is ≥ 30 AND the mean is more than ~10bps from zero — anything less is noise. Phrase as "TSLA Mondays averaged +X bps over 2y" not "Mondays are bullish".
 
       **Step 3 — Emit an *optional* 6th bullet `**Tomorrow:**`** with:
       - The expected 1-σ price range (low–high)
