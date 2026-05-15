@@ -141,47 +141,18 @@ Sort rows by date ascending. Use a date range (e.g. `2026-05-20 – 22`) for pri
 
 Per-stock entry-decision support. Reference levels are math, not recommendations. Currently tracking: **CBRS**. The list is set in the "Buying Window Tracker" item of "What to gather" — add tickers there to extend coverage.
 
-For each tracked stock, emit a sub-section with this exact shape (replace placeholders with computed values):
+For each tracked stock, emit a tight 4-bullet block — no tables, no nested context. The routine should do the deeper research (multiples, peers, drawdown analogs, zones, etc.) and use it to choose what to surface, but only the essentials appear in the report itself:
 
 ```markdown
-### <TICKER> — <Company name> (<short business descriptor>)
+### <TICKER> — <Company> (<≤6-word business descriptor>) | Day <N> | $<close> (<±X%>)
 
-**Status:** Day <N> since IPO | $<close> (<+/-X%> day-on-day) | Volume <V> (<above/below/in-line> avg)
-
-**Position vs reference levels:**
-- IPO price: $<IPO> — current is <+/-X%>
-- Day 1 close: $<D1> — current is <+/-X%>
-- All-time high: $<ATH> — current is <-X%>
-- 52-wk range: <$L–$H> (or `n/a — too few trading days`)
-
-**Implied multiples now:**
-- Trailing P/S: <X>× (on $<rev>M FY<year> revenue)
-- Forward P/S: <X>× (on $<rev>B FY<year>+1 analyst consensus)
-- Peer set: <PEER1> <X>× fwd · <PEER2> <X>× fwd · <PEER3> <X>× fwd
-
-**Reference price zones (math, not targets):**
-| Multiple | Implied price |
-|---|---|
-| 200× trailing | $<X> |
-| 150× trailing | $<X> |
-| 100× trailing | $<X> |
-| 50× trailing | $<X> |
-
-**Catalyst calendar (next 60 days):**
-- <YYYY-MM-DD> — <event> — <one short clause why it matters for entry timing>
-- ...
-
-**Risk markers:**
-- Days to analyst quiet-period end: <N>
-- Days to lockup expiry (180): <N>
-- Customer concentration: <X% from N customers>
-- Recent news / contracts that shift risk: <one line, or "no change">
-
-**Historical IPO drawdown context:**
-- Comparable hot AI/tech IPOs (median Day 2–30 drawdown): <X% to Y%>
-- Closest analogs: <TICKER1> bottomed <-X%> on Day <N>; <TICKER2> bottomed <-X%> on Day <N>
-- Current CBRS position vs that analog pattern: <one neutral observation>
+- **Range:** IPO $<IPO> · Day 1 close $<D1> · ATH $<ATH>
+- **Multiple:** ~<X>× trailing P/S | ~<X>× FY<N+1> forward
+- **Next catalyst:** <YYYY-MM-DD> <event> — <one short clause why it matters>
+- **Key risk:** <one most-material risk for entry timing, ≤15 words>
 ```
+
+That's it. Four bullets, no extras. Deeper data (full peer set, zone table, drawdown analog table) lives in `ipo-watch/state.md` "Buying Window Tracker — anchor data" for the routine's reference — surface from there only when something materially shifts (e.g. a peer's multiple rerates, a new analog IPO appears) by putting that as a `[CHANGED]` item in the Changes section, not in this Buying Window block.
 
 If the stock list is empty or none are publicly trading yet, write `_No publicly-trading watch-list stocks today._`
 
@@ -339,16 +310,14 @@ If a section other than "Next 30 Days" has no items, write `_Nothing today._` �
 
    Always emit all SIX lines, even on "no update" days — this is the daily snapshot.
 
-   **Buying Window Tracker — Slack format per stock** (compact; one block per ticker; never advice):
+   **Buying Window Tracker — Slack format per stock** (4 bullets, no tables, no extras; never advice):
 
    ```
-   *<TICKER>* (_<short business descriptor>_) | Day <N> | $<close> (<+/-X%>)
-   • Vs IPO $<IPO>: <+/-X%>  ·  Vs Day 1 $<D1>: <+/-X%>  ·  Vs ATH $<ATH>: <-X%>
-   • Implied: <X>× trailing  /  <X>× FY<N+1> fwd  (peers: <P1> <X>× · <P2> <X>×)
-   • Zones: 50× → $<X>  |  100× → $<X>  |  150× → $<X>  |  200× → $<X>
-   • Next catalysts: <YYYY-MM-DD> <event> · <YYYY-MM-DD> <event>
-   • Risk: lockup in <N>d · quiet period in <N>d · <one risk-marker clause>
-   • IPO drawdown analogs: <TICKER1> -<X>% by Day <N> · <TICKER2> -<X>% by Day <N>
+   *<TICKER>* (_<≤6-word descriptor>_) | Day <N> | $<close> (<±X%>)
+   • Range: IPO $<IPO> · Day 1 $<D1> · ATH $<ATH>
+   • Multiple: ~<X>× trailing | ~<X>× fwd
+   • Next: <YYYY-MM-DD> <event>
+   • Risk: <one most-material risk for entry timing, ≤15 words>
    ```
 
    Strict: every line is math or factual. No "buy", "sell", "entry zone", "wait" language anywhere.
