@@ -3,62 +3,61 @@
 The routine reads this on start and rewrites it before exit.
 
 ## Last run
-2026-06-06T00:00:00Z (thirty-first run — Saturday June 6; CBRS Day 16 confirmed $210.19 (−2.4%; range $196.73–$222.78; first below $200 intraday since IPO); TSLA June 5 confirmed $391.00 (−6.56%; near 200d MA ~$387); QNT Day 2 confirmed $56.26 (−6.8%); SpaceX roadshow launched June 4 (earlier than expected); S&P 500 Fast Track DENIED for SPCX (June 4); Japan offering upsized 25% to $2.5B; CBRS analyst quiet period ends Monday June 8)
+2026-06-07T00:00:00Z (thirty-second run — Sunday June 7; markets closed; SPCX book confirmed 2× oversubscribed ($150B orders); Goldman Sachs projects SPCX $474B 2030 revenue ($322B AI); Morgan Stanley projects SPCX $3.4T by 2040; IonQ Q1 2026 revenue $64.7M +755% YoY guidance raised; CBRS Day 17 Monday June 8 = analyst quiet period ends; TSLA merger $1T pay-package trigger narrative weekend)
 
 ## Tracked private companies
 | Company | Latest known IPO status | Source | Last checked |
 |---|---|---|---|
-| OpenAI | **September 2026 IPO target** (Labor Day–Thanksgiving window); confidential S-1 filed May 22; public S-1 expected ~late July/August; up to $1T valuation at listing; Goldman/JPMorgan/Morgan Stanley advising; for-profit conversion stands (Musk 9th Circuit appeal pending); $852B last private valuation; Q1 FY2026 operating margin −122%; ~$30B ARR; **CFO Sarah Friar reportedly wants 2027 delay** (no longer reports to Altman since Aug 2025; $600B infrastructure commitments flagged; May 2026 reporting); Altman pushing September 2026; no new update June 6 | https://gizmodo.com/openais-cfo-reportedly-wants-to-delay-the-ipo-from-2026-to-2027-2000753760 | 2026-06-06 |
-| Anthropic | October 2026 IPO target; **$965B post-money valuation** (Series H at **$65B raised**, closed May 28 — CONFIRMED); **CONFIDENTIAL S-1 FILED JUNE 1, 2026** (Goldman/JPMorgan/Morgan Stanley expected underwriters); **$47B annualized revenue run-rate** (as of May 28); Q2 2026 projected $10.9B revenue (+130% QoQ from Q1 $4.8B), $559M operating profit (first-ever profitable quarter); no update June 6 | https://fortune.com/2026/06/01/anthropic-s1-confidential/ | 2026-06-06 |
-| SpaceX | **S-1/A FILED JUNE 3, 2026 — FIXED PRICE $135/SHARE** ($1.75T–$1.77T valuation; 555.6M shares; $75B raise); ticker SPCX (proposed, NASDAQ); **roadshow LAUNCHED JUNE 4** (Gwynne Shotwell + CFO Bret Johnsen presenting to institutional investors; 4 days ahead of expected June 8); **pricing June 11; debut June 12**; retail access 30% of shares (~$22.5B) via Robinhood/Fidelity/Schwab/SoFi/E*Trade at IPO price; Japan offering upsized 25% to $2.5B (from $2B) — strong retail demand; **S&P 500 FAST-TRACK DENIED (June 4)**: 12-month seasoning period and GAAP profitability requirement stand; SPCX earliest S&P 500 inclusion mid-2027 ($4.94B FY2025 net loss disqualifies); **Morningstar FV $780B** (vs $1.75T IPO = "worth half the ask"); book oversubscribed; 21-bank syndicate led by Morgan Stanley, Goldman, JPMorgan, BofA, Citigroup; Tesla holds 18.99M SPCX shares ($2.56B at $135); staggered lockup; dual-class (Musk ~85% voting); NEW "may issue equity in future transactions" language | https://www.cnbc.com/2026/06/03/spacex-ipo-stock-price-roadshow-musk.html | 2026-06-06 |
-| Databricks | **~2027 IPO (CHANGED from H2 2026)** — CEO Ali Ghodsi: "2026 is a terrible year to go public"; $134B valuation (Dec 2025 Series L); **$4.8B ARR** (+55% YoY); new CFO David Conte; profitable with positive FCF; no S-1 filed; **Data+AI Summit June 15–18** (Moscone Center, SF — CEO may address IPO timeline) | https://thenextweb.com/news/databricks-ceo-calls-2026-a-terrible-year-to-go-public-as-spacex-anthropic-and-openai-prepare-to-absorb-200-billion-in-ipo-capital | 2026-06-06 |
-| Mistral | No IPO timeline confirmed; ~€14B valuation; no S-1 filed; acquiring Emmi AI (May 2026); annualized run rate $400M+ Jan 2026; **Mistral Medium 3.5 + Small 4 launched** (product news; no IPO impact) | https://www.trendingtopics.eu/mistral-buys-emmi/ | 2026-06-06 |
-| Cerebras | PUBLIC as of May 14, 2026. NASDAQ: CBRS. IPO price $185/share; Day 1 close $311.07 (+68%); Day 2 close $279.72 (−10.1%); Day 3 close ~$299; Day 4 close $314.80; Day 5 close $296.65 (−5.8%); Day 6 close $303.63 (+2.3%); Day 7 close $290.69 (May 22, −4.3%); Day 8 close $241.71 (May 26, −16.8%); Day 9 close $260.58 (May 27, +7.8%); Day 10 close $266.90 (May 28, +2.4%); Day 11 close $242.59 (May 29, −9.1%); Day 12 close $220.80 (June 1, −9.0%); Day 13 close $213.28 (June 2, −3.4%); Day 14 close $236.52 (June 3, +10.9%); Day 15 close $214.94 (June 4, −9.1% — CONFIRMED); **Day 16 close $210.19 (June 5, −2.4% — CONFIRMED; range $196.73–$222.78; intraday low $196.73 = first below $200 since IPO)**; analyst quiet period ends Monday June 8; ATH $386.34 | https://stockanalysis.com/stocks/cbrs/ | 2026-06-06 |
+| OpenAI | **September 2026 IPO target** (Labor Day–Thanksgiving window); confidential S-1 filed May 22; public S-1 expected ~late July/August; up to $1T valuation at listing; Goldman/JPMorgan/Morgan Stanley advising; for-profit conversion stands (Musk 9th Circuit appeal pending); $852B last private valuation; Q1 FY2026 operating margin −122%; ~$30B ARR; **CFO Sarah Friar reportedly wants 2027 delay** (no longer reports to Altman since Aug 2025; $600B infrastructure commitments flagged; May 2026 reporting); Altman pushing September 2026; no new update June 7 | https://gizmodo.com/openais-cfo-reportedly-wants-to-delay-the-ipo-from-2026-to-2027-2000753760 | 2026-06-07 |
+| Anthropic | October 2026 IPO target; **$965B post-money valuation** (Series H at **$65B raised**, closed May 28 — CONFIRMED); **CONFIDENTIAL S-1 FILED JUNE 1, 2026** (Goldman/JPMorgan/Morgan Stanley expected underwriters); **$47B annualized revenue run-rate** (as of May 28); Q2 2026 projected $10.9B revenue (+130% QoQ from Q1 $4.8B), $559M operating profit (first-ever profitable quarter); no update June 7 | https://fortune.com/2026/06/01/anthropic-s1-confidential/ | 2026-06-07 |
+| SpaceX | **S-1/A FILED JUNE 3, 2026 — FIXED PRICE $135/SHARE** ($1.75T–$1.77T valuation; 555.6M shares; $75B raise); ticker SPCX (proposed, NASDAQ); **roadshow LAUNCHED JUNE 4** (Gwynne Shotwell + CFO Bret Johnsen presenting to institutional investors); **pricing June 11; debut June 12**; **BOOK 2× OVERSUBSCRIBED — ~$150B ORDERS** (confirmed Reuters/Yahoo June 5); retail access 30% of shares (~$22.5B) via Robinhood/Fidelity/Schwab/SoFi/E*Trade at IPO price; Japan offering upsized 25% to $2.5B; **S&P 500 FAST-TRACK DENIED (June 4)**; Morningstar FV $780B; **Goldman Sachs: $474B total revenue 2030, $322B AI (100× growth)**; **Morgan Stanley: $3.4T revenue by 2040** (WSJ); 21-bank syndicate; Tesla holds 18.99M SPCX shares ($2.56B); dual-class (Musk ~85% voting); **merger with Tesla: Wedbush 80% odds; Kalshi 52%; "may issue equity in future transactions" clause; merger could trigger Musk ~$1T compensation package** | https://www.tradingview.com/news/reuters.com,2026:newsml_L6N42D107:0-spacex-ipo-running-two-times-oversubscribed-sources-say/ | 2026-06-07 |
+| Databricks | **~2027 IPO (CHANGED from H2 2026)** — CEO Ali Ghodsi: "2026 is a terrible year to go public"; $134B valuation (Dec 2025 Series L); **$4.8B ARR** (+55% YoY); new CFO David Conte; profitable with positive FCF; no S-1 filed; **Data+AI Summit June 15–18** (Moscone Center, SF; keynotes: Satya Nadella, Greg Brockman — CEO may address IPO timeline) | https://www.databricks.com/company/newsroom/press-releases/databricks-announces-2026-data-ai-summit-keynote-lineup-and | 2026-06-07 |
+| Mistral | No IPO timeline confirmed; ~€14B valuation; no S-1 filed; acquiring Emmi AI (May 2026); annualized run rate $400M+ Jan 2026; Mistral Medium 3.5 + Small 4 launched (product news; no IPO impact) | https://www.trendingtopics.eu/mistral-buys-emmi/ | 2026-06-07 |
+| Cerebras | PUBLIC as of May 14, 2026. NASDAQ: CBRS. IPO price $185/share; Day 1 close $311.07 (+68%); Day 2 close $279.72 (−10.1%); Day 3 close ~$299; Day 4 close $314.80; Day 5 close $296.65 (−5.8%); Day 6 close $303.63 (+2.3%); Day 7 close $290.69 (May 22, −4.3%); Day 8 close $241.71 (May 26, −16.8%); Day 9 close $260.58 (May 27, +7.8%); Day 10 close $266.90 (May 28, +2.4%); Day 11 close $242.59 (May 29, −9.1%); Day 12 close $220.80 (June 1, −9.0%); Day 13 close $213.28 (June 2, −3.4%); Day 14 close $236.52 (June 3, +10.9%); Day 15 close $214.94 (June 4, −9.1%); **Day 16 close $210.19 (June 5, −2.4% — CONFIRMED; range $196.73–$222.78; intraday low $196.73 = first below $200 since IPO)**; **Day 17 = Monday June 8 — analyst quiet period ends**; ATH $386.34 | https://stockanalysis.com/stocks/cbrs/ | 2026-06-07 |
 
 ## AI / quantum IPOs filed or upcoming
 | Company | Sector | Status | Expected Date | Ticker | Source |
 |---|---|---|---|---|---|
-| SpaceX | AI / Space | **S-1/A FILED JUNE 3; roadshow LIVE since June 4** (Shotwell + Johnsen presenting); pricing June 11; debut June 12; $1.75T valuation; $75B raise; 30% retail (~$22.5B); Japan offering upsized to $2.5B; **S&P 500 Fast Track DENIED** (earliest mid-2027); Morningstar FV $780B; book oversubscribed; staggered lockup; "may issue equity in future transactions" merger language | 2026-06-12 (debut); 2026-06-11 (pricing) | NASDAQ: SPCX | https://www.cnbc.com/2026/06/03/spacex-ipo-stock-price-roadshow-musk.html |
+| SpaceX | AI / Space | **S-1/A FILED JUNE 3; roadshow LIVE since June 4; BOOK 2× OVERSUBSCRIBED ($150B orders)** (Shotwell + Johnsen presenting); pricing June 11; debut June 12; $1.75T valuation; $75B raise; 30% retail (~$22.5B); Japan offering upsized to $2.5B; **S&P 500 Fast Track DENIED** (earliest mid-2027); Morningstar FV $780B; Goldman $474B 2030 rev ($322B AI); Morgan Stanley $3.4T by 2040; Tesla merger 80% odds (Wedbush) | 2026-06-12 (debut); 2026-06-11 (pricing) | NASDAQ: SPCX | https://www.tradingview.com/news/reuters.com,2026:newsml_L6N42D107:0-spacex-ipo-running-two-times-oversubscribed-sources-say/ |
 | OpenAI | AI | Confidential S-1 filed May 22; public S-1 ~late July/August; September 2026 IPO target (Altman); CFO Friar reportedly pushing 2027 delay; no public S-1 yet | ~2026-09 (Altman target) | TBD | https://gizmodo.com/openais-cfo-reportedly-wants-to-delay-the-ipo-from-2026-to-2027-2000753760 |
 | Anthropic | AI | **CONFIDENTIAL S-1 FILED JUNE 1, 2026**; October 2026 IPO; $47B ARR; $965B post-money; Goldman/JPM/MS underwriters; no public S-1 yet (expected ~late August/September) | ~2026-10 | TBD | https://fortune.com/2026/06/01/anthropic-s1-confidential/ |
 | Kodiak AI | AI | S-1 filed May 29 (SEC); autonomous trucking AI; secondary offering (no primary IPO proceeds); NVIDIA DRIVE Hyperion partner; ticker KDK; no listing date | TBD | KDK | https://www.sec.gov/Archives/edgar/data/1853138/000162828026039200/kdk-20260529.htm |
 | IQM Quantum Computers | Quantum | F-4 publicly filed May 14; SPAC merger with RAAQ; shareholder vote pending SEC effectiveness; ~$1.8B pre-money valuation; $450M+ cash at close ($134M PIPE at $10/sh); NYSE confirmed; mid-2026 close expected | ~2026-Q3 (est.) | NYSE: TBD (de-SPAC of RAAQ) | https://iqm.tech/press-releases/iqm-a-global-leader-for-quantum-computing-to-become-the-first-listed-european-quantum-company-through-merger-with-real-asset-acquisition-corp/ |
 | SoftBank Roze | AI / Robotics | Pre-filing; AI+robotics spinout; includes ABB robotics ($5.4B), Ampere Computing ($6.5B), DigitalBridge ($3B); $100B valuation target; H2 2026 US IPO; no S-1 filed | ~H2 2026 | TBD | https://www.cnbc.com/2026/04/30/softbank-roze-ai-robotics-ipo-100-billion-ft-report.html |
-| Databricks | AI | **~2027 IPO — CEO deferred**; $134B valuation; $4.8B ARR; no S-1 filed; Data+AI Summit June 15–18 | ~2027 | TBD | https://thenextweb.com/news/databricks-ceo-calls-2026-a-terrible-year-to-go-public-as-spacex-anthropic-and-openai-prepare-to-absorb-200-billion-in-ipo-capital |
+| Databricks | AI | **~2027 IPO — CEO deferred**; $134B valuation; $4.8B ARR; no S-1 filed; Data+AI Summit June 15–18 | ~2027 | TBD | https://www.databricks.com/company/newsroom/press-releases/databricks-announces-2026-data-ai-summit-keynote-lineup-and |
 
 ## Recently completed AI / quantum IPOs (last 30 days)
 | Company | Ticker | IPO Date | IPO Price | Notes |
 |---|---|---|---|---|
-| Quantinuum | NASDAQ: QNT | 2026-06-04 (first trade) | $60/share | Upsized IPO: 28M shares, $1.68B raised, ~$15.9B implied valuation; 20x+ oversubscribed; Day 1: open $68, high $71.35, low $58.55, close $60.38 (flat); **Day 2 (June 5): close $56.26 (−6.8%; range $51.15–$59.89); −6.3% below IPO price**; Honeywell ~48.1% voting post-IPO; analyst quiet period ends ~June 29 |
+| Quantinuum | NASDAQ: QNT | 2026-06-04 (first trade) | $60/share | Upsized IPO: 28M shares, $1.68B raised, ~$15.9B implied valuation; 20x+ oversubscribed; Day 1: open $68, high $71.35, low $58.55, close $60.38 (flat); **Day 2 (June 5): close $56.26 (−6.8%; range $51.15–$59.89); −6.3% below IPO price**; Day 3 = Monday June 8; Honeywell ~48.1% voting post-IPO; analyst quiet period ends ~June 29 |
 | Cerebras Systems | NASDAQ: CBRS | 2026-05-14 (first trade) | $185/share | $5.55B raised; Day 1 close $311.07 (+68%); Day 16 close $210.19 (June 5, −2.4%; CONFIRMED); intraday low $196.73 June 5 = first below $200 since IPO; ATH $386.34; through Day 16: 7 positive / 9 negative sessions; analyst quiet period ends June 8 |
 
 _Prior completed (outside 30-day window): Horizon Quantum HQ debuted March 20 via SPAC; Xanadu XNDU debuted March 27 via SPAC; Infleqtion INFQ debuted February 17 — all outside 30-day window._
 
 ## 30-day rolling watch items
-1. **SpaceX SPCX — roadshow LIVE (started June 4), pricing June 11, debut June 12**: S-1/A fixed $135; roadshow ahead of schedule; Shotwell + Johnsen presenting; Japan offering upsized to $2.5B; **S&P 500 Fast Track DENIED (June 4)** — removes ~$20B passive demand at debut; book still oversubscribed; Morningstar FV $780B vs $1.75T; Tesla holds $2.56B in SPCX; 5% insider/friends can sell Day 1; retail deadline June 11. First surfaced 2026-05-11; MAJOR UPDATE 2026-06-06.
-2. **Anthropic S-1 (CONFIDENTIAL FILED JUNE 1)**: Confidential S-1 submitted June 1, 2026; October 2026 IPO target; $47B ARR; Goldman/JPM/MS underwriters; public S-1 expected ~late August/September; no update June 6. First surfaced 2026-05-11; no update 2026-06-06.
-3. **OpenAI S-1 (filed May 22) + CFO timing tension**: Confidential S-1 filed May 22; September 2026 target (Altman); CFO Friar reportedly wants 2027 delay (flagged $600B infrastructure commitments + readiness concerns); next milestone = public S-1 filing. First surfaced 2026-05-11; CFO tension surfaced May 2026; no new update June 6.
-4. **CBRS analyst quiet period ends June 8 (Monday)**: Day 16 confirmed $210.19 (−2.4%; intraday low $196.73 = first below $200 since IPO); **analyst quiet period ends Monday June 8** — Morgan Stanley, Citigroup, Barclays, UBS, Mizuho, TD Cowen initiations expected; first formal underwriter price targets will reset the multiple narrative; non-underwriter analysts currently 3 buy / 2 hold with avg implied target ~$237. Through Day 16: 7 positive / 9 negative sessions. First surfaced 2026-05-19; UPDATED 2026-06-06.
-5. **Databricks IPO deferred to ~2027**: CEO Ghodsi June 2026: "a terrible year to go public"; Data+AI Summit June 15–18 may surface more color; $134B valuation, $4.8B ARR, profitable. First surfaced as "H2 2026" 2026-05-11; MAJOR CHANGE 2026-06-05.
-6. **QNT post-IPO fade — quantum sector repricing**: Day 1 close $60.38 (flat vs $60 IPO); Day 2 close $56.26 (−6.8%; now −6.3% below IPO price); Day 1 high $71.35 vs Day 2 low $51.15 = sobering range contraction; IONQ −4.44%, RGTI −10.36%, QBTS −7.89% on debut day; analyst quiet period ends ~June 29. First surfaced 2026-05-08; DEBUTED 2026-06-05; UPDATED 2026-06-06.
-7. **Tesla-SpaceX merger**: Kalshi 52% by May 2027; Polymarket 50–56%; Wedbush Dan Ives 80–90%; S-1/A "may issue equity in future transactions" clause; SpaceX roadshow live — Musk investor presentations will surface merger questions; TSLA −6.56% June 5 = worst single-day drop since IPO process began; TSLA holds $2.56B in SPCX equity. First surfaced 2026-05-31; UPDATED 2026-06-06.
-8. **S&P 500 Fast Track DENIED for mega-IPOs (June 4)**: S&P Dow Jones announced June 4 it will NOT change rules to fast-track mega-cap IPOs; 12-month seasoning period and GAAP profitability requirement stand; SPCX fails profitability ($4.94B FY2025 net loss); earliest S&P 500 inclusion for SPCX, Anthropic, OpenAI = ≥1 year post-IPO; removes ~$20B in expected passive index-buying demand for SPCX at debut; active demand (book oversubscribed) must compensate. First surfaced 2026-06-06.
-9. **CBRS Tradr 2x ETFs (CBRX/CBRZ) + analyst quiet period**: CBRX/CBRZ launched May 28 (Cboe); analyst quiet period ends June 8 (Monday) — underwriter initiations from Morgan Stanley, Citi, Barclays, UBS, Mizuho, TD Cowen; key near-term catalyst for CBRS multiple narrative. First surfaced 2026-05-29; UPDATED 2026-06-06.
-10. **AI IPO wave — Anthropic, OpenAI, SpaceX concurrent**: SpaceX roadshow live June 4; pricing June 11; Anthropic/OpenAI S-1s filed; OpenAI CFO-Altman timing tension adds uncertainty; total concurrent capital raise: $75B (SPCX confirmed); Databricks now deferred to ~2027. First surfaced 2026-06-02; UPDATED 2026-06-06.
+1. **SpaceX SPCX — book 2× OVERSUBSCRIBED; pricing June 11, debut June 12**: $150B orders for $75B raise confirmed; S-1/A fixed $135; roadshow live since June 4; Japan offering upsized to $2.5B; **Goldman Sachs: $474B total 2030 rev ($322B AI; 100× growth)**; **Morgan Stanley: $3.4T by 2040**; Morningstar FV $780B (bear); **S&P 500 Fast Track DENIED** (earliest mid-2027); **Tesla merger Wedbush 80%; Kalshi 52%; merger could trigger Musk ~$1T compensation package**; 5% insider/friends can sell Day 1; retail deadline June 11. First surfaced 2026-05-11; UPDATED 2026-06-07.
+2. **Anthropic S-1 (CONFIDENTIAL FILED JUNE 1)**: October 2026 IPO target; $47B ARR; Goldman/JPM/MS underwriters; public S-1 expected ~late August/September; no update June 7. First surfaced 2026-05-11; no update 2026-06-07.
+3. **OpenAI S-1 (filed May 22) + CFO timing tension**: Confidential S-1 filed May 22; September 2026 target (Altman); CFO Friar reportedly wants 2027 delay (flagged $600B infrastructure commitments + readiness concerns); next milestone = public S-1 filing. First surfaced 2026-05-11; no new update 2026-06-07.
+4. **CBRS analyst quiet period ends June 8 (Monday)**: Day 16 confirmed $210.19 (−2.4%; intraday low $196.73); **analyst quiet period ends Monday June 8** — Morgan Stanley, Citigroup, Barclays, UBS, Mizuho, TD Cowen initiations expected; first formal underwriter price targets will reset the multiple narrative; non-underwriter analysts 3 buy / 2 hold with avg implied target ~$237. Through Day 16: 7 positive / 9 negative sessions. First surfaced 2026-05-19; UPDATED 2026-06-07.
+5. **Databricks IPO deferred to ~2027**: CEO Ghodsi June 2026: "a terrible year to go public"; Data+AI Summit June 15–18 (Moscone Center — keynotes: Satya Nadella, Greg Brockman; CEO may address IPO timeline); $134B valuation, $4.8B ARR, profitable. First surfaced as "H2 2026" 2026-05-11; MAJOR CHANGE 2026-06-05; UPDATED 2026-06-07.
+6. **QNT post-IPO fade — quantum sector repricing**: Day 1 close $60.38 (flat vs $60 IPO); Day 2 close $56.26 (−6.8%; now −6.3% below IPO price); Day 3 = Monday June 8; IONQ −4.44%, RGTI −10.36%, QBTS −7.89% on QNT debut day; but IonQ Q1 2026 beat (+755% YoY) signals sector fundamentals strong; analyst quiet period ends ~June 29. First surfaced 2026-05-08; DEBUTED 2026-06-05; UPDATED 2026-06-07.
+7. **Tesla-SpaceX merger + $1T pay trigger**: Kalshi 52% by May 2027; Polymarket 50–56%; Wedbush Dan Ives 80–90%; S-1/A "may issue equity in future transactions" clause; **merger could trigger Musk ~$1T compensation package** (new framing June 4–7); TSLA −6.56% June 5 = worst single-day drop since IPO process began; TSLA holds $2.56B in SPCX equity; TSLA at critical 200d MA ~$387. First surfaced 2026-05-31; UPDATED 2026-06-07.
+8. **S&P 500 Fast Track DENIED for mega-IPOs (June 4)**: S&P Dow Jones announced June 4 it will NOT change rules to fast-track mega-cap IPOs; 12-month seasoning period and GAAP profitability requirement stand; SPCX fails profitability ($4.94B FY2025 net loss); earliest S&P 500 inclusion for SPCX, Anthropic, OpenAI = ≥1 year post-IPO; removes ~$20B in expected passive index-buying demand. First surfaced 2026-06-06; no change 2026-06-07.
+9. **CBRS Tradr 2x ETFs (CBRX/CBRZ) + analyst quiet period**: CBRX/CBRZ launched May 28 (Cboe); analyst quiet period ends June 8 (Monday) — underwriter initiations from Morgan Stanley, Citi, Barclays, UBS, Mizuho, TD Cowen; key near-term catalyst for CBRS multiple narrative. First surfaced 2026-05-29; UPDATED 2026-06-07.
+10. **IonQ Q1 2026 beat — quantum sector fundamentals**: Q1 2026 revenue $64.7M (+755% YoY); raised 2026 guidance to $260–270M; stock +9.5% AH; strongest quantum-sector print of 2026; signals enterprise adoption accelerating. First surfaced 2026-06-07.
 
 ## Notes for next run
-- **CBRS analyst quiet period ends Monday June 8**: Morgan Stanley, Citigroup, Barclays, UBS, Mizuho, TD Cowen expected to initiate; capture price targets and ratings; non-underwriter avg implied target currently ~$237; underwriter targets will define new consensus range. Monitor CBRS open June 8.
-- **SpaceX SPCX roadshow ongoing**: Formal presentations at institutional banks since June 4; pricing June 11 (Thursday); debut June 12 (Friday); retail allocation deadline June 11 (Robinhood/Fidelity/Schwab/SoFi/E*Trade). S&P Fast Track denied — no passive index demand.
-- **CBRS Day 17 (June 8 — Monday)**: June 5 run prediction $199–$231 for June 8; June 6 run updated prediction $194–$226 for June 8 → evaluate after confirming June 8 close. Note: analyst quiet period ends → may widen practical range beyond statistical 1-σ.
-- **TSLA June 8 close**: June 5 run prediction $408–$433 for June 8; June 6 run updated prediction $377–$405 for June 8 (σ widened to 3.5% after −6.56% Friday overshoot) → evaluate after June 8 close. TSLA at critical 200d MA ~$387.
-- **CBRS predictions for June 8 (Monday)**: Range $194–$226 logged (June 6 run; σ=7.5%; confirmed Day 16 close $210.19; analyst quiet period end skew). Evaluate after June 8 close.
-- **TSLA predictions for June 8 (Monday)**: Range $377–$405 logged (June 6 run; σ=3.5% widened; confirmed June 5 close $391.00; SpaceX roadshow + 200d MA support skew). Evaluate after June 8 close.
-- **Manual prediction tracking update (as of June 6)**:
-  - CBRS: 4 HITS / 11 evaluated (36%) — June 4 prediction $204–$237 for June 5 → actual $210.19 → HIT (~18.8% into band); system can't auto-evaluate (yfinance HTTP 403)
-  - TSLA: 6 HITS / 10 evaluated (60%) — June 4 prediction $409–$435 for June 5 → actual $391.00 → MISS (below lower bound by $18; −4.4% below)
-- **QNT Day 3 (June 8)**: Day 2 close $56.26 (−6.8%); now below IPO price $60; track Day 3 close; monitor IONQ/RGTI/QBTS.
-- **Databricks Data+AI Summit June 15–18**: CEO Ghodsi presenting; monitor for any IPO timeline commentary.
-- **TSLA σ reassessment**: June 1 actual move −4.7% and June 5 actual move −6.56% both exceeded 2.98% 1-σ band. Switched to 3.5% for June 6 run predictions. Consider whether further widening is warranted.
+- **CBRS Day 17 (Monday June 8)**: Analyst quiet period ends; Morgan Stanley, Citi, Barclays, UBS, Mizuho, TD Cowen initiations expected; capture price targets and ratings as they publish; non-underwriter avg implied target ~$237; underwriter targets will define new consensus range. June 7 run prediction for June 8 close: $194–$226.
+- **TSLA Monday June 8**: SpaceX roadshow institutional presentations continue; merger narrative elevated; TSLA at critical 200d MA ~$387. June 7 run prediction for June 8 close: $377–$405.
+- **CBRS & TSLA predictions for June 8**: Evaluate both after June 8 close (also need to evaluate June 5 and June 6 run predictions for June 8 — all target same date, most recent June 7 run is $194–$226 CBRS / $377–$405 TSLA).
+- **QNT Day 3 (Monday June 8)**: Day 2 close $56.26 (−6.8%); now below IPO price $60; track Day 3 close; monitor IONQ/RGTI/QBTS.
+- **SpaceX SPCX pricing Thursday June 11**: Retail allocation deadline June 11 (Robinhood/Fidelity/Schwab/SoFi/E*Trade); debut Friday June 12. Book 2× oversubscribed. S&P Fast Track denied — no passive index demand. Goldman $474B 2030 bull vs. Morningstar $780B FV bear.
+- **Databricks Data+AI Summit June 15–18**: Satya Nadella + Greg Brockman keynoting; CEO Ghodsi presenting; monitor for any IPO timeline commentary.
+- **Tesla merger narrative**: Intensifying ahead of SPCX debut; $1T pay-package trigger is new angle; watch TSLA on SPCX pricing day (June 11).
+- **TSLA σ**: Using 3.5% (widened from 2.98%); June 5 actual −6.56% still significantly exceeded 1-σ band. Reassess if June 8 move is again outsized.
+- **Manual prediction tracking (as of June 7)**:
+  - CBRS: 4 HITS / 11 evaluated (36%) — most recent evaluated: June 4 prediction $204–$237 for June 5 → actual $210.19 → HIT (18.8% into band); system can't auto-evaluate (yfinance HTTP 403)
+  - TSLA: 6 HITS / 10 evaluated (60%) — most recent evaluated: June 4 prediction $409–$435 for June 5 → actual $391.00 → MISS (below lower bound)
 
 ## Buying Window Tracker — anchor data (do not modify lightly)
 
@@ -96,7 +95,7 @@ These are historical anchors used by the Buying Window Tracker section. They are
 - **Notable contract:** $10B OpenAI MRA Jan 2026 (750MW compute through 2028); Amazon AWS deal noted May 2026
 - **Analyst quiet period ends:** ~2026-06-08 (25 calendar days from May 14 first trade date) — NEXT MONDAY
 - **Lockup expiry:** ~2026-11-11 (Day 180)
-- **Non-underwriter analyst coverage (as of June 6):** 3 buy, 2 hold, 0 sell; avg implied target ~$237 (~12.8% above $210)
+- **Non-underwriter analyst coverage (as of June 7):** 3 buy, 2 hold, 0 sell; avg implied target ~$237 (~12.8% above $210)
 - **S&P Dow Jones Fast Track inclusion:** effective May 25 (Memorial Day); first trading impact Tuesday May 26, 2026 (Day 8) — "sell the news" −16.8% decline
 - **S&P 500 Fast Track rule change DENIED (June 4):** S&P will NOT change rules for mega-cap IPOs; SPCX/Anthropic/OpenAI excluded from S&P 500 for ≥12 months post-IPO
 - **Nasdaq-100 Fast Entry:** rule effective May 1, 2026; threshold ~$100B market cap (top-40 NDX rank); CBRS at ~$64.1B (Day 16) is below threshold; next quarterly rebalance June 22
@@ -124,16 +123,17 @@ These are historical anchors used by the Buying Window Tracker section. They are
   - From June 2 run: $204–$237 for June 3 — **HIT** (actual Day 14 $236.52; 98.5% into band — CONFIRMED)
   - From June 3 run: $211–$245 for June 4 — **HIT** (actual Day 15 $214.94; ~12% into band — CONFIRMED)
   - From June 4 run: $204–$237 for June 5 — **HIT** (actual Day 16 $210.19; 18.8% into band — CONFIRMED)
-  - **From June 5 run: $199–$231 for June 8 (Monday)** — PENDING
-  - **From June 6 run: $194–$226 for June 8 (Monday)** (σ=7.5%; base Day 16 $210.19; analyst quiet period end skew) — most recent; evaluate after June 8 close
+  - From June 5 run: $199–$231 for June 8 (Monday) — PENDING
+  - From June 6 run: $194–$226 for June 8 (Monday) — PENDING
+  - **From June 7 run: $194–$226 for June 8 (Monday)** (σ=7.5%; base Day 16 $210.19; analyst quiet period end skew) — most recent; evaluate after June 8 close
   - Manual tracking: 4 HITS / 11 evaluated (36%)
 
 ### TSLA — Tesla, Inc.
 - **Classification:** Mature public stock (listed since 2010-06-29 NASDAQ; ~16 years public). Use 52-week low / 52-week high / 200-day moving average as reference levels.
 - **Sector:** EV manufacturer + autonomy (FSD) + humanoid robotics (Optimus) + energy storage + AI compute (Dojo)
 - **52-week range:** $273.21 (Jun 5, 2025) – $498.83 (Dec 22, 2025)
-- **200d MA:** ~$387 (per FPJ May 19 article; TSLA now barely above this level)
-- **50d MA:** ~$432.51 (per FPJ May 19 article; TSLA now well below 50d MA)
+- **200d MA:** ~$387 (per FPJ May 19 article; TSLA barely above this level as of June 5)
+- **50d MA:** ~$432.51 (per FPJ May 19 article; TSLA well below 50d MA)
 - **Confirmed closes (updated):**
   - May 15, 2026: $422.24 (−4.75%)
   - May 18, 2026: $409.99 (−2.90%)
@@ -148,13 +148,14 @@ These are historical anchors used by the Buying Window Tracker section. They are
   - June 1, 2026: $415.55 (CONFIRMED; −4.7% from $435.79)
   - June 2, 2026: $423.74 (CONFIRMED; +2.0% from $415.55)
   - June 3, 2026: $423.70 (CONFIRMED; ~flat; volume 44.34M)
-  - June 4, 2026: ~$418 (confirmed via web; −1.3%; minor discrepancy between sources: state $416.94 vs search $418.45)
+  - June 4, 2026: ~$418 (confirmed via web; −1.3%)
   - **June 5, 2026: $391.00 (CONFIRMED; −6.56%; SpaceX roadshow + S&P Fast Track denial drove sharp sell-off)**
 - **Trailing P/E:** ~360× (at $391; updated from ~387× at $420)
 - **Forward P/E:** ~186× (FY2026 consensus; at $391 from ~200× at $420)
 - **Analyst avg target:** ~$412; TSLA now $21 below analyst avg target
 - **30-day IV / realized vol:** Previously ~47.34% → daily σ ~2.98%. **WIDENED to 3.5%** for predictions (June 1 actual −4.7% and June 5 actual −6.56% both exceeded 2.98% 1-σ band); using σ=3.5% going forward until environment stabilizes.
 - **Tesla SpaceX shares:** 18.99M SPCX shares at $135 IPO price = $2.56B stated asset value
+- **Tesla-SpaceX merger:** Wedbush 80% odds; Kalshi 52%; merger could trigger Musk ~$1T compensation package; "may issue equity in future transactions" clause in S-1/A
 - **Q1 2026 results:** Revenue $16.2B (+16% YoY); EPS +8%; net income +17%; 1.3M FSD subscribers
 - **2026 CapEx:** $25B (raised from $20B at Q1 earnings April 22; FCF goes negative rest of 2026)
 - **Robotaxi status:** expansion launch June 22 (Phoenix, Miami, Orlando, Tampa, Las Vegas)
@@ -169,22 +170,23 @@ These are historical anchors used by the Buying Window Tracker section. They are
   - From June 1 run: $423–$449 for June 2 — HIT (actual $423.74; narrow hit)
   - From June 2 run: $403–$428 for June 3 — **HIT** (actual $423.70; 82.8% into band — CONFIRMED)
   - From June 3 run: $410–$436 for June 4 — **HIT** (actual $416.94; ~27% into band — CONFIRMED)
-  - From June 4 run: $409–$435 for June 5 — **MISS** (actual $391.00; below lower bound by $18; −4.4%; SpaceX S&P denial + merger fears drove outsized move)
-  - **From June 5 run: $408–$433 for June 8 (Monday)** — PENDING (based on est. $420 close; superseded by June 6 run)
-  - **From June 6 run: $377–$405 for June 8 (Monday)** (σ=3.5% widened; base confirmed $391.00; SpaceX roadshow + 200d MA support) — most recent; evaluate after June 8 close
-  - Manual tracking: 6 HITS / 10 evaluated (60%); updated June 5 as MISS
+  - From June 4 run: $409–$435 for June 5 — **MISS** (actual $391.00; below lower bound by $18; −4.4%)
+  - From June 5 run: $408–$433 for June 8 (Monday) — PENDING (superseded by June 6 run)
+  - From June 6 run: $377–$405 for June 8 (Monday) — PENDING
+  - **From June 7 run: $377–$405 for June 8 (Monday)** (σ=3.5%; base confirmed $391.00; SpaceX roadshow + 200d MA support) — most recent; evaluate after June 8 close
+  - Manual tracking: 6 HITS / 10 evaluated (60%); June 4 run → June 5 confirmed MISS
 - **Key catalyst calendar:**
-  - 2026-06-08: CBRS analyst quiet period ends; SpaceX (SPCX) roadshow presentations continue (institutional)
+  - 2026-06-08: CBRS analyst quiet period ends; SpaceX (SPCX) roadshow presentations continue; QNT Day 3
   - 2026-06-11: SpaceX (SPCX) pricing; retail allocation deadline (Robinhood/Fidelity/Schwab/SoFi/E*Trade)
   - 2026-06-12: SpaceX debut
-  - 2026-06-15–18: Databricks Data+AI Summit (CEO Ghodsi — monitor for IPO timeline comments)
+  - 2026-06-15–18: Databricks Data+AI Summit (keynotes: Satya Nadella, Greg Brockman; CEO Ghodsi — monitor for IPO timeline comments)
   - 2026-06-22: Robotaxi expansion launch (Phoenix, Miami, Orlando, Tampa, Las Vegas)
   - ~2026-06-29: QNT analyst quiet period ends
   - 2026-07-22: Q2 2026 earnings
 - **Standing risks:**
-  - Tesla-SpaceX merger: Kalshi 52%, Wedbush 80–90%; S-1/A "may issue equity" clause; roadshow Musk presentations intensify narrative
-  - Trading $21 below analyst avg target $412; NFP +251K hawkish; 30yr Treasury >5%
-  - **TSLA at +1% above 200d MA ~$387 — critical support level** (June 6)
+  - Tesla-SpaceX merger: Wedbush 80%, Kalshi 52%; "may issue equity in future transactions" clause; merger could trigger Musk ~$1T compensation package
+  - TSLA at critical 200d MA ~$387 (+1% above as of June 5); break below = levels not seen since March 2026
+  - Trading $21 below analyst avg target $412
   - FCF projected negative rest of 2026 ($25B capex)
   - China FSD clearance stalled; China sales -15% YoY
   - Australian class action (10,000 drivers; discovery deadline July 31, 2026)
@@ -199,6 +201,7 @@ These are historical anchors used by the Buying Window Tracker section. They are
 - **Day 1 low:** $58.55 (briefly below IPO price)
 - **Day 1 close:** $60.38 (flat vs $60 IPO)
 - **Day 2 close:** $56.26 (June 5, 2026 — −6.8%; range $51.15–$59.89; now −6.3% below IPO price; CONFIRMED)
+- **Day 3:** June 8, 2026 (Monday) — track close
 - **Shares offered:** 28M Class A (upsized from 26.5M)
 - **IPO gross proceeds:** $1.68B
 - **Implied valuation at $60:** ~$15.9B
