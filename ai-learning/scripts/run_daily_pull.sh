@@ -5,7 +5,9 @@
 set -uo pipefail
 export PATH="/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.local/bin"
 
-REPO="/Users/chandanshettysp/Documents/Projects/DailyRoutine"
+# Repo root derived from this script's location, so it works from any clone.
+# (Run from a clone OUTSIDE ~/Documents — that folder is TCC-protected from launchd.)
+REPO="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 HTTPS="https://github.com/chandanshetty01/DailyRoutine.git"
 CRED='credential.helper=!gh auth git-credential'
 LOG="$REPO/ai-learning/scripts/pull.log"

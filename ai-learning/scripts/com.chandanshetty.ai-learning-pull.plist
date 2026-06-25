@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- ai-learning daily pull. Install: cp to ~/Library/LaunchAgents/ then
+     launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.chandanshetty.ai-learning-pull.plist -->
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.chandanshetty.ai-learning-pull</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>/Users/chandanshettysp/.ai-learning-pull/ai-learning/scripts/run_daily_pull.sh</string>
+    </array>
+
+    <!-- Daily at 08:00 local (Mac is SGT). If asleep at 08:00, launchd runs it on next wake. -->
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key>
+        <integer>8</integer>
+        <key>Minute</key>
+        <integer>0</integer>
+    </dict>
+
+    <key>RunAtLoad</key>
+    <false/>
+
+    <key>StandardOutPath</key>
+    <string>/Users/chandanshettysp/Library/Logs/ai-learning-pull.out.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/chandanshettysp/Library/Logs/ai-learning-pull.err.log</string>
+</dict>
+</plist>
