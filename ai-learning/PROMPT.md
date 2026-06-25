@@ -25,9 +25,11 @@ Target window: **the last 7 calendar days** (for the first/backfill run, the las
    - This is exactly how the 30-day backfill (`log/2026-06-25.md`) was seeded. Prefer it whenever the browser is reachable.
    - **Not available in the unattended cloud run** (no local browser) — fall through to RSS.
 
-2. **Hosted X→RSS feed — FALLBACK for the unattended cloud run.** `WebFetch` the configured feed URL for @bcherny and parse the items (title/description = post text, link = canonical URL, pubDate = date).
-   - Feed URL: `<RSS_FEED_URL — set this once the user provisions the feed (RSS.app / self-hosted RSSHub)>`.
-   - If the feed URL is unset, empty, errors, or is stale (newest item older than the window), do not fail — fall through to WebSearch.
+2. **Hosted X→RSS feed — FALLBACK for the unattended cloud run.** `WebFetch` the feed URL for @bcherny and parse the items (title/description = post text, link = canonical URL, pubDate = date).
+   - **Primary feed:** `https://nitter.net/bcherny/rss` (verified working 2026-06-25; Nitter RSS, no auth).
+   - **If it fails** (Nitter instances go up/down): try a mirror by swapping the host — e.g. `https://nitter.poast.org/bcherny/rss`, `https://nitter.privacydev.net/bcherny/rss` — then give up on RSS. Note: the public RSSHub route `rsshub.app/twitter/user/bcherny` is dead (302 → 404), don't use it.
+   - Nitter links look like `nitter.net/bcherny/status/<id>` — rewrite them to canonical `https://x.com/bcherny/status/<id>` in the report.
+   - If every feed errors, is empty, or is stale (newest item older than the window), do not fail — fall through to WebSearch.
 
 3. **`WebSearch` — gap-fill / last resort (always available).** Search `bcherny`, `Boris Cherny Claude Code`, `from:bcherny`, `site:x.com bcherny`, plus secondary coverage (newsletters, Reddit r/ClaudeAI, HN) that quotes him. Capture paraphrased text, approximate date, and the `https://x.com/bcherny/status/<id>` URL. Direct unauthenticated `WebFetch` of `x.com` returns HTTP 402 — only `WebFetch` individual `status/<id>` URLs to confirm wording, and don't rely on the profile page.
 
