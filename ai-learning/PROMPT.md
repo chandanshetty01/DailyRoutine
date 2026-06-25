@@ -89,6 +89,31 @@ If a section has no items, write `_Nothing this week._` under the heading — do
    - **Notes for next run** — short reminders.
 2. Stage the new log file + updated `state.md`, commit with message `ai-learning: YYYY-MM-DD`, and push to `main`.
 
+3. **Send the digest to Slack — channel `#bpe-alerts` (id `C0AH8NGTUAH`).** Use the Slack MCP `send_message` tool, sending by channel **id**. ONE message containing TL;DR + top takeaways + "Try this week" + a link to the full report. Keep it mobile-scannable (short bullets, ≤ ~20 words each).
+
+   Prefer Block Kit if `send_message` accepts a `blocks` param (always include a `text` fallback). Otherwise send a single mrkdwn string with `━━━━━━━━━━━━━━━━━━` dividers. Structure:
+
+   ```
+   *🧠 AI Learning — Boris Cherny — <YYYY-MM-DD>*
+   _<window start> → <window end>_
+   ━━━━━━━━━━━━━━━━━━
+   *📝 TL;DR*
+   • <bullet 1>
+   • <bullet 2>
+   • <bullet 3>
+   ━━━━━━━━━━━━━━━━━━
+   *💡 TOP TAKEAWAYS*
+   • <post paraphrase> — _<what to learn/try>_  <https://x.com/...|post>
+   • ... (cap at 5; newest/most useful first)
+   ━━━━━━━━━━━━━━━━━━
+   *🔧 TRY THIS WEEK*
+   • <actionable item>   (omit section if none)
+   ━━━━━━━━━━━━━━━━━━
+   📄 <https://github.com/chandanshetty01/DailyRoutine/blob/main/ai-learning/log/<YYYY-MM-DD>.md|Full digest> · <https://chandanshetty01.github.io/DailyRoutine/#ai-learning|AI Learning tab>
+   ```
+
+   If there were **no new posts** this week, send a one-line message: `*🧠 AI Learning — <date>:* no new posts from @bcherny this week.` Use Slack `<url|text>` link syntax (not Markdown `[]()`). If the Slack send fails (rate limit, tool error), log it but **do not fail the run** — the report is already committed. Don't retry more than once.
+
 ## Hard rules
 
 - **Never invent posts, quotes, or dates.** If you can't verify a post happened in-window, leave it out. Mark anything uncertain as "approx date".
