@@ -3,10 +3,10 @@
 Rolling state for the ai-learning routine. Read on start, rewritten before exit.
 
 ## Last run
-2026-06-25T00:00:00Z — first automated weekly run, window 2026-06-18 → 2026-06-25. No new posts found beyond backfill coverage. Nitter RSS down (HTTP 403 on nitter.net + nitter.poast.org; ECONNREFUSED on nitter.privacydev.net); fell back to WebSearch. WebSearch returned no posts from Jun 25 not already covered.
+2026-06-25T00:00:00Z — 30-day backfill seed, window 2026-05-25 → 2026-06-24 (high-fidelity Chrome pull of @bcherny's live timeline; 48 posts harvested, ~18 featured).
 
 ## Covered posts (dedupe list — prune entries older than ~60 days)
-Featured in `log/2026-06-25.md` (backfill seed, prior git commit — status ids):
+Featured in `log/2026-06-25.md` (status ids):
 - 2069474681749754272 — Claude Tag launch (Jun 24)
 - 2069474689819480394 — per-thread sandbox model (Jun 23)
 - 2069474683372839253 — "Claude Everywhere", 65% of team code (Jun 23)
@@ -32,11 +32,8 @@ Featured in `log/2026-06-25.md` (backfill seed, prior git commit — status ids)
 - "More surfaces coming soon" for Claude Tag — follow up on which surfaces ship next.
 - Dynamic workflows still "research preview" — watch for GA.
 - Nested subagents capped at depth=5 "to start" — watch for changes.
-- Boris flagged (via press coverage, ~Jun 24) that fully automating development is "problematic" for companies and ROI focus is rising — watch for an X post elaborating on this tension.
 
 ## Notes for next run
-- Next run: Mon 2026-06-29, window 2026-06-22 → 2026-06-29.
-- Nitter RSS is currently broken (403 on nitter.net, nitter.poast.org; ECONNREFUSED on nitter.privacydev.net). Try a fresh Nitter instance or WebSearch directly.
-- RSSHub route (rsshub.app/twitter/user/bcherny) was already known dead (302→404); skip it.
-- The Jun 22–25 period has had light coverage in search — worth trying a targeted search for those dates next run to catch anything missed.
-- Prune the covered-posts list in early August 2026 (entries from May will be >60 days old).
+- This was the backfill. Next run = first true weekly: Mon 2026-06-29 (or first scheduled Monday), window = prior 7 days.
+- Source priority (per user): local Chrome pull primary → hosted X→RSS feed fallback → WebSearch gap-fill. See PROMPT.md.
+- Dedupe against the status-id list above so the Claude Tag / autonomy threads aren't re-summarized unless there's a genuine update.
