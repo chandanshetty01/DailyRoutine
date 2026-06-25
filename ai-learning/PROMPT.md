@@ -91,28 +91,28 @@ If a section has no items, write `_Nothing this week._` under the heading — do
 
 3. **Send the digest to Slack — channel `#bpe-alerts` (id `C0AH8NGTUAH`).** Use the Slack MCP `send_message` tool, sending by channel **id**. ONE message containing TL;DR + top takeaways + "Try this week" + a link to the full report. Keep it mobile-scannable (short bullets, ≤ ~20 words each).
 
-   Prefer Block Kit if `send_message` accepts a `blocks` param (always include a `text` fallback). Otherwise send a single mrkdwn string with `━━━━━━━━━━━━━━━━━━` dividers. Structure:
+   This Slack connector (`mcp.slack.com/mcp`) renders **standard Markdown** — use `**bold**`, `_italic_`, and `[text](url)` links (NOT Slack's `*bold*` or `<url|text>` mrkdwn). Send a single `message` string in this shape:
 
    ```
-   *🧠 AI Learning — Boris Cherny — <YYYY-MM-DD>*
+   **🧠 AI Learning — Boris Cherny — <YYYY-MM-DD>**
    _<window start> → <window end>_
-   ━━━━━━━━━━━━━━━━━━
-   *📝 TL;DR*
+
+   **📝 TL;DR**
    • <bullet 1>
    • <bullet 2>
    • <bullet 3>
-   ━━━━━━━━━━━━━━━━━━
-   *💡 TOP TAKEAWAYS*
-   • <post paraphrase> — _<what to learn/try>_  <https://x.com/...|post>
+
+   **💡 Top takeaways**
+   • <post paraphrase> — _<what to learn/try>_ — [post](https://x.com/...)
    • ... (cap at 5; newest/most useful first)
-   ━━━━━━━━━━━━━━━━━━
-   *🔧 TRY THIS WEEK*
-   • <actionable item>   (omit section if none)
-   ━━━━━━━━━━━━━━━━━━
-   📄 <https://github.com/chandanshetty01/DailyRoutine/blob/main/ai-learning/log/<YYYY-MM-DD>.md|Full digest> · <https://chandanshetty01.github.io/DailyRoutine/#ai-learning|AI Learning tab>
+
+   **🔧 Try this week**
+   • <actionable item>   (omit this section entirely if none)
+
+   📄 [Full digest](https://github.com/chandanshetty01/DailyRoutine/blob/main/ai-learning/log/<YYYY-MM-DD>.md) · [AI Learning tab](https://chandanshetty01.github.io/DailyRoutine/#ai-learning)
    ```
 
-   If there were **no new posts** this week, send a one-line message: `*🧠 AI Learning — <date>:* no new posts from @bcherny this week.` Use Slack `<url|text>` link syntax (not Markdown `[]()`). If the Slack send fails (rate limit, tool error), log it but **do not fail the run** — the report is already committed. Don't retry more than once.
+   If there were **no new posts** this week, send a one-line message: `**🧠 AI Learning — <date>:** no new posts from @bcherny this week.` If the Slack send fails (rate limit, tool error), log it but **do not fail the run** — the report is already committed. Don't retry more than once.
 
 ## Hard rules
 
