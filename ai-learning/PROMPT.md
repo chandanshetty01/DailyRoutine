@@ -20,22 +20,18 @@ Target window: **the last 7 calendar days** (for the first/backfill run, the las
 
 **Source priority (use the best one available in your environment, then fill gaps with the next):**
 
-1. **Local Chrome pull — PRIMARY when running on the user's machine with the Claude browser extension connected.** This is the highest-fidelity source (the user's logged-in X timeline).
-   - Navigate to `https://x.com/bcherny`, then scroll-and-harvest with the `javascript_tool`: collect every `article`, keying by the `status/<id>` permalink, capturing the `time[datetime]`, the `div[data-testid="tweetText"]` text, and any `[data-testid="socialContext"]` (repost marker). Scroll by ~0.9× viewport, wait ~900ms, repeat until the earliest harvested datetime is older than the window start (or 5 scrolls add nothing).
-   - This is exactly how the 30-day backfill (`log/2026-06-25.md`) was seeded. Prefer it whenever the browser is reachable.
-   - **Not available in the unattended cloud run** (no local browser) — fall through to RSS.
+1. **Committed raw store `ai-learning/raw/bcherny.jsonl` — PRIMARY.** A local daily job (`ai-learning/scripts/daily_pull.py`, run on the user's Mac via launchd) fetches @bcherny's timeline from Nitter — which works from a residential IP but is **403-blocked from this cloud environment** — and commits it here. So in the cloud, **read this file; do not try to fetch X/Nitter yourself.**
+   - Each line is JSON: `{id, date (ISO UTC), author, is_repost, is_reply, text, url}`. `url` is already the canonical `https://x.com/<author>/status/<id>`.
+   - Filter to items whose `date` falls in the window. Check `raw/_meta.json` `last_pull_utc`: if the store wasn't updated within the window (the user's Mac was off all week), say so in the Covers line and fall through to the attempts below to fill the gap.
+   - `is_repost: true` = he amplified someone else's post (author ≠ bcherny) — treat as "also amplified," secondary to his own posts. `is_reply: true` items are usually thread continuations of his own posts.
 
-2. **Hosted X→RSS feed — FALLBACK for the unattended cloud run.** `WebFetch` the feed URL for @bcherny and parse the items (title/description = post text, link = canonical URL, pubDate = date).
-   - **Primary feed:** `https://nitter.net/bcherny/rss` (verified working 2026-06-25; Nitter RSS, no auth).
-   - **If it fails** (Nitter instances go up/down): try a mirror by swapping the host — e.g. `https://nitter.poast.org/bcherny/rss`, `https://nitter.privacydev.net/bcherny/rss` — then give up on RSS. Note: the public RSSHub route `rsshub.app/twitter/user/bcherny` is dead (302 → 404), don't use it.
-   - Nitter links look like `nitter.net/bcherny/status/<id>` — rewrite them to canonical `https://x.com/bcherny/status/<id>` in the report.
-   - If every feed errors, is empty, or is stale (newest item older than the window), do not fail — fall through to WebSearch.
+2. **Direct Nitter RSS — fallback only if the store is stale/missing.** `WebFetch https://nitter.net/bcherny/rss` (then mirror `https://nitter.privacydev.net/bcherny/rss`). Expect **HTTP 403 from the cloud** — don't be surprised, just fall through. Rewrite `nitter.net/.../status/<id>` → `https://x.com/bcherny/status/<id>`. (The `rsshub.app/twitter/user/bcherny` route is dead — don't use it.)
 
-3. **`WebSearch` — gap-fill / last resort (always available).** Search `bcherny`, `Boris Cherny Claude Code`, `from:bcherny`, `site:x.com bcherny`, plus secondary coverage (newsletters, Reddit r/ClaudeAI, HN) that quotes him. Capture paraphrased text, approximate date, and the `https://x.com/bcherny/status/<id>` URL. Direct unauthenticated `WebFetch` of `x.com` returns HTTP 402 — only `WebFetch` individual `status/<id>` URLs to confirm wording, and don't rely on the profile page.
+3. **`WebSearch` — last resort, always available.** Queries: `bcherny`, `Boris Cherny Claude Code`, `from:bcherny`, plus secondary coverage (newsletters, Reddit r/ClaudeAI, HN). Best-effort; unauthenticated `WebFetch` of `x.com` returns HTTP 402, so only fetch individual `status/<id>` URLs to confirm wording.
 
-**Optional upgrade — X API v2 (only if a bearer token/connector is configured):** `GET /2/users/by/username/bcherny` → id, then `GET /2/users/:id/tweets?max_results=100&tweet.fields=created_at,public_metrics`. Authoritative for coverage + dates; prefer it over RSS/WebSearch when present. Ignore this block if not configured.
+**Optional upgrade — X API v2 (only if a bearer token/connector is configured):** `GET /2/users/by/username/bcherny` → id, then `GET /2/users/:id/tweets`. Authoritative; prefer it when present. Ignore if not configured.
 
-**Coverage honesty:** state which source you actually used at the top of your reasoning. RSS/WebSearch will not surface every reply or low-engagement post — capture what you can verify, never invent posts, and if the week was quiet say so plainly rather than padding.
+**Coverage honesty:** state which source you actually used in the report's Covers line. Never invent posts; if the week was quiet, say so plainly rather than padding.
 
 **Dedupe:** drop anything already summarized in `state.md`'s covered-posts list or last week's digest (match by status id / URL where possible, else by topic).
 
