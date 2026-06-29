@@ -3,11 +3,18 @@
 Rolling state for the ai-learning routine. Read on start, rewritten before exit.
 
 ## Last run
-2026-06-25T00:00:00Z — 30-day backfill seed, window 2026-05-25 → 2026-06-24 (high-fidelity Chrome pull of @bcherny's live timeline; 48 posts harvested, ~18 featured).
+2026-06-29T00:00:00Z — weekly run, window 2026-06-22 → 2026-06-29.
 
 ## Covered posts (dedupe list — prune entries older than ~60 days)
-Featured in `log/2026-06-25.md` (status ids):
-- 2069474681749754272 — Claude Tag launch (Jun 24)
+
+### Featured in `log/2026-06-29.md` (status ids):
+- 2071379474277613732 — Future product archetypes: Prototyper/Builder/Sweeper/Grower/Maintainer (Jun 28)
+- 2069474687323893796 — Claude Tag as company search engine / onboarding unlock (Jun 23)
+- 2069474688619958517 — Claude Tag proactive monitoring, emoji reactions per thread (Jun 23)
+- 2069474691010707486 — Claude Tag beta on Slack Enterprise/Team; "more surfaces coming soon" (Jun 23)
+
+### Featured in `log/2026-06-25.md` (status ids — 30-day backfill):
+- 2069474681749754272 — Claude Tag launch (Jun 23)
 - 2069474689819480394 — per-thread sandbox model (Jun 23)
 - 2069474683372839253 — "Claude Everywhere", 65% of team code (Jun 23)
 - 2068064304503660962 — Linear A decipherment (Jun 19)
@@ -23,17 +30,20 @@ Featured in `log/2026-06-25.md` (status ids):
 - Reposts noted: 2060061347522433422 ($65B raise), 2059385239781384341 (security plugin), 2060059697366110305 (effort/adaptive thinking)
 
 ## Recurring themes
-- **Autonomy playbook:** auto mode + dynamic workflows + self-verification loops + nested subagents — he returns to this constantly. Future weeks: watch for refinements.
-- **Claude Everywhere / Claude Tag:** Claude Code surfaced into Slack and other surfaces ("more surfaces coming soon").
+- **Autonomy playbook:** auto mode + dynamic workflows + self-verification loops + nested subagents — he returns to this constantly.
+- **Claude Everywhere / Claude Tag:** launched Jun 23 on Slack; more surfaces announced "coming soon." Used as company search engine, proactive team assistant, and onboarding tool internally.
 - **Model releases:** Fable 5 (Jun 9). Watch for next model news.
+- **Team structure:** Jun 28 post signals interest in how AI is reshaping roles and org design (Prototyper/Builder/Sweeper/Grower/Maintainer framework).
 - **Workflow philosophy:** redesign work, don't just speed it up; bake quality/security into the workflow.
 
 ## Open threads to watch
-- "More surfaces coming soon" for Claude Tag — follow up on which surfaces ship next.
-- Dynamic workflows still "research preview" — watch for GA.
+- "More surfaces coming soon" for Claude Tag — follow up on which non-Slack surfaces ship next.
+- Dynamic workflows still "research preview" — watch for GA announcement.
 - Nested subagents capped at depth=5 "to start" — watch for changes.
+- Product archetype framework (Jun 28) — watch for follow-up posts or application to Claude Code team.
 
 ## Notes for next run
-- This was the backfill. Next run = first true weekly: Mon 2026-06-29 (or first scheduled Monday), window = prior 7 days.
-- Source priority (per user): local Chrome pull primary → hosted X→RSS feed fallback → WebSearch gap-fill. See PROMPT.md.
-- Dedupe against the status-id list above so the Claude Tag / autonomy threads aren't re-summarized unless there's a genuine update.
+- Window: 2026-06-29 → 2026-07-06 (next Monday).
+- This week was light: one new standalone post (Jun 28 archetypes), plus a few thread continuations from the Jun 23 Claude Tag launch not captured last week.
+- Source priority: local raw store `ai-learning/raw/bcherny.jsonl` is working well (Mac pull pipeline healthy, pulled 2026-06-29T00:00Z).
+- Dedupe: all Jun 23 Claude Tag thread posts now covered; don't re-summarize unless there's a new development.
