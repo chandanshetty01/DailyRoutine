@@ -25,9 +25,16 @@ UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
 DC = "{http://purl.org/dc/elements/1.1/}"
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+REPO_ROOT = os.path.dirname(ROOT)
 RAW_DIR = os.path.join(ROOT, "raw")
 STORE = os.path.join(RAW_DIR, "bcherny.jsonl")
 META = os.path.join(RAW_DIR, "_meta.json")
+
+# Report folders listed in docs/manifest.json. The web viewer reads the manifest
+# from raw.githubusercontent.com (CDN, no rate limit) instead of depending on
+# api.github.com's 60 req/hr unauthenticated cap.
+MANIFEST_DIRS = ["ipo-watch/log", "ipo-watch/monthly", "ai-learning/log"]
+MANIFEST = os.path.join(REPO_ROOT, "docs", "manifest.json")
 
 
 def fetch():
@@ -98,7 +105,29 @@ def load_store():
     return store
 
 
+def build_manifest():
+    listing = {}
+    for rel in MANIFEST_DIRS:
+        d = os.path.join(REPO_ROOT, rel)
+        if os.path.isdir(d):
+            listing[rel] = sorted(
+                f for f in os.listdir(d) if f.endswith(".md") and not f.startswith(".")
+            )
+        else:
+            listing[rel] = []
+    with open(MANIFEST, "w") as f:
+        json.dump(
+            {"generated_at_utc": datetime.now(timezone.utc).isoformat(), "reports": listing},
+            f, indent=1,
+        )
+    total = sum(len(v) for v in listing.values())
+    print(f"manifest: {total} reports across {len(listing)} folders")
+
+
 def main():
+    if "--manifest-only" in sys.argv:
+        build_manifest()
+        return
     os.makedirs(RAW_DIR, exist_ok=True)
     used_url, body = fetch()
     fresh = parse(body)
@@ -119,6 +148,7 @@ def main():
     }
     with open(META, "w") as f:
         json.dump(meta, f, indent=2)
+    build_manifest()
     print(f"OK source={used_url} total={len(rows)} (+{len(added)} new, was {before})")
 
 

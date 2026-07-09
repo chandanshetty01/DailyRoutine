@@ -25,11 +25,11 @@ cd "$REPO" || exit 1
     echo "ERROR: pull script failed"; echo; exit 1
   fi
 
-  # 3) commit + push only if raw/ changed (porcelain catches untracked files too)
-  if [ -z "$(git status --porcelain -- ai-learning/raw)" ]; then
+  # 3) commit + push only if raw/ or the viewer manifest changed (porcelain catches untracked files too)
+  if [ -z "$(git status --porcelain -- ai-learning/raw docs/manifest.json)" ]; then
     echo "no new content"
   else
-    git add ai-learning/raw
+    git add ai-learning/raw docs/manifest.json
     git commit -q -m "ai-learning: daily pull $(date -u +%Y-%m-%d)"
     if ! git -c "$CRED" push "$HTTPS" HEAD:main; then
       echo "push rejected; rebase + retry"

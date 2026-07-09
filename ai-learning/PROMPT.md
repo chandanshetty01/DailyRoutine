@@ -87,9 +87,11 @@ If a section has no items, write `_Nothing this week._` under the heading — do
    - **Recurring themes** — short notes on what he posts about most (helps frame future digests).
    - **Open threads to watch** — things he hinted at ("more on plugins soon") to follow up next week.
    - **Notes for next run** — short reminders.
-2. Stage the new log file + updated `state.md`, commit with message `ai-learning: YYYY-MM-DD`, and push to `main`.
+2. Regenerate the web viewer's report manifest: run `python3 ai-learning/scripts/daily_pull.py --manifest-only` (writes `docs/manifest.json`; the viewer lists reports from it without hitting GitHub's rate-limited API).
 
-3. **Send the digest to Slack — channel `#bpe-alerts` (id `C0AH8NGTUAH`).** Use the Slack MCP `send_message` tool, sending by channel **id**. ONE message containing TL;DR + top takeaways + "Try this week" + a link to the full report. Keep it mobile-scannable (short bullets, ≤ ~20 words each).
+3. Stage the new log file + updated `state.md` + `docs/manifest.json`, commit with message `ai-learning: YYYY-MM-DD`, and push to `main`.
+
+4. **Send the digest to Slack — channel `#bpe-alerts` (id `C0AH8NGTUAH`).** Use the Slack MCP `send_message` tool, sending by channel **id**. ONE message containing TL;DR + top takeaways + "Try this week" + a link to the full report. Keep it mobile-scannable (short bullets, ≤ ~20 words each).
 
    This Slack connector (`mcp.slack.com/mcp`) renders **standard Markdown** — use `**bold**`, `_italic_`, and `[text](url)` links (NOT Slack's `*bold*` or `<url|text>` mrkdwn). Send a single `message` string in this shape:
 
