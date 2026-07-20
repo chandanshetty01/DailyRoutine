@@ -3,9 +3,17 @@
 Rolling state for the ai-learning routine. Read on start, rewritten before exit.
 
 ## Last run
-2026-07-13T00:00:00Z — weekly run, window 2026-07-06 → 2026-07-13.
+2026-07-20T00:00:00Z — weekly run, window 2026-07-13 → 2026-07-20.
 
 ## Covered posts (dedupe list — prune entries older than ~60 days)
+
+### Featured in `log/2026-07-20.md` (status ids):
+- 2077929379661844559 — 4-step AI adoption framework; Anthropic at step 3, bcherny at 4 (Jul 17)
+- 2077929390806073807 — /loop + /batch + dynamic workflows + worktree isolation for level 3–4 (Jul 17, reply)
+- 2077929397495959693 — AI ROI = eng-hours displaced, not usage dashboards (Jul 17, reply)
+- 2077929404219474148 — background automation enables work "not previously in range" (Jul 17, reply)
+- 2077489907350856038 — Artifacts + MCP connectors on Pro/Max/Team/Enterprise (Jul 15, repost ClaudeDevs)
+- 2077460395279692197 — domain knowledge as infrastructure: CLAUDE.md/REVIEW.md/skills = new lint rules (Jul 15)
 
 ### Featured in `log/2026-07-13.md` (status ids):
 - 2075635283211772279 — In-app browser in Claude Code desktop; sandboxed, configurable (Jul 10, repost ClaudeDevs)
@@ -26,7 +34,7 @@ Rolling state for the ai-learning routine. Read on start, rewritten before exit.
 - 2069474688619958517 — Claude Tag proactive monitoring, emoji reactions per thread (Jun 23)
 - 2069474691010707486 — Claude Tag beta on Slack Enterprise/Team; "more surfaces coming soon" (Jun 23)
 
-### Featured in `log/2026-06-25.md` (status ids — 30-day backfill, prunable after ~Aug 25):
+### Featured in `log/2026-06-25.md` (status ids — prunable after ~Aug 25):
 - 2069474681749754272 — Claude Tag launch (Jun 23)
 - 2069474689819480394 — per-thread sandbox model (Jun 23)
 - 2069474683372839253 — "Claude Everywhere", 65% of team code (Jun 23)
@@ -42,21 +50,23 @@ Rolling state for the ai-learning routine. Read on start, rewritten before exit.
 - 2060048877944778995 — dynamic workflows research preview (May 28)
 
 ## Recurring themes
-- **Autonomy playbook:** background subagents, self-verification loops, nested subagents, dynamic workflows, /checkup — he returns to setup and autonomy every week.
-- **Claude Everywhere / Claude Tag:** launched Jun 23 on Slack; multiplayer webinar Jul 8; more surfaces "coming soon"; in-app browser extends desktop into a live-web-aware workspace.
-- **Model releases & access:** Fable 5 (Jun 9) as a step-change model; rate limits normalized Jul 1; Artifacts expanding to Pro/Max.
-- **Tooling cadence:** rapid feature cadence — background subagents, /checkup, in-app browser all shipped within two weeks; Claude Code is evolving fast.
-- **Product vision:** "1% done" framing (Jul 6) + 5-archetypes post (Jun 28) together signal long-horizon ambition and deliberate team structure.
+- **Autonomy playbook:** /loop, /batch, dynamic workflows, worktree isolation, self-verification — he returns to the stack of features for org-level automation every week; now framed explicitly as the path from step 2 → 3 → 4 in his adoption ladder.
+- **Domain knowledge as infrastructure:** CLAUDE.md, skills, REVIEW.md, code comments — a major theme this week; the argument is that encoding tribal knowledge is the new lint rule, not a nice-to-have.
+- **Claude Everywhere / Claude Tag:** launched Jun 23; webinar Jul 8; Artifacts+MCP connectors Jul 15; more surfaces still "coming soon."
+- **Model releases & access:** Fable 5 (Jun 9) as step-change; Artifacts+MCP now available Pro/Max/Team/Enterprise.
+- **Product vision:** "1% done" (Jul 6) + 4-step adoption ladder (Jul 17) together signal long-horizon ambition and a deliberate framework for where teams/Anthropic are headed.
 
 ## Open threads to watch
-- Background subagents default — announced Jun 29 as "next version"; watch for GA release notes and foreground override UX.
-- "More surfaces coming soon" for Claude Tag — which non-Slack surfaces ship next.
-- Artifacts expanding to Pro/Max — no date given; watch for rollout announcement.
-- Dynamic workflows still "research preview" — watch for GA announcement.
-- In-app browser — sandboxed and configurable; watch for follow-up on persistence options and enterprise security controls.
+- **4-step adoption framework artifact** — bcherny linked to a Claude.ai artifact (https://claude.ai/code/artifact/bfdfaef9-bc62-4dfe-ba9e-c58a26c9accf); watch for a blog post or more detailed write-up.
+- **Background subagents default** — announced Jun 29 as "next version"; Jul 17 thread references "interfaces to manage multiple agents at once" suggesting shipped, but watch for explicit GA note and foreground override UX.
+- **"More surfaces coming soon" for Claude Tag** — which non-Slack surfaces ship next.
+- **Artifacts + MCP on publicly-shared artifacts** — currently unavailable on public shares; watch for this gate to lift.
+- **Dynamic workflows** — referenced as a feature in the Jul 17 adoption thread (suggesting available), but no explicit GA announcement yet.
+- **In-app browser** — sandboxed and configurable; watch for follow-up on enterprise security controls and persistence options.
 
 ## Notes for next run
-- Window: 2026-07-13 → 2026-07-20 (next Monday).
-- This week was high signal: /checkup (very actionable), in-app browser (big desktop UX change), and "1% done" origin story.
-- Source: local raw store working well; pulled 2026-07-13T00:00Z, newest post 2026-07-10.
-- Skipped: "This is pretty epic" (2074997911348244930, too short/no context), /checkup reply screenshot (2074997571563479143, thread continuation), "Getting started with loops" repost (2074208949205881033, too terse).
+- Window: 2026-07-20 → 2026-07-27 (next Monday).
+- This week was very high signal: 4-step adoption framework (most conceptual/strategic post in weeks), automation-as-infra essay (long-form, actionable), Artifacts+MCP feature drop.
+- Skipped: reply 2077929404219474148 is folded into the adoption thread summary rather than given its own bullet.
+- Source: local raw store working well; pulled 2026-07-20T00:00Z, newest post 2026-07-17. `new_this_pull: 0` means no new posts since the last pull (which is expected for a daily puller that ran overnight).
+- **RESOLVED open thread:** Artifacts expanding to Pro/Max — confirmed shipped Jul 15 (with MCP connector support added simultaneously).
