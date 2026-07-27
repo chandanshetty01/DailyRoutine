@@ -3,9 +3,16 @@
 Rolling state for the ai-learning routine. Read on start, rewritten before exit.
 
 ## Last run
-2026-07-20T00:00:00Z — weekly run, window 2026-07-13 → 2026-07-20.
+2026-07-27T00:00:00Z — weekly run, window 2026-07-20 → 2026-07-27.
 
 ## Covered posts (dedupe list — prune entries older than ~60 days)
+
+### Featured in `log/2026-07-27.md` (status ids):
+- 2080713091688583312 — Opus 5 least prompt injectable model; Auto Mode + probes → ~0 attack success rate (Jul 24)
+- 2080710971228918066 — ~80% of Claude Code system prompt removed for newer models; learnings on CLAUDE.md/skills (Jul 24, repost trq212)
+- 2079990597973057691 — Claude Security plugin beta: pre-commit vulnerability scanning from terminal (Jul 22, repost claudeai)
+- 2080750942333374870 — Opus 5 OSWorld v2 70.6% SOTA; offer to sponsor harder computer use evals (Jul 24, repost ehsanik)
+- 2080731979528679617 — Opus 5 near-consultant-quality spreadsheets/slides; rapid capability advancement (Jul 24, repost alexalbert__)
 
 ### Featured in `log/2026-07-20.md` (status ids):
 - 2077929379661844559 — 4-step AI adoption framework; Anthropic at step 3, bcherny at 4 (Jul 17)
@@ -28,7 +35,7 @@ Rolling state for the ai-learning routine. Read on start, rewritten before exit.
 - 2071653958905467027 — Claude on Microsoft Foundry/Azure GA (Jun 29, repost claudeai)
 - 2071647677591466098 — Subagents run in background by default in next Claude Code (Jun 29)
 
-### Featured in `log/2026-06-29.md` (status ids):
+### Featured in `log/2026-06-29.md` (status ids — prunable after ~Aug 29):
 - 2071379474277613732 — Future product archetypes: Prototyper/Builder/Sweeper/Grower/Maintainer (Jun 28)
 - 2069474687323893796 — Claude Tag as company search engine / onboarding unlock (Jun 23)
 - 2069474688619958517 — Claude Tag proactive monitoring, emoji reactions per thread (Jun 23)
@@ -50,23 +57,25 @@ Rolling state for the ai-learning routine. Read on start, rewritten before exit.
 - 2060048877944778995 — dynamic workflows research preview (May 28)
 
 ## Recurring themes
-- **Autonomy playbook:** /loop, /batch, dynamic workflows, worktree isolation, self-verification — he returns to the stack of features for org-level automation every week; now framed explicitly as the path from step 2 → 3 → 4 in his adoption ladder.
-- **Domain knowledge as infrastructure:** CLAUDE.md, skills, REVIEW.md, code comments — a major theme this week; the argument is that encoding tribal knowledge is the new lint rule, not a nice-to-have.
+- **Security as first-class concern:** this week: Opus 5 prompt injection resilience (bcherny's most excited post in weeks) + Claude Security plugin beta — security is becoming a core part of the Claude Code workflow, not an afterthought.
+- **Autonomy playbook:** /loop, /batch, dynamic workflows, worktree isolation, self-verification — he returns to this stack for org-level automation; now also framed as the path through the 4-step adoption ladder.
+- **Domain knowledge as infrastructure:** CLAUDE.md, skills, REVIEW.md, code comments — encoded tribal knowledge enables agents and new contributors; this week the 80% system prompt cut shows newer models need leaner, more targeted versions.
 - **Claude Everywhere / Claude Tag:** launched Jun 23; webinar Jul 8; Artifacts+MCP connectors Jul 15; more surfaces still "coming soon."
-- **Model releases & access:** Fable 5 (Jun 9) as step-change; Artifacts+MCP now available Pro/Max/Team/Enterprise.
+- **Model releases & access:** Fable 5 (Jun 9) as step-change; Opus 5 (Jul 24 week) as new capability milestone with security emphasis.
 - **Product vision:** "1% done" (Jul 6) + 4-step adoption ladder (Jul 17) together signal long-horizon ambition and a deliberate framework for where teams/Anthropic are headed.
 
 ## Open threads to watch
+- **Opus 5 prompt injection defense details** — bcherny said "More about this soon" re: the layered defense (model alignment + probes + Auto Mode); watch for a blog post or system card follow-up.
+- **80% system prompt removal learnings** — the trq212 thread on what was removed and why; watch for bcherny amplification or a dedicated CC docs page on CLAUDE.md best practices for newer models.
+- **Claude Security plugin** — in beta; watch for GA announcement and expanded scanning capabilities.
 - **4-step adoption framework artifact** — bcherny linked to a Claude.ai artifact (https://claude.ai/code/artifact/bfdfaef9-bc62-4dfe-ba9e-c58a26c9accf); watch for a blog post or more detailed write-up.
-- **Background subagents default** — announced Jun 29 as "next version"; Jul 17 thread references "interfaces to manage multiple agents at once" suggesting shipped, but watch for explicit GA note and foreground override UX.
 - **"More surfaces coming soon" for Claude Tag** — which non-Slack surfaces ship next.
 - **Artifacts + MCP on publicly-shared artifacts** — currently unavailable on public shares; watch for this gate to lift.
-- **Dynamic workflows** — referenced as a feature in the Jul 17 adoption thread (suggesting available), but no explicit GA announcement yet.
-- **In-app browser** — sandboxed and configurable; watch for follow-up on enterprise security controls and persistence options.
+- **Dynamic workflows** — referenced as a feature in the Jul 17 adoption thread; no explicit GA announcement yet.
 
 ## Notes for next run
-- Window: 2026-07-20 → 2026-07-27 (next Monday).
-- This week was very high signal: 4-step adoption framework (most conceptual/strategic post in weeks), automation-as-infra essay (long-form, actionable), Artifacts+MCP feature drop.
-- Skipped: reply 2077929404219474148 is folded into the adoption thread summary rather than given its own bullet.
-- Source: local raw store working well; pulled 2026-07-20T00:00Z, newest post 2026-07-17. `new_this_pull: 0` means no new posts since the last pull (which is expected for a daily puller that ran overnight).
-- **RESOLVED open thread:** Artifacts expanding to Pro/Max — confirmed shipped Jul 15 (with MCP connector support added simultaneously).
+- Window: 2026-07-27 → 2026-08-03 (next Sunday/Monday).
+- This week was model-release heavy: Opus 5 dropped, and bcherny's own post focused on its security properties rather than benchmarks — a notable signal about what he thinks matters most.
+- The trq212 system prompt post is a repost but high-signal; the URL leads to a thread worth deep-reading before the next run in case bcherny adds follow-up.
+- Source: local raw store working well; pulled 2026-07-27T00:00Z, newest post 2026-07-24. `new_this_pull: 0` is expected (daily puller ran overnight).
+- **RESOLVED open thread:** Background subagents as default — mentioned in the Jul 17 adoption thread ("interfaces to manage multiple agents at once" in Agent view/Desktop/iOS/Android/Tag), treating as shipped.
