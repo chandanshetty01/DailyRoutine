@@ -3,9 +3,12 @@
 Rolling state for the ai-learning routine. Read on start, rewritten before exit.
 
 ## Last run
-2026-07-27T00:00:00Z — weekly run, window 2026-07-20 → 2026-07-27.
+2026-08-03T00:00:00Z — weekly run, window 2026-07-27 → 2026-08-03. No new posts this week.
 
 ## Covered posts (dedupe list — prune entries older than ~60 days)
+
+### Featured in `log/2026-08-03.md`:
+- (no new posts this window)
 
 ### Featured in `log/2026-07-27.md` (status ids):
 - 2080713091688583312 — Opus 5 least prompt injectable model; Auto Mode + probes → ~0 attack success rate (Jul 24)
@@ -57,9 +60,9 @@ Rolling state for the ai-learning routine. Read on start, rewritten before exit.
 - 2060048877944778995 — dynamic workflows research preview (May 28)
 
 ## Recurring themes
-- **Security as first-class concern:** this week: Opus 5 prompt injection resilience (bcherny's most excited post in weeks) + Claude Security plugin beta — security is becoming a core part of the Claude Code workflow, not an afterthought.
-- **Autonomy playbook:** /loop, /batch, dynamic workflows, worktree isolation, self-verification — he returns to this stack for org-level automation; now also framed as the path through the 4-step adoption ladder.
-- **Domain knowledge as infrastructure:** CLAUDE.md, skills, REVIEW.md, code comments — encoded tribal knowledge enables agents and new contributors; this week the 80% system prompt cut shows newer models need leaner, more targeted versions.
+- **Security as first-class concern:** Opus 5 prompt injection resilience + Claude Security plugin beta — security is becoming core to the Claude Code workflow, not an afterthought.
+- **Autonomy playbook:** /loop, /batch, dynamic workflows, worktree isolation, self-verification — he returns to this stack for org-level automation; framed as the path through the 4-step adoption ladder.
+- **Domain knowledge as infrastructure:** CLAUDE.md, skills, REVIEW.md, code comments — encoded tribal knowledge enables agents and new contributors; newer models need leaner, more targeted versions.
 - **Claude Everywhere / Claude Tag:** launched Jun 23; webinar Jul 8; Artifacts+MCP connectors Jul 15; more surfaces still "coming soon."
 - **Model releases & access:** Fable 5 (Jun 9) as step-change; Opus 5 (Jul 24 week) as new capability milestone with security emphasis.
 - **Product vision:** "1% done" (Jul 6) + 4-step adoption ladder (Jul 17) together signal long-horizon ambition and a deliberate framework for where teams/Anthropic are headed.
@@ -74,8 +77,7 @@ Rolling state for the ai-learning routine. Read on start, rewritten before exit.
 - **Dynamic workflows** — referenced as a feature in the Jul 17 adoption thread; no explicit GA announcement yet.
 
 ## Notes for next run
-- Window: 2026-07-27 → 2026-08-03 (next Sunday/Monday).
-- This week was model-release heavy: Opus 5 dropped, and bcherny's own post focused on its security properties rather than benchmarks — a notable signal about what he thinks matters most.
-- The trq212 system prompt post is a repost but high-signal; the URL leads to a thread worth deep-reading before the next run in case bcherny adds follow-up.
-- Source: local raw store working well; pulled 2026-07-27T00:00Z, newest post 2026-07-24. `new_this_pull: 0` is expected (daily puller ran overnight).
-- **RESOLVED open thread:** Background subagents as default — mentioned in the Jul 17 adoption thread ("interfaces to manage multiple agents at once" in Agent view/Desktop/iOS/Android/Tag), treating as shipped.
+- Window: 2026-08-03 → 2026-08-10 (next Sunday/Monday).
+- This week was quiet — no posts from @bcherny between 2026-07-27 and 2026-08-03. Raw store confirmed fresh (pulled 2026-08-03T00:00Z), newest post remains 2026-07-24.
+- Open threads from the Opus 5 week (Jul 24) are still pending — watch for follow-ups on prompt injection defense details and the Security plugin GA.
+- If next week is also quiet, consider doing a deeper check via WebSearch or looking at secondary sources (newsletters, Reddit r/ClaudeAI, HN) for bcherny coverage.
