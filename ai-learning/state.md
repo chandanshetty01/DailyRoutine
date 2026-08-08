@@ -78,6 +78,7 @@ Rolling state for the ai-learning routine. Read on start, rewritten before exit.
 
 ## Notes for next run
 - Window: 2026-08-03 → 2026-08-10 (next Sunday/Monday).
+- **ROSTER EXPANDED (2026-08-08):** now 9 tracked accounts — bcherny + _catwu, alexalbert__, simonw, karpathy, emollick, swyx, rasbt, levelsio. Read ALL `raw/<handle>.jsonl` stores and follow the new multi-person structure in PROMPT.md (re-read it in full — the output format changed: grouped by person, ≤3/person, ≤12 total). Start per-person covered-posts lists in this file. Their stores were seeded 2026-08-08, so the full window is covered for next run.
 - This week was quiet — no posts from @bcherny between 2026-07-27 and 2026-08-03. Raw store confirmed fresh (pulled 2026-08-03T00:00Z), newest post remains 2026-07-24.
 - Open threads from the Opus 5 week (Jul 24) are still pending — watch for follow-ups on prompt injection defense details and the Security plugin GA.
 - If next week is also quiet, consider doing a deeper check via WebSearch or looking at secondary sources (newsletters, Reddit r/ClaudeAI, HN) for bcherny coverage.
