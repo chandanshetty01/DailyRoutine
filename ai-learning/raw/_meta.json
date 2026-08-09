@@ -1,5 +1,5 @@
 {
-  "last_pull_utc": "2026-08-08T13:58:44.527649+00:00",
+  "last_pull_utc": "2026-08-09T00:00:05.657861+00:00",
   "accounts": {
     "bcherny": {
       "source": "https://nitter.net/bcherny/rss",
@@ -21,9 +21,9 @@
     },
     "simonw": {
       "source": "https://nitter.net/simonw/rss",
-      "total_posts": 23,
-      "new_this_pull": 0,
-      "newest_date": "2026-08-08T02:38:16+00:00"
+      "total_posts": 25,
+      "new_this_pull": 2,
+      "newest_date": "2026-08-08T22:36:59+00:00"
     },
     "karpathy": {
       "source": "https://nitter.net/karpathy/rss",
@@ -33,21 +33,21 @@
     },
     "emollick": {
       "source": "https://nitter.net/emollick/rss",
-      "total_posts": 21,
-      "new_this_pull": 0,
-      "newest_date": "2026-08-08T05:09:34+00:00"
+      "total_posts": 25,
+      "new_this_pull": 4,
+      "newest_date": "2026-08-08T22:33:50+00:00"
     },
     "swyx": {
       "source": "https://nitter.net/swyx/rss",
-      "total_posts": 22,
-      "new_this_pull": 0,
-      "newest_date": "2026-08-08T08:36:57+00:00"
+      "total_posts": 26,
+      "new_this_pull": 4,
+      "newest_date": "2026-08-08T20:45:06+00:00"
     },
     "rasbt": {
       "source": "https://nitter.net/rasbt/rss",
-      "total_posts": 20,
-      "new_this_pull": 0,
-      "newest_date": "2026-08-07T14:37:32+00:00"
+      "total_posts": 21,
+      "new_this_pull": 1,
+      "newest_date": "2026-08-08T14:45:37+00:00"
     },
     "levelsio": {
       "source": "https://nitter.net/levelsio/rss",
