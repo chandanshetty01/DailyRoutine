@@ -3,9 +3,36 @@
 Rolling state for the ai-learning routine. Read on start, rewritten before exit.
 
 ## Last run
-2026-08-03T00:00:00Z — weekly run, window 2026-07-27 → 2026-08-03. No new posts this week.
+2026-08-10T00:00:00Z — weekly run, window 2026-08-03 → 2026-08-10.
 
 ## Covered posts (dedupe list — prune entries older than ~60 days)
+
+### Featured in `log/2026-08-10.md`:
+
+**bcherny:**
+- 2086520950259118464 — Prompt injection largely solved via stacked defenses (model training + probes + Auto Mode); ~0 success rate on unseen attacks (Aug 9)
+- 2085860677990883454 — Auto Mode becomes default in Claude Code next week; ~0 indirect prompt injection (Aug 7); blog: claude.com/blog/auto-mode-default-in-claude-code
+
+**simonw:**
+- 2085877951925801274 — Black Hat talk on OpenAI/HF incident: multi-agent spontaneous coordination via file-name messages; accidental-cyberattacks tag now 4+ labs (Aug 7); blog: simonwillison.net/2026/Aug/7/openai-timeline/
+- 2086220154468442496 — Skeptical of auto-mode fixing prompt injection; detailed counterpoint blog (Aug 8); blog: simonwillison.net/2026/Aug/8/auto-mode/
+- 2086454620470309371 — Vibe-coding games looks easy; making them fun remains beyond AI (Aug 9)
+
+**emollick:**
+- 2085747398630920220 — Mythos/Astra: autonomous exploit-finding, social engineering, spontaneous coordination — not just finding bugs on command (Aug 7)
+- 2085553951034745154 — Every benchmark score has implied asterisk: "could be significantly higher with a better harness" (Aug 7)
+- 2086338988520927368 — Escalation prompt: "I want you, not your agents, to go through everything" (Aug 9)
+
+**swyx:**
+- 2086505938144616810 — Warning: delete accumulated skills; stale skills eat context and interact badly (Aug 9); blog: forge.smol.ai/blog/dangerous-release-code-was-a-skill
+- 2085517544795079014 — Kill My SaaS $10k hackathon concept post (Aug 7)
+- 2085995879966921177 — Kill My SaaS competition live; 600+ applied, 100 admitted (Aug 8)
+
+**rasbt:**
+- 2085737107486642385 — LLMs-from-scratch hits 100k GitHub stars; teasing upcoming custom small LLM project (Aug 7)
+
+**levelsio:**
+- 2084348044808507416 — Accountant relaying AI answers to client; value of professionals is now judgment not information retrieval (Aug 3)
 
 ### Featured in `log/2026-08-03.md`:
 - (no new posts this window)
@@ -31,7 +58,7 @@ Rolling state for the ai-learning routine. Read on start, rewritten before exit.
 - 2074925531519468012 — Claude Tag webinar: single-player → multiplayer journey (Jul 8, repost _catwu)
 - 2074247226038063316 — "We are 1% done"; Claude Code origin in Anthropic safety research (Jul 6)
 
-### Featured in `log/2026-07-06.md` (status ids):
+### Featured in `log/2026-07-06.md` (status ids — prunable after ~Sep 6):
 - 2072777472970563995 — Artifacts in Claude Code "life changing"; expanding to Pro and Max (Jul 2)
 - 2072429181565288665 — Fable 5 rate limits reset; ready to build again (Jul 1, repost ClaudeDevs)
 - 2072000214634742243 — Claude Desktop on Linux launch (Jun 30)
@@ -44,41 +71,58 @@ Rolling state for the ai-learning routine. Read on start, rewritten before exit.
 - 2069474688619958517 — Claude Tag proactive monitoring, emoji reactions per thread (Jun 23)
 - 2069474691010707486 — Claude Tag beta on Slack Enterprise/Team; "more surfaces coming soon" (Jun 23)
 
-### Featured in `log/2026-06-25.md` (status ids — prunable after ~Aug 25):
-- 2069474681749754272 — Claude Tag launch (Jun 23)
-- 2069474689819480394 — per-thread sandbox model (Jun 23)
-- 2069474683372839253 — "Claude Everywhere", 65% of team code (Jun 23)
-- 2068064304503660962 — Linear A decipherment (Jun 19)
-- 2067700226669060207 — Artifacts in Claude Code (Jun 18)
-- 2064431111154053187 — Fable 5 biggest step-up (Jun 9)
-- 2064426115255730578 — self-verification loops (Jun 9)
-- 2064327225504403752 — nested subagents, depth 5 (Jun 9)
-- 2064034799711588805 — 1-year retrospective w/ @_catwu, auto vs plan mode (Jun 8)
-- 2063792263067754658 — 5 tips: running Opus autonomously (Jun 8)
-- 2063028956211867837 — Cowork for big non-chat work (Jun 5)
-- 2060390852619272526 / 2060390853835726946 / 2060390855383400729 — Salesforce agentic thread (May 29)
-- 2060048877944778995 — dynamic workflows research preview (May 28)
-
 ## Recurring themes
-- **Security as first-class concern:** Opus 5 prompt injection resilience + Claude Security plugin beta — security is becoming core to the Claude Code workflow, not an afterthought.
-- **Autonomy playbook:** /loop, /batch, dynamic workflows, worktree isolation, self-verification — he returns to this stack for org-level automation; framed as the path through the 4-step adoption ladder.
-- **Domain knowledge as infrastructure:** CLAUDE.md, skills, REVIEW.md, code comments — encoded tribal knowledge enables agents and new contributors; newer models need leaner, more targeted versions.
-- **Claude Everywhere / Claude Tag:** launched Jun 23; webinar Jul 8; Artifacts+MCP connectors Jul 15; more surfaces still "coming soon."
-- **Model releases & access:** Fable 5 (Jun 9) as step-change; Opus 5 (Jul 24 week) as new capability milestone with security emphasis.
-- **Product vision:** "1% done" (Jul 6) + 4-step adoption ladder (Jul 17) together signal long-horizon ambition and a deliberate framework for where teams/Anthropic are headed.
+
+### @bcherny (Boris Cherny)
+- **Prompt injection defense** is his anchor topic: Jul 24 Opus 5 announcement → Aug 7 confirmation of ~0 success rate → Aug 9 detailed public explanation of stacked defenses. Watch for any follow-up blog post or system card addendum.
+- **Auto Mode** going default; he and the team have used it exclusively for months.
+- **Autonomy playbook**: /loop, /batch, dynamic workflows, worktree isolation, self-verification — consistent framework across weeks.
+- **Domain knowledge as infrastructure**: CLAUDE.md, skills, REVIEW.md encoding tribal knowledge; newer models need leaner versions.
+
+### @simonw (Simon Willison)
+- **Independent empirical tester**: writes up experiments and publishes counter-takes to announcements (e.g., auto-mode skepticism this week).
+- **Security tracker**: self-appointed chronicler of the "accidental cyberattacks" phenomenon; now at 4–5 incidents.
+- **Game dev with AI**: multi-week thread on vibe-coding games; consistent finding that aesthetics is solved, game feel is not.
+
+### @emollick (Ethan Mollick)
+- **Evidence-based skeptic** on AI benchmarks and hype; consistently surfaces the harness/evaluation quality gap.
+- **Cybersecurity alarm**: most vocal this week about the implications of open-weight frontier-level models for autonomous hacking.
+- **Practical prompting**: shares concrete prompts and techniques for getting better results from coding agents.
+
+### @swyx
+- **AI tooling ecosystem** trends: skills hygiene, forge, hackathons.
+- **Competitive AI development** experiments: Kill My SaaS is his most concrete test of AI-first product velocity.
+- **Infrastructure for agents**: papercuts, agent-native git (Smol Forge), eval frameworks.
+
+### @rasbt (Sebastian Raschka)
+- **Open-source LLM education**: LLMs-from-scratch is his flagship resource; steadily adds new material.
+- **Architecture deep-dives**: weekly analyses of new open-weight model releases (Kimi K3, Laguna, etc.).
+- **Harness/token efficiency** observations: Claude Code uses 2–3x more tokens than other harnesses at similar success rates.
+
+### @levelsio (Pieter Levels)
+- **Indie builder shipping with AI**: vibe-codes tools (calorie tracker, Photo AI video editor) and reflects on AI changing professional services.
+- **AI in professional services**: accountant-as-AI-relay observation this week; recurring theme of when humans add value vs. when AI suffices.
+
+### @_catwu, @alexalbert__, @karpathy
+- All quiet for 2+ weeks. _catwu and alexalbert__ newest posts Jul 24; karpathy newest Aug 2.
+- Watch karpathy for Anthropic R&D posts; _catwu for Claude Code PM previews.
 
 ## Open threads to watch
-- **Opus 5 prompt injection defense details** — bcherny said "More about this soon" re: the layered defense (model alignment + probes + Auto Mode); watch for a blog post or system card follow-up.
-- **80% system prompt removal learnings** — the trq212 thread on what was removed and why; watch for bcherny amplification or a dedicated CC docs page on CLAUDE.md best practices for newer models.
-- **Claude Security plugin** — in beta; watch for GA announcement and expanded scanning capabilities.
-- **4-step adoption framework artifact** — bcherny linked to a Claude.ai artifact (https://claude.ai/code/artifact/bfdfaef9-bc62-4dfe-ba9e-c58a26c9accf); watch for a blog post or more detailed write-up.
-- **"More surfaces coming soon" for Claude Tag** — which non-Slack surfaces ship next.
-- **Artifacts + MCP on publicly-shared artifacts** — currently unavailable on public shares; watch for this gate to lift.
-- **Dynamic workflows** — referenced as a feature in the Jul 17 adoption thread; no explicit GA announcement yet.
+
+- **Auto Mode as default** — ships "next week" per Aug 7 bcherny post; watch for announcement and user reports on whether it changes workflows meaningfully.
+- **simonw vs. bcherny on prompt injection** — simonw's Aug 8 blog explicitly says he isn't persuaded; watch for bcherny response or a more detailed Anthropic write-up to address the skepticism.
+- **Kill My SaaS results** — swyx's $10k hackathon; watch for final evaluation and which SaaS categories proved hard to clone.
+- **rasbt's custom small LLM project** — teased Aug 7 as "keeping me super busy this month"; likely ships August/September.
+- **Open-weight frontier models + cybersecurity** — emollick explicitly asked "what's the plan" for open-weight Mythos/Astra-level models; no institutional answer yet.
+- **Claude Security plugin** — still in beta; watch for GA announcement.
+- **"More surfaces coming soon" for Claude Tag** — June 23 promise still open.
+- **Artifacts + MCP on publicly-shared artifacts** — still unavailable on public shares.
 
 ## Notes for next run
-- Window: 2026-08-03 → 2026-08-10 (next Sunday/Monday).
-- **ROSTER EXPANDED (2026-08-08):** now 9 tracked accounts — bcherny + _catwu, alexalbert__, simonw, karpathy, emollick, swyx, rasbt, levelsio. Read ALL `raw/<handle>.jsonl` stores and follow the new multi-person structure in PROMPT.md (re-read it in full — the output format changed: grouped by person, ≤3/person, ≤12 total). Start per-person covered-posts lists in this file. Their stores were seeded 2026-08-08, so the full window is covered for next run.
-- This week was quiet — no posts from @bcherny between 2026-07-27 and 2026-08-03. Raw store confirmed fresh (pulled 2026-08-03T00:00Z), newest post remains 2026-07-24.
-- Open threads from the Opus 5 week (Jul 24) are still pending — watch for follow-ups on prompt injection defense details and the Security plugin GA.
-- If next week is also quiet, consider doing a deeper check via WebSearch or looking at secondary sources (newsletters, Reddit r/ClaudeAI, HN) for bcherny coverage.
+
+- Window: 2026-08-10 → 2026-08-17.
+- **Full 9-account roster is active and populated.** All stores are fresh (pulled 2026-08-10T00:00Z).
+- This week was rich: bcherny/simonw/emollick/swyx all had substantive posts; _catwu/alexalbert__/karpathy were quiet. Keep the multi-person structure.
+- The auto-mode announcement + simonw counterpoint is the most important thread to follow up next week — look for bcherny's response or a community reaction.
+- emollick's cybersecurity alarm posts were numerous and high-signal; filter carefully next week if the Black Hat fallout continues.
+- swyx's Kill My SaaS hackathon closes Wednesday Aug 12 — results may appear next week.
