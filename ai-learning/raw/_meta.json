@@ -1,17 +1,11 @@
 {
-  "last_pull_utc": "2026-08-13T00:00:07.197254+00:00",
+  "last_pull_utc": "2026-08-14T05:18:30.474201+00:00",
   "accounts": {
     "bcherny": {
-      "source": "https://nitter.net/bcherny/rss",
-      "total_posts": 53,
-      "new_this_pull": 0,
-      "newest_date": "2026-08-11T21:07:03+00:00"
+      "error": "https://lightbrd.com/bcherny/rss: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
     },
     "_catwu": {
-      "source": "https://nitter.net/_catwu/rss",
-      "total_posts": 20,
-      "new_this_pull": 0,
-      "newest_date": "2026-08-08T10:27:21+00:00"
+      "error": "https://lightbrd.com/_catwu/rss: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
     },
     "alexalbert__": {
       "source": "https://nitter.net/alexalbert__/rss",
@@ -21,9 +15,9 @@
     },
     "simonw": {
       "source": "https://nitter.net/simonw/rss",
-      "total_posts": 34,
-      "new_this_pull": 0,
-      "newest_date": "2026-08-11T00:39:34+00:00"
+      "total_posts": 38,
+      "new_this_pull": 4,
+      "newest_date": "2026-08-13T22:14:11+00:00"
     },
     "karpathy": {
       "source": "https://nitter.net/karpathy/rss",
@@ -33,27 +27,27 @@
     },
     "emollick": {
       "source": "https://nitter.net/emollick/rss",
-      "total_posts": 45,
-      "new_this_pull": 2,
-      "newest_date": "2026-08-12T15:06:35+00:00"
+      "total_posts": 51,
+      "new_this_pull": 6,
+      "newest_date": "2026-08-13T23:20:24+00:00"
     },
     "swyx": {
       "source": "https://nitter.net/swyx/rss",
-      "total_posts": 49,
-      "new_this_pull": 5,
-      "newest_date": "2026-08-12T20:40:12+00:00"
+      "total_posts": 69,
+      "new_this_pull": 20,
+      "newest_date": "2026-08-14T04:28:15+00:00"
     },
     "rasbt": {
       "source": "https://nitter.net/rasbt/rss",
       "total_posts": 24,
-      "new_this_pull": 2,
+      "new_this_pull": 0,
       "newest_date": "2026-08-12T13:26:41+00:00"
     },
     "levelsio": {
       "source": "https://nitter.net/levelsio/rss",
-      "total_posts": 40,
-      "new_this_pull": 18,
-      "newest_date": "2026-08-12T21:18:30+00:00"
+      "total_posts": 54,
+      "new_this_pull": 14,
+      "newest_date": "2026-08-13T23:07:44+00:00"
     }
   }
 }
