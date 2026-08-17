@@ -3,9 +3,36 @@
 Rolling state for the ai-learning routine. Read on start, rewritten before exit.
 
 ## Last run
-2026-08-10T00:00:00Z — weekly run, window 2026-08-03 → 2026-08-10.
+2026-08-17T00:00:00Z — weekly run, window 2026-08-10 → 2026-08-17.
 
 ## Covered posts (dedupe list — prune entries older than ~60 days)
+
+### Featured in `log/2026-08-17.md`:
+
+**bcherny:**
+- 2088014489438621990 — Multi-week maintenance routine experiment via Slack: 388 PRs opened (crash fuzzer, dup unifier, dead-code remover), 180 merged after review (Aug 13)
+- 2087284684103537011 — LLM bugs have shifted from off-by-ones to system design and UX flaws; adversarial code review is the counter (Aug 11)
+
+**simonw:**
+- 2086931955539742985 — Claude Haiku "hallucinates wildly"; flagged as model still powering Claude Code's WebFetch tool (Aug 10)
+- 2089112517796827439 — Qwen 3.8 27B local review: "most fun with a local model"; vision-capable, runs LM Studio on M5 Max (Aug 16)
+
+**emollick:**
+- 2087229045029404835 — LLMs cross-pollinating science subfields = revolutionary; solves "burden of knowledge" bottleneck (Aug 11)
+- 2088864599701442925 — o3-mini agentic loop produced exam questions matching high-stakes standardized test psychometrics — one of the largest such field studies (Aug 16)
+- 2089042815405686919 — Non-verifiable AI benchmarks should use qualitative research methods; AI researchers should read psychometrics before reinventing from scratch (Aug 16)
+
+**swyx:**
+- 2087437017840046156 — "How to steal a reasoning trace" — swyx calls it one of the most important papers of 2026; extended-thinking traces are a new attack surface (Aug 12)
+- 2088073777779515615 — /align-me modification: batch all design clarification questions upfront in one shot instead of one at a time (Aug 14)
+
+**rasbt:**
+- 2088631263737364818 — Claude text watermarking explainer: inference-time secret key selects among tied tokens; EU AI Act required, applied globally (Aug 15)
+- 2087180773497421926 — Meta Muse Glimmer 30B architecture: first Apache 2.0 large open-weight model; 52 KiB/token KV cache vs Gemma 4's 840 KiB (Aug 11)
+
+**levelsio:**
+- 2087305386743206224 — Claude getting "extremely preachy every day"; ready to switch to Grok (Aug 11)
+- 2087579763158216795 — Switched ideasai.com auto app builder back-end from Claude to Grok 4.6; cites repeated refusals (Aug 12)
 
 ### Featured in `log/2026-08-10.md`:
 
@@ -74,55 +101,57 @@ Rolling state for the ai-learning routine. Read on start, rewritten before exit.
 ## Recurring themes
 
 ### @bcherny (Boris Cherny)
-- **Prompt injection defense** is his anchor topic: Jul 24 Opus 5 announcement → Aug 7 confirmation of ~0 success rate → Aug 9 detailed public explanation of stacked defenses. Watch for any follow-up blog post or system card addendum.
-- **Auto Mode** going default; he and the team have used it exclusively for months.
-- **Autonomy playbook**: /loop, /batch, dynamic workflows, worktree isolation, self-verification — consistent framework across weeks.
-- **Domain knowledge as infrastructure**: CLAUDE.md, skills, REVIEW.md encoding tribal knowledge; newer models need leaner versions.
+- **Autonomous maintenance routines** is the new anchor: 388 PRs across repos in a few weeks, 180 merged; model self-tunes its own prompt on misses. Next expected: more data on merge rates, specific routine prompts published.
+- **Prompt injection defense**: stacked defenses → ~0 attack success rate; Auto Mode now default. Thread with simonw ongoing.
+- **LLM bug taxonomy shifting**: off-by-ones → system design/UX/missing context. Adversarial code review as the structural counter.
+- **Autonomy playbook**: /loop, /batch, dynamic workflows, worktree isolation, self-verification — consistent across weeks.
 
 ### @simonw (Simon Willison)
-- **Independent empirical tester**: writes up experiments and publishes counter-takes to announcements (e.g., auto-mode skepticism this week).
-- **Security tracker**: self-appointed chronicler of the "accidental cyberattacks" phenomenon; now at 4–5 incidents.
-- **Game dev with AI**: multi-week thread on vibe-coding games; consistent finding that aesthetics is solved, game feel is not.
+- **Independent empirical tester**: experiments, publishes counter-takes (auto-mode skepticism, Haiku hallucination report, Qwen review).
+- **Model quality watchdog**: flagged Haiku as Claude Code's WebFetch model this week — calls it his "current least favorite model."
+- **Security tracker**: accidental-cyberattacks tag now 4–5 incidents; Black Hat talk published.
+- **Open-weight enthusiast**: Qwen 3.8 27B review was his most enthusiastic local-model write-up in memory.
 
 ### @emollick (Ethan Mollick)
-- **Evidence-based skeptic** on AI benchmarks and hype; consistently surfaces the harness/evaluation quality gap.
-- **Cybersecurity alarm**: most vocal this week about the implications of open-weight frontier-level models for autonomous hacking.
-- **Practical prompting**: shares concrete prompts and techniques for getting better results from coding agents.
+- **Evidence-based AI optimist/skeptic**: this week added science cross-pollination thesis alongside usual benchmarking caveats.
+- **Evaluation methodology advocate**: pushed qualitative research methods for non-verifiable benchmarks — not just "use a better harness."
+- **Harness > model tier**: o3-mini agentic loop result reinforces his consistent finding.
+- **Cybersecurity alarm**: still tracking but quieter this week than last.
 
 ### @swyx
-- **AI tooling ecosystem** trends: skills hygiene, forge, hackathons.
-- **Competitive AI development** experiments: Kill My SaaS is his most concrete test of AI-first product velocity.
-- **Infrastructure for agents**: papercuts, agent-native git (Smol Forge), eval frameworks.
+- **AI tooling ecosystem**: Kill My SaaS results came in (multiple submissions in one weekend, 183 sub-agents); batch clarification UX pattern.
+- **Security surface tracker**: reasoning trace theft paper as a new attack vector for extended-thinking deployments.
+- **Infrastructure for agents**: consistent; forge, eval frameworks, skills hygiene from last week.
 
 ### @rasbt (Sebastian Raschka)
-- **Open-source LLM education**: LLMs-from-scratch is his flagship resource; steadily adds new material.
-- **Architecture deep-dives**: weekly analyses of new open-weight model releases (Kimi K3, Laguna, etc.).
-- **Harness/token efficiency** observations: Claude Code uses 2–3x more tokens than other harnesses at similar success rates.
+- **Architecture deep-dives**: Meta Muse Glimmer 30B this week (KV-cache efficiency standout); consistent weekly cadence.
+- **Open-source LLM education**: LLMs-from-scratch still active; custom small LLM project still in progress.
+- **Watermarking explainer**: Claude EU AI Act watermarking became his most-read post this cycle.
 
 ### @levelsio (Pieter Levels)
-- **Indie builder shipping with AI**: vibe-codes tools (calorie tracker, Photo AI video editor) and reflects on AI changing professional services.
-- **AI in professional services**: accountant-as-AI-relay observation this week; recurring theme of when humans add value vs. when AI suffices.
+- **Refusal frustration → model switching**: switched ideasai.com to Grok 4.6 this week; signal that Claude's refusal tuning is losing production builders.
+- **Indie builder shipping with AI**: primarily posts fitness/food/travel; AI signal is sparse but high-value when it appears.
 
 ### @_catwu, @alexalbert__, @karpathy
-- All quiet for 2+ weeks. _catwu and alexalbert__ newest posts Jul 24; karpathy newest Aug 2.
-- Watch karpathy for Anthropic R&D posts; _catwu for Claude Code PM previews.
+- All quiet again. _catwu newest Aug 13 (logistics only); alexalbert__ newest Aug 14 (repost only); karpathy newest Aug 2 (outside window).
+- Watch karpathy for any Anthropic R&D posts; _catwu for Claude Code PM previews.
 
 ## Open threads to watch
 
-- **Auto Mode as default** — ships "next week" per Aug 7 bcherny post; watch for announcement and user reports on whether it changes workflows meaningfully.
-- **simonw vs. bcherny on prompt injection** — simonw's Aug 8 blog explicitly says he isn't persuaded; watch for bcherny response or a more detailed Anthropic write-up to address the skepticism.
-- **Kill My SaaS results** — swyx's $10k hackathon; watch for final evaluation and which SaaS categories proved hard to clone.
-- **rasbt's custom small LLM project** — teased Aug 7 as "keeping me super busy this month"; likely ships August/September.
-- **Open-weight frontier models + cybersecurity** — emollick explicitly asked "what's the plan" for open-weight Mythos/Astra-level models; no institutional answer yet.
+- **simonw vs. bcherny on prompt injection** — simonw's Aug 8 blog says he's not persuaded; bcherny hasn't publicly responded. Watch for a more detailed Anthropic write-up or bcherny's counter.
+- **Kill My SaaS final results** — swyx's hackathon produced real submissions; watch for winner announcement and which SaaS categories proved hardest to clone.
+- **rasbt's custom small LLM project** — teased Aug 7 as "keeping me super busy this month"; still no update; likely ships August/September.
+- **levelsio migration trajectory** — switched to Grok 4.6 this week; watch for follow-up on whether the switch held or they returned to Claude.
+- **Claude Haiku in WebFetch** — simonw flagged it explicitly; watch for Anthropic response or a tool-model update in Claude Code.
+- **Reasoning trace security** — swyx called it the most important paper of 2026; watch for follow-up from security researchers or model providers on mitigations.
+- **Open-weight frontier models + cybersecurity** — emollick's alarm from Aug 7 still unanswered institutionally; Meta Muse Glimmer 30B now in the field.
 - **Claude Security plugin** — still in beta; watch for GA announcement.
-- **"More surfaces coming soon" for Claude Tag** — June 23 promise still open.
-- **Artifacts + MCP on publicly-shared artifacts** — still unavailable on public shares.
 
 ## Notes for next run
 
-- Window: 2026-08-10 → 2026-08-17.
-- **Full 9-account roster is active and populated.** All stores are fresh (pulled 2026-08-10T00:00Z).
-- This week was rich: bcherny/simonw/emollick/swyx all had substantive posts; _catwu/alexalbert__/karpathy were quiet. Keep the multi-person structure.
-- The auto-mode announcement + simonw counterpoint is the most important thread to follow up next week — look for bcherny's response or a community reaction.
-- emollick's cybersecurity alarm posts were numerous and high-signal; filter carefully next week if the Black Hat fallout continues.
-- swyx's Kill My SaaS hackathon closes Wednesday Aug 12 — results may appear next week.
+- Window: 2026-08-17 → 2026-08-24.
+- All stores fresh as of 2026-08-17T00:00Z; all 9 accounts populated.
+- Active accounts this week: bcherny, simonw, emollick, swyx, rasbt, levelsio. _catwu, alexalbert__, karpathy all quiet.
+- Priority threads: levelsio Grok migration follow-up; bcherny response to simonw prompt injection; Kill My SaaS winner; rasbt small LLM project.
+- emollick had 20+ in-window posts this week; filter ruthlessly next time — prioritize novel claims over amplification.
+- The `log/2026-06-29.md` entries become prunable Aug 29; the `log/2026-07-06.md` entries become prunable Sep 6.
