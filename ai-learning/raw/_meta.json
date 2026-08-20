@@ -1,16 +1,16 @@
 {
-  "last_pull_utc": "2026-08-19T00:11:32.292739+00:00",
+  "last_pull_utc": "2026-08-20T00:06:01.274883+00:00",
   "accounts": {
     "bcherny": {
       "source": "https://nitter.net/bcherny/rss",
-      "total_posts": 60,
-      "new_this_pull": 3,
-      "newest_date": "2026-08-18T16:48:39+00:00"
+      "total_posts": 62,
+      "new_this_pull": 2,
+      "newest_date": "2026-08-19T03:55:32+00:00"
     },
     "_catwu": {
       "source": "https://nitter.net/_catwu/rss",
       "total_posts": 22,
-      "new_this_pull": 1,
+      "new_this_pull": 0,
       "newest_date": "2026-08-17T21:53:14+00:00"
     },
     "alexalbert__": {
@@ -20,10 +20,7 @@
       "newest_date": "2026-08-14T19:16:18+00:00"
     },
     "simonw": {
-      "source": "https://nitter.net/simonw/rss",
-      "total_posts": 50,
-      "new_this_pull": 0,
-      "newest_date": "2026-08-16T23:08:53+00:00"
+      "error": "https://lightbrd.com/simonw/rss: HTTP Error 403: Forbidden"
     },
     "karpathy": {
       "source": "https://nitter.net/karpathy/rss",
@@ -33,27 +30,24 @@
     },
     "emollick": {
       "source": "https://nitter.net/emollick/rss",
-      "total_posts": 90,
-      "new_this_pull": 9,
-      "newest_date": "2026-08-18T23:38:49+00:00"
+      "total_posts": 95,
+      "new_this_pull": 5,
+      "newest_date": "2026-08-19T14:33:56+00:00"
     },
     "swyx": {
-      "source": "https://nitter.net/swyx/rss",
-      "total_posts": 94,
-      "new_this_pull": 6,
-      "newest_date": "2026-08-18T19:36:41+00:00"
+      "error": "https://lightbrd.com/swyx/rss: HTTP Error 403: Forbidden"
     },
     "rasbt": {
       "source": "https://nitter.net/rasbt/rss",
       "total_posts": 28,
-      "new_this_pull": 1,
+      "new_this_pull": 0,
       "newest_date": "2026-08-18T01:38:49+00:00"
     },
     "levelsio": {
       "source": "https://nitter.net/levelsio/rss",
-      "total_posts": 105,
-      "new_this_pull": 17,
-      "newest_date": "2026-08-19T00:21:14+00:00"
+      "total_posts": 113,
+      "new_this_pull": 8,
+      "newest_date": "2026-08-19T23:22:58+00:00"
     }
   }
 }
