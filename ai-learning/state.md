@@ -3,9 +3,12 @@
 Rolling state for the ai-learning routine. Read on start, rewritten before exit.
 
 ## Last run
-2026-08-24T00:00:00Z — weekly run, window 2026-08-17 → 2026-08-24.
+2026-08-31T00:00:00Z — weekly run, window 2026-08-24 → 2026-08-31. **Data gap: all raw stores stale (newest data Aug 19–20); full window missed. No posts included in digest.**
 
 ## Covered posts (dedupe list — prune entries older than ~60 days)
+
+### Featured in `log/2026-08-31.md`:
+_(No posts — full data gap. Mac daily pull did not cover Aug 20–31.)_
 
 ### Featured in `log/2026-08-24.md`:
 
@@ -114,73 +117,70 @@ Rolling state for the ai-learning routine. Read on start, rewritten before exit.
 - 2071653958905467027 — Claude on Microsoft Foundry/Azure GA (Jun 29, repost claudeai)
 - 2071647677591466098 — Subagents run in background by default in next Claude Code (Jun 29)
 
-### Featured in `log/2026-06-29.md` (status ids — prunable after ~Aug 29):
-- 2071379474277613732 — Future product archetypes: Prototyper/Builder/Sweeper/Grower/Maintainer (Jun 28)
-- 2069474687323893796 — Claude Tag as company search engine / onboarding unlock (Jun 23)
-- 2069474688619958517 — Claude Tag proactive monitoring, emoji reactions per thread (Jun 23)
-- 2069474691010707486 — Claude Tag beta on Slack Enterprise/Team; "more surfaces coming soon" (Jun 23)
-
 ## Recurring themes
 
 ### @bcherny (Boris Cherny)
-- **Autonomous maintenance routines** still the anchor: 388 PRs/180 merged was last week's headliner; this week amplified protein binder science result and Cowork expansion.
-- **Prompt injection defense**: stacked defenses → ~0 attack success rate; Auto Mode default. Thread with simonw ongoing.
-- **LLM bug taxonomy shifting**: off-by-ones → system design/UX/missing context. Adversarial code review as the structural counter.
-- **Claude Code Desktop QoL**: actively improving startup latency and small friction points; consistent signal of "daily driver" focus.
-- **Reposts signal**: bcherny amplified two major Anthropic announcements this week (protein binders, Cowork mobile/web) — suggests he views both as milestone moments.
+- **Autonomous maintenance routines**: 388 PRs/180 merged is still the landmark data point; Cowork expansion + protein binder repost signal he views both as milestone moments.
+- **Prompt injection defense**: stacked defenses → ~0 attack success rate; Auto Mode default. Thread with simonw still unresolved.
+- **LLM bug taxonomy shifting**: off-by-ones → system design/UX/missing context. Adversarial code review as structural counter.
+- **Claude Code Desktop QoL**: actively improving startup latency and small friction points.
 
 ### @simonw (Simon Willison)
-- **Stale this week** (403 error, no in-window posts). Last major items: Qwen 27B enthusiastic review (Aug 16), Haiku hallucination flag (Aug 10).
-- **Model quality watchdog**: continues to flag capability and trust gaps; Claude Haiku in WebFetch is an open concern.
-- **Security tracker**: accidental-cyberattacks tag now 4–5 incidents.
+- **Stale since Aug 20 pull** (403 error). Last covered items: Qwen 27B enthusiastic review (Aug 16), Haiku hallucination flag (Aug 10).
+- **Model quality watchdog**: flags capability and trust gaps; Claude Haiku in WebFetch is an open concern still unresolved by Anthropic.
+- **Security tracker**: accidental-cyberattacks tag active.
+- **Blog active**: simonwillison.net had posts through Aug 21 (llm-openrouter 0.7, llm 0.32.1) — blog activity doesn't require X store recovery.
 
 ### @emollick (Ethan Mollick)
-- **Eval calibration**: pushed back on Qwen 27B for agentic tasks ("immediately obviously not frontier") despite simonw enthusiasm — do your own benchmarking.
-- **Reproducibility advocate**: multiverse reporting + prompt disclosure now his concrete recommendation.
-- **Variance as underrated gap**: new addition this week — smart models are bad at generating diverse outputs; harder problem than it looks.
-- **Alignment mainstream signal**: CoT monitoring at 20% inference compute = evidence alignment is production-serious.
-- **Very high posting volume**: still 20+ posts per week; continue filtering ruthlessly.
+- **Eval calibration**: pushed back on Qwen 27B for agentic tasks.
+- **Reproducibility advocate**: multiverse reporting + prompt disclosure.
+- **Creative variance gap**: novel addition — smart models bad at generating diverse outputs.
+- **Alignment mainstream signal**: CoT monitoring at 20% inference compute.
+- **Book / new work**: WebSearch suggests a "co-intelligence" follow-up ("co-existence.ai") and agentic shopping research may be in progress — unverified in-window.
+- **Very high posting volume**: continue filtering ruthlessly.
 
 ### @_catwu (Cat Wu)
-- **Feature preview amplification**: /design command preview this week; continues to signal upcoming Claude Code PM content.
-- Watch for more original takes on feature workflows as Cowork and Code expand to new surfaces.
+- **Feature preview amplification**: /design command preview confirmed. Watch for GA or Desktop expansion.
 
 ### @swyx
-- **AI tooling ecosystem**: Kill My SaaS closed (69 submissions); context engineering workshop surfaced as practical resource.
-- **Security surface tracker**: reasoning trace theft paper from last week; no follow-up this week.
-- **Store shows 403 error on last pull** — JSONL had partial data; watch for recovery.
+- **AI tooling ecosystem**: Kill My SaaS closed (69 submissions); context engineering workshop surfaced.
+- **Store 403 error**: JSONL partial since Aug 20; recovery unknown.
 
 ### @rasbt (Sebastian Raschka)
-- **Architecture deep-dives**: one clarifying follow-up this week (watermarking detection = cheap hash-like check).
-- **Custom small LLM project**: still no update; teased Aug 7 as keeping him "super busy"; likely ships Sep–Oct.
+- **Architecture deep-dives**: continues weekly; Glimmer 30B, watermarking clarification covered.
+- **Custom small LLM project**: teased Aug 7; still no update in covered window — likely ships Sep–Oct.
+- **Build a Reasoning Model (From Scratch)**: released and shipping; counterfeit copies on Amazon India flagged.
 
 ### @levelsio (Pieter Levels)
-- **Quiet on AI this week**: all posts about real estate, fitness, sleep optimization, lifestyle.
-- **Grok migration still in effect**: no reversal signals; watch for mention of Claude returning.
+- **Grok migration still in effect**: switched ideasai.com to Grok 4.6 (Aug 12). No Claude return signals.
+- **Active but off-topic**: posts about real estate, fitness, sleep, food dominate.
 
 ### @alexalbert__, @karpathy
-- Both outside window for 10+ days. Watch karpathy for Anthropic R&D posts; alexalbert__ for prompting guides.
+- Both outside window for 17+ days. karpathy last post Aug 2 (LotR renderer experiment). alexalbert__ last Aug 14 (watermarking FAQ repost).
 
 ## Open threads to watch
 
-- **Kill My SaaS winner**: 69 final submissions are browseable; no formal winner announced yet. Watch for swyx's post-mortem or community analysis of hardest SaaS categories to replace.
-- **simonw vs. bcherny on prompt injection**: simonw's Aug 8 blog said he wasn't persuaded; still no bcherny public counter. Stale now that simonw's store has 403 error — watch when simonw's store recovers.
-- **rasbt's custom small LLM project**: teased Aug 7 as "keeping me super busy this month"; no update after 2.5 weeks; likely ships Sep–Oct.
-- **levelsio migration trajectory**: still on Grok 4.6; no AI posts this week. Watch for return to Claude or deeper Grok integration.
-- **Claude Haiku in WebFetch**: simonw flagged it explicitly Aug 10; no Anthropic response or tool-model update announcement yet.
-- **Reasoning trace security**: swyx's Aug 12 paper still has no public mitigation response from model providers.
-- **/design command GA**: early preview confirmed; watch for wider release or Desktop-only expansion note.
-- **Protein binder follow-up**: Adaptyv Bio / Twist Bioscience may publish independently; watch for scientific community reaction.
-- **Alignment monitoring infrastructure**: emollick's CoT monitoring signal; watch for other labs disclosing similar commitments.
+- **Mac daily pull failure**: raw stores have a full 11-day gap (Aug 20–31). Check launchd job status and Nitter source availability. Next run is blocked without this recovery.
+- **Kill My SaaS winner**: 69 final submissions browseable; no formal winner or post-mortem announced yet. Watch for swyx's analysis.
+- **simonw vs. bcherny on prompt injection**: simonw's Aug 8 blog skeptical; no bcherny counter. Stale while simonw's store is 403.
+- **rasbt's custom small LLM project**: teased Aug 7; no update after 3+ weeks; likely ships Sep–Oct.
+- **levelsio migration trajectory**: still on Grok 4.6; no AI posts in covered windows. Watch for return to Claude.
+- **Claude Haiku in WebFetch**: simonw flagged Aug 10; no Anthropic response yet.
+- **Reasoning trace security**: swyx's Aug 12 paper; no public mitigation response from model providers.
+- **/design command GA**: early preview confirmed Aug 17; watch for wider release.
+- **Protein binder follow-up**: Adaptyv Bio / Twist Bioscience may publish independently.
+- **Alignment monitoring infrastructure**: emollick's CoT monitoring signal; watch other labs.
 - **Claude Security plugin**: still in beta; watch for GA announcement.
+- **emollick book / co-existence.ai**: unverified from WebSearch; watch for confirmed announcement.
 
 ## Notes for next run
 
-- Window: 2026-08-24 → 2026-08-31.
-- Data gap: stores were last pulled 2026-08-20; Aug 20–24 posts are missing for all accounts. Next run should have a fresh pull covering the full window.
-- @simonw and @swyx stores had 403 errors on the Aug 20 pull — both may have partial or stale data; check _meta.json carefully.
-- `log/2026-06-29.md` entries prunable Aug 29 — prune them at next run.
+- Window: 2026-09-07 → 2026-09-14 (next Monday). Or earlier if the pull resumes mid-week.
+- **CRITICAL**: Mac launchd daily pull has produced no new data since Aug 20. Check `ai-learning/raw/_meta.json` for updated `last_pull_utc` before writing digest. If stores are still stale through Sep 7+, escalate in the digest — this is now a 3-week gap.
+- `log/2026-06-29.md` entries now prunable (Aug 29 prune date passed) — pruned in this run.
 - `log/2026-07-06.md` entries prunable Sep 6.
-- Active accounts this week: bcherny, _catwu, emollick, swyx, rasbt. levelsio active but all non-AI. simonw, alexalbert__, karpathy all quiet.
-- emollick: still 20+ posts/week; continue ruthless filtering — prioritize novel claims and evidence over commentary and policy tweets.
-- Check if /design command has shipped more broadly and if Kill My SaaS winner was announced.
+- @simonw and @swyx stores had 403 errors on the Aug 20 pull — check if `_meta.json` shows recovery.
+- emollick: WebSearch hints at posts about AI slop preprints (his name on papers he didn't write) and human-augmentation vs. task-automation research — look for these in recovered store.
+- Check if /design command has shipped more broadly (was early preview Aug 17).
+- Check if rasbt's custom small LLM project has shipped.
+- Check if Kill My SaaS winner was announced.
