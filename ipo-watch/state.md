@@ -3,25 +3,25 @@
 The routine reads this on start and rewrites it before exit.
 
 ## Last run
-2026-08-31T00:00:00Z (one-hundred-and-sixteenth run — Monday August 31, 2026; Day 75 for CBRS est ~$185 (Aug 28 confirmed $186.67); TSLA Aug 28 confirmed $348.75; OpenAI ends Cursor model access Nov 12 (SpaceX-owned); Starlink UAE 10-year license Aug 28; Anthropic public S-1 still not filed; predictions logged for Wed Sep 2: CBRS $178–$195, TSLA $342–$356)
+2026-09-01T00:00:00Z (one-hundred-and-seventeenth run — Tuesday September 1, 2026; Labor Day — US markets CLOSED; TSLA Aug 31 confirmed $367.95 +5.51% Cybercab anticipation; CBRS Aug 31 confirmed ~$178.90 −3.3% vs IPO; SPCX Aug 31 confirmed $143.69 +1.5%; Syntiant S-1/A filed Aug 31; Anthropic public S-1 still not filed; predictions logged for Sep 2: CBRS $171–$187, TSLA $361–$375)
 
 ## Tracked private companies
 | Company | Latest known IPO status | Source | Last checked |
 |---|---|---|---|
-| OpenAI | **Q4 2026 IPO REPORTEDLY TARGETED** (multiple sources Aug 28–29; racing Anthropic) vs. "2027 or sooner" (CFO Friar Aug 19 all-hands); confidential S-1 filed June 8; public S-1 not filed; revenue run rate >$40B (July 2026, +20%+ MoM); Q2 operating loss widened to $12.3B; projected $14B FY2026 loss; finance leaders hired (Ajmere Dale CAO, Cynthia Gaylor Corp Finance) | https://seekingalpha.com/news/4544675-openai-plans-q4-ipo-ai-race-anthropic | 2026-08-31 |
-| Anthropic | **PUBLIC S-1 NOT YET FILED as of Aug 31**; first eligible post-Labor Day filing date = Wednesday September 2; listing target "late September or early October"; **Proposed ticker: ANTH**; **$965B post-money valuation** (Series H $65B, closed May 28); MS/GS/JPM/Citi underwriters; **CONFIDENTIAL S-1 FILED JUNE 1, 2026**; **Q2 2026 PRELIMINARY REVENUE >$11.5B (+143% QoQ); FIRST POSITIVE ADJUSTED OPERATING PROFIT; Q3 GAAP OPERATING PROFIT EXPECTED >$1B**; investors citing **$2T IPO VALUATION TARGET** (Fortune Aug 13); **CNBC AUG 21: IPO PROSPECTUS WILL LIST "AI BACKLASH" AS STANDALONE RISK CATEGORY** | https://thedailyguardian.com/world/anthropic-plans-to-publicly-unveil-ipo-prospectus-after-labor-day-the-information-reports-752042/ | 2026-08-31 |
-| SpaceX | **PUBLIC as of June 12, 2026. NASDAQ: SPCX. IPO price $135/share; Day 1 close $161.11 (+19.3%); ATH intraday $225.64 (Day 5, June 16); all-time closing low $107.01 (July 28); Day 55 confirmed close $140.87 (Aug 28); Day 56 est ~$141 (Aug 31)**; 319M insider shares absorbed Aug 20; **next tranche ~700M September (~Day 80 calendar, est Sep 20; ~20 days from Mon Aug 31); ~700M October; full 180-day block expires Dec 8, 2026**; 29% short interest; CURSOR $60B acquisition closed Aug 14; **OPENAI ENDS CURSOR MODEL ACCESS EFFECTIVE NOV 12, 2026 (AUG 29)** — CEO Truell: only 5% of Cursor traffic affected; GROK 4.6 Aug 12; Q2 earnings rev $7.81B (+92% YoY); Morgan Stanley $300 Overweight; **$100B STARBASE LOUISIANA ANNOUNCED AUG 25**; **STARLINK UAE 10-YEAR LICENSE AUG 28** (TDRA; consumer + business + maritime + aviation) | https://www.investing.com/equities/spacex | 2026-08-31 |
-| Databricks | **~H2 2027 IPO** — CEO Ali Ghodsi June 4: 2026 "terrible year to go public"; **$190B VALUATION ($5B ROUND CLOSED AUG 13–14)**; **ARR >$7B run-rate (+80% YoY, Q2 2026)**; Microsoft Azure partnership extended to 2030s; no update Aug 31 | https://www.databricks.com/company/newsroom/press-releases/databricks-grows-80-yoy-surpasses-7b-revenue-run-rate-scales | 2026-08-31 |
-| Mistral | No IPO timeline confirmed; **EU AI Act GPAI Code of Practice SIGNATORY (enforcement ACTIVATED AUGUST 2, 2026)**; ARR >$400M; targeting $1B ARR by year-end; **IN TALKS TO RAISE $3.5B AT ~$23B VALUATION (Aug 2026; not confirmed closed)**; **SHIELDSTRAL released Aug 2026**; no update Aug 31 | https://valueaddvc.com/blog/mistral-ai-ipo-2026-valuation-arr-and-how-it-ranks-among-ai-ipo-contenders | 2026-08-31 |
-| Cerebras | PUBLIC as of May 14, 2026. NASDAQ: CBRS. IPO price $185/share; Day 1 close $311.07 (+68%); **Day 75 est ~$185 (August 31, 2026; proxy-blocked; Aug 28 confirmed $186.67)**; CALLOSUM PARTNERSHIP AUG 20; CS-4 UNVEILED AUG 18 POST-CLOSE (3× WSE-3T; 750 PFLOPS; GA Sep quarter); UBS PT $330 (raised); ATH $386.34; 52w closing low $172.85 (Day 45, July 20); Q2: core beat, GAAP miss; FY core guidance $880–890M; 5+ investigations; lockup Nov 10; ARK $17M buy Aug 26; MIZUHO BUY AUG 27 | https://stockanalysis.com/stocks/cbrs/ | 2026-08-31 |
+| OpenAI | **Q4 2026 IPO reportedly targeted** (multiple sources Aug 28–29; racing Anthropic) vs. "2027 or sooner" (CFO Friar Aug 19 all-hands); leaning 2027 per CFO signals; confidential S-1 filed June 8; public S-1 not filed; revenue run rate >$40B; Q2 operating loss $12.3B; projected $14B FY2026 loss; finance leaders hired | https://seekingalpha.com/news/4544675-openai-plans-q4-ipo-ai-race-anthropic | 2026-09-01 |
+| Anthropic | **PUBLIC S-1 NOT YET FILED as of Sep 1 (Labor Day)**; first eligible post-Labor Day filing date = Wednesday September 2; listing target "late September or early October"; **Proposed ticker: ANTH**; **$965B post-money valuation** (Series H $65B, closed May 28); MS/GS/JPM/Citi underwriters; **CONFIDENTIAL S-1 FILED JUNE 1, 2026**; **Q2 2026 PRELIMINARY REVENUE >$11.5B (+143% QoQ); FIRST POSITIVE ADJUSTED OPERATING PROFIT; Q3 GAAP OPERATING PROFIT EXPECTED >$1B**; investors citing **$2T IPO VALUATION TARGET** (Fortune Aug 13); annualized revenue run-rate ~$47B (per search data Sep 1) | https://thedailyguardian.com/world/anthropic-plans-to-publicly-unveil-ipo-prospectus-after-labor-day-the-information-reports-752042/ | 2026-09-01 |
+| SpaceX | **PUBLIC as of June 12, 2026. NASDAQ: SPCX. IPO price $135/share; Day 1 close $161.11 (+19.3%); ATH intraday $225.64 (Day 5, June 16); all-time closing low $107.01 (July 28); Day 56 CONFIRMED $143.69 (Aug 31, +1.5%)**; next ~700M September (~Day 80 calendar, est Sep 20; ~19 days from Sep 2); ~700M October; full 180-day block expires Dec 8, 2026; 29% short interest; CURSOR $60B acquisition closed Aug 14; OPENAI ENDS CURSOR MODEL ACCESS EFFECTIVE NOV 12, 2026; Starlink UAE 10-year license Aug 28; Q3 earnings Nov 5, 2026 | https://www.investing.com/equities/spacex | 2026-09-01 |
+| Databricks | **~H2 2027 IPO** — CEO Ali Ghodsi: 2026 "terrible year to go public"; **$190B VALUATION ($5B ROUND CLOSED AUG 13–14)**; **ARR >$7B run-rate (+80% YoY, Q2 2026)**; Microsoft Azure partnership extended to 2030s; no update Sep 1 | https://www.databricks.com/company/newsroom/press-releases/databricks-grows-80-yoy-surpasses-7b-revenue-run-rate-scales | 2026-09-01 |
+| Mistral | No IPO timeline confirmed; **EU AI Act GPAI Code of Practice SIGNATORY (enforcement ACTIVATED AUGUST 2, 2026)**; ARR >$400M; targeting $1B ARR by year-end; **IN TALKS TO RAISE $3.5B AT ~$23B VALUATION (Aug 2026; not confirmed closed)**; **SHIELDSTRAL released Aug 2026**; no update Sep 1 | https://valueaddvc.com/blog/mistral-ai-ipo-2026-valuation-arr-and-how-it-ranks-among-ai-ipo-contenders | 2026-09-01 |
+| Cerebras | PUBLIC as of May 14, 2026. NASDAQ: CBRS. IPO price $185/share; Day 1 close $311.07 (+68%); **Day 75 CONFIRMED ~$178.90 (Aug 31, 2026)**; CS-4 in GA for Sep quarter; ARK $17M buy Aug 26; Mizuho Buy Aug 27; ATH $386.34; 52w closing low $172.85 (Day 45, July 20); Q2: core beat, GAAP miss; FY core guidance $880–890M; 5+ investigations; lockup Nov 10 | https://stockanalysis.com/stocks/cbrs/ | 2026-09-01 |
 
 ## AI / quantum IPOs filed or upcoming
 | Company | Sector | Status | Expected Date | Ticker | Source |
 |---|---|---|---|---|---|
-| OpenAI | AI | **Q4 2026 IPO reportedly targeted** (multiple sources Aug 28–29; racing Anthropic) vs. "2027 or sooner" (CFO Friar Aug 19); confidential S-1 Jun 8; public S-1 not filed; revenue >$40B; Q2 operating loss $12.3B; $14B FY2026 loss | ~Q4 2026 (contested; "2027 or sooner" also in play) | TBD | https://seekingalpha.com/news/4544675-openai-plans-q4-ipo-ai-race-anthropic |
-| Anthropic | AI | **PUBLIC S-1 NOT FILED as of Aug 31**; first eligible date Sep 2 (post-Labor Day); listing "late Sep/early Oct"; ANTH proposed; MS/GS/JPM/Citi; Q3 GAAP profit >$1B expected | **~Late Sep – Oct 23, 2026** | ANTH (proposed) | https://thedailyguardian.com/world/anthropic-plans-to-publicly-unveil-ipo-prospectus-after-labor-day-the-information-reports-752042/ |
-| Syntiant | AI | **S-1 FILED JULY 6, 2026; S-1/A JULY 13, 2026** (Citi/BofA/UBS + Needham/Stifel/Cantor/KeyBanc); edge AI chips (Neural Decision Processors); Nasdaq: SYTN; $270M TTM revenue; Intel/Microsoft-backed; **NO ROADSHOW ANNOUNCEMENT AS OF AUG 31; NEXT CHECKPOINT SEP 8+** | **Sep 8, 2026+** (post-Labor Day; no firm date) | SYTN | https://www.syntiant.com/press-release/syntiant-publicly-files-registration-statement-for-proposed-initial-public-offering/ |
-| Lambda | AI / Cloud infra | Pre-filing; GPU cloud / AI infrastructure; **IN TALKS TO RAISE $3B AT ~$12B VALUATION (Bloomberg Aug 24, 2026)** — doubled from $5.9B (2025); >$1.5B revenue run-rate; Microsoft multi-B agreement + NVIDIA partnership; no S-1 filed; Morgan Stanley / JPMorgan / Citi hired; **IPO as soon as 2027** | ~H2 2027 | TBD | https://www.bloomberg.com/news/articles/2026-08-24/ai-cloud-provider-lambda-in-talks-for-3-billion-pre-ipo-round |
+| OpenAI | AI | **Q4 2026 IPO reportedly targeted** vs "2027 or sooner" (CFO Friar Aug 19); confidential S-1 Jun 8; public S-1 not filed; leaning 2027 per CFO signals | ~Q4 2026 (contested; "2027 or sooner" also in play) | TBD | https://seekingalpha.com/news/4544675-openai-plans-q4-ipo-ai-race-anthropic |
+| Anthropic | AI | **PUBLIC S-1 NOT FILED as of Sep 1**; first eligible date Sep 2; listing "late Sep/early Oct"; ANTH proposed; MS/GS/JPM/Citi; Q3 GAAP profit >$1B expected | **~Late Sep – Oct 23, 2026** | ANTH (proposed) | https://thedailyguardian.com/world/anthropic-plans-to-publicly-unveil-ipo-prospectus-after-labor-day-the-information-reports-752042/ |
+| Syntiant | AI | **S-1 FILED JULY 6, 2026; S-1/A JULY 13, 2026; S-1/A AUGUST 31, 2026** (third amendment); edge AI chips (Neural Decision Processors); Nasdaq: SYTN; $270M TTM revenue; Intel/Microsoft-backed; Citi/BofA/UBS lead; **AUG 31 S-1/A FILED — potential approaching roadshow or price range set; NEXT CHECKPOINT SEP 8+** | **Sep 8, 2026+** (post-Labor Day; no firm date) | SYTN | https://www.syntiant.com/press-release/syntiant-publicly-files-registration-statement-for-proposed-initial-public-offering/ |
+| Lambda | AI / Cloud infra | Pre-filing; GPU cloud / AI infrastructure; **IN TALKS TO RAISE $3B AT ~$12B VALUATION (Bloomberg Aug 24, 2026)**; >$1.5B revenue run-rate; Microsoft multi-B agreement + NVIDIA partnership; no S-1 filed; Morgan Stanley / JPMorgan / Citi hired; **IPO as soon as 2027** | ~H2 2027 | TBD | https://www.bloomberg.com/news/articles/2026-08-24/ai-cloud-provider-lambda-in-talks-for-3-billion-pre-ipo-round |
 | SoftBank Roze | AI / Robotics | Pre-filing; AI+robotics spinout; $100B valuation target; H2 2026 US IPO target (may slip 2027); no S-1 filed | ~H2 2026 (may slip 2027) | TBD | https://finance.yahoo.com/sectors/technology/articles/softbank-plans-100b-u-ipo-115700056.html |
 | Databricks | AI | **~H2 2027 IPO** — CEO: "2026 terrible year to go public"; **$190B valuation ($5B round closed Aug 13–14)**; ARR >$7B | ~H2 2027 | TBD | https://www.databricks.com/company/newsroom/press-releases/databricks-grows-80-yoy-surpasses-7b-revenue-run-rate-scales |
 | Asia AI Group | AI | **S-1 FILED JULY 1, 2026** (SEC EDGAR); AI consulting + system integration; Nasdaq Capital Market; small-cap; no pricing date set | TBD (no firm date) | TBD | https://www.sec.gov/Archives/edgar/data/0002141084/000214108426000001/asiaai-forms-1-20260701a.htm |
@@ -30,40 +30,40 @@ The routine reads this on start and rewrites it before exit.
 ## Recently completed AI / quantum IPOs (last 30 days)
 | Company | Ticker | IPO Date | IPO Price | Notes |
 |---|---|---|---|---|
-| IQM Quantum Computers | Nasdaq: IQMX | 2026-07-02 (first trade) | PIPE $10/ADS | SPAC merger with RAAQ; net proceeds ~$233M; Day 1 close $12.88; **Day 44 (Aug 31) est ~$9.35** |
-| SpaceX | NASDAQ: SPCX | 2026-06-12 (first trade) | $135/share | Day 1 $161.11; ATH intraday $225.64 (Day 5); all-time closing low $107.01 (July 28); **Day 55 CONFIRMED $140.87 (Aug 28); Day 56 est ~$141 (Aug 31)**; Starlink UAE 10-year license Aug 28; OpenAI ends Cursor access Nov 12; next ~700M Sep (~Day 80 est Sep 20), ~700M Oct; full block expires Dec 8, 2026 |
-| Quantinuum | NASDAQ: QNT | 2026-06-04 (first trade) | $60/share | Day 1 close $60.38; ATH intraday $86.79 (July 14); **Day 61 est ~$54 (Aug 31)**; 52w range $47.06 intraday low–$86.79; 12 analysts all-Buy, avg PT $97.17; lockup ~Dec 2026; Oracle OCI partnership Aug 11 |
-| Cerebras Systems | NASDAQ: CBRS | 2026-05-14 (first trade) | $185/share | **Day 75 est ~$185 (Aug 31; Aug 28 confirmed $186.67)**; ARK bought $17M Aug 26; Mizuho Buy Aug 27; Callosum partnership Aug 20; CS-4 unveiled Aug 18; UBS PT $330; ATH $386.34; 52w closing low $172.85; lockup ~Nov 10 |
+| IQM Quantum Computers | Nasdaq: IQMX | 2026-07-02 (first trade) | PIPE $10/ADS | SPAC merger with RAAQ; net proceeds ~$233M; Day 1 close $12.88; **Day 44 est ~$9.35 (Aug 31, proxy-blocked; last confirmed ~$9.35 Aug 28)** |
+| SpaceX | NASDAQ: SPCX | 2026-06-12 (first trade) | $135/share | Day 1 $161.11; ATH intraday $225.64 (Day 5); all-time closing low $107.01 (July 28); **Day 56 CONFIRMED $143.69 (Aug 31, +1.5%)**; next ~700M Sep (est Sep 20), ~700M Oct; full block expires Dec 8, 2026 |
+| Quantinuum | NASDAQ: QNT | 2026-06-04 (first trade) | $60/share | Day 1 close $60.38; ATH intraday $86.79 (July 14); **Day 60 CONFIRMED $54.00 (Aug 28); Day 61 est ~$54 (Aug 31)**; lockup ~Dec 2026; Oracle OCI partnership Aug 11 |
+| Cerebras Systems | NASDAQ: CBRS | 2026-05-14 (first trade) | $185/share | **Day 75 CONFIRMED ~$178.90 (Aug 31; range $176.20–$182.16)**; −3.3% below IPO $185; CS-4 in GA Sep quarter; ARK $17M Aug 26; Mizuho Buy Aug 27; ATH $386.34; lockup ~Nov 10 |
 
 _Prior completed (outside 30-day window): Horizon Quantum HQ debuted March 20 via SPAC; Xanadu XNDU debuted March 27 via SPAC; Infleqtion INFQ debuted February 17 — all outside 30-day window._
 
 ## 30-day rolling watch items
-1. **ANTHROPIC PUBLIC S-1 EXPECTED WEDNESDAY SEP 2 (The Information Aug 27)**: Bloomberg "before Aug 31" window MISSED. The Information (Aug 27) reports Anthropic plans to publicly unveil prospectus AFTER Labor Day. Labor Day = September 1 (Tuesday; US market closed). First possible filing date = **Wednesday September 2, 2026**. Check EDGAR Wednesday Sep 2. Listing now "late September or early October." **CRITICAL**. UPDATED 2026-08-31.
-2. **OPENAI ENDS CURSOR MODEL ACCESS (AUG 29, NEW)**: OpenAI announced August 29 it will terminate Cursor's direct access to OpenAI models by November 12, 2026, citing inability to confirm SpaceX compliance with ToS. Cursor CEO: only 5% of Cursor traffic used OpenAI models; product continuity maintained with Anthropic, Google, xAI models. Negative for SPCX/Cursor; signals OpenAI aggressive stance toward Musk entities. ADDED 2026-08-31.
-3. **OPENAI Q4 2026 IPO NOW REPORTED (AUG 28–29)**: Multiple sources (Seeking Alpha) report OpenAI eyeing Q4 2026 IPO to race Anthropic. CFO Friar said "2027 or sooner" Aug 19; conflicting signals. Finance leaders hired (Ajmere Dale CAO; Cynthia Gaylor Corp Finance). Q2 operating loss widened to $12.3B; projected $14B FY2026 loss. UPDATED 2026-08-31.
-4. **SPCX $100B STARBASE LOUISIANA + MORGAN STANLEY + UAE LICENSE**: SpaceX $100B Louisiana spaceport (Vermilion Parish; Aug 25); Morgan Stanley "attractively valued" $300 PT (Aug 26); **Starlink UAE 10-year license (Aug 28; TDRA)**. Next ~700M unlock est Sep 20. UPDATED 2026-08-31.
-5. **MRVL AH + DAY-SESSION SELLOFF (AUG 27–28)**: MRVL Q2 FY27 beat ($2.74B, +37% YoY) but pushed Google AI payoff to FY2029. AH −7.45% Aug 27; regular hours −8% Aug 28. NVDA "barely budged" — market treated as MRVL-specific. Investor Day Oct 6 is next MRVL catalyst. CARRIED FORWARD 2026-08-31.
-6. **CBRS PRICE ESTIMATION CALIBRATION**: Aug 28 (Day 74) confirmed close = $186.67. Day 75 (Aug 31) est ~$185 (proxy-blocked). Stock consolidating in $180–190 range (at IPO price). Systematic downside misses in Aug 22–28 window captured in state.md but not by auto-evaluator (proxy-blocked). UPDATED 2026-08-31.
-7. **ARK INVEST + MIZUHO CBRS ACCUMULATION**: ARK bought $8.84M on Aug 18, $17M on Aug 26 at $182–185 range. Mizuho Securities confirmed Buy rating Aug 27. Two institutional signals within 8 days establish visible accumulation zone at IPO-price level. CARRIED FORWARD 2026-08-31.
-8. **TSLA CYBERCAB LAUNCH EVENT SEP 3 (THURSDAY; 3 TRADING DAYS FROM MON AUG 31)**: Production Cybercab; no steering wheel/pedals; Tesla AI4 computer; Musk <$30K before 2027; Giga Texas production started; invite-only + livestream; Cybercab folds into existing Austin Robotaxi app fleet alongside Model Y. RSVP deadline was Aug 30. First post-event trading day = Friday Sep 5. UPDATED 2026-08-31.
-9. **SPCX STAGGERED UNLOCK SCHEDULE — NEXT ~700M SEPTEMBER (~SEP 20)**: Day 55 confirmed $140.87 (Aug 28). Next tranches: ~700M September (~Day 80 calendar, est Sep 20; ~20 days from Mon Aug 31), ~700M October. Full 180-day block expires Dec 8, 2026. UPDATED 2026-08-31.
-10. **CBRS LOCKUP EXPIRY NOV 10 (DAY 180)**: ~71 days from Monday Aug 31. Stock Day-75 est ~$185 (at IPO $185). 5+ investigations + GAAP margin miss + lockup = multi-layered overhang into November. CARRIED FORWARD 2026-08-31.
+1. **ANTHROPIC PUBLIC S-1 EXPECTED WEDNESDAY SEP 2 (The Information Aug 27; Labor Day passed)**: Labor Day = September 1 (Tuesday; US market CLOSED). First possible filing date = **Wednesday September 2, 2026**. Check EDGAR Wednesday Sep 2. Listing now "late September or early October." **CRITICAL**. UPDATED 2026-09-01.
+2. **TSLA CYBERCAB LAUNCH EVENT SEPTEMBER 3 (THURSDAY; 2 TRADING DAYS FROM SEP 2)**: +5.51% Aug 31 pre-event rally to $367.95; Cybercab: two-seat, no steering/pedals, Tesla AI4 computer; sub-$30K before 2027; Austin TX; invite-only + livestream; first post-event trading day = Friday Sep 5. Sep 2 (Wed) = session immediately before event. UPDATED 2026-09-01.
+3. **TSLA AUG 31 MISS + CYBERCAB CATALYST**: Prediction $342–$356 for Aug 31; actual $367.95 = MISS ABOVE by +$11.95 (+3.4%); Cybercab pre-event move exceeded realized-vol estimate. First miss driven by known upcoming event. Suggests pre-event sessions should widen expected range beyond statistical 1-σ. ADDED 2026-09-01.
+4. **OPENAI ENDS CURSOR MODEL ACCESS (AUG 29)**: Effective November 12, 2026; Cursor CEO: only 5% of Cursor traffic used OpenAI models; product continuity with Anthropic, Google, xAI. Signals OpenAI aggressive stance toward Musk entities. CARRIED FORWARD 2026-09-01.
+5. **OPENAI Q4 2026 IPO NOW REPORTED (AUG 28–29) VS 2027**: Multiple sources report Q4 2026 target; CFO Friar said "2027 or sooner" Aug 19; Polymarket odds near zero for 2026. Conflicting signals. Finance leaders hired. CARRIED FORWARD 2026-09-01.
+6. **SPCX $100B STARBASE LOUISIANA + MORGAN STANLEY $300 PT + UAE LICENSE + Q3 EARNINGS NOV 5**: Starbase Louisiana ($100B; Aug 25); MS "attractively valued" $300 PT (Aug 26); Starlink UAE 10-year license (Aug 28); Q3 earnings Nov 5, 2026 (first report including full Cursor quarter). **Next ~700M unlock est Sep 20 (~19 days from Sep 2)**. UPDATED 2026-09-01.
+7. **SYNTIANT S-1/A AMENDMENT FILED AUG 31**: Third amendment to S-1 (original Jul 6; S-1/A Jul 13; S-1/A Aug 31). Filing the day before Labor Day may indicate price range or roadshow preparation. Next checkpoint Sep 8+. ADDED 2026-09-01.
+8. **NVDA Q2 FY27 BEAT (AUG 26)**: Revenue $96.2B (+106% YoY); Non-GAAP EPS $2.22 (+120%); Sep 10 dividend ex-date $0.25; +9% Aug 27. Sustained AI-infra capex — positive sector read-through for CBRS/AI IPO pipeline. Sep 10 ex-date adds a near-term calendar event. ADDED 2026-09-01.
+9. **ARK INVEST + MIZUHO CBRS ACCUMULATION**: ARK bought $8.84M on Aug 18, $17M on Aug 26 at $182–185 range. Mizuho Securities confirmed Buy rating Aug 27. Two institutional signals within 8 days at IPO-price level. CARRIED FORWARD 2026-09-01.
+10. **CBRS LOCKUP EXPIRY NOV 10 (DAY 180)**: ~70 days from Wednesday Sep 2. Stock Day-75 at ~$178.90 (−3.3% below IPO $185). 5+ investigations + GAAP margin miss + lockup = multi-layered overhang into November. CARRIED FORWARD 2026-09-01.
 
 ## Notes for next run
-- **CRITICAL: ANTHROPIC PUBLIC S-1 EXPECTED WEDNESDAY SEP 2**: Check EDGAR Wednesday Sep 2 (first trading day post-Labor Day; Sep 1 = Labor Day, market CLOSED). If filed Sep 2, lead story of the week. S-1 will include first public look at financials, risk factors, governance. Proposed ticker ANTH on Nasdaq.
-- **CBRS Day 75 (Aug 31)**: Prediction logged Aug 28: $176–$192 for Aug 31; Aug 29/30 updated to $178–$195. Capture Aug 31 close on Wednesday Sep 2 run. Day 76 = Wednesday Sep 2.
-- **TSLA Aug 31**: Prediction logged $342–$356. Capture Aug 31 close on Wed Sep 2 run. Cybercab event Thursday Sep 3 = day after.
-- **TSLA CYBERCAB SEP 3 (THURSDAY)**: First post-event trading day = Friday Sep 5. Watch AH reaction Thursday Sep 3. Key: confirmed commercial timeline and whether sub-$30K price unlocks retail demand signal.
-- **SPCX ~700M unlock est Sep 20**: Flag approaching (~19 days from Sep 2). Monitor share price reaction pre- and post-unlock.
-- **QNT Day 61 (Aug 31)**: Day 60 CONFIRMED $54.00. Capture Aug 31 close.
-- **IQMX Day 44 (Aug 31)**: Day 43 est ~$9.35. Capture Aug 31 close.
-- **SPCX Day 56 (Aug 31)**: Day 55 CONFIRMED $140.87. Capture Aug 31 close. Note Cursor/OpenAI and UAE license developments.
+- **CRITICAL: ANTHROPIC PUBLIC S-1 EXPECTED WEDNESDAY SEP 2**: Check EDGAR Wednesday Sep 2 (first trading day post-Labor Day). If filed, lead story of the week — prospectus includes first public financials, ANTH ticker, risk factors. S-1 will be at EDGAR under Anthropic.
+- **CBRS Day 76 (Sep 2)**: Prediction logged Sep 1: $171–$187 for Sep 2 (realized vol ~4.5%; basis $178.90 confirmed Aug 31). Capture Sep 2 close.
+- **TSLA Sep 2**: Prediction logged Sep 1: $361–$375 for Sep 2 (realized vol ~2%; basis $367.95 confirmed Aug 31). Capture Sep 2 close. Note: Cybercab event THURSDAY Sep 3 = next trading day.
+- **TSLA CYBERCAB SEP 3 (THURSDAY)**: First post-event trading day = Friday Sep 5. Watch AH reaction Thursday Sep 3. Key: commercial timeline confirmation and whether sub-$30K price triggers retail demand signal.
+- **SPCX ~700M unlock est Sep 20**: ~18 days from Sep 2. Monitor share price reaction pre- and post-unlock.
+- **QNT Day 62 (Sep 2)**: Day 61 est ~$54 (Aug 31). Capture Sep 2 close.
+- **IQMX Day 45 (Sep 2)**: Day 44 est ~$9.35 (Aug 31). Capture Sep 2 close.
+- **SPCX Day 57 (Sep 2)**: Day 56 confirmed $143.69 (Aug 31). Capture Sep 2 close.
 - **OpenAI public S-1**: Still not filed. Check EDGAR on every run.
-- **SYTN**: Next checkpoint Sep 8, 2026 — watch for roadshow announcement.
-- **OpenAI/Cursor dispute**: Nov 12 effective date for cutoff. Monitor whether Cursor pivots to xAI models accelerates or diminishes Cerebras demand for OpenAI inference.
-- **Predictions logged for Wednesday September 2, 2026 (from Aug 31 run):**
-  - CBRS: $178–$195 (realized vol ~4.5%; basis $186.67 confirmed Aug 28; skew: Anthropic S-1 may file; first post-Labor Day session)
-  - TSLA: $342–$356 (realized vol ~2%; basis $348.75 confirmed Aug 28; skew: day before Cybercab launch Sep 3)
+- **NVDA Sep 10 dividend ex-date**: $0.25 dividend; ex-date Sep 10. Small calendar event.
+- **SYTN S-1/A Aug 31**: New amendment signals roadshow may be imminent. Check for roadshow announcement or pricing date Sep 8+.
+- **Predictions logged for Wednesday September 2, 2026 (from Sep 1 run):**
+  - CBRS: $171–$187 (realized vol ~4.5%; basis $178.90 confirmed Aug 31; skew: Anthropic S-1 may file; first post-Labor Day session)
+  - TSLA: $361–$375 (realized vol ~2%; basis $367.95 confirmed Aug 31; skew: Cybercab event Thu Sep 3; pre-event session)
 
 ## Buying Window Tracker — anchor data (do not modify lightly)
 
@@ -148,31 +148,31 @@ These are historical anchors used by the Buying Window Tracker section. They are
 - **Day 72 close:** $182.15 (August 26, 2026; CONFIRMED)
 - **Day 73 close:** $182.38 (August 27, 2026; CONFIRMED)
 - **Day 74 close:** $186.67 (August 28, 2026; CONFIRMED — above IPO $185; +2.4% from Day 73)
-- **Day 75 close:** ~$185 est (August 31, 2026; proxy-blocked; prediction was $178–$195)
-- **Day 76 close:** TBD (September 2, 2026; prediction $178–$195)
+- **Day 75 close:** ~$178.90 CONFIRMED (August 31, 2026; range $176.20–$182.16; within prediction $178–$195; lower-bound touch)
+- **Day 76 close:** TBD (September 2, 2026; prediction $171–$187)
 - **52w low (closing):** $172.85 (Day 45, July 20) — ATH intraday: $386.34 (Day 1); all-time intraday low: $160.81 (Day 30 June 26)
 - **Shares offered:** 30M Class A
 - **IPO gross proceeds:** $5.55B
 - **FY2025 revenue:** $510M (+76% YoY)
 - **FY2025 net margin:** 47%
 - **Customer concentration FY2025:** MBZUAI 62% + G42 24% = 86% total
-- **Notable contracts:** $10B OpenAI MRA Jan 2026; Amazon AWS deal May 2026; **$24.6B total backlog**; **OpenAI 750MW multi-year >$20B deal (June 23, 2026)**; **AWS multi-year fast-inference partnership (June 23, 2026)**; **European expansion: 200MW (France + Nordics) by end-2027 (July 9, 2026)**; **Flex 7× CS-3 manufacturing scale-up (July 9, 2026)**; **GPT-5.6 Sol deploying on Cerebras at 750 tokens/sec (ultrafast mode)**; **CrowdStrike Falcon AIDR partnership (July 22, 2026)**; **AMD-Cerebras inference solution (Helios + WSE) H2 2026 (July 23, 2026)**; **CS-4 UNVEILED AUG 18 — 3× WSE-3T; 750 PFLOPs; 30× GPU; first iteration of Cerebras Nexus Platform Architecture; GA Sep quarter**; **CALLOSUM PARTNERSHIP AUG 20 — ultra-low-latency heterogeneous agentic inference; European reach**; **ARK INVEST: $8.84M BUY AUG 18, $17M BUY AUG 26**; **MIZUHO BUY RATING MAINTAINED AUG 27**
+- **Notable contracts:** $10B OpenAI MRA Jan 2026; Amazon AWS deal May 2026; **$24.6B total backlog**; **OpenAI 750MW multi-year >$20B deal (June 23, 2026)**; **AWS multi-year fast-inference partnership (June 23, 2026)**; **European expansion: 200MW (France + Nordics) by end-2027 (July 9, 2026)**; **Flex 7× CS-3 manufacturing scale-up (July 9, 2026)**; **GPT-5.6 Sol deploying on Cerebras at 750 tokens/sec (ultrafast mode)**; **CrowdStrike Falcon AIDR partnership (July 22, 2026)**; **AMD-Cerebras inference solution (Helios + WSE) H2 2026 (July 23, 2026)**; **CS-4 UNVEILED AUG 18 — 3× WSE-3T; 750 PFLOPs; 30× GPU; 30× GPU; GA Sep quarter**; **CALLOSUM PARTNERSHIP AUG 20 — ultra-low-latency heterogeneous agentic inference; European reach**; **ARK INVEST: $8.84M BUY AUG 18, $17M BUY AUG 26**; **MIZUHO BUY RATING MAINTAINED AUG 27**
 - **Q2 2026 EARNINGS (AUGUST 12, 2026 AMC):** GAAP rev $180.1M (+74%, MISS); Core rev $209.9M (+103%, BEAT); GAAP gross margin 14%; Core gross margin 41% (BEAT); GAAP EPS −$2.98 (MISS; $377M SBC); FY core guidance raised $880–890M; Q3 core GM guidance 38–40%; RPO $25.4B; >3× 2027 revenue guided
 - **Analyst coverage:** 11 analysts; Strong Buy avg; avg PT ~$291.64; MS $279; **UBS $330 raised Aug 2026 from $320**; **Mizuho Buy maintained Aug 27**
-- **Securities investigations (ACTIVE):** Pomerantz (July 14), Bronstein Gewirtz (July 3–16), Kaplan Fox (July 3; updated Aug 13 citing Q2 GAAP miss), Schall Law Firm, Glancy Prongay Wolke & Rother, Block & Leviton; no formal complaint filed as of Aug 31
+- **Securities investigations (ACTIVE):** Pomerantz (July 14), Bronstein Gewirtz (July 3–16), Kaplan Fox (July 3; updated Aug 13 citing Q2 GAAP miss), Schall Law Firm, Glancy Prongay Wolke & Rother, Block & Leviton; no formal complaint filed as of Sep 1
 - **Lockup expiry:** ~2026-11-10 (Day 180)
 - **Short interest (June 30):** 13.53M shares = 16.9% of float
-- **Market cap at ~$185 (Day 75 est):** ~$44.0B (237.6M total shares × $185)
-- **Trailing P/S at ~$185:** ~87× (~$44.0B / $510M FY2025)
-- **FY2026 forward P/S at ~$185:** ~50× (~$44.0B / $885M core guidance midpoint)
-- **Reference price zones (at ~$185 basis):**
+- **Market cap at ~$178.90 (Day 75):** ~$42.5B (237.6M total shares × $178.90)
+- **Trailing P/S at ~$178.90:** ~83× (~$42.5B / $510M FY2025)
+- **FY2026 forward P/S at ~$178.90:** ~48× (~$42.5B / $885M core guidance midpoint)
+- **Reference price zones (at ~$178.90 basis):**
   - 50× P/S → ~$107/share
   - 85× P/S → ~$183/share (near current level)
   - 100× P/S → ~$215/share
   - 150× P/S → ~$323/share
   - 200× P/S → ~$430/share
 - **Historical IPO drawdown analogs:** ARM (−17% by week 4), KVYO (−22% by month 1), RDDT (−24% by week 3), CRWV (−12% by week 1)
-- **Logged predictions (updated through August 31):**
+- **Logged predictions (updated through September 1):**
   - From August 12 run: $226–$261 for August 13 — **HIT CONFIRMED** ($231.01; 14% into band)
   - From August 13 run: $214–$246 for August 14 — **HIT CONFIRMED** ($218.98; ~22% into band)
   - From August 14 run: $207–$233 for Aug 18 — **HIT CONFIRMED** ($221.85; ~76% into band)
@@ -186,16 +186,17 @@ These are historical anchors used by the Buying Window Tracker section. They are
   - From August 25 run: $188–$206 for Aug 26 — **MISS BELOW** (actual $182.15; ~3.3% below lower bound $188)
   - From August 26 run: $204–$224 for Aug 27 — **MISS BELOW** (actual $182.38; ~10.6% below lower bound $204)
   - From August 27 run: $236–$258 for Aug 28 — **MISS BELOW** (actual $186.67; ~21.1% below lower bound $236)
-  - From August 28 run: $176–$192 for Aug 31 (Mon) — LOGGED
-  - From August 29 run (updated basis): $178–$195 for Aug 31 (Mon) — LOGGED
-  - From August 30 run: $178–$195 for Aug 31 (Mon) — LOGGED
-  - **From August 31 run: $178–$195 for Sep 2 (Wed) — LOGGED**
+  - From August 28 run: $176–$192 for Aug 31 (Mon) — **HIT** (actual ~$178.90; near lower bound; manual)
+  - From August 29 run: $178–$195 for Aug 31 (Mon) — **HIT** (actual ~$178.90; at lower bound; manual)
+  - From August 30 run: $178–$195 for Aug 31 (Mon) — **HIT** (same; manual)
+  - From August 31 run: $178–$195 for Sep 2 (Wed) — LOGGED
+  - **From September 1 run: $171–$187 for Sep 2 (Wed) — LOGGED** (basis $178.90 actual; skew: Anthropic S-1 may file; first post-Labor Day)
 
 ### TSLA — Tesla, Inc.
 - **Classification:** Mature public stock (listed since 2010-06-29 NASDAQ). Use 52-week low / 52-week high / 200-day moving average as reference levels.
 - **52-week range:** ~$297.38 (52w closing low; intraday $297.82 set July 30) – $498.83 (52w high; Dec 22, 2025).
 - **200d MA:** ~$387
-- **Confirmed/estimated closes (updated through August 31):**
+- **Confirmed/estimated closes (updated through September 1):**
   - **July 30, 2026: $298.33 CONFIRMED**
   - **August 4, 2026: $327.35 CONFIRMED**
   - **August 7, 2026: $328.58 CONFIRMED**
@@ -207,23 +208,25 @@ These are historical anchors used by the Buying Window Tracker section. They are
   - **August 26, 2026: ~$347.70 est** (intraday $342.53–$351.93)
   - **August 27, 2026: $350.25 CONFIRMED**
   - **August 28, 2026: $348.75 CONFIRMED** (−1.71% from Aug 27; within prediction $345–$359 = HIT at 26.8% into band)
-  - **August 31, 2026: ~$348.75 est** (proxy-blocked; prediction $342–$356)
+  - **August 31, 2026: $367.95 CONFIRMED** (+5.51%; Cybercab event anticipation; +46% volume; S&P 500 −0.46% same day; MISS above prediction $342–$356)
 - **Q2 2026 EARNINGS (July 22, 2026 AMC):** Revenue $28.24B (+26% YoY; beat); EPS $0.33 GAAP (miss vs $0.53); auto GM ex-reg credits 16.3% (miss); FCF −$1.1B; China July deliveries −33% YoY
 - **NEVADA ROBOTAXI (AUG 20–21):** Full AVNC permit 5,000 vehicles Clark County (Las Vegas)
-- **CYBERCAB LAUNCH EVENT CONFIRMED SEPTEMBER 3, 2026 (AUSTIN TX; THURSDAY):** Two-seat Cybercab; no steering wheel/pedals; Tesla AI4 computer; Musk confirmed price **<$30K before 2027**; Giga Texas production started; invite-only + livestream; Cybercab folds into existing Robotaxi app in Austin alongside Model Y; RSVP deadline Aug 30 passed; first post-event trading day = Friday Sep 5
+- **CYBERCAB LAUNCH EVENT CONFIRMED SEPTEMBER 3, 2026 (AUSTIN TX; THURSDAY):** Two-seat Cybercab; no steering wheel/pedals; Tesla AI4 computer; Musk confirmed price **<$30K before 2027**; Giga Texas production started; invite-only + livestream; folds into existing Austin Robotaxi app fleet; first post-event trading day = Friday Sep 5
 - **CHINA RECALL (AUG 21):** ~2.98M vehicles (door handle OTA + warning labels); OTA fix execution begins Sep 25
-- **Trailing P/E at $348.75 (Aug 28):** ~320× ($348.75 / $1.09 TTM EPS)
-- **Forward P/E at $348.75 (Aug 28):** ~189× (FY2026 consensus ~$1.85 EPS)
+- **Trailing P/E at $367.95 (Aug 31):** ~338× ($367.95 / $1.09 TTM EPS)
+- **Forward P/E at $367.95 (Aug 31):** ~199× (FY2026 consensus ~$1.85 EPS)
 - **Key catalyst calendar:**
-  - **2026-09-01 (Tuesday):** Labor Day — US market CLOSED
-  - **2026-09-02 (Wednesday):** First trading day of September; Anthropic S-1 potentially filed
-  - **2026-09-03 (Thursday):** Cybercab launch event Austin TX (2 trading days from Mon Aug 31)
+  - **2026-09-02 (Wednesday):** First trading day of September; Anthropic S-1 potentially filed; TSLA Cybercab event one day away
+  - **2026-09-03 (Thursday):** Cybercab launch event Austin TX
+  - **2026-09-05 (Friday):** First post-Cybercab-event trading day
+  - **~2026-09-10:** NVDA dividend ex-date $0.25
   - **~2026-09-20 (est):** Nevada robotaxi commercial launch; SPCX ~700M unlock est.
   - **2026-09-25:** China recall execution begins (OTA fix)
   - **~2026-10-02 (Friday):** TSLA Q3 2026 deliveries (estimated)
   - **2026-10-23 (Friday):** Anthropic (ANTH) IPO target (may slip)
+  - **2026-11-05:** SPCX Q3 earnings
   - **2026-11-10:** CBRS lockup expiry
-- **Logged predictions (updated through August 31):**
+- **Logged predictions (updated through September 1):**
   - From August 13 run: $319–$345 for August 14 — **HIT CONFIRMED** ($334.16; 58% into band)
   - From August 14 run: $322–$346 for Aug 18 — **HIT CONFIRMED** (~$336.87; ~77% into band)
   - From August 17 run: $330–$354 for Aug 18 — **HIT CONFIRMED** (~$336.87; ~30% into band)
@@ -234,10 +237,11 @@ These are historical anchors used by the Buying Window Tracker section. They are
   - From August 25 run: $353–$367 for Aug 26 — **MISS BELOW** (actual ~$347.70; 0.6% below lower bound $353)
   - From August 26 run: $344–$358 for Aug 27 — **HIT CONFIRMED** ($350.25; 44% into band)
   - From August 27 run: $345–$359 for Aug 28 — **HIT CONFIRMED** ($348.75; 26.8% into band)
-  - From August 28 run: $340–$354 for Aug 31 (Mon) — LOGGED
-  - From August 29 run (updated basis): $342–$356 for Aug 31 (Mon) — LOGGED
-  - From August 30 run: $342–$356 for Aug 31 (Mon) — LOGGED
-  - **From August 31 run: $342–$356 for Sep 2 (Wed) — LOGGED**
+  - From August 28 run: $340–$354 for Aug 31 (Mon) — **MISS ABOVE** ($367.95; +$13.95, +3.9% above upper bound $354; Cybercab pre-event)
+  - From August 29 run: $342–$356 for Aug 31 (Mon) — **MISS ABOVE** ($367.95; +$11.95, +3.4% above upper bound $356; Cybercab pre-event)
+  - From August 30 run: $342–$356 for Aug 31 (Mon) — **MISS ABOVE** (same; Cybercab pre-event)
+  - From August 31 run: $342–$356 for Sep 2 (Wed) — LOGGED (basis $348.75; now superseded by Sep 1 run)
+  - **From September 1 run: $361–$375 for Sep 2 (Wed) — LOGGED** (basis $367.95 actual; skew: Cybercab event Thu Sep 3; pre-event session)
 
 ### QNT — Quantinuum (trapped-ion quantum hardware + software)
 - **Classification:** New IPO (Day 1 = June 4, 2026). Use IPO / Day 1 / ATH as reference levels.
@@ -259,15 +263,15 @@ These are historical anchors used by the Buying Window Tracker section. They are
 - **Day 1 close:** $161.11 (+19.3% vs IPO)
 - **Day 5 intraday ATH:** $225.64 (June 16, 2026)
 - **All-time closing low:** $107.01 (July 28, 2026)
-- **Day 55 close:** $140.87 (August 28, 2026 — CONFIRMED)
-- **Day 56 close:** ~$141 est (August 31, 2026 — proxy-blocked; Starlink UAE license positive; OpenAI Cursor termination minor negative)
+- **Day 56 close:** $143.69 CONFIRMED (August 31, 2026 — +1.5%)
 - **Q2 2026 earnings:** Revenue $7.81B (+92% YoY); AI segment $2.6B; Starlink $4.3B (12M subscribers); CapEx $18.4B; backlog $47.5B
 - **CURSOR $60B ACQUISITION FORMALLY CLOSED AUG 14**
-- **$100B STARBASE LOUISIANA ANNOUNCED AUG 25:** Vermilion Parish; 10 Starship launch pads; construction 2027; first launch 2029; 3,000+ direct jobs
-- **MORGAN STANLEY "ATTRACTIVELY VALUED" AUG 26:** Adam Jonas; $300 PT Overweight
-- **STARLINK UAE 10-YEAR LICENSE AUG 28 (NEW):** TDRA; consumer + business + government + maritime + aviation; new Gulf-region revenue stream
-- **OPENAI ENDS CURSOR MODEL ACCESS AUG 29 (NEW):** Effective November 12, 2026; Cursor CEO: only 5% of Cursor traffic affected; product continuity with Anthropic/Google/xAI models
-- **LOCKUP SCHEDULE:** Aug 6 = 911.5M shares; Aug 20 = 319M shares (ABSORBED); **next ~700M September (~Day 80 calendar, est Sep 20; ~20 days from Mon Aug 31); ~700M October; full block expires Dec 8, 2026**
+- **$100B STARBASE LOUISIANA ANNOUNCED AUG 25**
+- **MORGAN STANLEY "ATTRACTIVELY VALUED" AUG 26:** $300 PT Overweight
+- **STARLINK UAE 10-YEAR LICENSE AUG 28**
+- **OPENAI ENDS CURSOR MODEL ACCESS AUG 29:** Effective November 12, 2026; 5% of Cursor traffic affected
+- **Q3 EARNINGS: NOVEMBER 5, 2026** (first report including full Cursor quarter)
+- **LOCKUP SCHEDULE:** Aug 6 = 911.5M shares; Aug 20 = 319M shares (ABSORBED); **next ~700M September (~Day 80 calendar, est Sep 20; ~19 days from Sep 2); ~700M October; full block expires Dec 8, 2026**
 - **SHORT INTEREST:** ~29% of float
 
 ### IQMX — IQM Quantum Computers (superconducting quantum hardware)
