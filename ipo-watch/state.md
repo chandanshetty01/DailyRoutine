@@ -189,8 +189,9 @@ These are historical anchors used by the Buying Window Tracker section. They are
   - From August 28 run: $176–$192 for Aug 31 (Mon) — **HIT** (actual ~$178.90; near lower bound; manual)
   - From August 29 run: $178–$195 for Aug 31 (Mon) — **HIT** (actual ~$178.90; at lower bound; manual)
   - From August 30 run: $178–$195 for Aug 31 (Mon) — **HIT** (same; manual)
-  - From August 31 run: $178–$195 for Sep 2 (Wed) — LOGGED
-  - **From September 1 run: $171–$187 for Sep 2 (Wed) — LOGGED** (basis $178.90 actual; skew: Anthropic S-1 may file; first post-Labor Day)
+  - From August 31 run: $178–$195 for Sep 2 (Wed) — **MISS BELOW** (actual ~$174.38; −$3.62 or −2.0% below lower bound $178)
+  - From September 1 run: $171–$187 for Sep 2 (Wed) — **HIT** (actual ~$174.38; ~18% into band)
+  - **From September 2 run: $167–$182 for Sep 3 (Thu) — LOGGED** (basis $174.38; skew: Cybercab event AH Sep 3; Anthropic S-1 pending)
 
 ### TSLA — Tesla, Inc.
 - **Classification:** Mature public stock (listed since 2010-06-29 NASDAQ). Use 52-week low / 52-week high / 200-day moving average as reference levels.
@@ -240,8 +241,9 @@ These are historical anchors used by the Buying Window Tracker section. They are
   - From August 28 run: $340–$354 for Aug 31 (Mon) — **MISS ABOVE** ($367.95; +$13.95, +3.9% above upper bound $354; Cybercab pre-event)
   - From August 29 run: $342–$356 for Aug 31 (Mon) — **MISS ABOVE** ($367.95; +$11.95, +3.4% above upper bound $356; Cybercab pre-event)
   - From August 30 run: $342–$356 for Aug 31 (Mon) — **MISS ABOVE** (same; Cybercab pre-event)
-  - From August 31 run: $342–$356 for Sep 2 (Wed) — LOGGED (basis $348.75; now superseded by Sep 1 run)
-  - **From September 1 run: $361–$375 for Sep 2 (Wed) — LOGGED** (basis $367.95 actual; skew: Cybercab event Thu Sep 3; pre-event session)
+  - From August 31 run: $342–$356 for Sep 2 (Wed) — superseded by Sep 1 run (basis updated)
+  - From September 1 run: $361–$375 for Sep 2 (Wed) — **MISS BELOW** (actual ~$357.21; −$3.79 or −1.0% below lower bound $361; EU registration data triggered profit-taking)
+  - **From September 2 run: $350–$364 for Sep 3 (Thu) — LOGGED** (basis $357.21; skew: Cybercab event AH Sep 3; Sep 3 close is pre-event)
 
 ### QNT — Quantinuum (trapped-ion quantum hardware + software)
 - **Classification:** New IPO (Day 1 = June 4, 2026). Use IPO / Day 1 / ATH as reference levels.
