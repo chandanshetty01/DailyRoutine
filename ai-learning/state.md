@@ -3,9 +3,12 @@
 Rolling state for the ai-learning routine. Read on start, rewritten before exit.
 
 ## Last run
-2026-08-31T00:00:00Z — weekly run, window 2026-08-24 → 2026-08-31. **Data gap: all raw stores stale (newest data Aug 19–20); full window missed. No posts included in digest.**
+2026-09-07T00:00:00Z — weekly run, window 2026-08-31 → 2026-09-07. **Data gap: all raw stores stale (newest data Aug 19–20); full 18-day gap (3rd consecutive missed digest). No posts included.**
 
 ## Covered posts (dedupe list — prune entries older than ~60 days)
+
+### Featured in `log/2026-09-07.md`:
+_(No posts — full data gap. Mac daily pull has not covered Aug 20 – Sep 7.)_
 
 ### Featured in `log/2026-08-31.md`:
 _(No posts — full data gap. Mac daily pull did not cover Aug 20–31.)_
@@ -86,101 +89,79 @@ _(No posts — full data gap. Mac daily pull did not cover Aug 20–31.)_
 **levelsio:**
 - 2084348044808507416 — Accountant relaying AI answers to client; value of professionals is now judgment not information retrieval (Aug 3)
 
-### Featured in `log/2026-08-03.md`:
-- (no new posts this window)
+### Featured in `log/2026-07-27.md` (status ids — prunable after ~Sep 27):
+- 2080713091688583312, 2080710971228918066, 2079990597973057691, 2080750942333374870, 2080731979528679617
 
-### Featured in `log/2026-07-27.md` (status ids):
-- 2080713091688583312 — Opus 5 least prompt injectable model; Auto Mode + probes → ~0 attack success rate (Jul 24)
-- 2080710971228918066 — ~80% of Claude Code system prompt removed for newer models (Jul 24, repost trq212)
-- 2079990597973057691 — Claude Security plugin beta: pre-commit vulnerability scanning from terminal (Jul 22, repost claudeai)
-- 2080750942333374870 — Opus 5 OSWorld v2 70.6% SOTA (Jul 24, repost ehsanik)
-- 2080731979528679617 — Opus 5 near-consultant-quality spreadsheets/slides (Jul 24, repost alexalbert__)
-
-### Featured in `log/2026-07-20.md` (status ids):
-- 2077929379661844559 — 4-step AI adoption framework (Jul 17)
-- 2077929390806073807 — /loop + /batch + dynamic workflows + worktree isolation (Jul 17, reply)
-- 2077929397495959693 — AI ROI = eng-hours displaced, not usage dashboards (Jul 17, reply)
-- 2077929404219474148 — background automation enables work "not previously in range" (Jul 17, reply)
-- 2077489907350856038 — Artifacts + MCP connectors on Pro/Max/Team/Enterprise (Jul 15, repost ClaudeDevs)
-- 2077460395279692197 — domain knowledge as infrastructure: CLAUDE.md/REVIEW.md/skills = new lint rules (Jul 15)
-
-### Featured in `log/2026-07-13.md` (status ids):
-- 2075635283211772279 — In-app browser in Claude Code desktop (Jul 10, repost ClaudeDevs)
-- 2074997570317779038 — /checkup command: 7-step setup optimizer (Jul 8)
-- 2074925531519468012 — Claude Tag webinar: single-player → multiplayer journey (Jul 8, repost _catwu)
-- 2074247226038063316 — "We are 1% done"; Claude Code origin in Anthropic safety research (Jul 6)
-
-### Featured in `log/2026-07-06.md` (status ids — prunable after ~Sep 6):
-- 2072777472970563995 — Artifacts in Claude Code "life changing"; expanding to Pro and Max (Jul 2)
-- 2072429181565288665 — Fable 5 rate limits reset (Jul 1, repost ClaudeDevs)
-- 2072000214634742243 — Claude Desktop on Linux launch (Jun 30)
-- 2071653958905467027 — Claude on Microsoft Foundry/Azure GA (Jun 29, repost claudeai)
-- 2071647677591466098 — Subagents run in background by default in next Claude Code (Jun 29)
+### Featured in `log/2026-07-20.md` (status ids — prunable after ~Sep 20):
+- 2077929379661844559, 2077929390806073807, 2077929397495959693, 2077929404219474148, 2077489907350856038, 2077460395279692197
 
 ## Recurring themes
 
 ### @bcherny (Boris Cherny)
-- **Autonomous maintenance routines**: 388 PRs/180 merged is still the landmark data point; Cowork expansion + protein binder repost signal he views both as milestone moments.
-- **Prompt injection defense**: stacked defenses → ~0 attack success rate; Auto Mode default. Thread with simonw still unresolved.
-- **LLM bug taxonomy shifting**: off-by-ones → system design/UX/missing context. Adversarial code review as structural counter.
-- **Claude Code Desktop QoL**: actively improving startup latency and small friction points.
+- **Autonomous maintenance routines**: 388 PRs/180 merged remains the landmark data point; Cowork expansion signals a milestone for broader access.
+- **Prompt injection defense**: stacked defenses → ~0 attack success rate; Auto Mode default. Thread with simonw unresolved.
+- **LLM bug taxonomy**: off-by-ones → system design/UX/missing context. Adversarial code review as structural counter.
+- **Claude Code Desktop QoL**: actively improving startup latency and friction points.
+- **Store stale since Aug 20** — no new data for 3 weeks.
 
 ### @simonw (Simon Willison)
-- **Stale since Aug 20 pull** (403 error). Last covered items: Qwen 27B enthusiastic review (Aug 16), Haiku hallucination flag (Aug 10).
-- **Model quality watchdog**: flags capability and trust gaps; Claude Haiku in WebFetch is an open concern still unresolved by Anthropic.
-- **Security tracker**: accidental-cyberattacks tag active.
-- **Blog active**: simonwillison.net had posts through Aug 21 (llm-openrouter 0.7, llm 0.32.1) — blog activity doesn't require X store recovery.
+- **Store 403 error since Aug 20** — no data for 3 weeks.
+- **Model quality watchdog**: Haiku in WebFetch hallucination concern still unresolved.
+- **Blog active**: simonwillison.net had posts through at least Aug 21 (llm-openrouter 0.7, llm 0.32.1).
+- **Security tracker**: prompt injection debate with bcherny still open.
 
 ### @emollick (Ethan Mollick)
-- **Eval calibration**: pushed back on Qwen 27B for agentic tasks.
-- **Reproducibility advocate**: multiverse reporting + prompt disclosure.
-- **Creative variance gap**: novel addition — smart models bad at generating diverse outputs.
+- **Eval calibration**: reproducibility advocate; multiverse reporting + prompt disclosure push.
+- **Creative variance gap**: smart models bad at generating diverse outputs.
 - **Alignment mainstream signal**: CoT monitoring at 20% inference compute.
-- **Book / new work**: WebSearch suggests a "co-intelligence" follow-up ("co-existence.ai") and agentic shopping research may be in progress — unverified in-window.
 - **Very high posting volume**: continue filtering ruthlessly.
+- **Store stale since Aug 20** — no new data for 3 weeks.
 
 ### @_catwu (Cat Wu)
-- **Feature preview amplification**: /design command preview confirmed. Watch for GA or Desktop expansion.
+- **Feature preview amplification**: /design command preview confirmed (Aug 17). Watch for GA or Desktop expansion.
+- **Store stale since Aug 17** — no data for 3 weeks.
 
 ### @swyx
 - **AI tooling ecosystem**: Kill My SaaS closed (69 submissions); context engineering workshop surfaced.
-- **Store 403 error**: JSONL partial since Aug 20; recovery unknown.
+- **Simulation as scaling law**: WebSearch hints at a late-Aug post on this theme (unconfirmed in-window).
+- **Store 403 error since Aug 20** — no data for 3 weeks.
 
 ### @rasbt (Sebastian Raschka)
-- **Architecture deep-dives**: continues weekly; Glimmer 30B, watermarking clarification covered.
-- **Custom small LLM project**: teased Aug 7; still no update in covered window — likely ships Sep–Oct.
-- **Build a Reasoning Model (From Scratch)**: released and shipping; counterfeit copies on Amazon India flagged.
+- **Architecture deep-dives**: weekly; Glimmer 30B, watermarking covered.
+- **Custom small LLM project**: teased Aug 7; still no update — likely ships Sep–Oct.
+- **Store stale since Aug 18** — no data for 3 weeks.
 
 ### @levelsio (Pieter Levels)
 - **Grok migration still in effect**: switched ideasai.com to Grok 4.6 (Aug 12). No Claude return signals.
-- **Active but off-topic**: posts about real estate, fitness, sleep, food dominate.
+- **Store stale since Aug 20** — no data for 3 weeks.
 
 ### @alexalbert__, @karpathy
-- Both outside window for 17+ days. karpathy last post Aug 2 (LotR renderer experiment). alexalbert__ last Aug 14 (watermarking FAQ repost).
+- Both stale for 4+ weeks. karpathy Sequoia Ascent 2026 fireside chat surfaced in WebSearch (undated). alexalbert__ last Aug 14.
 
 ## Open threads to watch
 
-- **Mac daily pull failure**: raw stores have a full 11-day gap (Aug 20–31). Check launchd job status and Nitter source availability. Next run is blocked without this recovery.
-- **Kill My SaaS winner**: 69 final submissions browseable; no formal winner or post-mortem announced yet. Watch for swyx's analysis.
+- **⚠️ Mac daily pull failure (CRITICAL — 3rd week)**: raw stores have an 18-day gap (Aug 20 → Sep 7). Three consecutive digests missed. Check launchd job, Nitter source availability, and whether the RSS URLs have changed. Recovery essential for next run.
+- **Kill My SaaS winner**: 69 final submissions; no formal winner or post-mortem confirmed. Watch for swyx's analysis.
 - **simonw vs. bcherny on prompt injection**: simonw's Aug 8 blog skeptical; no bcherny counter. Stale while simonw's store is 403.
-- **rasbt's custom small LLM project**: teased Aug 7; no update after 3+ weeks; likely ships Sep–Oct.
-- **levelsio migration trajectory**: still on Grok 4.6; no AI posts in covered windows. Watch for return to Claude.
+- **rasbt's custom small LLM project**: teased Aug 7; ~5 weeks without update; likely ships Sep–Oct.
+- **levelsio migration trajectory**: still on Grok 4.6; watch for return to Claude.
 - **Claude Haiku in WebFetch**: simonw flagged Aug 10; no Anthropic response yet.
-- **Reasoning trace security**: swyx's Aug 12 paper; no public mitigation response from model providers.
-- **/design command GA**: early preview confirmed Aug 17; watch for wider release.
+- **Reasoning trace security**: swyx's Aug 12 paper; no public mitigation from model providers.
+- **/design command GA**: early preview Aug 17; watch for wider release.
 - **Protein binder follow-up**: Adaptyv Bio / Twist Bioscience may publish independently.
 - **Alignment monitoring infrastructure**: emollick's CoT monitoring signal; watch other labs.
-- **Claude Security plugin**: still in beta; watch for GA announcement.
-- **emollick book / co-existence.ai**: unverified from WebSearch; watch for confirmed announcement.
+- **Claude Security plugin**: still in beta; watch for GA.
+- **karpathy Sequoia Ascent chat**: surfaced in WebSearch — may have substantial content on "agentic engineering raises the ceiling" theme; verify when store recovers.
+- **swyx "simulation as scaling law"**: late-Aug post surfaced in WebSearch; may be in-window when store recovers.
 
 ## Notes for next run
 
-- Window: 2026-09-07 → 2026-09-14 (next Monday). Or earlier if the pull resumes mid-week.
-- **CRITICAL**: Mac launchd daily pull has produced no new data since Aug 20. Check `ai-learning/raw/_meta.json` for updated `last_pull_utc` before writing digest. If stores are still stale through Sep 7+, escalate in the digest — this is now a 3-week gap.
-- `log/2026-06-29.md` entries now prunable (Aug 29 prune date passed) — pruned in this run.
-- `log/2026-07-06.md` entries prunable Sep 6.
-- @simonw and @swyx stores had 403 errors on the Aug 20 pull — check if `_meta.json` shows recovery.
-- emollick: WebSearch hints at posts about AI slop preprints (his name on papers he didn't write) and human-augmentation vs. task-automation research — look for these in recovered store.
-- Check if /design command has shipped more broadly (was early preview Aug 17).
-- Check if rasbt's custom small LLM project has shipped.
+- Window: 2026-09-14 → 2026-09-21 (next Monday).
+- **CRITICAL**: Mac launchd pull has now missed 18 days. Check `ai-learning/raw/_meta.json` for updated `last_pull_utc` immediately. If still stale, the digest will be empty again.
+- `log/2026-07-06.md` entries are now prunable (Sep 6 prune date passed) — prune next run.
+- @simonw and @swyx stores have had 403 errors since Aug 20 — check if `_meta.json` shows recovery.
+- emollick: WebSearch hints at posts on AI slop preprints and human-augmentation vs. task-automation research — look for in recovered store.
+- rasbt: check for custom small LLM project announcement.
+- Check if /design command has shipped more broadly.
 - Check if Kill My SaaS winner was announced.
+- karpathy: verify Sequoia Ascent fireside chat post date when store recovers.
