@@ -3,22 +3,23 @@
 The routine reads this on start and rewrites it before exit.
 
 ## Last run
-2026-09-10T00:00:00Z (one-hundred-and-twenty-fifth run — Thursday September 10, 2026; CBRS Sep 9 close $197.42 confirmed (-6.2%); TSLA Sep 9 close $366.60 confirmed (+3.5%); both Sep 9 predictions MISSED; CBRS officer Form 144 $10.2M; Sep 10 closes pending; Tomorrow predictions logged: CBRS $189–$206, TSLA $359–$374 for Sep 11)
+2026-09-11T00:00:00Z (one-hundred-and-twenty-sixth run — Friday September 11, 2026; CBRS Sep 11 intraday $171.54–$182.33 BELOW IPO PRICE $185 for first time since Day 45 July 20; TSLA Sep 10 close $363.56 confirmed (-0.85%); SPCX Sep 10 close ~$148.76 (59M unlock executed); Nscale NEW — $3B US IPO target Sep–Oct, $14.6B val; Anthropic wave article Bloomberg Sep 9; Monday Sep 14 predictions logged: CBRS $168–$186, TSLA $356–$371)
 
 ## Tracked private companies
 | Company | Latest known IPO status | Source | Last checked |
 |---|---|---|---|
 | OpenAI | **Q4 2026 IPO reportedly targeted** vs "2027 or sooner" (CFO Friar Aug 19); confidential S-1 filed Jun 8; public S-1 not filed; $852B valuation; revenue run rate >$40B; no update Sep 10 | _cnbc.com/2026/08/19/open-ai-ipo-timing-2027-friar.html (search-confirmed)_ | 2026-09-10 |
 | Anthropic | **PUBLIC S-1 NOT FILED as of Sep 10**; expected late September; roadshow mid-October; listing "just before November midterms" (~late Oct–early Nov); Proposed ticker: ANTH; $965B post-money valuation (Series H $65B, closed May 28); MS/GS/JPM/Citi underwriters; CONFIDENTIAL S-1 FILED JUNE 1, 2026; REVENUE RUN-RATE >$47B ANNUALIZED; $2T IPO VALUATION TARGET | _manifold.markets/AlexMiller3a5e/when-will-anthropics-public-s1-come (search-confirmed)_ | 2026-09-10 |
-| SpaceX | **PUBLIC as of June 12, 2026. NASDAQ: SPCX. IPO price $135/share; Day 1 close $161.11 (+19.3%); ATH intraday $225.64 (Day 5, June 16); all-time closing low $107.01 (July 28); Sep 9 close ~$149.03 (-2.9%; 319M unlock day)**; **59M shares unlock Sep 10 (today)**; **Starship Flt 14 NET TUESDAY SEPTEMBER 15**; Sep 24/Oct 9/Oct 24/Dec 8 = remaining tranches; full block expires Dec 8, 2026; **OPPENHEIMER PT RAISED TO $280 FROM $250 (SEP 2) — OUTPERFORM**; 29% short interest; Cursor $60B acquisition closed Aug 14; Q3 earnings Nov 5, 2026 | _tradingeconomics.com/spcx:us (search-confirmed)_ | 2026-09-10 |
+| SpaceX | **PUBLIC as of June 12, 2026. NASDAQ: SPCX. IPO price $135/share; Day 1 close $161.11 (+19.3%); ATH intraday $225.64 (Day 5, June 16); all-time closing low $107.01 (July 28); Sep 10 close ~$148.76 (59M unlock executed)**; **Starship Flt 14 NET TUESDAY SEPTEMBER 15**; Sep 24/Oct 9/Oct 24/Dec 8 = remaining tranches; full block expires Dec 8, 2026; **OPPENHEIMER PT RAISED TO $280 FROM $250 (SEP 2) — OUTPERFORM**; 29% short interest; Cursor $60B acquisition closed Aug 14; Q3 earnings Nov 5, 2026 | _tradingeconomics.com/spcx:us (search-confirmed)_ | 2026-09-11 |
 | Databricks | **~H2 2027 IPO** — CEO: "2026 terrible year to go public"; **$190B VALUATION ($5B ROUND CLOSED AUG 13–14)**; **ARR >$7B run-rate (+80% YoY, Q2 2026)**; no update Sep 10 | _databricks.com press releases (search-confirmed)_ | 2026-09-10 |
 | Mistral | No IPO timeline confirmed; EU AI Act GPAI Code of Practice SIGNATORY; ARR >$400M; IN TALKS TO RAISE $3.5B AT ~$23B VALUATION (Jun/Aug 2026; not confirmed closed); no update Sep 10 | _Bloomberg Jun 2026 (search-confirmed)_ | 2026-09-10 |
-| Cerebras | PUBLIC as of May 14, 2026. NASDAQ: CBRS. IPO price $185/share; Day 1 close $311.07 (+68%); **Day-80 confirmed $197.42 (Sep 9, 2026; -6.2%)**; **Sep 10 (Day 81) close pending**; CS-4 in GA for Sep quarter; **14.6M INTERMEDIATE SHARE TRANCHE UNLOCKS WEDNESDAY SEPTEMBER 16 (PROSPECTUS-CONFIRMED — corrected from prior "Tuesday")**; MORGAN STANLEY OVERWEIGHT CONFIRMED — CORE REVENUE 3×+ BY 2027; Mizuho Buy Aug 27; ATH $386.34; 52w closing low $172.85 (Day 45, July 20); Q2: core beat, GAAP miss; FY core guidance $880–890M; 5+ investigations; lockup Nov 10; **OFFICER SEAN LIE FORM 144 $10.2M (53,460 shares); CEO FELDMAN FORM 4 $7.88M SOLD SEP 4** | _stocktitan.net/sec-filings/CBRS/144-cerebras-systems-inc-sec-filing-3e03a21c0b31.html (search-confirmed)_ | 2026-09-10 |
+| Cerebras | PUBLIC as of May 14, 2026. NASDAQ: CBRS. IPO price $185/share; Day 1 close $311.07 (+68%); **Day-81 est ~$199.77 (Sep 10, unconfirmed)**; **Day-82 Sep 11 intraday $171.54–$182.33 (open $179.45) — BELOW IPO PRICE $185 FIRST TIME SINCE DAY 45 JULY 20**; CS-4 in GA for Sep quarter; **14.6M INTERMEDIATE SHARE TRANCHE UNLOCKS WEDNESDAY SEPTEMBER 16 (3 TRADING DAYS FROM SEP 11)**; MORGAN STANLEY OVERWEIGHT CONFIRMED — CORE REVENUE 3×+ BY 2027; Mizuho Buy Aug 27; ATH $386.34; 52w closing low $172.85 (Day 45, July 20); Q2: core beat, GAAP miss; FY core guidance $880–890M; 5+ investigations; lockup Nov 10; **OFFICER SEAN LIE FORM 144 $10.2M (53,460 shares); CEO FELDMAN FORM 4 $7.88M SOLD SEP 4** | _stocktitan.net/overview/CBRS/ (search-confirmed)_ | 2026-09-11 |
 
 ## AI / quantum IPOs filed or upcoming
 | Company | Sector | Status | Expected Date | Ticker | Source |
 |---|---|---|---|---|---|
 | OpenAI | AI | Q4 2026 (contested; "2027 or sooner" per CFO Aug 19); confidential S-1 filed Jun 8; public S-1 not filed | ~Q4 2026 (contested) | TBD | _openai.com (search-confirmed)_ |
+| Nscale | AI | **NEW SEP 11**: AI GPU neocloud (data centers for GPU-heavy AI workloads); London-based; founded 2024; targeting Sep–Oct 2026 US IPO; $3B raise; $14.6B valuation; $51B contracted revenue; GS + JPMorgan lead; NO S-1 FILED AS OF SEP 11 | **Late Sep–Oct 2026 (may slip)** | TBD (US exchange) | _bloomberg.com/news/articles/2026-08-06/nscale-touts-51-billion-in-contracts-targets-september-us-ipo (search-confirmed; URL proxy-blocked)_ |
 | Anthropic | AI | **PUBLIC S-1 DELAYED PAST SEP 9 & SEP 10; still not filed**; now expected late September; roadshow mid-October; listing ~late Oct–early Nov; ANTH proposed; MS/GS/JPM/Citi; revenue >$47B annualized; $2T valuation target | **~Late Sep 2026 (public S-1); Oct–Nov 2026 (listing)** | ANTH (proposed) | _manifold.markets/AlexMiller3a5e/when-will-anthropics-public-s1-come (search-confirmed)_ |
 | Syntiant | AI | **S-1 FILED JULY 6, 2026; S-1/A JULY 13, 2026; S-1/A AUGUST 31, 2026** (third amendment); edge AI chips (Neural Decision Processors); Nasdaq: SYTN; $270M TTM revenue; Intel/Microsoft-backed; Citi/BofA/UBS lead; no roadshow or price range announced; AWAITING ROADSHOW/PRICE-RANGE | **Q3–Q4 2026 (no firm date)** | SYTN | _syntiant.com/press-release (search-confirmed)_ |
 | Lambda | AI / Cloud infra | Pre-filing; GPU cloud / AI infrastructure; IN TALKS TO RAISE $3B AT ~$12B VALUATION (Bloomberg Aug 24, 2026); >$1.5B revenue run-rate; Microsoft multi-B + NVIDIA partnership; no S-1 filed; Morgan Stanley / JPMorgan / Citi hired; IPO as soon as 2027 | ~H2 2027 | TBD | _Bloomberg Aug 24 (search-confirmed)_ |
@@ -38,28 +39,29 @@ The routine reads this on start and rewrites it before exit.
 _Prior completed (outside 30-day window): Horizon Quantum HQ debuted March 20 via SPAC; Xanadu XNDU debuted March 27 via SPAC; Infleqtion INFQ debuted February 17 — all outside 30-day window._
 
 ## 30-day rolling watch items
-1. **ANTHROPIC PUBLIC S-1 EXPECTED LATE SEPTEMBER — STILL NOT FILED AS OF SEP 10**: Public S-1 NOT filed by EOD Sep 10. Now expected any day this week or next. Roadshow mid-October; listing just before November midterms (~late Oct–early Nov). $965B post-money; $2T valuation target; ANTH proposed; NASDAQ. **Monitor EDGAR daily — filing could come any day now.** UPDATED 2026-09-10.
-2. **NVDA $12.9B HUGGING FACE ACQUISITION — DOJ HSR REVIEW ONGOING**: Agreement Sep 2; public confirm Sep 3. DOJ/FTC HSR waiting period ongoing. Expected close H1 2027 pending regulatory approval. Nvidia at GS conference Sep 10 (positive demand commentary); Firmus-OpenAI Malaysian data center deal signed. UPDATED 2026-09-10.
-3. **STARSHIP FLIGHT 14 TUESDAY SEPTEMBER 15 TARGET (NET)**: FAA ship-catch approved Sep 3; FCC filing confirms Sep 15 NET. First-orbital Starship; 20 Starlink V3 satellites. **5 days from Sep 10 (Thu)**. Key SPCX catalyst. UPDATED 2026-09-10.
-4. **SPCX CORRECTED LOCKUP SCHEDULE: SEP 9 = 319M (DONE); SEP 10 = 59M (TODAY)**; Sep 24/Oct 9/Oct 24/Dec 8 = subsequent tranches; Sep 9 close $149.03 (-2.9%); prior "Tuesday September 16" CBRS tranche day corrected to **Wednesday September 16**. Starship Flt 14 Sep 15. UPDATED 2026-09-10.
-5. **CBRS 14.6M INTERMEDIATE TRANCHE UNLOCKS WEDNESDAY SEPTEMBER 16**: Per IPO prospectus; 6 calendar days / ~4 trading days from Sep 10. At Sep 9 price ~$197.42, this tranche = ~$2.88B face value. **COMPOUNDED BY: officer Form 144 $10.2M (Lie) + CEO Feldman Form 4 $7.88M (Sep 4) — insider selling active near the tranche.** Short interest 16.9% float. UPDATED 2026-09-10.
-6. **TSLA CYBERCAB BROADER AUSTIN ROLLOUT TODAY (SEP 10)**: Broader commercial expansion (beyond invite-only Sep 3 event) estimated for today. NHTSA AQ26002 probe ongoing (covers ~1,000 Cybercab FMVSS self-certification; no escalation to Engineering Analysis). Sep 9 TSLA +3.5% to $366.60 ahead of today. China recall OTA execution Sep 25 (Friday). Q3 deliveries est Oct 2 (Friday). UPDATED 2026-09-10.
-7. **CBRS FORECAST AUDIT FINDING — RANGES TOO NARROW**: CBRS all-time hit rate 44% (9 samples); 30-day 25% (4 samples). Recent misses: Sep 4 (actual $214 vs $177–$193 range; +10.9%), Sep 8 (actual $210.43 vs $181–$199; +5.7%), Sep 9 (actual $197.42 vs $201–$220; -1.78%). Pattern: audit says "per_ticker_underperformance." Routine cannot auto-modify prompt. **Surfaced for user review — consider widening CBRS vol multiplier or raising realized-vol estimate from 4.5% to ~6–7%.** UPDATED 2026-09-10.
-8. **TIGER GLOBAL ~3M SHARES ($663M) CBRS Q2 BUY (AUG 14 13F)**: Tiger Global added ~3.0M shares CBRS; joins ARK ($17M Aug 26), Mizuho (Buy Aug 27), Morgan Stanley (overweight 3×+ revenue 2027). Offset by recent insider selling (Feldman Sep 4, Lie Form 144). CARRIED FORWARD 2026-09-10.
-9. **CBRS LOCKUP EXPIRY NOV 10 (DAY 180)**: ~61 days from Sep 10. Day-80 at $197.42 (+6.7% vs IPO $185). 5+ investigations; GAAP margin miss; 86% customer concentration; intermediate tranche Sep 16 (Wed) is the nearer event. CARRIED FORWARD 2026-09-10.
-10. **OPENAI Q4 2026 IPO (CONTESTED) VS 2027**: CFO Friar "2027 or sooner" Aug 19; multiple reports say Q4 2026 still on table; Polymarket odds near zero for 2026; $852B valuation; confidential S-1 filed Jun 8. No update Sep 10. CARRIED FORWARD 2026-09-10.
+1. **CBRS BELOW IPO PRICE SEP 11 (DAY 82) — SEP 16 TRANCHE 3 TRADING DAYS AWAY**: Sep 11 intraday $171.54–$182.33, below IPO $185 for first time since Day 45 (July 20). Sep 16 (Wed) 14.6M intermediate tranche = 3 trading days (Mon/Tue/Wed). No company-specific negative news — attributed to pre-tranche supply pressure + active insider selling (CEO Feldman $7.88M Sep 4 + officer Lie Form 144 $10.2M). **Monitor Sep 14 (Mon) open for follow-through below IPO or recovery.** UPDATED 2026-09-11.
+2. **STARSHIP FLIGHT 14 TUESDAY SEPTEMBER 15 TARGET (NET)**: FAA ship-catch approved Sep 3; FCC filing confirms Sep 15 NET. First-orbital Starship; 20 Starlink V3 satellites. 4 days from Sep 11 (Fri). Key SPCX catalyst; 29% short interest = short-squeeze risk on success. UPDATED 2026-09-11.
+3. **ANTHROPIC PUBLIC S-1 STILL NOT FILED AS OF SEP 11**: Public S-1 NOT filed. Now expected late September / mid-October public filing; roadshow mid-October; listing just before November midterms (~late Oct–early Nov). $965B post-money; $2T valuation target; ANTH proposed; NASDAQ. Bloomberg Sep 9 "wave of AI IPOs" names Nscale, Aggreko, Oura alongside Anthropic. **Monitor EDGAR daily.** UPDATED 2026-09-11.
+4. **NSCALE NEW — AI GPU NEOCLOUD TARGETING SEP–OCT 2026 US IPO**: $3B raise; $14.6B val; $51B contracted revenue; GS + JPMorgan; London-based; founded 2024. No S-1 filed as of Sep 11. **Monitor SEC EDGAR for Nscale S-1 filing and Bloomberg for updated pricing date as September runs out.** UPDATED 2026-09-11.
+5. **SPCX SEP 10 CLOSE ~$148.76 (59M UNLOCK EXECUTED)**; Sep 24/Oct 9/Oct 24/Dec 8 = subsequent tranches; Starship Flt 14 NET Tuesday Sep 15 = primary near-term catalyst. UPDATED 2026-09-11.
+6. **CBRS 14.6M INTERMEDIATE TRANCHE UNLOCKS WEDNESDAY SEPTEMBER 16**: Per IPO prospectus; 3 trading days from Sep 11 (Mon Sep 14, Tue Sep 15, Wed Sep 16). At est ~$177 intraday Sep 11, this tranche = ~$2.58B face value. **COMPOUNDED BY: officer Form 144 $10.2M (Lie) + CEO Feldman Form 4 $7.88M (Sep 4) — insider selling active.** Short interest 16.9% float. UPDATED 2026-09-11.
+7. **NVDA $12.9B HUGGING FACE ACQUISITION — DOJ HSR REVIEW ONGOING**: Agreement Sep 2; DOJ/FTC HSR waiting period ongoing. Expected close H1 2027 pending regulatory approval. Nvidia GS Communacopia+Tech Conference Sep 10 (positive AI demand commentary). Firmus-OpenAI Malaysian data center deal. CARRIED FORWARD 2026-09-11.
+8. **CBRS FORECAST AUDIT FINDING — RANGES TOO NARROW**: CBRS all-time hit rate 44% (9 samples); 30-day 25% (4 samples). Pattern: "per_ticker_underperformance." Sep 11 intraday confirms additional miss (range $189–$206 vs actual $171–$182). Routine cannot auto-modify prompt. **Surfaced for user review — consider widening CBRS vol multiplier from ~5% to ~8–10% given recent 6–12% single-day swings.** UPDATED 2026-09-11.
+9. **CBRS LOCKUP EXPIRY NOV 10 (DAY 180)**: ~60 days from Sep 11. Day-82 below IPO $185. Intermediate tranche Sep 16 (Wed) is the nearer event. CARRIED FORWARD 2026-09-11.
+10. **OPENAI Q4 2026 IPO (CONTESTED) VS 2027**: CFO Friar "2027 or sooner" Aug 19; Polymarket odds near zero for 2026; $852B valuation; confidential S-1 filed Jun 8. No update Sep 11. CARRIED FORWARD 2026-09-11.
 
 ## Notes for next run
-- **SEP 11 (FRIDAY) PRIORITIES**: Capture CBRS, TSLA, SPCX Sep 10 closes (today's — should be confirmed overnight). Evaluate Sep 10 predictions (CBRS $201–$220, TSLA $345–$359 from Sep 9 run) against Sep 10 actuals. Sep 11 predictions logged: CBRS $189–$206, TSLA $359–$374.
-- **ANTHROPIC S-1**: Monitor SEC EDGAR (efts.sec.gov) DAILY. Expected "late September" — could file any day this week or next.
-- **SPCX**: 59M shares unlock Sep 10 (today). Starship Flight 14 = Sep 15 (Tuesday, 5 days). Capture Sep 10 close.
-- **CBRS**: Sep 16 (Wednesday) 14.6M share tranche. Note correction: state.md previously said "Tuesday September 16" — it's WEDNESDAY. Monthly options expiry is Sep 18 (Friday, 3rd Friday), not Sep 19 (Saturday) as prior state erroneously stated.
-- **TSLA Sep 10**: Cybercab broader Austin rollout live — capture Sep 10 close; note market reaction to execution data (routing/wait time improvements?).
-- **DATE CONFIRMED**: Sep 10 = Thursday; Sep 11 = Friday; Sep 14 = Monday; Sep 15 = Tuesday; Sep 16 = Wednesday; Sep 17 = Thursday; Sep 18 = Friday (monthly opex); Sep 19 = Saturday; Sep 25 = Friday (China OTA); Oct 2 = Friday (Q3 deliveries est).
-- **Predictions logged for Friday September 11, 2026 (from Sep 10 run):**
-  - CBRS: $189–$206 (realized vol ~4.5%; basis Sep 9 $197.42; skew: Sep 16 Wed tranche approaching; officer Form 144 $10.2M; no special Friday catalyst)
-  - TSLA: $359–$374 (realized vol ~2%; basis Sep 9 $366.60; skew: post-Cybercab broader rollout settling; NHTSA probe; Friday no special effect)
-- **Sep 9 predictions evaluated**: CBRS $201–$220 → actual $197.42 → MISS (-1.78%); TSLA $346–$360 → actual $366.60 → MISS (+1.83%). Both missed Sep 9.
+- **SEP 14 (MONDAY) PRIORITIES**: Capture CBRS, TSLA, SPCX Sep 11 final closes (especially CBRS — confirm whether it closed above or below IPO $185; last intraday was $171–$182). Evaluate Sep 11 predictions (CBRS $189–$206, TSLA $359–$374) against Sep 11 actuals. Monday Sep 14 predictions already logged: CBRS $168–$186, TSLA $356–$371.
+- **CBRS SEP 16 TRANCHE**: Wednesday September 16 is the 14.6M intermediate tranche. Monitor Sep 14 (Mon) open for post-Friday-gap continuation or recovery; Sep 15 (Tue) final pre-tranche trading. At Sep 11 intraday ~$177, tranche = ~$2.58B face value.
+- **STARSHIP FLT 14**: NET Tuesday September 15. Binary catalyst for SPCX; 29% short interest. Capture launch outcome.
+- **ANTHROPIC S-1**: Monitor SEC EDGAR DAILY. Public S-1 still not filed; expected any day late September.
+- **NSCALE**: Monitor SEC EDGAR for S-1 filing (none filed as of Sep 11). Bloomberg source says September target; may slip to October.
+- **DATE CONFIRMED**: Sep 11 = Friday; Sep 14 = Monday; Sep 15 = Tuesday (Starship Flt 14 NET); Sep 16 = Wednesday (CBRS 14.6M tranche); Sep 18 = Friday (monthly opex, 3rd Friday); Sep 25 = Friday (China OTA TSLA); Oct 2 = Friday (TSLA Q3 deliveries est); Nov 10 = Tuesday (CBRS main lockup Day 180).
+- **Predictions logged for Monday September 14, 2026 (from Sep 11 run):**
+  - CBRS: $168–$186 (realized vol ~5%; basis est Sep 11 intraday midpoint ~$177; negative skew: Sep 16 Wed tranche 2 trading days away; active insider selling; elevated vol post-gap)
+  - TSLA: $356–$371 (realized vol ~2%; basis Sep 10 close $363.56; skew: Starship Flt 14 NET Tue Sep 15; Cybercab/NHTSA probe)
+- **Sep 11 predictions (from Sep 10 run) PENDING EVALUATION**: CBRS $189–$206 → actual Sep 11 MISS (intraday $171–$182 = below lower bound $189); TSLA $359–$374 → Sep 11 range $357–$369 = near-miss/partial (HIT by range criteria; final close unconfirmed).
+- **Sep 10 predictions PENDING**: CBRS $201–$220 → actual Sep 10 est ~$199.77 (unconfirmed) → near-miss; TSLA $345–$359 → actual Sep 10 $363.56 → MISS (+$4.56 above upper bound).
 
 ## Buying Window Tracker — anchor data (do not modify lightly)
 
@@ -150,7 +152,8 @@ These are historical anchors used by the Buying Window Tracker section. They are
 - **Day 78 close:** ~$214.00 CONFIRMED (September 4, 2026; +12%; NVDA/Hugging Face AI chip rally)
 - **Day 79 close:** ~$210.43 CONFIRMED (September 8, 2026; -1.7%; vol 2× avg)
 - **Day 80 close:** $197.42 CONFIRMED (September 9, 2026; -6.2%; officer insider selling; Sep 16 tranche pressure)
-- **Day 81 close:** PENDING (September 10, 2026; Sep 11 prediction $189–$206 logged)
+- **Day 81 close:** ~$199.77 ESTIMATED UNCONFIRMED (September 10, 2026; yfinance proxy-blocked; search estimate only)
+- **Day 82 intraday:** $171.54–$182.33 (open $179.45; September 11, 2026; BELOW IPO PRICE $185 FOR FIRST TIME SINCE DAY 45)
 - **52w low (closing):** $172.85 (Day 45, July 20) — ATH intraday: $386.34 (Day 1); all-time intraday low: $160.81 (Day 30 June 26)
 - **Shares offered:** 30M Class A
 - **IPO gross proceeds:** $5.55B
@@ -181,9 +184,10 @@ These are historical anchors used by the Buying Window Tracker section. They are
   - Sep 4 run: $181–$199 for Sep 8 → MISS (actual $210.43; +5.7% above range)
   - Sep 5 run: $204–$224 for Sep 8 → HIT (actual $210.43; 32% into band)
   - Sep 8 run: $201–$220 for Sep 9 → MISS (actual $197.42; -1.78% below range)
-  - Sep 9 run: $201–$220 for Sep 10 → PENDING (Sep 10 close not confirmed)
-  - **Sep 10 run: $189–$206 for Sep 11 (Fri) — LOGGED** (basis Sep 9 $197.42; skew: Sep 16 Wed tranche; Form 144; no special Fri catalyst)
-  - **CBRS all-time: 9 evaluated, 4 hits (44%); 30-day: 4 evaluated, 1 hit (25%) — underperforming; ranges too narrow**
+  - Sep 9 run: $201–$220 for Sep 10 → NEAR-MISS (actual est ~$199.77 unconfirmed; just below lower bound)
+  - Sep 10 run: $189–$206 for Sep 11 → MISS (intraday $171.54–$182.33; well below lower bound $189)
+  - **Sep 11 run: $168–$186 for Sep 14 (Mon) — LOGGED** (basis est Sep 11 midpoint ~$177; skew: Sep 16 tranche, insider selling, elevated vol, negative skew)
+  - **CBRS all-time: 10 evaluated, 4 hits (40%); 30-day: 5 evaluated, 1 hit (20%) — underperforming; ranges too narrow**
 
 ### TSLA — Tesla, Inc.
 - **Classification:** Mature public stock (listed since 2010-06-29 NASDAQ). Use 52-week low / 52-week high / 200-day moving average as reference levels.
@@ -192,7 +196,8 @@ These are historical anchors used by the Buying Window Tracker section. They are
 - **Confirmed/estimated closes (updated through September 10):**
   - **September 8, 2026: ~$352.89 CONFIRMED (state/SEARCH)** (first post-Labor Day)
   - **September 9, 2026: $366.60 CONFIRMED (SEARCH)** (+3.5% from Sep 8; opened $355.01, peaked $370.00, settled $366.60)
-  - **September 10, 2026: PENDING** (Cybercab broader Austin rollout day; prediction from Sep 9 run $345–$359 — not yet evaluated)
+  - **September 10, 2026: $363.56 CONFIRMED** (-0.85% from Sep 9 $366.60; Sep 11 intraday $357.68–$369.21)
+  - **September 11, 2026: PENDING FINAL CLOSE** (intraday range $357.68–$369.21 confirmed)
 - **Q2 2026 EARNINGS (July 22, 2026 AMC):** Revenue $28.24B (+26% YoY; beat); EPS $0.33 GAAP (miss); auto GM ex-reg credits 16.3% (miss); FCF −$1.1B
 - **CYBERCAB DEPLOYMENT:** Sep 3, 2026 invite-only launch (Austin TX; 45 Cybercabs; ACL Live event); **broader commercial rollout estimated Sep 10 (today)**; Wells Fargo "early execution issues" (routing errors, wait times); NHTSA AQ26002 probe ongoing (~1,000 Cybercab FMVSS self-certification)
 - **NEVADA ROBOTAXI (AUG 20–21):** Full AVNC permit 5,000 vehicles Clark County; commercial launch est ~Sep 20 area (verify exact date)
@@ -213,9 +218,10 @@ These are historical anchors used by the Buying Window Tracker section. They are
   - Sep 4 run: $375–$391 for Sep 8 → MISS (actual $352.89; -5.9% below range)
   - Sep 5 run: $347–$361 for Sep 8 → HIT (actual $352.89; 42% into band)
   - Sep 8 run: $346–$360 for Sep 9 → MISS (actual $366.60; +1.83% above range)
-  - Sep 9 run: $345–$359 for Sep 10 → PENDING (Sep 10 close not confirmed)
-  - **Sep 10 run: $359–$374 for Sep 11 (Fri) — LOGGED** (basis Sep 9 $366.60; skew: post-Cybercab rollout settling; NHTSA probe; Friday no special effect)
-  - **TSLA all-time: 9 evaluated, 5 hits (55.6%); 30-day: 4 evaluated, 2 hits (50%) — borderline calibration**
+  - Sep 9 run: $345–$359 for Sep 10 → MISS (actual $363.56; +$4.56 above upper bound)
+  - Sep 10 run: $359–$374 for Sep 11 → PENDING FINAL CLOSE (intraday $357–$369; near-miss)
+  - **Sep 11 run: $356–$371 for Sep 14 (Mon) — LOGGED** (basis Sep 10 $363.56; skew: Starship Flt 14 NET Tue Sep 15; Cybercab/NHTSA)
+  - **TSLA all-time: 10 evaluated, 5 hits (50%); 30-day: 5 evaluated, 2 hits (40%) — borderline calibration**
 
 ### QNT — Quantinuum (trapped-ion quantum hardware + software)
 - **Classification:** New IPO (Day 1 = June 4, 2026). Use IPO / Day 1 / ATH as reference levels.
@@ -236,7 +242,7 @@ These are historical anchors used by the Buying Window Tracker section. They are
 - **All-time closing low:** $107.01 (July 28, 2026)
 - **Sep 8 close:** ~$153.47 (search-confirmed; Day 64)
 - **Sep 9 close:** ~$149.03 (-2.9%; 319M unlock day; Day 65)
-- **Sep 10 (Day 66):** 59M share unlock today; Starship Flight 14 approach
+- **Sep 10 (Day 66):** ~$148.76 ESTIMATED (59M unlock executed; search-confirmed estimate; Starship Flt 14 NET Sep 15)
 - **Q2 2026 earnings:** Revenue $7.81B (+92% YoY); AI segment $2.6B; Starlink $4.3B (12M subscribers); CapEx $18.4B; backlog $47.5B
 - **CURSOR $60B ACQUISITION FORMALLY CLOSED AUG 14**
 - **STARSHIP FLIGHT 14 FCC FILING (SEP 2): TARGETS TUESDAY SEPTEMBER 15** (first orbital Starship; 20 Starlink V3 satellites; FAA SHIP-CATCH APPROVED SEP 3)
