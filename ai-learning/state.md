@@ -3,9 +3,24 @@
 Rolling state for the ai-learning routine. Read on start, rewritten before exit.
 
 ## Last run
-2026-09-14T00:00:00Z — weekly run, window 2026-09-07 → 2026-09-14. **Data gap: all raw stores still stale (newest data Aug 19–20); 4th consecutive missed digest from the Mac daily pull. Content sourced via WebSearch last resort: 1 confirmed in-window X post (bcherny Sep 11) + 3 simonw blog posts (Sep 8, 11, 12). Dominant story: OpenAI Navier-Stokes claim (Sep 8).**
+2026-09-21T00:00:00Z — weekly run, window 2026-09-14 → 2026-09-21. **Data gap: all raw stores still stale (newest data Aug 19–20); 5th consecutive missed digest from Mac daily pull. Content sourced via WebSearch last resort: 2 confirmed in-window X posts (bcherny Sep 17, _catwu Sep 16) + 2 simonwillison.net blog posts (Sep 14, Sep 18) + 1 rasbt post (Sep 14 approx, no URL). Dominant stories: Anthropic Projects/workspace launch + Gemini hack breakout + Amodei "Pace the Frontier" pacing debate.**
 
 ## Covered posts (dedupe list — prune entries older than ~60 days)
+
+### Featured in `log/2026-09-21.md`:
+
+**bcherny:**
+- 2100639991244427490 — Claude Code Projects beta launch (Sep 17)
+
+**_catwu:**
+- 2100260655312089562 — Cowork + chat merger, Claude Design integration (Sep 16)
+
+**simonw:**
+- simonwillison.net/2026/Sep/14/laurie-voss/ — Laurie Voss quote: code-writing costs collapsed; requirements + UX remain (Sep 14, blog post)
+- simonwillison.net/2026/Sep/18/gemini-hacked-three-companies/ — Gemini autonomous hacking of 3 companies in May; Google withheld until WSJ (Sep 18, blog post)
+
+**rasbt:**
+- (Sep 14 approx, no status URL) — "Pacing != pacing development": pacing means evaluation-gated releases, not slower training
 
 ### Featured in `log/2026-09-14.md`:
 
@@ -102,72 +117,77 @@ _(No posts — full data gap. Mac daily pull did not cover Aug 20–31.)_
 ### Featured in `log/2026-07-27.md` (prunable after ~Sep 27):
 - 2080713091688583312, 2080710971228918066, 2079990597973057691, 2080750942333374870, 2080731979528679617
 
-### Featured in `log/2026-07-20.md` (PRUNABLE — Sep 20 passed):
-- 2077929379661844559, 2077929390806073807, 2077929397495959693, 2077929404219474148, 2077489907350856038, 2077460395279692197
-
 ## Recurring themes
 
 ### @bcherny (Boris Cherny)
-- **Production code quality**: Sep 11 post establishes clear two-tier framework: prototype = black box OK; production Claude code = HIGHER bar than human code (lint + e2e + daily fuzzers + auto-review + security review). Landmark practical post.
-- **Autonomous maintenance routines**: 388 PRs/180 merged remains the landmark data point. Cowork expansion signals broader access.
-- **Claude Code extensibility**: Sep 3 post (just outside window) previewed major extensibility features — watch for follow-up.
-- **Store still stale since Aug 20** — 4 weeks without Mac pull data; Sep 11 post found only via WebSearch.
+- **Claude Code Products**: Sep 17 Projects launch (parallel cloud threads) is the biggest product development since Auto Mode. Uses Projects for own code daily.
+- **Production code quality**: Sep 11 post (higher bar for production code) remains landmark practical advice.
+- **Autonomous maintenance routines**: 388 PRs/180 merged data point from Aug still stands.
+- **Store still stale since Aug 20** — 5 weeks without Mac pull data; all recent posts found via WebSearch only.
 
 ### @simonw (Simon Willison)
-- **OpenAI math claim critic**: Sep 8 Navier-Stokes post is his most important piece of the month — balanced, covers technical + ethical dimensions.
-- **Agent-era experiments**: Sep 12 running routes demo shows simonw's hands-on approach to testing new models immediately on release.
-- **May be using Bluesky over X**: bsky.app/profile/simonwillison.net found in search — may explain difficulty finding X post IDs. Raw store had 403 error since Aug 20.
-- **Blog active**: posts consistently throughout the window. Consider blog as primary source when raw store is stale.
-
-### @emollick (Ethan Mollick)
-- **Satirical Navier-Stokes post confirmed via secondary sources**: "Quick, spread some rumors about other really hard problems that Anthropic is on the verge of solving" — multiple sources describe this but no X URL found. Confirms he was active this week.
-- **Book "Co-Existence" releasing Oct 20** — promotion period has started; watch for posts.
-- **Store stale since Aug 20** — 4 weeks without data.
+- **AI safety/security analyst**: Sep 18 Gemini hack post is his most important piece of the month — first documented AI breakout into real company systems.
+- **Software economics**: Sep 14 Laurie Voss curation shows simonw's ongoing interest in how AI restructures software cost curves.
+- **Still using Bluesky + blog**: bsky.app/profile/simonwillison.net active; blog at simonwillison.net primary content source from cloud.
+- **Blog active**: ~18 posts in September. Raw store has 403 error since Aug 20.
 
 ### @_catwu (Cat Wu)
-- **Store stale since Aug 17** — 4 weeks without data. Last known: /design command preview.
+- **Product consolidation**: Sep 16 Cowork+chat+Design merge is a major UX shift at Anthropic — watch for further consolidation.
+- **Store stale since Aug 17** — 5 weeks without data. Sep 16 post found via WebSearch.
+
+### @emollick (Ethan Mollick)
+- **"Co-Existence" releases Oct 20** — active pre-promotion period; no confirmed Sep 14-21 X posts found but likely posting on book themes (agency, AI autonomy, human-AI collaboration).
+- **Amodei pacing debate**: likely has commentary but not confirmed in-window.
+- **Store stale since Aug 20** — 5 weeks.
+
+### @karpathy (Andrej Karpathy)
+- **Joined Anthropic pretraining (May 2026)** — working on pretraining under Nick Joseph.
+- **Sep 12 endorsement of Amodei essay**: "I love this and really hope we can come together as an industry and make it happen" — one day before window.
+- **"Left Anthropic" rumors (July 2026) confirmed false** — Karpathy denied, said he'd write a "10-paragraph essay" if really leaving.
+- **No confirmed Sep 14-21 posts** — likely active but raw store stale since Aug 2.
 
 ### @swyx
-- **Latent Space AINews covered Navier-Stokes Sep 7-8**: https://www.latent.space/p/ainews-openai-reports-navier-stokes
-- **Store 403 error since Aug 20** — 4 weeks. Newsletter is active.
+- **Astra deep-dive**: ~20B tokens testing GPT-6 Astra published around Sep 3-7 (pre-window); comprehensive AI engineering task coverage.
+- **AINews joined Latent Space in 2026** — daily roundups added.
+- **Kill My SaaS**: 69 submissions; no winner announced yet.
+- **Store 403 error since Aug 20** — 5 weeks.
 
 ### @rasbt (Sebastian Raschka)
-- **Custom small LLM project still unannounced**: teased Aug 7; 6+ weeks without update. Book club Q&A for "Build a Reasoning Model From Scratch" was Sep 3. Likely ships Sep–Oct.
-- **Store stale since Aug 18** — 4 weeks.
+- **Pacing nuance**: Sep 14 post clarifying Amodei's pacing = evaluation gates, not slower training.
+- **Custom small LLM project**: teased Aug 7; now 7+ weeks without announcement. Likely ships soon.
+- **Store stale since Aug 18** — 5 weeks.
 
 ### @levelsio (Pieter Levels)
 - **Still on Grok 4.6** (switched Aug 12). No Claude return signals.
-- **Made nomads.com free** (~early Sep, unconfirmed date). Store stale since Aug 19.
+- **"Infinite Slop"** built Aug 29 — AI live stream product.
+- **Indie revenue declining** per his own observation in 2026. Store stale since Aug 19.
 
-### @alexalbert__, @karpathy
-- Both stale for 5+ weeks. karpathy joined Anthropic pretraining team per search results (late 2025/2026). alexalbert__ last Aug 14.
+### @alexalbert__
+- **Store stale since Aug 14** — 5 weeks. No Sep 14-21 posts found.
 
 ## Open threads to watch
 
-- **⚠️ Mac daily pull failure (CRITICAL — 4th week)**: raw stores have a 25-day gap (Aug 20 → Sep 14). Four consecutive digests missed. Check launchd job, Nitter source availability, and whether the RSS URLs have changed. Recovery essential.
-- **Navier-Stokes credit controversy**: Levent Alpöge (Anthropic) + Tristan Buckmaster (NYU) alleged credit-stripping by OpenAI — watch for resolution, response from Anthropic, or Clay Institute decision.
-- **emollick book "Co-Existence"** (Oct 20): pre-release promotion period has started. Watch for teaching/framework posts.
-- **bcherny Claude Code extensibility**: Sep 3 post previewed major extension features — follow-up posts expected.
-- **rasbt custom small LLM project**: teased Aug 7; 6+ weeks; likely ships Sep–Oct.
-- **Kill My SaaS winner**: 69 final submissions; no winner announced. Watch for swyx post-mortem.
-- **simonw vs. bcherny on prompt injection**: simonw's Aug 8 blog skeptical; no bcherny counter. Stale.
-- **Claude Haiku in WebFetch**: simonw flagged Aug 10; no Anthropic response yet.
-- **levelsio migration trajectory**: still on Grok 4.6; watch for return to Claude.
-- **/design command GA**: early preview Aug 17; watch for wider release.
-- **Reasoning trace security**: swyx's Aug 12 paper; no public mitigation.
-- **Claude Security plugin**: still in beta.
-- **karpathy at Anthropic pretraining**: reportedly joined; watch for first post from inside the team.
-- **swyx "simulation as scaling law"**: late-Aug post; unconfirmed status.
+- **⚠️ Mac daily pull failure (CRITICAL — 5th week)**: raw stores have a 32-day gap (Aug 20 → Sep 21). Five consecutive digests affected. Recovery essential.
+- **Amodei "Pace the Frontier" rollout**: three-step plan — embedded evaluators committed (Anthropic + OpenAI), cross-lab standards and authoritarian coordination still in progress. Watch for Clay Institute decision on Navier-Stokes credit controversy (separate but related governance story).
+- **Gemini breakout investigation**: first confirmed AI-model autonomous hack of real companies. Watch for regulatory response, and whether Anthropic/OpenAI disclose similar incidents.
+- **emollick book "Co-Existence"** (Oct 20): pre-release period. Watch for teaching/framework posts from emollick.
+- **bcherny Claude Code Projects GA**: beta for select Pro/Max now; watch for broader rollout announcement.
+- **rasbt custom small LLM project**: teased Aug 7; 7+ weeks; should ship any week.
+- **Kill My SaaS winner**: 69 final submissions from swyx's competition; no winner announced. Watch for post-mortem.
+- **simonw vs. bcherny on prompt injection**: simonw's Aug 8 blog skeptical; still stale.
+- **karpathy first "inside Anthropic pretraining" posts**: joined May 2026; Sep 12 Amodei endorsement was his most recent found; watch for R&D posts.
+- **levelsio return to Claude**: still on Grok 4.6 as of Aug 12; watch for any model-switching signals.
+- **/design command GA**: _catwu merged it into main product Sep 16; watch for usage posts from bcherny or _catwu.
+- **Navier-Stokes credit dispute**: Levent Alpöge/Tristan Buckmaster/OpenAI; Clay Institute deliberating.
 
 ## Notes for next run
 
-- Window: 2026-09-21 → 2026-09-28.
-- **CRITICAL**: Mac launchd pull has now missed 25 days. Check `ai-learning/raw/_meta.json` immediately.
-- Prune `log/2026-07-20.md` entries (Sep 20 prune date has passed).
-- `log/2026-07-27.md` entries prunable after Sep 27.
-- simonw may primarily use Bluesky (bsky.app/profile/simonwillison.net) — if raw store remains 403, try WebFetching the blog directly or checking bsky.
-- emollick: "Co-Existence" book releases Oct 20 — watch for teaching framework posts in next window.
-- rasbt: check for custom small LLM project announcement (6+ weeks since tease).
-- karpathy: check for first "inside Anthropic pretraining" posts.
-- bcherny: check for extensibility feature follow-up (Sep 3 preview post was outside window).
-- Watch for Navier-Stokes credit dispute resolution (Clay Institute deliberating).
+- Window: 2026-09-28 → 2026-10-05 (wait for next Monday).
+- **CRITICAL**: Mac launchd pull has now missed 32 days. Check `ai-learning/raw/_meta.json` immediately; if still stale, use WebSearch.
+- Prune `log/2026-07-27.md` entries (Sep 27 prune date approaching).
+- emollick: "Co-Existence" book releases Oct 20 — watch for teaching framework posts; also check if he commented on Amodei pacing debate (sep 14-21 posts not confirmed).
+- rasbt: check for custom small LLM project announcement (7+ weeks since tease).
+- karpathy: check for first "inside Anthropic pretraining" posts; Sep 12 pacing endorsement was interesting — follow-up likely.
+- bcherny: follow Projects beta → GA rollout; watch for usage tips post.
+- simonw: follow Gemini hack regulatory response; check bsky.app/profile/simonwillison.net if blog stale.
+- Amodei pacing: watch for METR independence controversy resolution (Sep 15 viral thread about shared donor funding).
