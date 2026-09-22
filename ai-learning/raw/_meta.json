@@ -1,53 +1,62 @@
 {
-  "last_pull_utc": "2026-08-20T00:06:01.274883+00:00",
+  "last_pull_utc": "2026-09-22T02:59:40.651978+00:00",
   "accounts": {
     "bcherny": {
-      "source": "https://nitter.net/bcherny/rss",
-      "total_posts": 62,
-      "new_this_pull": 2,
-      "newest_date": "2026-08-19T03:55:32+00:00"
+      "error": "x: https://lightbrd.com/bcherny/rss: HTTP Error 403: Forbidden"
     },
     "_catwu": {
-      "source": "https://nitter.net/_catwu/rss",
-      "total_posts": 22,
-      "new_this_pull": 0,
-      "newest_date": "2026-08-17T21:53:14+00:00"
+      "error": "x: https://lightbrd.com/_catwu/rss: HTTP Error 403: Forbidden"
     },
     "alexalbert__": {
-      "source": "https://nitter.net/alexalbert__/rss",
-      "total_posts": 21,
-      "new_this_pull": 0,
-      "newest_date": "2026-08-14T19:16:18+00:00"
+      "error": "x: https://lightbrd.com/alexalbert__/rss: HTTP Error 403: Forbidden"
     },
     "simonw": {
-      "error": "https://lightbrd.com/simonw/rss: HTTP Error 403: Forbidden"
+      "source": "https://simonwillison.net/atom/everything/",
+      "errors": [
+        "x: https://lightbrd.com/simonw/rss: HTTP Error 403: Forbidden"
+      ],
+      "total_posts": 80,
+      "new_this_pull": 30,
+      "newest_date": "2026-09-21T23:09:20+00:00"
     },
     "karpathy": {
-      "source": "https://nitter.net/karpathy/rss",
-      "total_posts": 20,
-      "new_this_pull": 0,
+      "source": "https://karpathy.bearblog.dev/feed/",
+      "errors": [
+        "x: https://lightbrd.com/karpathy/rss: HTTP Error 403: Forbidden"
+      ],
+      "total_posts": 30,
+      "new_this_pull": 10,
       "newest_date": "2026-08-02T16:10:51+00:00"
     },
     "emollick": {
-      "source": "https://nitter.net/emollick/rss",
-      "total_posts": 95,
-      "new_this_pull": 5,
-      "newest_date": "2026-08-19T14:33:56+00:00"
+      "source": "https://www.oneusefulthing.org/feed",
+      "errors": [
+        "x: https://lightbrd.com/emollick/rss: HTTP Error 403: Forbidden"
+      ],
+      "total_posts": 115,
+      "new_this_pull": 20,
+      "newest_date": "2026-09-18T17:54:32+00:00"
     },
     "swyx": {
-      "error": "https://lightbrd.com/swyx/rss: HTTP Error 403: Forbidden"
+      "source": "https://www.latent.space/feed",
+      "errors": [
+        "x: https://lightbrd.com/swyx/rss: HTTP Error 403: Forbidden"
+      ],
+      "total_posts": 114,
+      "new_this_pull": 20,
+      "newest_date": "2026-09-21T22:13:49+00:00"
     },
     "rasbt": {
-      "source": "https://nitter.net/rasbt/rss",
-      "total_posts": 28,
-      "new_this_pull": 0,
-      "newest_date": "2026-08-18T01:38:49+00:00"
+      "source": "https://magazine.sebastianraschka.com/feed",
+      "errors": [
+        "x: https://lightbrd.com/rasbt/rss: HTTP Error 403: Forbidden"
+      ],
+      "total_posts": 48,
+      "new_this_pull": 20,
+      "newest_date": "2026-09-09T11:14:25+00:00"
     },
     "levelsio": {
-      "source": "https://nitter.net/levelsio/rss",
-      "total_posts": 113,
-      "new_this_pull": 8,
-      "newest_date": "2026-08-19T23:22:58+00:00"
+      "error": "x: https://lightbrd.com/levelsio/rss: HTTP Error 403: Forbidden"
     }
   }
 }

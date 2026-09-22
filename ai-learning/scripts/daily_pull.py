@@ -34,6 +34,20 @@ FEED_HOSTS = [
     "https://nitter.privacydev.net",
     "https://lightbrd.com",
 ]
+
+# First-party blog/newsletter feeds (verified live 2026-09-03). These are normal
+# websites — reliable, cloud-fetchable, unaffected by Nitter/X blocking. For
+# these people the long-form content is often higher signal than their tweets.
+# Since the Nitter collapse (2026-08-21) this is the primary live source; the
+# X handles without a blog (bcherny, _catwu, alexalbert__, levelsio) stay dark
+# until a paid X source (RSS.app / twitterapi.io) is wired.
+BLOG_FEEDS = {
+    "simonw": "https://simonwillison.net/atom/everything/",
+    "karpathy": "https://karpathy.bearblog.dev/feed/",
+    "emollick": "https://www.oneusefulthing.org/feed",
+    "rasbt": "https://magazine.sebastianraschka.com/feed",
+    "swyx": "https://www.latent.space/feed",
+}
 UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
 DC = "{http://purl.org/dc/elements/1.1/}"
 FETCH_DELAY_S = 2  # be polite to the Nitter instance between account fetches
@@ -56,7 +70,7 @@ def fetch(handle):
         url = f"{host}/{handle}/rss"
         try:
             req = urllib.request.Request(url, headers={"User-Agent": UA})
-            with urllib.request.urlopen(req, timeout=25) as r:
+            with urllib.request.urlopen(req, timeout=10) as r:
                 if r.status == 200:
                     body = r.read()
                     if b"<item>" in body:
@@ -103,6 +117,61 @@ def parse(body, handle):
     return out
 
 
+def _iso_date(raw):
+    if not raw:
+        return ""
+    raw = raw.strip()
+    try:  # RFC822 (RSS pubDate)
+        return parsedate_to_datetime(raw).astimezone(timezone.utc).isoformat()
+    except Exception:
+        pass
+    try:  # ISO 8601 (Atom published/updated)
+        return datetime.fromisoformat(raw.replace("Z", "+00:00")).astimezone(timezone.utc).isoformat()
+    except Exception:
+        return ""
+
+
+def _strip_html(s):
+    return re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", s or "")).strip()
+
+
+def parse_blog(body, handle):
+    """Parse an RSS <item> or Atom <entry> feed into store rows keyed by link."""
+    root = ET.fromstring(body)
+    out = {}
+    entries = [e for e in root.iter() if e.tag.split("}")[-1] in ("item", "entry")]
+    for e in entries:
+        fields = {}
+        for c in e:
+            tag = c.tag.split("}")[-1]
+            if tag == "link":
+                # Atom: <link href="..."/>; RSS: <link>text</link>
+                href = c.get("href") or (c.text or "")
+                rel = c.get("rel", "alternate")
+                if href and (tag not in fields or rel == "alternate"):
+                    fields["link"] = href.strip()
+            elif tag in ("title", "pubDate", "published", "updated", "description", "summary", "content"):
+                fields.setdefault(tag, "".join(c.itertext()) if tag in ("content", "summary", "description") else (c.text or ""))
+        link = fields.get("link", "")
+        if not link:
+            continue
+        title = _strip_html(fields.get("title", ""))
+        snippet = _strip_html(fields.get("description") or fields.get("summary") or fields.get("content") or "")[:220]
+        text = f"{title} — {snippet}" if snippet else title
+        date_iso = _iso_date(fields.get("pubDate") or fields.get("published") or fields.get("updated"))
+        out[link] = {
+            "id": link,
+            "date": date_iso,
+            "author": handle,
+            "is_repost": False,
+            "is_reply": False,
+            "source": "blog",
+            "text": text,
+            "url": link,
+        }
+    return out
+
+
 def load_store(path):
     store = {}
     if os.path.exists(path):
@@ -121,17 +190,40 @@ def load_store(path):
 
 def pull_account(handle):
     store_path = os.path.join(RAW_DIR, f"{handle}.jsonl")
-    used_url, body = fetch(handle)
-    fresh = parse(body, handle)
+    fresh, sources, errors = {}, [], []
+
+    # X timeline via Nitter (dead since 2026-08-21, kept in case an instance revives)
+    try:
+        used_url, body = fetch(handle)
+        fresh.update(parse(body, handle))
+        sources.append(used_url)
+    except Exception as e:
+        errors.append(f"x: {e}")
+
+    # First-party blog feed (primary live source for handles that have one)
+    if handle in BLOG_FEEDS:
+        url = BLOG_FEEDS[handle]
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": UA})
+            with urllib.request.urlopen(req, timeout=25) as r:
+                fresh.update(parse_blog(r.read(), handle))
+            sources.append(url)
+        except Exception as e:
+            errors.append(f"blog: {e}")
+
+    if not sources:
+        raise RuntimeError("; ".join(errors) or "no sources configured")
+
     store = load_store(store_path)
-    added = [tid for tid in fresh if tid not in store]
+    added = [k for k in fresh if k not in store]
     store.update(fresh)  # refresh text/date for existing too
     rows = sorted(store.values(), key=lambda o: (o["date"], o["id"]), reverse=True)
     with open(store_path, "w") as f:
         for o in rows:
             f.write(json.dumps(o, ensure_ascii=False) + "\n")
     return {
-        "source": used_url,
+        "source": ", ".join(sources),
+        "errors": errors or None,
         "total_posts": len(rows),
         "new_this_pull": len(added),
         "newest_date": rows[0]["date"] if rows else "",

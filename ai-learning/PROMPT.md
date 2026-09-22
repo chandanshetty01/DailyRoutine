@@ -41,9 +41,15 @@ Target window: **the last 7 calendar days.** Compute today's date with `date -u 
    - Filter each store to items whose `date` falls in the window. Check `raw/_meta.json` (per-account `last_pull` info): if an account has an `error` or its store is stale for the whole window, note that in the Covers line rather than guessing.
    - `is_repost: true` = the tracked person amplified someone else's post — secondary signal. `is_reply: true` = usually thread continuations of their own posts.
 
-2. **Direct Nitter RSS — fallback only if a store is stale/missing.** `WebFetch https://nitter.net/<handle>/rss` (then mirror `https://nitter.privacydev.net/<handle>/rss`). Expect **HTTP 403 from the cloud** — don't be surprised, just fall through.
+2. **First-party blog feeds — direct fetch, WORKS FROM THE CLOUD.** If a blog-backed handle's store is stale, `WebFetch` its feed directly (these are normal websites, not Nitter — they are reliable from anywhere):
+   - simonw → `https://simonwillison.net/atom/everything/`
+   - karpathy → `https://karpathy.bearblog.dev/feed/`
+   - emollick → `https://www.oneusefulthing.org/feed`
+   - rasbt → `https://magazine.sebastianraschka.com/feed`
+   - swyx → `https://www.latent.space/feed`
+   Store rows from these carry `source: "blog"` — treat blog posts as first-class items (often higher signal than tweets).
 
-3. **`WebSearch` — last resort.** Query the person's name + topic. Best-effort; unauthenticated `WebFetch` of `x.com` returns HTTP 402, so only fetch individual `status/<id>` URLs to confirm wording.
+3. **X-only handles — `bcherny`, `_catwu`, `alexalbert__`, `levelsio` — have NO live automated source** since the Nitter collapse (2026-08-21; Nitter returns 403 everywhere — do not waste time retrying it). Until a paid X feed (RSS.app / twitterapi.io) is wired: check their stores for any manually backfilled data, then use `WebSearch` as last resort (only include posts whose `x.com/<handle>/status/<id>` URL you can verify; unauthenticated `WebFetch` of `x.com` returns HTTP 402). If nothing verifiable, report them as dark in the Covers line — do not pad.
 
 **Coverage honesty:** state which source you actually used in the report's Covers line, and name any account whose data was missing/stale. Never invent posts; if someone was quiet, show them as quiet.
 
