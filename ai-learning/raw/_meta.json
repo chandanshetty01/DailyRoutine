@@ -1,5 +1,5 @@
 {
-  "last_pull_utc": "2026-09-22T02:59:40.651978+00:00",
+  "last_pull_utc": "2026-09-22T06:55:29.729032+00:00",
   "accounts": {
     "bcherny": {
       "error": "x: https://lightbrd.com/bcherny/rss: HTTP Error 403: Forbidden"
@@ -16,7 +16,7 @@
         "x: https://lightbrd.com/simonw/rss: HTTP Error 403: Forbidden"
       ],
       "total_posts": 80,
-      "new_this_pull": 30,
+      "new_this_pull": 0,
       "newest_date": "2026-09-21T23:09:20+00:00"
     },
     "karpathy": {
@@ -25,7 +25,7 @@
         "x: https://lightbrd.com/karpathy/rss: HTTP Error 403: Forbidden"
       ],
       "total_posts": 30,
-      "new_this_pull": 10,
+      "new_this_pull": 0,
       "newest_date": "2026-08-02T16:10:51+00:00"
     },
     "emollick": {
@@ -34,7 +34,7 @@
         "x: https://lightbrd.com/emollick/rss: HTTP Error 403: Forbidden"
       ],
       "total_posts": 115,
-      "new_this_pull": 20,
+      "new_this_pull": 0,
       "newest_date": "2026-09-18T17:54:32+00:00"
     },
     "swyx": {
@@ -42,9 +42,9 @@
       "errors": [
         "x: https://lightbrd.com/swyx/rss: HTTP Error 403: Forbidden"
       ],
-      "total_posts": 114,
-      "new_this_pull": 20,
-      "newest_date": "2026-09-21T22:13:49+00:00"
+      "total_posts": 115,
+      "new_this_pull": 1,
+      "newest_date": "2026-09-22T06:30:56+00:00"
     },
     "rasbt": {
       "source": "https://magazine.sebastianraschka.com/feed",
@@ -52,7 +52,7 @@
         "x: https://lightbrd.com/rasbt/rss: HTTP Error 403: Forbidden"
       ],
       "total_posts": 48,
-      "new_this_pull": 20,
+      "new_this_pull": 0,
       "newest_date": "2026-09-09T11:14:25+00:00"
     },
     "levelsio": {
