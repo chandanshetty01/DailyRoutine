@@ -1,5 +1,5 @@
 {
-  "last_pull_utc": "2026-09-22T06:55:29.729032+00:00",
+  "last_pull_utc": "2026-09-23T00:00:06.706849+00:00",
   "accounts": {
     "bcherny": {
       "error": "x: https://lightbrd.com/bcherny/rss: HTTP Error 403: Forbidden"
@@ -15,9 +15,9 @@
       "errors": [
         "x: https://lightbrd.com/simonw/rss: HTTP Error 403: Forbidden"
       ],
-      "total_posts": 80,
-      "new_this_pull": 0,
-      "newest_date": "2026-09-21T23:09:20+00:00"
+      "total_posts": 85,
+      "new_this_pull": 5,
+      "newest_date": "2026-09-22T23:46:41+00:00"
     },
     "karpathy": {
       "source": "https://karpathy.bearblog.dev/feed/",
@@ -42,9 +42,9 @@
       "errors": [
         "x: https://lightbrd.com/swyx/rss: HTTP Error 403: Forbidden"
       ],
-      "total_posts": 115,
+      "total_posts": 116,
       "new_this_pull": 1,
-      "newest_date": "2026-09-22T06:30:56+00:00"
+      "newest_date": "2026-09-22T21:07:39+00:00"
     },
     "rasbt": {
       "source": "https://magazine.sebastianraschka.com/feed",
