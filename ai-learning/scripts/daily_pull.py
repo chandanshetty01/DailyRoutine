@@ -1,20 +1,25 @@
 #!/usr/bin/env python3
 """
-ai-learning daily pull — fetch tracked accounts' timelines from Nitter RSS and
-merge them into durable per-account stores the cloud weekly routine summarizes.
+ai-learning daily pull — fetch tracked accounts' X timelines (twitterapi.io) and
+blog feeds, and merge them into durable per-account stores the cloud weekly
+routine summarizes.
 
-Why this exists: Nitter blocks Anthropic's cloud IPs (HTTP 403) but works fine
-from a residential IP, and X itself returns 402 to unauthenticated fetches. So
-the user's Mac captures the raw posts daily; the cloud routine just reads the
-committed JSONL. No browser, no login, stdlib only.
+History: originally Nitter RSS (free), which died for good on 2026-08-21. X
+itself returns 402 to unauthenticated fetches. Since 2026-09-23 X posts come
+from twitterapi.io (pay-per-use, ~$1/mo at this volume); first-party blog feeds
+supplement five accounts.
+
+API key: env TWITTERAPI_KEY, else ~/.config/ai-learning/twitterapi.key. The key
+is a secret and must NEVER be committed — this repo backs a public site.
 
 Stores: ai-learning/raw/<handle>.jsonl (one JSON object per line, newest first,
-deduped by tweet id). ai-learning/raw/_meta.json holds per-account pull info.
+deduped by tweet id / blog URL). ai-learning/raw/_meta.json holds per-account
+pull info.
 """
-import json, re, sys, os, time, urllib.request
+import json, re, sys, os, time, urllib.request, urllib.parse
 from email.utils import parsedate_to_datetime
 from xml.etree import ElementTree as ET
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 
 # Tracked accounts. Boris anchors the digest; the rest were chosen with the user
 # (tier 1 + tier 2, 2026-08-08).
@@ -29,18 +34,10 @@ ACCOUNTS = [
     "rasbt",         # LLM research explainers
     "levelsio",      # indie shipping with AI
 ]
-FEED_HOSTS = [
-    "https://nitter.net",
-    "https://nitter.privacydev.net",
-    "https://lightbrd.com",
-]
 
-# First-party blog/newsletter feeds (verified live 2026-09-03). These are normal
-# websites — reliable, cloud-fetchable, unaffected by Nitter/X blocking. For
-# these people the long-form content is often higher signal than their tweets.
-# Since the Nitter collapse (2026-08-21) this is the primary live source; the
-# X handles without a blog (bcherny, _catwu, alexalbert__, levelsio) stay dark
-# until a paid X source (RSS.app / twitterapi.io) is wired.
+# First-party blog/newsletter feeds (verified live 2026-09-03). Normal websites —
+# reliable and cloud-fetchable. Long-form content is often higher signal than
+# the same person's tweets.
 BLOG_FEEDS = {
     "simonw": "https://simonwillison.net/atom/everything/",
     "karpathy": "https://karpathy.bearblog.dev/feed/",
@@ -48,9 +45,13 @@ BLOG_FEEDS = {
     "rasbt": "https://magazine.sebastianraschka.com/feed",
     "swyx": "https://www.latent.space/feed",
 }
+
+TWITTERAPI_URL = "https://api.twitterapi.io/twitter/user/last_tweets"
+KEY_FILE = os.path.expanduser("~/.config/ai-learning/twitterapi.key")
+MAX_PAGES = 6            # 20 tweets/page; caps cost if an account goes wild
+BACKFILL_DAYS = 45       # never page further back than this
 UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
-DC = "{http://purl.org/dc/elements/1.1/}"
-FETCH_DELAY_S = 2  # be polite to the Nitter instance between account fetches
+FETCH_DELAY_S = 1
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 REPO_ROOT = os.path.dirname(ROOT)
@@ -64,56 +65,75 @@ MANIFEST_DIRS = ["ipo-watch/log", "ipo-watch/monthly", "ai-learning/log"]
 MANIFEST = os.path.join(REPO_ROOT, "docs", "manifest.json")
 
 
-def fetch(handle):
-    last_err = None
-    for host in FEED_HOSTS:
-        url = f"{host}/{handle}/rss"
-        try:
-            req = urllib.request.Request(url, headers={"User-Agent": UA})
-            with urllib.request.urlopen(req, timeout=10) as r:
-                if r.status == 200:
-                    body = r.read()
-                    if b"<item>" in body:
-                        return url, body
-                    last_err = f"{url}: 200 but no items"
-                else:
-                    last_err = f"{url}: HTTP {r.status}"
-        except Exception as e:
-            last_err = f"{url}: {e}"
-    raise RuntimeError(last_err)
+def api_key():
+    k = os.environ.get("TWITTERAPI_KEY", "").strip()
+    if not k and os.path.exists(KEY_FILE):
+        k = open(KEY_FILE).read().strip()
+    return k
 
 
-def parse(body, handle):
-    root = ET.fromstring(body)
-    out = {}
-    for item in root.iter("item"):
-        link = (item.findtext("link") or "").strip()
-        guid = (item.findtext("guid") or "").strip()
-        m = re.search(r"status/(\d+)", link) or re.search(r"status/(\d+)", guid)
-        if not m:
-            continue
-        tid = m.group(1)
-        author = (item.findtext(DC + "creator") or "").lstrip("@").strip() or handle
-        text = re.sub(r"\s+", " ", (item.findtext("title") or "")).strip()
-        # Nitter prefixes replies/thread continuations with "R to @handle: "
-        reply_m = re.match(r"^R to @[\w]+:\s*", text)
-        is_reply = bool(reply_m)
-        if reply_m:
-            text = text[reply_m.end():]
-        pub = item.findtext("pubDate")
-        try:
-            date_iso = parsedate_to_datetime(pub).astimezone(timezone.utc).isoformat()
-        except Exception:
-            date_iso = ""
-        out[tid] = {
-            "id": tid,
-            "date": date_iso,
-            "author": author,
-            "is_repost": author.lower() != handle.lower(),
-            "is_reply": is_reply,
-            "text": text,
-            "url": f"https://x.com/{author}/status/{tid}",
-        }
+def _tweet_row(t, handle):
+    """Normalize a twitterapi.io tweet object into a store row."""
+    rt = t.get("retweeted_tweet")
+    src = rt if rt else t
+    author = ((src.get("author") or {}).get("userName") or handle)
+    tid = str(src.get("id") or t.get("id"))
+    try:
+        date_iso = datetime.strptime(src.get("createdAt", ""), "%a %b %d %H:%M:%S %z %Y") \
+            .astimezone(timezone.utc).isoformat()
+    except Exception:
+        date_iso = ""
+    text = re.sub(r"\s+", " ", src.get("text") or "").strip()
+    return tid, {
+        "id": tid,
+        "date": date_iso,
+        "author": author,
+        "is_repost": bool(rt) or author.lower() != handle.lower(),
+        "is_reply": bool(src.get("isReply")),
+        "source": "x",
+        "text": text,
+        "url": f"https://x.com/{author}/status/{tid}",
+    }
+
+
+def fetch_x(handle, known_ids, key):
+    """Page through the user's recent tweets until we reach already-stored ids
+    or BACKFILL_DAYS. Returns {id: row}."""
+    out, cursor = {}, ""
+    cutoff = datetime.now(timezone.utc) - timedelta(days=BACKFILL_DAYS)
+    for _ in range(MAX_PAGES):
+        q = {"userName": handle}
+        if cursor:
+            q["cursor"] = cursor
+        req = urllib.request.Request(
+            f"{TWITTERAPI_URL}?{urllib.parse.urlencode(q)}",
+            headers={"X-API-Key": key, "User-Agent": UA},
+        )
+        # twitterapi.io latency varies wildly (10-50s observed): long timeout + 1 retry.
+        for attempt in (1, 2):
+            try:
+                with urllib.request.urlopen(req, timeout=90) as r:
+                    data = json.load(r)
+                break
+            except Exception:
+                if attempt == 2:
+                    raise
+                time.sleep(5)
+        if data.get("status") != "success":
+            raise RuntimeError(f"twitterapi: {data.get('msg') or data}")
+        tweets = (data.get("data") or {}).get("tweets") or data.get("tweets") or []
+        reached_known = reached_cutoff = False
+        for t in tweets:
+            tid, row = _tweet_row(t, handle)
+            if tid in known_ids:
+                reached_known = True
+            if row["date"] and datetime.fromisoformat(row["date"]) < cutoff:
+                reached_cutoff = True
+                continue
+            out[tid] = row
+        cursor = data.get("next_cursor") or ""
+        if reached_known or reached_cutoff or not data.get("has_next_page") or not cursor:
+            break
     return out
 
 
@@ -188,17 +208,20 @@ def load_store(path):
     return store
 
 
-def pull_account(handle):
+def pull_account(handle, key):
     store_path = os.path.join(RAW_DIR, f"{handle}.jsonl")
+    store = load_store(store_path)
     fresh, sources, errors = {}, [], []
 
-    # X timeline via Nitter (dead since 2026-08-21, kept in case an instance revives)
-    try:
-        used_url, body = fetch(handle)
-        fresh.update(parse(body, handle))
-        sources.append(used_url)
-    except Exception as e:
-        errors.append(f"x: {e}")
+    # X timeline via twitterapi.io
+    if key:
+        try:
+            fresh.update(fetch_x(handle, set(store), key))
+            sources.append("twitterapi.io")
+        except Exception as e:
+            errors.append(f"x: {e}")
+    else:
+        errors.append("x: no TWITTERAPI_KEY / key file")
 
     # First-party blog feed (primary live source for handles that have one)
     if handle in BLOG_FEEDS:
@@ -214,7 +237,6 @@ def pull_account(handle):
     if not sources:
         raise RuntimeError("; ".join(errors) or "no sources configured")
 
-    store = load_store(store_path)
     added = [k for k in fresh if k not in store]
     store.update(fresh)  # refresh text/date for existing too
     rows = sorted(store.values(), key=lambda o: (o["date"], o["id"]), reverse=True)
@@ -254,13 +276,14 @@ def main():
         build_manifest()
         return
     os.makedirs(RAW_DIR, exist_ok=True)
+    key = api_key()
     meta = {"last_pull_utc": datetime.now(timezone.utc).isoformat(), "accounts": {}}
     failures = 0
     for i, handle in enumerate(ACCOUNTS):
         if i:
             time.sleep(FETCH_DELAY_S)
         try:
-            info = pull_account(handle)
+            info = pull_account(handle, key)
             meta["accounts"][handle] = info
             print(f"OK  {handle}: total={info['total_posts']} (+{info['new_this_pull']} new)")
         except Exception as e:

@@ -36,7 +36,7 @@ Target window: **the last 7 calendar days.** Compute today's date with `date -u 
 
 **Source priority (use the best available, then fill gaps with the next):**
 
-1. **Committed raw stores `ai-learning/raw/<handle>.jsonl` — PRIMARY.** A local daily job (`ai-learning/scripts/daily_pull.py`, run on the user's Mac via launchd) fetches every tracked account's timeline from Nitter — which works from a residential IP but is **403-blocked from this cloud environment** — and commits one JSONL per handle. So in the cloud, **read these files; do not try to fetch X/Nitter yourself.**
+1. **Committed raw stores `ai-learning/raw/<handle>.jsonl` — PRIMARY.** A local daily job (`ai-learning/scripts/daily_pull.py`, run on the user's Mac via launchd) fetches every tracked account's X timeline via the **twitterapi.io** API (since 2026-09-23; the API key lives only on the user's Mac) plus five blog feeds, and commits one JSONL per handle. So in the cloud, **read these files; do not try to fetch X yourself** (unauthenticated x.com returns 402; Nitter is dead).
    - Each line is JSON: `{id, date (ISO UTC), author, is_repost, is_reply, text, url}`. `url` is already canonical `https://x.com/<author>/status/<id>`.
    - Filter each store to items whose `date` falls in the window. Check `raw/_meta.json` (per-account `last_pull` info): if an account has an `error` or its store is stale for the whole window, note that in the Covers line rather than guessing.
    - `is_repost: true` = the tracked person amplified someone else's post — secondary signal. `is_reply: true` = usually thread continuations of their own posts.
@@ -49,7 +49,7 @@ Target window: **the last 7 calendar days.** Compute today's date with `date -u 
    - swyx → `https://www.latent.space/feed`
    Store rows from these carry `source: "blog"` — treat blog posts as first-class items (often higher signal than tweets).
 
-3. **X-only handles — `bcherny`, `_catwu`, `alexalbert__`, `levelsio` — have NO live automated source** since the Nitter collapse (2026-08-21; Nitter returns 403 everywhere — do not waste time retrying it). Until a paid X feed (RSS.app / twitterapi.io) is wired: check their stores for any manually backfilled data, then use `WebSearch` as last resort (only include posts whose `x.com/<handle>/status/<id>` URL you can verify; unauthenticated `WebFetch` of `x.com` returns HTTP 402). If nothing verifiable, report them as dark in the Covers line — do not pad.
+3. **If a store is stale** (its `raw/_meta.json` entry shows an error, or `last_pull_utc` is older than the window — i.e. the user's Mac was off): for blog-backed handles use step 2; for the rest (`bcherny`, `_catwu`, `alexalbert__`, `levelsio`) use `WebSearch` as last resort, only including posts whose `x.com/<handle>/status/<id>` URL you can verify. Name any stale account in the Covers line — do not pad. Rows carry `source: "x"` or `source: "blog"`.
 
 **Coverage honesty:** state which source you actually used in the report's Covers line, and name any account whose data was missing/stale. Never invent posts; if someone was quiet, show them as quiet.
 
