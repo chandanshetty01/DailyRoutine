@@ -1,68 +1,62 @@
 {
-  "last_pull_utc": "2026-09-23T00:36:34.113092+00:00",
+  "last_pull_utc": "2026-09-23T00:38:43.749257+00:00",
   "accounts": {
     "bcherny": {
-      "source": "twitterapi.io",
-      "errors": null,
-      "total_posts": 86,
-      "new_this_pull": 0,
-      "newest_date": "2026-09-22T23:39:32+00:00"
+      "error": "x: HTTP Error 402: Payment Required"
     },
     "_catwu": {
-      "source": "twitterapi.io",
-      "errors": null,
-      "total_posts": 28,
-      "new_this_pull": 0,
-      "newest_date": "2026-09-22T16:39:47+00:00"
+      "error": "x: HTTP Error 402: Payment Required"
     },
     "alexalbert__": {
-      "source": "twitterapi.io",
-      "errors": null,
-      "total_posts": 31,
-      "new_this_pull": 0,
-      "newest_date": "2026-09-22T18:34:15+00:00"
+      "error": "x: HTTP Error 402: Payment Required"
     },
     "simonw": {
-      "source": "twitterapi.io, https://simonwillison.net/atom/everything/",
-      "errors": null,
+      "source": "https://simonwillison.net/atom/everything/",
+      "errors": [
+        "x: HTTP Error 402: Payment Required"
+      ],
       "total_posts": 115,
       "new_this_pull": 0,
       "newest_date": "2026-09-22T23:50:29+00:00"
     },
     "karpathy": {
-      "source": "twitterapi.io, https://karpathy.bearblog.dev/feed/",
-      "errors": null,
+      "source": "https://karpathy.bearblog.dev/feed/",
+      "errors": [
+        "x: HTTP Error 402: Payment Required"
+      ],
       "total_posts": 30,
       "new_this_pull": 0,
       "newest_date": "2026-08-02T16:10:51+00:00"
     },
     "emollick": {
-      "source": "twitterapi.io, https://www.oneusefulthing.org/feed",
-      "errors": null,
+      "source": "https://www.oneusefulthing.org/feed",
+      "errors": [
+        "x: HTTP Error 402: Payment Required"
+      ],
       "total_posts": 235,
-      "new_this_pull": 120,
+      "new_this_pull": 0,
       "newest_date": "2026-09-22T16:55:20+00:00"
     },
     "swyx": {
-      "source": "twitterapi.io, https://www.latent.space/feed",
-      "errors": null,
+      "source": "https://www.latent.space/feed",
+      "errors": [
+        "x: HTTP Error 402: Payment Required"
+      ],
       "total_posts": 141,
       "new_this_pull": 0,
       "newest_date": "2026-09-22T21:07:39+00:00"
     },
     "rasbt": {
-      "source": "twitterapi.io, https://magazine.sebastianraschka.com/feed",
-      "errors": null,
+      "source": "https://magazine.sebastianraschka.com/feed",
+      "errors": [
+        "x: HTTP Error 402: Payment Required"
+      ],
       "total_posts": 66,
       "new_this_pull": 0,
       "newest_date": "2026-09-22T13:46:42+00:00"
     },
     "levelsio": {
-      "source": "twitterapi.io",
-      "errors": null,
-      "total_posts": 233,
-      "new_this_pull": 0,
-      "newest_date": "2026-09-22T21:11:06+00:00"
+      "error": "x: HTTP Error 402: Payment Required"
     }
   }
 }
