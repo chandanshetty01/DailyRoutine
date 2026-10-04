@@ -1,5 +1,5 @@
 {
-  "last_pull_utc": "2026-10-03T00:00:06.115214+00:00",
+  "last_pull_utc": "2026-10-04T00:00:07.110267+00:00",
   "accounts": {
     "bcherny": {
       "source": "twitterapi.io",
@@ -25,44 +25,44 @@
     "simonw": {
       "source": "twitterapi.io, https://simonwillison.net/atom/everything/",
       "errors": null,
-      "total_posts": 150,
-      "new_this_pull": 0,
-      "newest_date": "2026-10-01T06:29:01+00:00"
+      "total_posts": 155,
+      "new_this_pull": 5,
+      "newest_date": "2026-10-03T23:35:55+00:00"
     },
     "karpathy": {
       "source": "twitterapi.io, https://karpathy.bearblog.dev/feed/",
       "errors": null,
       "total_posts": 32,
-      "new_this_pull": 2,
+      "new_this_pull": 0,
       "newest_date": "2026-10-02T06:35:51+00:00"
     },
     "emollick": {
       "source": "twitterapi.io, https://www.oneusefulthing.org/feed",
       "errors": null,
-      "total_posts": 288,
-      "new_this_pull": 3,
-      "newest_date": "2026-10-02T19:57:16+00:00"
+      "total_posts": 293,
+      "new_this_pull": 5,
+      "newest_date": "2026-10-03T20:53:26+00:00"
     },
     "swyx": {
       "source": "twitterapi.io, https://www.latent.space/feed",
       "errors": null,
-      "total_posts": 187,
-      "new_this_pull": 9,
-      "newest_date": "2026-10-02T22:50:48+00:00"
+      "total_posts": 190,
+      "new_this_pull": 3,
+      "newest_date": "2026-10-03T21:13:35+00:00"
     },
     "rasbt": {
       "source": "twitterapi.io, https://magazine.sebastianraschka.com/feed",
       "errors": null,
-      "total_posts": 73,
-      "new_this_pull": 0,
-      "newest_date": "2026-09-29T17:25:44+00:00"
+      "total_posts": 74,
+      "new_this_pull": 1,
+      "newest_date": "2026-10-03T13:03:58+00:00"
     },
     "levelsio": {
       "source": "twitterapi.io",
       "errors": null,
-      "total_posts": 303,
-      "new_this_pull": 6,
-      "newest_date": "2026-10-02T22:34:36+00:00"
+      "total_posts": 305,
+      "new_this_pull": 2,
+      "newest_date": "2026-10-03T13:32:20+00:00"
     }
   }
 }
