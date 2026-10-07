@@ -1,12 +1,12 @@
 {
-  "last_pull_utc": "2026-10-06T00:00:37.518149+00:00",
+  "last_pull_utc": "2026-10-07T00:38:59.775726+00:00",
   "accounts": {
     "bcherny": {
       "source": "twitterapi.io",
       "errors": null,
-      "total_posts": 107,
-      "new_this_pull": 2,
-      "newest_date": "2026-10-05T21:38:25+00:00"
+      "total_posts": 113,
+      "new_this_pull": 6,
+      "newest_date": "2026-10-06T20:15:19+00:00"
     },
     "_catwu": {
       "source": "twitterapi.io",
@@ -25,9 +25,9 @@
     "simonw": {
       "source": "twitterapi.io, https://simonwillison.net/atom/everything/",
       "errors": null,
-      "total_posts": 161,
-      "new_this_pull": 5,
-      "newest_date": "2026-10-05T23:56:47+00:00"
+      "total_posts": 174,
+      "new_this_pull": 13,
+      "newest_date": "2026-10-07T00:32:42+00:00"
     },
     "karpathy": {
       "source": "twitterapi.io, https://karpathy.bearblog.dev/feed/",
@@ -39,30 +39,30 @@
     "emollick": {
       "source": "twitterapi.io, https://www.oneusefulthing.org/feed",
       "errors": null,
-      "total_posts": 303,
-      "new_this_pull": 9,
-      "newest_date": "2026-10-05T23:14:11+00:00"
+      "total_posts": 308,
+      "new_this_pull": 5,
+      "newest_date": "2026-10-06T23:10:17+00:00"
     },
     "swyx": {
       "source": "twitterapi.io, https://www.latent.space/feed",
       "errors": null,
-      "total_posts": 190,
-      "new_this_pull": 0,
-      "newest_date": "2026-10-03T21:13:35+00:00"
+      "total_posts": 194,
+      "new_this_pull": 4,
+      "newest_date": "2026-10-06T21:16:30+00:00"
     },
     "rasbt": {
       "source": "twitterapi.io, https://magazine.sebastianraschka.com/feed",
       "errors": null,
-      "total_posts": 74,
-      "new_this_pull": 0,
-      "newest_date": "2026-10-03T13:03:58+00:00"
+      "total_posts": 75,
+      "new_this_pull": 1,
+      "newest_date": "2026-10-06T15:57:38+00:00"
     },
     "levelsio": {
       "source": "twitterapi.io",
       "errors": null,
-      "total_posts": 325,
+      "total_posts": 340,
       "new_this_pull": 15,
-      "newest_date": "2026-10-05T23:35:24+00:00"
+      "newest_date": "2026-10-06T22:30:29+00:00"
     }
   }
 }
