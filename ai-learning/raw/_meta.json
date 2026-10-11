@@ -1,19 +1,19 @@
 {
-  "last_pull_utc": "2026-10-10T00:00:06.503965+00:00",
+  "last_pull_utc": "2026-10-11T00:00:07.240717+00:00",
   "accounts": {
     "bcherny": {
       "source": "twitterapi.io",
       "errors": null,
       "total_posts": 121,
-      "new_this_pull": 2,
+      "new_this_pull": 0,
       "newest_date": "2026-10-09T18:11:50+00:00"
     },
     "_catwu": {
       "source": "twitterapi.io",
       "errors": null,
-      "total_posts": 33,
-      "new_this_pull": 0,
-      "newest_date": "2026-10-07T22:52:01+00:00"
+      "total_posts": 34,
+      "new_this_pull": 1,
+      "newest_date": "2026-10-09T18:28:19+00:00"
     },
     "alexalbert__": {
       "source": "twitterapi.io",
@@ -25,9 +25,9 @@
     "simonw": {
       "source": "twitterapi.io, https://simonwillison.net/atom/everything/",
       "errors": null,
-      "total_posts": 190,
-      "new_this_pull": 7,
-      "newest_date": "2026-10-09T22:48:37+00:00"
+      "total_posts": 191,
+      "new_this_pull": 1,
+      "newest_date": "2026-10-10T02:04:12+00:00"
     },
     "karpathy": {
       "source": "twitterapi.io, https://karpathy.bearblog.dev/feed/",
@@ -39,30 +39,30 @@
     "emollick": {
       "source": "twitterapi.io, https://www.oneusefulthing.org/feed",
       "errors": null,
-      "total_posts": 324,
-      "new_this_pull": 6,
-      "newest_date": "2026-10-09T20:31:49+00:00"
+      "total_posts": 328,
+      "new_this_pull": 4,
+      "newest_date": "2026-10-10T17:38:26+00:00"
     },
     "swyx": {
       "source": "twitterapi.io, https://www.latent.space/feed",
       "errors": null,
-      "total_posts": 206,
-      "new_this_pull": 3,
-      "newest_date": "2026-10-09T19:08:25+00:00"
+      "total_posts": 215,
+      "new_this_pull": 9,
+      "newest_date": "2026-10-10T22:07:17+00:00"
     },
     "rasbt": {
       "source": "twitterapi.io, https://magazine.sebastianraschka.com/feed",
       "errors": null,
-      "total_posts": 75,
-      "new_this_pull": 0,
-      "newest_date": "2026-10-06T15:57:38+00:00"
+      "total_posts": 76,
+      "new_this_pull": 1,
+      "newest_date": "2026-10-10T13:13:00+00:00"
     },
     "levelsio": {
       "source": "twitterapi.io",
       "errors": null,
-      "total_posts": 365,
-      "new_this_pull": 4,
-      "newest_date": "2026-10-09T20:30:00+00:00"
+      "total_posts": 367,
+      "new_this_pull": 2,
+      "newest_date": "2026-10-10T16:27:02+00:00"
     }
   }
 }
