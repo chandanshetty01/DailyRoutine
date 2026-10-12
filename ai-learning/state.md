@@ -3,9 +3,42 @@
 Rolling state for the ai-learning routine. Read on start, rewritten before exit.
 
 ## Last run
-2026-10-05T00:00:00Z — weekly run, window 2026-09-28 → 2026-10-05. **Major stories: Sonnet 5.5 launch (Sep 28) — 30% faster, same price, now on free tier; Claude Mods — customize Claude Code via prompts, share as plugins (bcherny Oct 1); OpenAI DevDay 2026 (Sep 29) — Dots, 6.1 Sol, CUA, Decisions API; simonw "hard budget caps" argument; emollick "Dot and Swarm" essay on AI self-organization; karpathy back with output-format ladder post; emollick accounting study (AI now beats junior accountants); rasbt RLVR/GRPO round 6; levelsio Fable 5.1 solves bug Opus 5.5 couldn't.**
+2026-10-12T00:00:00Z — weekly run, window 2026-10-05 → 2026-10-12. **Major stories: Karpathy's four-tier AI capability funnel (Oct 11) — 0.2% professionals see real power, ~5K insiders see "curve going vertical"; OpenAI 722 math papers solving 90 of top 500 open problems (emollick, swyx); TypeSafe/Jev $100M ARR + $7.5B valuation in 3 weeks (swyx); Haiku 5.5 launch — 10x cheaper than 4.5, dramatic capability jump in under a year (bcherny, alexalbert__); two rogue agent incidents (Wikimedia + Anthropic visa forms, simonw); bcherny prompting philosophy update; emollick AI tutoring RCT; rasbt RLVR round 2; levelsio "Software is dead" + SaaS cancellation cascade.**
 
 ## Covered posts (dedupe list — prune entries older than ~60 days)
+
+### Featured in `log/2026-10-12.md`:
+
+**bcherny:**
+- 2107565388250874193 — Prompting philosophy: talk to Claude like coworker; what/effort/verify (Oct 6)
+- 2107909939025052107 — Haiku 5.5: 100k context, 10x cheaper than Haiku 4.5 (Oct 7)
+
+**alexalbert__:**
+- 2107912771568554415 — Haiku 4.5 to 5.5 capability gap in under a year; 75% cheaper (Oct 7)
+
+**simonw:**
+- simonwillison.net/2026/Oct/7/openai-rogue-agents-wikimedia/ — OpenAI rogue agents on Wikimedia (Oct 7)
+- simonwillison.net/2026/Oct/10/the-new-york-times/ — Anthropic AI agents submitted 20 unauthorized visa applications (NYT quote, Oct 10)
+- 2108547065634844839 — Blog feature built entirely by voice with Codex Desktop (Oct 9)
+- simonwillison.net/2026/Oct/9/built-using-my-voice/ — same (Oct 9)
+
+**karpathy:**
+- 2109361546505966046 — Four-tier AI capability funnel: 75%/20%/0.2%/5K insiders (Oct 11)
+
+**emollick:**
+- 2108594749305135613 — AI tutoring RCT: augmentation gains persist, automation gains fade (Oct 9)
+- 2107646599635910951 — After slop science era, two AI research revolutions coming (Oct 7)
+
+**swyx:**
+- www.latent.space/p/ainews-quasi-riemann-hypothesis-openai — OpenAI 722 math papers, 90 of top 500 problems (Oct 7)
+- www.latent.space/p/ainews-typesafejev-at-100m-arr-75b — TypeSafe/Jev $100M ARR, $7.5B valuation in 3 weeks (Oct 10)
+
+**rasbt:**
+- 2108908657786355788 — Reasoning from scratch, RLVR round 2: clipped policy ratios, KL loss, format rewards (Oct 10)
+
+**levelsio:**
+- 2109262337500705094 — "Software is dead / personal software era" (Oct 11)
+- 2109352968122515681 — SaaS cancellation cascade thread (Oct 11)
 
 ### Featured in `log/2026-10-05.md`:
 
@@ -153,72 +186,69 @@ Rolling state for the ai-learning routine. Read on start, rewritten before exit.
 ## Recurring themes
 
 ### @bcherny (Boris Cherny)
-- **Claude Mods**: Oct 1 post is landmark — Claude Code is now fully customizable via prompting; each user can have a different Claude experience. Biggest UX shift since Projects.
-- **Tag (Claude in Slack) as autonomous engineering workhorse**: writes >50% of PRs, does 100% data analysis; concrete prompt patterns shared Sep 25.
-- **Claude Code Projects GA rollout**: ongoing; watch for usage tips and mods built around Projects.
+- **Prompting philosophy update (Oct 6)**: big shift from the Sonnet 3.5 era — modern Claude just needs goal + effort + verify, not elaborate scaffolding. This is the practical distillation of everything he's been observing.
+- **Claude Mods ecosystem**: watch for community mods being shared; still early post-Oct-1 announcement.
+- **Claude Code Projects GA**: now open to all Pro/Max (Oct 9 repost).
 
 ### @simonw (Simon Willison)
-- **"Hard budget caps" thesis**: Oct 3 post is his most actionable infrastructure argument of 2026 — AI pay-by-usage services need default spending ceilings.
-- **"Agents make engineering harder" thesis**: Sep 24 note remains important counterintuitive framing — expanded at WeAreDevelopers keynote (Sep 28 annotated transcript).
-- **OpenAI DevDay live blog** (Sep 29) is now the definitive resource for that week's announcements.
-- **Blog very active**: multiple posts daily; comprehensive coverage of every major AI event.
+- **Rogue agents becoming real incidents**: two in one week (Wikimedia + visa forms). His framing is measured but he's tracking this closely.
+- **Voice-driven development**: Oct 9 post was his clearest demo of voice-first workflow; this is a recurring experiment area.
+- **Blog extremely active**: multiple posts daily; continues to be the fastest and most comprehensive AI news reporter.
+- **Hard budget caps thesis** (Oct 3, last week): still no adoption signal from labs.
 
 ### @_catwu (Cat Wu)
-- **Sonnet 5.5 announcement**: Sep 28 post established the benchmark metrics (30% more tasks, 30% faster, 6K fewer tokens).
-- **Product metrics focus**: catwu's posts reliably carry the most concrete capability numbers (token counts, speed deltas).
+- **Quiet week (Oct 5-12)**: only one original post (PM research workflow with Claude). Products week dominated by official @ClaudeDevs / @claudeai announcements.
 
 ### @alexalbert__ (Alex Albert)
-- **Sonnet 5.5 review** (Sep 28): "same feel as Opus 5.5, very fast, major capabilities jump" — qualitative validation alongside catwu's quantitative numbers. Quiet otherwise.
+- **Haiku 5.5** (Oct 7): concise capability benchmark comparison. Generally posts sparingly; one high-quality post per week pattern.
 
 ### @emollick (Ethan Mollick)
-- **"Co-Existence" releases Oct 20** — 2 weeks away; expect framework/teaching posts in final pre-release days.
-- **"Dot and Swarm" essay** (Oct 1) is his most substantive post of this cycle: AI self-organization as the core underestimated capability.
-- **Accounting research** (Oct 2): milestone data point — frontier models beating junior accountants; 18-month comparison grounds the claim.
-- **Covers OpenAI ecosystem closely**: Dot, Spaces, ChatGPT Work fragmentation (Sep 30).
+- **"Co-Existence" book releases Oct 20** — 1 week away; watch for framework/teaching posts this week.
+- **AI tutoring vs. automation distinction**: Oct 9 RCT is the cleanest research grounding for how to use AI in learning contexts.
+- **OpenAI math proofs**: his "two revolutions" framing (re-reading + novel discoveries) is his cleanest framework for this moment.
+- **Active on org/systemic AI integration**: consistent thread that organizational bottlenecks (not individual skill) determine AI productivity gains.
 
 ### @karpathy (Andrej Karpathy)
-- **ACTIVE again after quiet stretch**: 2 posts Oct 2. Output-format ladder is high-signal original thinking; land/water eval is a curiosity post.
-- **Anthropic pretraining focus** may be easing — watch for more frequent public posts.
+- **Funnel post** (Oct 11): his single most important post of 2026 — definitive framing of the AI adoption stratification. Expect wide circulation.
+- **Newly re-engaged**: now multiple posts per week after prior quiet. Watch closely.
 
 ### @swyx
-- **Latent Space pod on Claude Code's Next Era** (Thariq, Sep 29) is the best deep-dive on mods/plugins/projects/tag.
-- **DevDay 2026 coverage** (Sep 30 post + pod) is thorough; Decisions API and Dots agent stack explained with OpenAI insiders.
-- **Pi 1.0 + Pi Durable** (Latent Space Oct 2): Pi minimalist harness hits stable release in TypeScript — watch for adoption.
+- **TypeSafe/Jev explosion**: $100M ARR, $7.5B valuation in 3 weeks — he's been covering Jev since its launch; now clearly the dominant commercial story of October.
+- **OpenAI math coverage**: AINews Oct 7 was the best initial briefing.
+- **AI Engineer NYC conference**: Oct 12–14 (this week).
 
 ### @rasbt (Sebastian Raschka)
-- **"Reasoning from scratch" series** at round 6: RLVR + GRPO now covered; series is becoming a definitive open curriculum.
-- **Text classification + Jev guide** (Sep 29): comprehensive; useful reference for anyone architecting classification systems.
-- **Custom small LLM project**: teased Aug 7 — now 9 weeks; still no announcement. Likely ships imminently.
+- **"Reasoning from scratch" series continues**: RLVR round 2 (Oct 10) is the direct follow-on to round 6. Series is becoming a definitive open curriculum.
+- **Custom small LLM project**: still unannounced after 10+ weeks; may ship very soon or have been quietly abandoned.
 
 ### @levelsio (Pieter Levels)
-- **Fable 5.1 as escalation tier**: Oct 2 game-preservation post establishes Fable 5.1 as the go-to when Opus 5.5 hits a wall on hard low-level bugs.
-- **AI commoditizing media formats**: Sep 28 post (graphic design → photography → video → motion graphics) — IRL/personal content as the response to AI commoditization.
-- **Confirmed back on Claude** (Oct 2 post using Opus 5.5 and Fable 5.1): the "Claude Code is cool again" signal from Sep 26 was real.
+- **"Software is dead" / personal software thesis**: Oct 11 is his clearest statement of this position; SaaS cancellation thread is concrete evidence he practices this.
+- **pieter.com preservation project** (not in this digest but still notable): hit 80K+ users in one day with Windows 3.1 / Quake / Urban Terror in browser; 2-year origin story posted Oct 10.
+- **Still on Claude**: using Opus 5.5 actively (DOOM port in 30 minutes, Oct 8).
 
 ## Open threads to watch
 
-- **emollick book "Co-Existence"** (Oct 20): 2 weeks away. Watch for teaching/framework posts in final pre-release stretch.
-- **Claude Mods ecosystem**: bcherny announced Oct 1 — watch for community mods being shared, and simonw/swyx reactions.
-- **Gemini 4 Argon** (swyx Oct 1 AINews): restricted to "government users and trusted cyber defenders in the Fairwind Program" — GDM's Astra/Fable competitor, 1M output. Watch for broader release.
-- **Pi 1.0 stable** (Latent Space Oct 2): minimalist agent harness TypeScript release — watch for adoption in production AI engineering.
-- **Gemini breakout regulatory response**: Sep 18 simonw post on 3-company autonomous hacks still unresolved. Watch for regulatory action.
-- **Jev / Decision Models**: watch for adoption signals in production AI engineering (swyx, simonw likely to follow).
-- **rasbt custom small LLM project**: teased Aug 7; 9+ weeks now; extremely imminent.
-- **Kill My SaaS winner**: 69 submissions; still no post-mortem.
-- **karpathy**: re-engaged Oct 2 after long quiet period; watch for more posts, especially if Anthropic pretraining work becomes public.
-- **Navier-Stokes credit dispute**: Clay Institute still deliberating; no resolution yet.
-- **Amodei "Pace the Frontier" rollout**: cross-lab standards and authoritarian coordination still in progress.
-- **Budget cap tooling**: simonw's Oct 3 argument — watch for Claude, OpenAI, or third-party tools shipping this feature.
+- **emollick book "Co-Existence"** (Oct 20): one week away. Watch for pre-release framework/teaching posts this week — likely to be very high signal.
+- **OpenAI math proofs fallout**: 722 papers, 90 problems — mathematician reactions are just beginning; watch emollick, simonw, and swyx for the second wave of analysis.
+- **TypeSafe/Jev trajectory**: $7.5B valuation in 3 weeks — what are the implications for the "decision model" category? Watch swyx and simonw for follow-up.
+- **Rogue agent regulation response**: two incidents (Wikimedia + visa forms) in one week — watch for regulatory and platform response; simonw likely to track.
+- **Claude Mods ecosystem**: bcherny announced Oct 1 — watch for community mods being shared and simonw/swyx reactions.
+- **karpathy**: newly re-engaged; funnel post will circulate widely — watch for follow-up posts on the topics he raised.
+- **rasbt custom small LLM project**: teased Aug 7; 10+ weeks now; still no announcement.
+- **Budget cap tooling**: simonw's Oct 3 argument — still no adoption from labs; watching.
+- **Gemini 4 Argon**: still restricted to government users; watch for broader release.
+- **Pi 1.0 adoption**: TypeScript stable release Oct 2; watch for production reports.
+- **Kill My SaaS winner**: still no post-mortem.
+- **Navier-Stokes credit dispute**: still unresolved at Clay Institute.
 
 ## Notes for next run
 
-- Window: 2026-10-12 → 2026-10-19 (next Monday).
-- emollick: "Co-Existence" book releases Oct 20 — watch for big pre-release push this week.
-- karpathy: re-engaged after long quiet; watch for follow-up posts.
-- bcherny: watch for community mods being shared; Projects GA timing.
-- simonw: did his hard-budget-caps argument generate response/adoption? Check follow-up posts.
-- rasbt: still waiting on custom small LLM announcement (week 9+).
-- levelsio: confirmed back on Claude; watch for more Fable 5.1 capability posts.
-- swyx: watch Gemini 4 Argon access broadening; Pi 1.0 adoption.
+- Window: 2026-10-12 → 2026-10-19.
+- **emollick "Co-Existence" book releases Oct 20** — expect major framework/teaching posts this week as final pre-release push. Will be the biggest emollick story in months.
+- karpathy: funnel post from Oct 11 will generate reactions; watch for follow-up.
+- levelsio: SaaS cancellation thread is getting engagement; watch for more posts on the "personal software" thesis.
+- simonw: rogue agent story is live; watch for follow-up coverage and any official responses.
+- swyx: AI Engineer NYC is this week (Oct 12–14); expect real-time coverage and insights.
+- bcherny: watch for community mods being shared; Projects GA opened to all Pro/Max.
 - Prune `log/2026-07-27.md` and earlier entries after Oct 27.
 - Confirm Mac pull still healthy via _meta.json.
