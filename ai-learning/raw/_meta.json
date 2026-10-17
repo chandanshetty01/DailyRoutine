@@ -1,14 +1,18 @@
 {
-  "last_pull_utc": "2026-10-16T01:02:43.548671+00:00",
+  "last_pull_utc": "2026-10-17T00:00:07.368889+00:00",
   "accounts": {
     "bcherny": {
-      "error": "x: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+      "source": "twitterapi.io",
+      "errors": null,
+      "total_posts": 132,
+      "new_this_pull": 8,
+      "newest_date": "2026-10-16T21:34:34+00:00"
     },
     "_catwu": {
       "source": "twitterapi.io",
       "errors": null,
-      "total_posts": 34,
-      "new_this_pull": 0,
+      "total_posts": 35,
+      "new_this_pull": 1,
       "newest_date": "2026-10-09T18:28:19+00:00"
     },
     "alexalbert__": {
@@ -21,30 +25,30 @@
     "simonw": {
       "source": "twitterapi.io, https://simonwillison.net/atom/everything/",
       "errors": null,
-      "total_posts": 209,
-      "new_this_pull": 4,
-      "newest_date": "2026-10-15T19:47:52+00:00"
+      "total_posts": 211,
+      "new_this_pull": 2,
+      "newest_date": "2026-10-16T22:06:37+00:00"
     },
     "karpathy": {
       "source": "twitterapi.io, https://karpathy.bearblog.dev/feed/",
       "errors": null,
-      "total_posts": 33,
-      "new_this_pull": 0,
+      "total_posts": 34,
+      "new_this_pull": 1,
       "newest_date": "2026-10-11T19:12:37+00:00"
     },
     "emollick": {
       "source": "twitterapi.io, https://www.oneusefulthing.org/feed",
       "errors": null,
-      "total_posts": 361,
-      "new_this_pull": 8,
-      "newest_date": "2026-10-15T23:52:08+00:00"
+      "total_posts": 366,
+      "new_this_pull": 5,
+      "newest_date": "2026-10-16T19:50:58+00:00"
     },
     "swyx": {
       "source": "twitterapi.io, https://www.latent.space/feed",
       "errors": null,
-      "total_posts": 263,
-      "new_this_pull": 8,
-      "newest_date": "2026-10-15T21:17:21+00:00"
+      "total_posts": 267,
+      "new_this_pull": 4,
+      "newest_date": "2026-10-16T23:58:13+00:00"
     },
     "rasbt": {
       "source": "twitterapi.io, https://magazine.sebastianraschka.com/feed",
@@ -56,9 +60,9 @@
     "levelsio": {
       "source": "twitterapi.io",
       "errors": null,
-      "total_posts": 440,
-      "new_this_pull": 13,
-      "newest_date": "2026-10-15T17:19:09+00:00"
+      "total_posts": 450,
+      "new_this_pull": 10,
+      "newest_date": "2026-10-16T21:38:44+00:00"
     }
   }
 }
