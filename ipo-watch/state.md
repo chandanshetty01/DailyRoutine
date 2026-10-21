@@ -3,24 +3,24 @@
 The routine reads this on start and rewrites it before exit.
 
 ## Last run
-2026-10-20T00:00:00Z (one-hundred-and-sixty-fourth run — Tuesday October 20, 2026; CBRS Day 110; last confirmed market data Oct 19: CBRS $120.66 (new ALL-TIME closing low; −5.15%; analyst target cut + lockup/OpenAI overhang); TSLA est. $368.06 (+3.8%); SPCX $147.96 (+1.3%; Q3 earnings AMC tonight Oct 20); CBRS Oct 19 predictions for Oct 20 logged: CBRS $115–$127 / TSLA $359–$377)
+2026-10-21T00:00:00Z (one-hundred-and-sixty-fifth run — Wednesday October 21, 2026; CBRS Day 111; last confirmed market data Oct 20: CBRS $118.24 (new ALL-TIME closing low; −2.01%; 52w intraday low $116.22; TD Cowen cut PT $275→$175 Buy); TSLA $373.71 (+1.54%; AH ~$382 on merger news; Q3 earnings AMC tonight Oct 21); SPCX $147.79 (−0.1%; Q3 beat AH +8% to ~$159); CBRS Oct 21 predictions for Oct 22 logged: CBRS $112–$124 / TSLA $336–$411)
 
 ## Tracked private companies
 | Company | Latest known IPO status | Source | Last checked |
 |---|---|---|---|
-| OpenAI | ~2027 or later; **Altman: "not 2026"**; confidential S-1 filed Jun 8; public S-1 not filed; **~$50B ARR (FT Oct 2026 revision from prior ~$70B)**; Saudi engineer Abdulrahman Alfozan charged with spy device in SF exec conference room (Oct 13-14); GPT-6.1 Astra cancelled Sep 29 (safety); CA AG subpoena Oct 2; no update Oct 20 | _Al Jazeera; FT (search-confirmed)_ | 2026-10-20 |
-| Anthropic | **PUBLIC S-1 NOT FILED as of Oct 20**; confidential S-1 filed June 1; **OCT 14 INVESTOR MEETINGS COMPLETED — Q2 REV >$11.5B; ARR $65B (JULY); FIRST ADJ. OP. PROFIT IN Q2; Q3 EXPECTED TO BE A LOSS; $1.8T–$2T VALUATION RANGE; S-1 FILING WINDOW ~OCT 23–25 (3–5 CAL DAYS FROM OCT 20); ROADSHOW NOV 9; LISTING ~MID-NOV BEFORE THANKSGIVING NOV 26**; Proposed ticker: ANTH; NASDAQ; $965B post-money (Series H $65B); MS/GS/JPM/Citi underwriters | _financefeeds.com; NPR; X/@kevinxu (search-confirmed)_ | 2026-10-20 |
-| SpaceX | **PUBLIC as of June 12, 2026. NASDAQ: SPCX. IPO price $135/share; Day 1 close $161.11 (+19.3%); ATH intraday $225.64 (Day 5, June 16); all-time closing low $107.01 (July 28); Oct 19 CONFIRMED $147.96 (+1.3%); Day 122 Oct 20**; **Q3 EARNINGS AMC TONIGHT OCT 20 — rev consensus $12.9–13.8B; first AI + Starlink separate segment reporting**; **Oct 24 next tranche (Sat, 4 cal days); Dec 8 full block expiry**; **TD COWEN BUY; CLSA $250 PT; BERNSTEIN $248 PT; EVERCORE ISI $275 PT (raised Oct 16); avg analyst PT $218.76** | _SpaceX IR; Yahoo Finance; Benzinga (search-confirmed)_ | 2026-10-20 |
-| Databricks | **~H2 2027 IPO** — CEO: "2026 terrible year to go public" (Jun 2026); **~$190B VALUATION (est.)**; **ARR >$7B run-rate (+80% YoY, Q2 2026)**; no update Oct 20 | _bloomberg.com capital-markets (prior run)_ | 2026-10-20 |
-| Mistral | **CONFIRMED CLOSED: €3B at $24B valuation (Sep 8, 2026)**; Samsung + PSG Equity + Scaleup Europe co-led; no IPO timeline; no update Oct 20 | _prior run_ | 2026-10-20 |
-| Cerebras | PUBLIC as of May 14, 2026. NASDAQ: CBRS. IPO price $185/share; Day 1 close $311.07 (+68%); **Day 109 Oct 19: $120.66 CONFIRMED (−5.15% from $127.21; NEW ALL-TIME CLOSING LOW; intraday low $120.12; volume 11.53M = 53% above avg; analyst target cut + lockup/OpenAI overhang); Day 110 = Oct 20 (Tue; close unconfirmed)**; ATH intraday $386.34; **OPENAI BACKLOG REALIZATION RISK: only $74M spent of $10B MRA through June**; **main lockup Nov 10 (21 cal days); EST. Q3 EARNINGS NOV 10-11 (Yahoo Finance: Nov 10; EarningsWhispers: Nov 11 AMC; unconfirmed; Q3 guidance $214–216M; EPS consensus −$0.13); FRANK RIMERMAN ADVISORS LLC RAISED HOLDINGS (Oct 18 MarketBeat)** | _MarketBeat; Yahoo Finance; QuiverQuant (search-confirmed)_ | 2026-10-20 |
+| OpenAI | ~2027 or later; **Altman: "not 2026"**; confidential S-1 filed Jun 8; public S-1 not filed; **~$50B ARR (FT Oct 2026 revision from prior ~$70B)**; Saudi engineer Abdulrahman Alfozan charged with spy device in SF exec conference room (Oct 13-14); GPT-6.1 Astra cancelled Sep 29 (safety); CA AG subpoena Oct 2; no update Oct 21 | _Al Jazeera; FT (search-confirmed)_ | 2026-10-21 |
+| Anthropic | **PUBLIC S-1 NOT FILED as of Oct 21**; confidential S-1 filed June 1; **OCT 14 INVESTOR MEETINGS COMPLETED — Q2 REV >$11.5B; ARR $65B (JULY); FIRST ADJ. OP. PROFIT IN Q2; Q3 EXPECTED TO BE A LOSS; $1.8T–$2T VALUATION RANGE; S-1 FILING WINDOW ~OCT 23–25 (2–4 CAL DAYS FROM OCT 21 = THU–SAT); ROADSHOW NOV 9; LISTING ~MID-NOV BEFORE THANKSGIVING NOV 26**; Proposed ticker: ANTH; NASDAQ; $965B post-money (Series H $65B); MS/GS/JPM/Citi underwriters | _financefeeds.com; NPR; X/@kevinxu (search-confirmed)_ | 2026-10-21 |
+| SpaceX | **PUBLIC as of June 12, 2026. NASDAQ: SPCX. IPO price $135/share; Day 1 close $161.11 (+19.3%); ATH intraday $225.64 (Day 5, June 16); all-time closing low $107.01 (July 28); Oct 20 CONFIRMED $147.79 (−0.1%); AH +8% to ~$159 (Q3 beat); Day 123 Oct 21**; **Q3 EARNINGS RELEASED OCT 20: rev $14.58B (+161% YoY), EPS adjusted $0.45 (beat $0.13 est), net income $4.4B (first profitable quarter), AI "Super Intelligence" $7.56B (+9× YoY), Connectivity $5.2B (+69% YoY); capex $19.6B**; **TESLA-SPACEX MERGER COMMITTEES FORMED (OCT 20 — BOTH BOARDS; MUSK EXCLUDED; NO TERMS; SHAREHOLDERS VOTE)**; **Oct 24 tranche (3 cal days, Sat); Dec 8 full block expiry**; **TD COWEN BUY; CLSA $250 PT; BERNSTEIN $248 PT; EVERCORE ISI $275 PT (raised Oct 16); avg analyst PT $218.76** | _Benzinga; TechCrunch; Axios (search-confirmed)_ | 2026-10-21 |
+| Databricks | **~H2 2027 IPO** — CEO: "2026 terrible year to go public" (Jun 2026); **~$190B VALUATION (est.)**; **ARR >$7B run-rate (+80% YoY, Q2 2026)**; no update Oct 21 | _bloomberg.com capital-markets (prior run)_ | 2026-10-21 |
+| Mistral | **CONFIRMED CLOSED: €3B at $24B valuation (Sep 8, 2026)**; Samsung + PSG Equity + Scaleup Europe co-led; no IPO timeline; no update Oct 21 | _prior run_ | 2026-10-21 |
+| Cerebras | PUBLIC as of May 14, 2026. NASDAQ: CBRS. IPO price $185/share; Day 1 close $311.07 (+68%); **Day 110 Oct 20: $118.24 CONFIRMED (−2.01% from $120.66; NEW ALL-TIME CLOSING LOW; 52w intraday low $116.22; TD Cowen cut PT $275→$175 Buy; ICG Advisors raised holdings); Day 111 = Oct 21 (Wed; close unconfirmed)**; ATH intraday $386.34; **OPENAI BACKLOG REALIZATION RISK: only $74M spent of $10B MRA through June**; **main lockup Nov 10 (20 cal days); EST. Q3 EARNINGS NOV 10-12 (Yahoo Finance: Nov 12; earlier est. Nov 10-11; unconfirmed; Q3 guidance $214–216M; EPS consensus −$0.13); TD COWEN CUT PT TO $175 (BELOW IPO $185) FROM $275 (BUY MAINTAINED; OCT 19); ICG ADVISORS LLC RAISED HOLDINGS (Oct 20 MarketBeat)** | _MarketBeat; Yahoo Finance; QZ (search-confirmed)_ | 2026-10-21 |
 
 ## AI / quantum IPOs filed or upcoming
 | Company | Sector | Status | Expected Date | Ticker | Source |
 |---|---|---|---|---|---|
 | OpenAI | AI | ~2027 or later; Altman "not 2026"; confidential S-1 filed Jun 8; public S-1 not filed; ~$50B ARR (FT revised Oct 2026) | ~2027 or later | TBD | _FT (search-confirmed)_ |
-| Anthropic | AI | **PUBLIC S-1 NOT FILED AS OF OCT 20**; **OCT 14 INVESTOR MEETINGS DONE; S-1 WINDOW OCT 23–25 (3–5 cal days from Oct 20); NOV 9 ROADSHOW; MID-NOV LISTING BEFORE THANKSGIVING NOV 26**; Q2 rev >$11.5B; ARR $65B (July); $1.8T-$2T val range; ANTH proposed; MS/GS/JPM/Citi | **S-1 filing window ~Oct 23–25; Roadshow Nov 9 (20 cal days from Oct 20); listing ~mid-Nov (before Thanksgiving)** | ANTH (proposed) | _financefeeds.com; X/@kevinxu (search-confirmed)_ |
-| **Nscale** | AI | **S-1 FILED SEPTEMBER 18, 2026 on SEC**; **S-1/A NOT FILED AS OF OCT 20**; **BLOOMBERG OCT 15: FLAGSHIP NORWAY DATA CENTER 6 MONTHS BEHIND SCHEDULE; ONLY 6.4 OF 30MW OPERATIONAL**; full-stack AI GPU neocloud (London-HQ); NYSE: NSCL; $44.6B Anthropic anchor; $103.4B TCV; H1 2026 revenue $140.6M (+1,252% YoY); $30–35B target valuation; GS/JPM/MS lead; **NVIDIA INVESTMENT CLOSE ~NOV 16**; **LISTING TIMELINE UNCERTAIN DUE TO DATA CENTER DELAYS**; **JUSTIN OSOFSKY (EX-META VP) HIRED AS COO EFFECTIVE OCT 2** | **S-1/A not filed; listing uncertain** | NSCL (NYSE) | _Bloomberg via startupfortune.com; CryptoBriefing; sec.gov (search-confirmed)_ |
+| Anthropic | AI | **PUBLIC S-1 NOT FILED AS OF OCT 21**; **OCT 14 INVESTOR MEETINGS DONE; S-1 WINDOW OCT 23–25 (2–4 cal days from Oct 21 = THU–SAT); NOV 9 ROADSHOW; MID-NOV LISTING BEFORE THANKSGIVING NOV 26**; Q2 rev >$11.5B; ARR $65B (July); $1.8T-$2T val range; ANTH proposed; MS/GS/JPM/Citi | **S-1 filing window ~Oct 23–25; Roadshow Nov 9 (19 cal days from Oct 21); listing ~mid-Nov (before Thanksgiving)** | ANTH (proposed) | _financefeeds.com; X/@kevinxu (search-confirmed)_ |
+| **Nscale** | AI | **S-1 FILED SEPTEMBER 18, 2026 on SEC**; **S-1/A NOT FILED AS OF OCT 21**; **BLOOMBERG OCT 15: FLAGSHIP NORWAY DATA CENTER 6 MONTHS BEHIND SCHEDULE; ONLY 6.4 OF 30MW OPERATIONAL**; full-stack AI GPU neocloud (London-HQ); NYSE: NSCL; $44.6B Anthropic anchor; $103.4B TCV; H1 2026 revenue $140.6M (+1,252% YoY); $30–35B target valuation; GS/JPM/MS lead; **NVIDIA INVESTMENT CLOSE ~NOV 16**; **LISTING TIMELINE UNCERTAIN DUE TO DATA CENTER DELAYS**; **JUSTIN OSOFSKY (EX-META VP) HIRED AS COO EFFECTIVE OCT 2** | **S-1/A not filed; listing uncertain** | NSCL (NYSE) | _Bloomberg via startupfortune.com; CryptoBriefing; sec.gov (search-confirmed)_ |
 | Iambic Therapeutics | AI (biotech) | **DEBUTED NASDAQ OCT 15, 2026 AS IAM; priced $16; Day 1 +16% to $18.50; IPO CLOSED OCT 16** | DEBUTED 2026-10-15 | IAM (NASDAQ) | _Investing.com; 247WallSt (search-confirmed Oct 15)_ |
 | Syntiant | AI | S-1/A (3rd amendment) Aug 31; edge AI chips; Nasdaq: SYTN; Intel/Microsoft-backed; no roadshow date | **Q4 2026 (no firm date)** | SYTN | _prior run_ |
 | Lambda | AI / Cloud infra | Pre-filing; GPU cloud; >$1.5B revenue run-rate; MS/JPM/Citi hired; IPO as soon as 2027 | ~H2 2027 | TBD | _Bloomberg Aug 24 (prior run)_ |
@@ -34,35 +34,35 @@ The routine reads this on start and rewrites it before exit.
 |---|---|---|---|---|
 | Iambic Therapeutics | NASDAQ: IAM | 2026-10-15 (first trade) | $16/share | Day 1 +16% to $18.50; AI-integrated oncology drug discovery; $150M gross; IPO closed Oct 16 |
 | IQM Quantum Computers | Nasdaq: IQMX | 2026-07-02 (first trade) | PIPE $10/ADS | SPAC merger with RAAQ; net proceeds ~$233M; Day 1 close $12.88; early Sep est ~$10.95 |
-| SpaceX | NASDAQ: SPCX | 2026-06-12 (first trade) | $135/share | Day 1 $161.11; ATH intraday $225.64 (Day 5); all-time closing low $107.01 (July 28); Day 122 Oct 20; Oct 19 $147.96 CONFIRMED (+1.3%); **Q3 EARNINGS AMC TONIGHT OCT 20** |
+| SpaceX | NASDAQ: SPCX | 2026-06-12 (first trade) | $135/share | Day 1 $161.11; ATH intraday $225.64 (Day 5); all-time closing low $107.01 (July 28); Day 123 Oct 21; Oct 20 $147.79 CONFIRMED (−0.1%); AH +8% to ~$159 on Q3 beat; **Q3 EARNINGS: rev $14.58B, EPS adj $0.45, net income $4.4B, AI segment $7.56B; TESLA MERGER COMMITTEES FORMED** |
 | Quantinuum | NASDAQ: QNT | 2026-06-04 (first trade) | $60/share | Day 1 close $60.38; ATH intraday $86.79 (July 14); Sep 22 close ~$53.02 (est.); Russell 1000/3000 effective Sep 21; lockup ~Dec 2026 |
-| Cerebras Systems | NASDAQ: CBRS | 2026-05-14 (first trade) | $185/share | **Day 109 Oct 19: $120.66 CONFIRMED (−5.15%; new ALL-TIME CLOSING LOW; intraday low $120.12; analyst target cut + lockup/OpenAI overhang; volume 11.53M = 53% above avg); Day 110 = Oct 20 (Tue; close unconfirmed); main lockup Nov 10 (21 cal days); EST. Q3 EARNINGS NOV 10-11 (unconfirmed; Q3 guidance $214–216M; EPS consensus −$0.13)** |
+| Cerebras Systems | NASDAQ: CBRS | 2026-05-14 (first trade) | $185/share | **Day 110 Oct 20: $118.24 CONFIRMED (−2.01%; new ALL-TIME CLOSING LOW; 52w intraday low $116.22; TD Cowen cut PT $275→$175 Buy; ICG Advisors raised holdings); Day 111 = Oct 21 (Wed; close unconfirmed); main lockup Nov 10 (20 cal days); EST. Q3 EARNINGS NOV 10-12 (unconfirmed; Q3 guidance $214–216M; EPS consensus −$0.13)** |
 
 _Prior completed (outside 30-day window): Horizon Quantum HQ debuted March 20 via SPAC; Xanadu XNDU debuted March 27 via SPAC; Infleqtion INFQ debuted February 17 — all outside 30-day window._
 
 ## 30-day rolling watch items
-1. **SPCX Q3 EARNINGS AMC TONIGHT OCT 20 — UPDATED: Rev consensus $12.9–13.8B vs Q2 $7.8B (+65–77% QoQ); first AI + Starlink separate segment reporting expected; EPS est. $0.14–0.21; Goldman Buy $230 PT; Evercore expects $104B annualized run-rate by year-end; Oct 19 close $147.96 (+1.3%). Oct 24 tranche (4 cal days). UPDATED 2026-10-20.
-2. **ANTHROPIC PUBLIC S-1 WINDOW ~OCT 23–25 (3–5 CAL DAYS FROM OCT 20) — OCT 14 INVESTOR MEETINGS COMPLETED; ROADSHOW NOV 9; MID-NOV LISTING BEFORE NOV 26 THANKSGIVING**: Q3 expected to be a loss (infra spend); $1.8T-$2T val range per investor discussions; **S-1 FILING WINDOW OCT 23–25 (ANALYST PROJECTION PER @kevinxu, NOT COMPANY CONFIRMED)**; monitor EDGAR DAILY from Oct 23. UPDATED 2026-10-20.
-3. **CBRS DAY 109 $120.66 CONFIRMED NEW ALL-TIME CLOSING LOW (OCT 19; −5.15%); ANALYST TARGET CUT + LOCKUP/OPENAI OVERHANG (QUIVER QUANT OCT 19); OPENAI BACKLOG REALIZATION RISK ($74M SPENT OF $10B MRA THROUGH JUNE)**; intraday low $120.12; volume 11.53M (53% above avg); **EST. Q3 EARNINGS NOV 10-11 (21–22 CAL DAYS; Yahoo Finance: Nov 10; EarningsWhispers: Nov 11; Q3 guidance $214–216M; EPS consensus −$0.13)**; **MAIN LOCKUP NOV 10 (21 CAL DAYS) = SAME DAY AS PROJECTED EARNINGS = PEAK COMPOUND RISK**; FRANK RIMERMAN ADVISORS LLC RAISED HOLDINGS (OCT 18). Avg analyst PT ~$291–$300 (11 analysts). UPDATED 2026-10-20.
-4. **SPCX OCT 19 CONFIRMED $147.96 (+1.3%); OCT 24 TRANCHE SAT (4 CAL DAYS); DEC 8 FULL EXPIRY**: STARLINK UKRAINE CONTROVERSY (OCT 13-14) — unresolved. AI + Starlink segment reporting separately first time tonight. Evercore PT $275; Goldman Buy $230; Bernstein $248; avg PT $218.76. UPDATED 2026-10-20.
-5. **TESLA Q3 EARNINGS AMC TOMORROW OCT 21 (WED, 1 CAL DAY) — DOMINANT NEAR-TERM BINARY**: EPS consensus $0.44–0.45 non-GAAP (Goldman); revenue $27.8–28.1B (Hudson Labs: $27.6B); energy storage 13.7 GWh deployed vs 15.9 GWh expected (miss); robotaxi/Optimus outlook > quarterly numbers per Goldman; stock fell after each of last 3 earnings reports; options imply larger move; Oct 19 est. close $368.06 (+3.8% pre-earnings bounce). Nevada robotaxi approved Aug 2026 (up to 5,000 vehicles Clark County). FOMC Oct 27-28 (~80% hold; ~20% hike). UPDATED 2026-10-20.
-6. **ASML Q3 2026 €11.6B BEAT (OCT 14) — AI CHIP DEMAND POSITIVE**: 113 new systems vs 86 in Q2; NVDA/AMD/Broadcom briefly rallied; confirms AI chip capacity build-out intact. CARRIED 2026-10-20.
-7. **MICROSOFT MAIA 300 PRIMARY INFERENCE FROM 2027 (OCT 12 ANNOUNCEMENT)**: Maia 300 will replace third-party chips (incl. Cerebras/Nvidia) for Microsoft's AI inference from 2027; Morgan Stanley est. >1M units; 40% more tokens/MW claim. CBRS sold off on announcement (Oct 12 = Day 101 at $175.05). CARRIED 2026-10-20.
-8. **NSCALE S-1 FILED SEP 18 — NYSE: NSCL — S-1/A STILL NOT FILED AS OF OCT 20; BLOOMBERG OCT 15: NORWAY DATA CENTER 6 MONTHS BEHIND SCHEDULE (6.4/30MW ONLY)**; Full-stack AI GPU neocloud; $44.6B Anthropic anchor; $103.4B TCV; H1 rev $140.6M (+1,252% YoY); $30–35B target valuation; GS/JPM/MS lead; **NVIDIA INVESTMENT CLOSE ~NOV 16**; **JUSTIN OSOFSKY (EX-META) HIRED AS COO EFFECTIVE OCT 2**; **IPO TIMELINE UNCERTAIN**. UPDATED 2026-10-20.
-9. **TESLA-SPACEX MERGER SPECULATION (MUSK ALL-IN PODCAST SEP 16)**: 66% Kalshi odds by 2028. No concrete deal. Roadster reveal used SpaceX cold-gas thrusters. CARRIED 2026-10-20.
-10. **SEP CPI 3.7% HEADLINE / 2.6% CORE (ABOVE CONSENSUS) — FOMC OCT 27-28 NOW ~80% HOLD (~20% HIKE)**: JPMorgan base case is hold; Sep hike was 25bp to 3.75–4.00%; UOB expects 2 more hikes in Dec/Q1 2027. Pressures CBRS (~56× P/S) and TSLA (~338× P/E). CARRIED 2026-10-20.
+1. **TESLA-SPACEX MERGER COMMITTEES FORMED (OCT 20 — BOTH BOARDS; MUSK EXCLUDED AS CONFLICTED; NO DEAL TERMS; SHAREHOLDERS VOTE IF DEAL REACHED)**: Musk said "a good idea" on SPCX Q3 earnings call; Barclays sees possible all-stock deal with SPCX acquiring TSLA; TSLA AH +2.2%; SPCX AH +8%. Q3 TSLA earnings AMC tonight Oct 21 — merger + earnings dual narrative. 66% Kalshi odds by 2028. UPDATED 2026-10-21.
+2. **SPCX Q3 BEAT (OCT 20): REV $14.58B (+161% YoY), EPS ADJ $0.45 (BEAT $0.13 EST), NET INCOME $4.4B, AI "SUPER INTELLIGENCE" $7.56B (+9× YoY; BEAT $6.47B EST); CAPEX $19.6B (EXCEEDED REVENUE); SHARES AH +8% TO ~$159; FIRST PROFITABLE QUARTER SINCE IPO**; Oct 24 tranche (3 cal days, Sat); Dec 8 full block expiry. UPDATED 2026-10-21.
+3. **ANTHROPIC PUBLIC S-1 WINDOW ~OCT 23–25 (2–4 CAL DAYS FROM OCT 21 = THU–SAT) — OCT 14 INVESTOR MEETINGS COMPLETED; ROADSHOW NOV 9; MID-NOV LISTING BEFORE NOV 26 THANKSGIVING**: Q3 expected to be a loss (infra spend); $1.8T-$2T val range per investor discussions; monitor EDGAR DAILY from Oct 23. UPDATED 2026-10-21.
+4. **CBRS DAY 110 $118.24 CONFIRMED NEW ALL-TIME CLOSING LOW (OCT 20; −2.01%); TD COWEN CUT PT TO $175 (BELOW IPO $185) FROM $275 (BUY MAINTAINED; OCT 19); 52W INTRADAY LOW $116.22 (OCT 20)**; **OPENAI BACKLOG REALIZATION RISK ($74M SPENT OF $10B MRA THROUGH JUNE)**; intraday low $116.22; ICG Advisors raised holdings Oct 20; **EST. Q3 EARNINGS NOV 10-12 (20–22 CAL DAYS; Yahoo Finance: Nov 12; Q3 guidance $214–216M; EPS consensus −$0.13)**; **MAIN LOCKUP NOV 10 (20 CAL DAYS) = SAME DAY AS PROJECTED EARNINGS = PEAK COMPOUND RISK**; Avg analyst PT ~$289.90-$299.90 (MarketBeat/Investing.com). UPDATED 2026-10-21.
+5. **TESLA Q3 EARNINGS AMC TONIGHT OCT 21 (WED) — DOMINANT NEAR-TERM BINARY**: EPS consensus $0.44–0.45 non-GAAP (Goldman); revenue $27.8–28.1B; energy storage 13.7 GWh deployed vs 15.9 GWh expected (miss); robotaxi/Optimus outlook > quarterly numbers per Goldman; stock fell after each of last 3 earnings reports; options imply larger move; Oct 20 confirmed close $373.71 (+1.54%; AH ~$382 on merger news). FOMC Oct 27-28 (~80% hold). UPDATED 2026-10-21.
+6. **ASML Q3 2026 €11.6B BEAT (OCT 14) — AI CHIP DEMAND POSITIVE**: 113 new systems vs 86 in Q2; NVDA/AMD/Broadcom briefly rallied; confirms AI chip capacity build-out intact. CARRIED 2026-10-21.
+7. **MICROSOFT MAIA 300 PRIMARY INFERENCE FROM 2027 (OCT 12 ANNOUNCEMENT)**: Maia 300 will replace third-party chips (incl. Cerebras/Nvidia) for Microsoft's AI inference from 2027; Morgan Stanley est. >1M units; 40% more tokens/MW claim. CBRS sold off on announcement (Oct 12 = Day 101 at $175.05). CARRIED 2026-10-21.
+8. **NSCALE S-1 FILED SEP 18 — NYSE: NSCL — S-1/A STILL NOT FILED AS OF OCT 21; BLOOMBERG OCT 15: NORWAY DATA CENTER 6 MONTHS BEHIND SCHEDULE (6.4/30MW ONLY)**; Full-stack AI GPU neocloud; $44.6B Anthropic anchor; $103.4B TCV; H1 rev $140.6M (+1,252% YoY); $30–35B target valuation; GS/JPM/MS lead; **NVIDIA INVESTMENT CLOSE ~NOV 16**; **IPO TIMELINE UNCERTAIN**. CARRIED 2026-10-21.
+9. **SEP CPI 3.7% HEADLINE / 2.6% CORE (ABOVE CONSENSUS) — FOMC OCT 27-28 NOW ~80% HOLD (~20% HIKE)**: JPMorgan base case is hold; Sep hike was 25bp to 3.75–4.00%; UOB expects 2 more hikes in Dec/Q1 2027. Pressures CBRS (~55× P/S) and TSLA (~343× P/E). CARRIED 2026-10-21.
+10. **SPCX OCT 24 TRANCHE (SAT, 3 CAL DAYS) + DEC 8 FULL EXPIRY**: Starlink Ukraine controversy (Oct 13-14) — unresolved. Avg PT $218.76. Tesla merger committee parallel track. UPDATED 2026-10-21.
 
 ## Notes for next run
-- **TUE OCT 20 = TODAY; NEXT TRADING DAY = WED OCT 21**.
-- **EVALUATE OCT 20 PREDICTIONS (TUE CLOSE; UNCONFIRMED)**: CBRS $115–$127 (Oct 20 run) for Oct 21 → PENDING. TSLA $359–$377 (Oct 20 run) for Oct 21 → PENDING.
-- **MANUAL EVALUATION OF OCT 19 PREDICTIONS**: Oct 18 CBRS $120–$135 for Oct 19 → actual $120.66 → HIT (4.4% into band from low). Oct 18 TSLA $346–$364 for Oct 19 → actual $368.06 → MISS (above high by $4.06; 1.1%). Oct 16 TSLA $353–$372 for Oct 19 → actual $368.06 → HIT (79.3% into band). Oct 16 CBRS $128–$151 for Oct 19 → actual $120.66 → MISS (below low by $7.34).
-- **SPCX Q3 EARNINGS AMC TONIGHT OCT 20**: Capture results tomorrow. Rev consensus $12.9–13.8B; EPS $0.14–0.21; AI + Starlink segment reporting first time. Evercore ~$104B annualized run-rate by year-end.
-- **TSLA Q3 EARNINGS AMC OCT 21 (TOMORROW; 1 CAL DAY)**: EPS consensus $0.44–0.45 non-GAAP; rev $27.8–28.1B; energy storage miss likely; robotaxi/Optimus guidance = key variable per Goldman. Stock fell after last 3 earnings. Oct 19 close est. $368.06 (+3.8% pre-earnings).
-- **CBRS**: Day 110 Oct 20 (close unconfirmed). Oct 19 actual = $120.66 new ATL. Nov 10 lockup Day 180 = 21 cal days. **EST. Q3 EARNINGS NOV 10-11 (unconfirmed) = SAME OR 1 DAY AFTER LOCKUP — COMPOUND SUPPLY+EVENT RISK**. Q3 guidance $214–216M; EPS consensus −$0.13. OpenAI spent only $74M of $10B MRA through June. Analyst target cut Oct 19 per Quiver Quant. Avg analyst PT: ~$291–$300 (11 analysts).
-- **ANTHROPIC**: Public S-1 WINDOW Oct 23–25 (Thu–Sat, 3–5 cal days from Oct 20). Monitor EDGAR from Oct 23. Q3 expected to be a loss per company guidance.
-- **NSCALE**: IPO timeline uncertain. Justin Osofsky (ex-Meta) hired as COO effective Oct 2. Nvidia investment close ~Nov 16. Monitor for S-1/A.
-- **DATE CONFIRMED**: Oct 20 = Tuesday (today; CBRS Day 110). Oct 21 = Wednesday AMC (TSLA Q3 earnings; SPCX results already out from tonight). Oct 23–25 = Fri–Sun (Anthropic S-1 filing window; 3–5 cal days). Oct 24 = Saturday (SPCX tranche; 4 cal days). Oct 27–28 = Mon–Tue (FOMC; 7–8 cal days). Nov 9 = Sunday (Anthropic roadshow; 20 cal days). Nov 10 = Tuesday (CBRS lockup Day 180; 21 cal days). Est. Nov 10-11 = Tue-Wed (CBRS Q3 earnings AMC; 21–22 cal days, unconfirmed).
-- **FORECAST AUDIT NOTE**: yfinance unavailable (proxy blocks). All evaluate calls failing (403 CONNECT tunnel errors). Manual evaluation from Oct 6 onward. 30d stats: CBRS 100% hit (2 samples, insufficient), TSLA 50% hit (2 samples, insufficient). Full history: 37 evaluated, 62.2% hit. Oct 20 predictions logged: CBRS $115–$127, TSLA $359–$377, both for Oct 21.
+- **WED OCT 21 = TODAY; NEXT TRADING DAY = THU OCT 22**.
+- **EVALUATE OCT 21 PREDICTIONS (WED CLOSE; UNCONFIRMED)**: CBRS $112–$124 (Oct 21 run) for Oct 22 → PENDING. TSLA $336–$411 (Oct 21 run) for Oct 22 → PENDING.
+- **MANUAL EVALUATION OF OCT 20 PREDICTIONS**: Oct 20 run CBRS $115–$127 for Oct 21 → actual Oct 21 PENDING. Oct 20 run TSLA $359–$377 for Oct 21 → actual Oct 21 PENDING.
+- **TSLA Q3 EARNINGS AMC TONIGHT OCT 21**: Capture results tomorrow. Consensus EPS $0.44–$0.45; rev $27.8–28.1B; energy storage miss likely (13.7 vs 15.9 GWh); robotaxi/Optimus guidance key per Goldman. Oct 20 close $373.71; AH ~$382 (merger news). Post-earnings move historically 8–15%.
+- **TESLA-SPACEX MERGER COMMITTEES**: Both boards formed independent special committees Oct 20. Musk excluded (conflicted). No terms agreed; shareholders would vote. Barclays sees possible all-stock deal. Monitor for term sheet or shareholder meeting date.
+- **ANTHROPIC**: Public S-1 WINDOW Oct 23–25 (Thu–Sat, 2–4 cal days). Monitor EDGAR from Oct 23. Q3 expected to be a loss per company guidance.
+- **CBRS**: Day 111 Oct 21. Oct 20 confirmed ATL close $118.24. TD Cowen target now $175 (below IPO $185). ICG Advisors raised holdings. Nov 10 lockup Day 180 = 20 cal days. Est. Q3 earnings Nov 10–12 per Yahoo Finance/EarningsWhispers (still unconfirmed). Avg analyst PT ~$289.90 (MarketBeat).
+- **SPCX**: Oct 21 = Day 123. Oct 20 close $147.79; Q3 beat AH +8% to ~$159. Oct 24 tranche (Sat, 3 cal days). Tesla merger committee parallel. Dec 8 full block expiry.
+- **FORECAST AUDIT NOTE**: yfinance unavailable (proxy blocks). All evaluate calls failing (403 CONNECT tunnel errors). Manual evaluation from Oct 6 onward. 30d stats: CBRS 100% hit (1 sample, insufficient), TSLA 100% hit (1 sample, insufficient). Full history: 37 evaluated, 62.2% hit. Oct 21 predictions logged: CBRS $112–$124, TSLA $336–$411, both for Oct 22.
+- **DATE CONFIRMED**: Oct 21 = Wednesday (today; CBRS Day 111; TSLA Q3 earnings AMC tonight). Oct 22 = Thursday (next trading day). Oct 23 = Friday (Anthropic S-1 window opens, 2 cal days). Oct 24 = Saturday (SPCX tranche, 3 cal days). Oct 27-28 = Mon-Tue (FOMC, 6-7 cal days). Nov 9 = Monday (Anthropic roadshow, 19 cal days). Nov 10 = Tuesday (CBRS lockup Day 180, 20 cal days). Est. Nov 10-12 = Tue-Thu (CBRS Q3 earnings AMC, 20-22 cal days, unconfirmed).
 
 ## Buying Window Tracker — anchor data (do not modify lightly)
 
@@ -182,26 +182,27 @@ These are historical anchors used by the Buying Window Tracker section. They are
 - **Day 107 close:** $142.17 CONFIRMED CORRECTED (October 15, 2026 Thursday — Tesla Roadster reveal evening; CPI aftermath; +0.49% from $141.48; prior estimate ~$139.29 was incorrect; HeyGoTrade search-confirmed)
 - **Day 108 close:** $127.21 CONFIRMED (October 16, 2026 Friday — monthly opex; −10.52% from $142.17; new ALL-TIME CLOSING LOW; intraday low $126.05; 76,734 put contracts; Microsoft Maia 300 headwind; Morningstar/MarketBeat/Motley Fool search-confirmed)
 - **Day 109 close:** $120.66 CONFIRMED (October 19, 2026 Monday — analyst target cut + lock-up/OpenAI overhang; −5.15% from $127.21; new ALL-TIME CLOSING LOW; intraday low $120.12; volume 11.53M = 53% above avg; MarketBeat/Yahoo Finance/Google Finance search-confirmed)
-- **Day 110 close:** UNCONFIRMED (October 20, 2026 Tuesday)
-- **52w low (closing):** $120.66 CONFIRMED (October 19, 2026 — ALL-TIME CLOSING LOW); **all-time intraday low $120.12 (October 19, 2026)**; ATH intraday: $386.34 (Day 1)
+- **Day 110 close:** $118.24 CONFIRMED (October 20, 2026 Tuesday — TD Cowen PT cut to $175 (below IPO $185); −2.01% from $120.66; NEW ALL-TIME CLOSING LOW; 52w intraday low $116.22; ICG Advisors raised holdings; Yahoo Finance/CNBC search-confirmed)
+- **Day 111 close:** UNCONFIRMED (October 21, 2026 Wednesday)
+- **52w low (closing):** $118.24 CONFIRMED (October 20, 2026 — ALL-TIME CLOSING LOW); **all-time intraday low $116.22 (October 20, 2026)**; ATH intraday: $386.34 (Day 1)
 - **Shares offered:** 30M Class A
 - **IPO gross proceeds:** $5.55B
 - **FY2025 revenue:** $510M (+76% YoY)
 - **FY2025 net margin:** 47%
 - **Customer concentration FY2025:** MBZUAI 62% + G42 24% = 86% total
-- **Notable contracts:** $10B OpenAI MRA Jan 2026 (**OpenAI spent only $74M through June — backlog realization risk**); Amazon AWS deal May 2026; **$24.6B total backlog**; **OpenAI 750MW multi-year >$20B deal (June 23, 2026)**; **AWS multi-year fast-inference partnership (June 23, 2026)**; **European expansion: 200MW (France + Nordics) by end-2027 (July 9, 2026)**; **Flex 7× CS-3 manufacturing scale-up (July 9, 2026)**; **GPT-5.6 Sol deployed on Cerebras at 750 tokens/sec (ultrafast mode)**; **GPT-6.1 Sol Ultrafast now on NVIDIA at ~300 t/s (Sep 29, 2026 — NEGATIVE; OpenAI supplier diversification)**; **SAM ALTMAN X POST OCT 2: "CLOSE PARTNER" + "DEEP ENGAGEMENT PUSHING ON FRONTIERS OF SPEED"**; **CrowdStrike Falcon AIDR partnership (July 22, 2026)**; **AMD-Cerebras inference solution (Helios + WSE) H2 2026 (July 23, 2026)**; **CS-4 UNVEILED AUG 18 — 3× WSE-3T; 750 PFLOPs; 30× GPU; GA Sep quarter**; **ARK INVEST: $8.84M BUY AUG 18, $17M BUY AUG 26, ~$20M BUY OCT 2, MID-OCT BUYING CONFIRMED (CNN/TipRanks)**; **MORGAN STANLEY OVERWEIGHT CONFIRMED SEP 8**; **GIMLET LABS MULTI-SILICON AI INFERENCE PARTNERSHIP (SEP 29, 2026)**; **FREEDOM CAPITAL MARKETS UPGRADED TO BUY $209 PT OCT 2 (Paul Meeks)**; **JEFFERIES UPGRADED TO OUTPERFORM OCT 5**; **MICROSOFT MAIA 300 ANNOUNCED OCT 12 AS PRIMARY INFERENCE FROM 2027 (BEARISH)**; **FRANK RIMERMAN ADVISORS LLC RAISED HOLDINGS (OCT 18, 2026 — MARKETBEAT)**; **ANALYST TARGET CUT OCT 19 (QUIVER QUANT)**
+- **Notable contracts:** $10B OpenAI MRA Jan 2026 (**OpenAI spent only $74M through June — backlog realization risk**); Amazon AWS deal May 2026; **$24.6B total backlog**; **OpenAI 750MW multi-year >$20B deal (June 23, 2026)**; **AWS multi-year fast-inference partnership (June 23, 2026)**; **European expansion: 200MW (France + Nordics) by end-2027 (July 9, 2026)**; **Flex 7× CS-3 manufacturing scale-up (July 9, 2026)**; **GPT-5.6 Sol deployed on Cerebras at 750 tokens/sec (ultrafast mode)**; **GPT-6.1 Sol Ultrafast now on NVIDIA at ~300 t/s (Sep 29, 2026 — NEGATIVE; OpenAI supplier diversification)**; **SAM ALTMAN X POST OCT 2: "CLOSE PARTNER" + "DEEP ENGAGEMENT PUSHING ON FRONTIERS OF SPEED"**; **CrowdStrike Falcon AIDR partnership (July 22, 2026)**; **AMD-Cerebras inference solution (Helios + WSE) H2 2026 (July 23, 2026)**; **CS-4 UNVEILED AUG 18 — 3× WSE-3T; 750 PFLOPs; 30× GPU; GA Sep quarter**; **ARK INVEST: $8.84M BUY AUG 18, $17M BUY AUG 26, ~$20M BUY OCT 2, MID-OCT BUYING CONFIRMED (CNN/TipRanks)**; **MORGAN STANLEY OVERWEIGHT CONFIRMED SEP 8**; **GIMLET LABS MULTI-SILICON AI INFERENCE PARTNERSHIP (SEP 29, 2026)**; **FREEDOM CAPITAL MARKETS UPGRADED TO BUY $209 PT OCT 2 (Paul Meeks)**; **JEFFERIES UPGRADED TO OUTPERFORM OCT 5**; **MICROSOFT MAIA 300 ANNOUNCED OCT 12 AS PRIMARY INFERENCE FROM 2027 (BEARISH)**; **ICG ADVISORS LLC RAISED HOLDINGS (OCT 20, 2026 — MARKETBEAT)**; **TD COWEN CUT PT TO $175 FROM $275 (BUY MAINTAINED; OCT 19 — BELOW IPO $185)**
 - **Q2 2026 EARNINGS (AUGUST 12, 2026 AMC):** GAAP rev $180.1M (+74%, MISS); Core rev $209.9M (+103%, BEAT); GAAP gross margin 14%; Core gross margin 41% (BEAT); GAAP EPS −$2.98 (MISS; $377M SBC); FY core guidance raised $880–890M; Q3 core guidance $214–216M; Q3 core GM guidance 38–40%; RPO $25.4B; >3× 2027 revenue guided
-- **Q3 2026 EARNINGS DATE: EST. NOV 10–11, 2026 (Yahoo Finance: Nov 10; EarningsWhispers: Nov 11 AMC; company not announced; Q3 guidance $214–216M; EPS consensus −$0.13 / 3 analysts) — 0–1 day after Nov 10 lockup Day 180**
-- **Analyst coverage:** avg PT ~$291–$300 (MarketBeat, 11 analysts search-confirmed); MS overweight; UBS reiterated ($330 PT); Needham + Rosenblatt Buy/$300; Freedom Capital Buy/$209 (Oct 2); Jefferies Outperform (Oct 5); Mizuho Outperform ($300 PT); Citi Buy ($320 PT, lowered from $340); Wedbush Outperform $270 PT
+- **Q3 2026 EARNINGS DATE: EST. NOV 10–12, 2026 (Yahoo Finance: Nov 12; EarningsWhispers: Nov 11 AMC; company not announced; Q3 guidance $214–216M; EPS consensus −$0.13 / 3 analysts) — same or near Nov 10 lockup Day 180**
+- **Analyst coverage:** avg PT ~$289.90-$299.90 (MarketBeat/Investing.com, 11 analysts search-confirmed); MS overweight; UBS reiterated ($330 PT); Needham + Rosenblatt Buy/$300; Freedom Capital Buy/$209 (Oct 2); Jefferies Outperform (Oct 5); Mizuho Outperform ($300 PT); Citi Buy ($320 PT, lowered from $340); Wedbush Outperform $270 PT; **TD COWEN: BUY BUT CUT TO $175 FROM $275 (OCT 19 — BELOW IPO $185)**
 - **Securities investigations (ACTIVE):** Pomerantz, Bronstein Gewirtz, Kaplan Fox, Schall Law Firm, Glancy Prongay Wolke & Rother, Block & Leviton; no formal complaint filed
-- **Insider selling (ACTIVE):** CEO Andrew Feldman: 37,441 shares sold Sep 4 at avg $210.46 = $7.88M; CTO Sean Lie sold 120K shares ~$25.1M (Sep 30, 2026)
+- **Insider selling (ACTIVE):** CEO Andrew Feldman: 37,441 shares sold Sep 4 at avg $210.46 = $7.88M; CTO Sean Lie sold 120K shares ~$25.1M (Sep 30, 2026); total insider sales ~$387.7M over 3 months (search-confirmed Oct 20)
 - **Lockup schedule:**
   - **Intermediate tranches:** Sep 16 (14.6M) ABSORBED; Sep 30 (19.4M) ABSORBED (with −8.87% cost); **Oct 14 (19.4M) ABSORBED (with −5.10% cost)**
-  - **Main lockup expiry: ~2026-11-10 (Day 180; ~21 cal days from Oct 20)**
+  - **Main lockup expiry: ~2026-11-10 (Day 180; ~20 cal days from Oct 21)**
 - **Short interest (June 30):** 13.53M shares = 16.9% of float
-- **Market cap at $120.66 (Oct 19 confirmed):** ~$28.67B (237.6M × $120.66)
-- **Trailing P/S at $120.66:** ~56.2× (~$28.67B / $510M FY2025)
-- **FY2026 forward P/S at $120.66:** ~32.4× (~$28.67B / $885M core guidance midpoint)
+- **Market cap at $118.24 (Oct 20 confirmed):** ~$28.1B (237.6M × $118.24)
+- **Trailing P/S at $118.24:** ~55.1× (~$28.1B / $510M FY2025)
+- **FY2026 forward P/S at $118.24:** ~31.8× (~$28.1B / $885M core guidance midpoint)
 - **Reference price zones:**
   - 50× P/S → ~$107/share
   - 70× P/S → ~$150/share (above current)
@@ -209,7 +210,7 @@ These are historical anchors used by the Buying Window Tracker section. They are
   - 150× P/S → ~$323/share
   - 200× P/S → ~$430/share
 - **Historical IPO drawdown analogs:** ARM (−17% by week 4), KVYO (−22% by month 1), RDDT (−24% by week 3), CRWV (−12% by week 1)
-- **Forecast accuracy (updated Oct 20):**
+- **Forecast accuracy (updated Oct 21):**
   - Oct 5 run: $155–$178 for Oct 6 → HIT CONFIRMED (actual $177.10)
   - Oct 6 run: $170–$195 for Oct 7 → HIT CONFIRMED (actual $175.05; 20.2% into band)
   - Oct 7 run: $167–$189 for Oct 8 → **MISS CONFIRMED** (actual $165.34; near miss)
@@ -223,21 +224,23 @@ These are historical anchors used by the Buying Window Tracker section. They are
   - Oct 16 run: $128–$151 for Oct 19 → **MISS MANUAL** (actual $120.66; below low by $7.34)
   - Oct 17 run: $120–$135 for Oct 19 → **HIT MANUAL** (actual $120.66; 4.4% into band from low)
   - Oct 18 run: $120–$135 for Oct 19 → **HIT MANUAL** (actual $120.66; 4.4% into band from low)
-  - **Oct 20 run: $115–$127 for Oct 21 → PENDING**
+  - Oct 20 run: $115–$127 for Oct 21 → PENDING
+  - **Oct 21 run: $112–$124 for Oct 22 → PENDING**
 
 ### TSLA — Tesla, Inc.
 - **Classification:** Mature public stock (listed since 2010-06-29 NASDAQ). Use 52-week low / 52-week high / 200-day moving average as reference levels.
 - **52-week range:** ~$297.38 (52w closing low; intraday $297.82 set July 30) – $498.83 (52w high; Dec 22, 2025).
 - **200d MA:** ~$387
-- **Confirmed/estimated closes (updated through October 20):**
-  - **October 16, 2026: $354.72 CONFIRMED** (Motley Fool; Yahoo Finance; Finviz; −2.13% from $362.44; trading range $349.33–$370.50)
-  - **October 19, 2026: $368.06 EST. CONFIRMED** (MarketBeat: +3.8% from $354.72; high $369.58; prior close $354.72; search-confirmed)
-  - **October 20, 2026: UNCONFIRMED**
+- **Confirmed/estimated closes (updated through October 21):**
+  - **October 19, 2026: $368.06 EST. CONFIRMED** (MarketBeat: +3.8% from $354.72; search-confirmed)
+  - **October 20, 2026: $373.71 CONFIRMED** (Finviz/MarketBeat: +1.54% from $368.06; AH ~$382.15 +2.2% on merger news; search-confirmed)
+  - **October 21, 2026: UNCONFIRMED** (Q3 earnings AMC tonight)
 - **Q3 2026 DELIVERIES: 486,532 CONFIRMED BEAT (OCT 2–3)**: +5.3% vs consensus ~462K; YoY still −2.4% vs Q3 2025.
-- **TESLA Q3 2026 EARNINGS: OCTOBER 21, 2026 (Wednesday AMC) — CONFIRMED**: EPS consensus $0.44–0.45 non-GAAP (Goldman/MarketBeat); revenue $27.8–28.1B (Hudson Labs: $27.6B); energy storage deployed 13.7 GWh vs 15.9 GWh expected (miss); key watch: robotaxi/Optimus guidance > quarterly numbers (Goldman); stock fell after each of last 3 reports; options imply larger post-earnings move than recent average; Nevada robotaxi approved Aug 2026 (up to 5,000 vehicles Clark County).
-- **Trailing P/E at $368.06 (est. Oct 19):** ~337.7× ($368.06 / $1.09 TTM EPS)
-- **Forward P/E at $368.06:** ~199.0× (FY2026 consensus ~$1.85 EPS)
-- **Forecast accuracy (updated Oct 20):**
+- **TESLA Q3 2026 EARNINGS: OCTOBER 21, 2026 AMC — TONIGHT**: EPS consensus $0.44–0.45 non-GAAP; revenue $27.8–28.1B; energy storage deployed 13.7 GWh vs 15.9 GWh expected (miss); key watch: robotaxi/Optimus guidance; stock fell after each of last 3 reports; options imply 8–15% post-earnings move
+- **TESLA-SPACEX MERGER COMMITTEES FORMED (OCT 20)**: both boards formed independent special committees; Musk confirmed "a good idea" but excluded (conflicted); no terms agreed; shareholders would vote; Barclays sees possible all-stock SPCX acquiring TSLA scenario
+- **Trailing P/E at $373.71 (Oct 20):** ~342.9× ($373.71 / $1.09 TTM EPS)
+- **Forward P/E at $373.71:** ~202.0× (FY2026 consensus ~$1.85 EPS)
+- **Forecast accuracy (updated Oct 21):**
   - Oct 6 run: $365–$391 for Oct 7 → HIT CONFIRMED (actual $377.81; 49.3% into band)
   - Oct 7 run: $370–$391 for Oct 8 → **HIT CONFIRMED** (actual $375.00; 13.5% into band)
   - Oct 8 run: $368–$388 for Oct 9 → **HIT CONFIRMED** (actual ~$382.70; ~74% into band)
@@ -248,7 +251,8 @@ These are historical anchors used by the Buying Window Tracker section. They are
   - Oct 16 run: $353–$372 for Oct 19 → **HIT MANUAL** (actual $368.06; 79.3% into band)
   - Oct 17 run: $346–$364 for Oct 19 → **MISS MANUAL** (actual $368.06; above high by $4.06; 1.1%)
   - Oct 18 run: $346–$364 for Oct 19 → **MISS MANUAL** (actual $368.06; above high by $4.06; 1.1%)
-  - **Oct 20 run: $359–$377 for Oct 21 → PENDING**
+  - Oct 20 run: $359–$377 for Oct 21 → PENDING
+  - **Oct 21 run: $336–$411 for Oct 22 → PENDING (post-earnings session; wide range)**
 
 ### QNT — Quantinuum (trapped-ion quantum hardware + software)
 - **Classification:** New IPO (Day 1 = June 4, 2026). Use IPO / Day 1 / ATH as reference levels.
@@ -268,22 +272,23 @@ These are historical anchors used by the Buying Window Tracker section. They are
 - **Day 1 close:** $161.11 (+19.3% vs IPO)
 - **Day 5 intraday ATH:** $225.64 (June 16, 2026)
 - **All-time closing low:** $107.01 (July 28, 2026)
-- **Day 120 Oct 16: $146.03 CONFIRMED** (−1.74%; intraday range $142.95–$147.92)
-- **Day 121 Oct 19: $147.96 CONFIRMED** (+1.3%; intraday range $146.83–$151.01)
-- **Day 122 Oct 20: UNCONFIRMED** (Q3 earnings AMC tonight)
+- **Day 121 Oct 19: $147.96 CONFIRMED** (+1.3%)
+- **Day 122 Oct 20: $147.79 CONFIRMED** (−0.1%; Q3 beat AH +8% to ~$159)
+- **Day 123 Oct 21: UNCONFIRMED** (post-earnings session)
+- **Q3 2026 EARNINGS (OCT 20 AMC):** Revenue $14.58B (+161% YoY, beat $12.95B est); adjusted EPS $0.45 (beat $0.13 est); net income $4.4B (FIRST PROFITABLE QUARTER); AI "Super Intelligence" segment $7.56B (+9× YoY, beat $6.47B est), operating income $431M; Connectivity $5.2B (+69% YoY); Space $1.8B (+6%); Capex $19.6B (exceeded revenue); Starlink consumers 13.6M; Starlink Mobile 22M monthly users
+- **TESLA-SPACEX MERGER COMMITTEES FORMED (OCT 20)**: Musk said "a good idea" on earnings call; both boards formed independent special committees; Musk excluded; no terms; shareholders vote; TSLA AH +2.2%; SPCX AH +8%
 - **NASDAQ-100 REBALANCE (SEP 21):** Weight doubled to 2.82% effective Sep 21
 - **NASA $946M CONTRACT (SEP 18):** Crew-15/16/17; CCtCap total $5.92B through 2030
 - **STARSHIP FLIGHT 14: CONFIRMED ORBITAL SUCCESS SEP 28** — 26 Starlink V3 sats deployed nominally
 - **$40B NVIDIA CHIP FINANCING (FT OCT 6):** $10B bank loans + $30B investment-grade bonds; Apollo-led; expected close 2027
 - **CURSOR $60B ACQUISITION:** Agreement announced June 16, 2026; expected Q3 2026 close; AI coding tool (Anysphere)
-- **Q3 2026 EARNINGS: TONIGHT OCTOBER 20, 2026 AMC**: Rev consensus $12.9–13.8B vs Q2 $7.8B; EPS consensus $0.14–0.21; Q2 AI segment +247% YoY, $2.6B; Q2 AI adj EBITDA $1.1B; Q2 net loss $541M; capex $18.4B; Evercore expects $104B annualized rev by year-end; first AI + Starlink separate segment reporting expected
 - **ANALYST COVERAGE:** TD Cowen Buy; CLSA $250 PT; Bernstein $248 PT; Goldman Buy $230 PT; Evercore ISI $275 PT (raised Oct 16); avg analyst PT $218.76; Susquehanna raised PT to $173
 - **LOCKUP SCHEDULE:**
   - **Oct 9 (FRIDAY) = DAY-120 TRANCHE (328.4M shares) — ABSORBED at +1.23%**
-  - Oct 24 (Sat, 4 cal days from Oct 20) = next tranche
+  - Oct 24 (Sat, 3 cal days from Oct 21) = next tranche
   - Dec 8 = additional/full block expiry
 - **SHORT INTEREST:** ~29% of float
-- **STARLINK UKRAINE CONTROVERSY:** Speed restrictions on moving military terminals (Oct 13-14); no confirmed resolution as of Oct 20
+- **STARLINK UKRAINE CONTROVERSY:** Speed restrictions on moving military terminals (Oct 13-14); no confirmed resolution as of Oct 21
 
 ### IQMX — IQM Quantum Computers (superconducting quantum hardware)
 - **Classification:** New IPO (Day 1 = July 2, 2026). SPAC merger with RAAQ.
