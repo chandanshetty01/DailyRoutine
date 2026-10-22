@@ -1,5 +1,5 @@
 {
-  "last_pull_utc": "2026-10-21T00:00:07.246658+00:00",
+  "last_pull_utc": "2026-10-22T00:00:06.561533+00:00",
   "accounts": {
     "bcherny": {
       "source": "twitterapi.io",
@@ -11,9 +11,9 @@
     "_catwu": {
       "source": "twitterapi.io",
       "errors": null,
-      "total_posts": 35,
-      "new_this_pull": 0,
-      "newest_date": "2026-10-09T18:28:19+00:00"
+      "total_posts": 36,
+      "new_this_pull": 1,
+      "newest_date": "2026-10-21T19:25:50+00:00"
     },
     "alexalbert__": {
       "source": "twitterapi.io",
@@ -25,9 +25,9 @@
     "simonw": {
       "source": "twitterapi.io, https://simonwillison.net/atom/everything/",
       "errors": null,
-      "total_posts": 220,
-      "new_this_pull": 5,
-      "newest_date": "2026-10-20T23:50:25+00:00"
+      "total_posts": 224,
+      "new_this_pull": 4,
+      "newest_date": "2026-10-21T18:41:53+00:00"
     },
     "karpathy": {
       "source": "twitterapi.io, https://karpathy.bearblog.dev/feed/",
@@ -39,16 +39,16 @@
     "emollick": {
       "source": "twitterapi.io, https://www.oneusefulthing.org/feed",
       "errors": null,
-      "total_posts": 383,
-      "new_this_pull": 5,
-      "newest_date": "2026-10-20T21:25:24+00:00"
+      "total_posts": 387,
+      "new_this_pull": 4,
+      "newest_date": "2026-10-21T18:04:15+00:00"
     },
     "swyx": {
       "source": "twitterapi.io, https://www.latent.space/feed",
       "errors": null,
-      "total_posts": 301,
-      "new_this_pull": 9,
-      "newest_date": "2026-10-20T19:41:31+00:00"
+      "total_posts": 312,
+      "new_this_pull": 11,
+      "newest_date": "2026-10-21T21:11:33+00:00"
     },
     "rasbt": {
       "source": "twitterapi.io, https://magazine.sebastianraschka.com/feed",
@@ -60,9 +60,9 @@
     "levelsio": {
       "source": "twitterapi.io",
       "errors": null,
-      "total_posts": 491,
-      "new_this_pull": 19,
-      "newest_date": "2026-10-20T23:24:11+00:00"
+      "total_posts": 503,
+      "new_this_pull": 12,
+      "newest_date": "2026-10-21T22:27:24+00:00"
     }
   }
 }
