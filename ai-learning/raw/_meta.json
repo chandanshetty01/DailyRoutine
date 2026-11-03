@@ -1,5 +1,5 @@
 {
-  "last_pull_utc": "2026-11-02T00:00:07.560418+00:00",
+  "last_pull_utc": "2026-11-03T00:00:07.205282+00:00",
   "accounts": {
     "bcherny": {
       "source": "twitterapi.io",
@@ -25,30 +25,30 @@
     "simonw": {
       "source": "twitterapi.io, https://simonwillison.net/atom/everything/",
       "errors": null,
-      "total_posts": 258,
-      "new_this_pull": 3,
-      "newest_date": "2026-11-01T23:24:22+00:00"
+      "total_posts": 260,
+      "new_this_pull": 2,
+      "newest_date": "2026-11-02T19:24:46+00:00"
     },
     "karpathy": {
       "source": "twitterapi.io, https://karpathy.bearblog.dev/feed/",
       "errors": null,
       "total_posts": 37,
-      "new_this_pull": 1,
+      "new_this_pull": 0,
       "newest_date": "2026-11-01T18:14:46+00:00"
     },
     "emollick": {
       "source": "twitterapi.io, https://www.oneusefulthing.org/feed",
       "errors": null,
-      "total_posts": 434,
-      "new_this_pull": 6,
-      "newest_date": "2026-11-01T20:16:07+00:00"
+      "total_posts": 441,
+      "new_this_pull": 7,
+      "newest_date": "2026-11-02T21:45:13+00:00"
     },
     "swyx": {
       "source": "twitterapi.io, https://www.latent.space/feed",
       "errors": null,
-      "total_posts": 398,
-      "new_this_pull": 1,
-      "newest_date": "2026-11-01T06:03:37+00:00"
+      "total_posts": 404,
+      "new_this_pull": 6,
+      "newest_date": "2026-11-02T23:01:02+00:00"
     },
     "rasbt": {
       "source": "twitterapi.io, https://magazine.sebastianraschka.com/feed",
@@ -60,9 +60,9 @@
     "levelsio": {
       "source": "twitterapi.io",
       "errors": null,
-      "total_posts": 606,
-      "new_this_pull": 10,
-      "newest_date": "2026-11-01T23:23:50+00:00"
+      "total_posts": 622,
+      "new_this_pull": 16,
+      "newest_date": "2026-11-02T23:21:03+00:00"
     }
   }
 }
