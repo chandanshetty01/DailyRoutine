@@ -1,8 +1,8 @@
 # ai-learning state
 
-**Last run:** 2026-11-02T00:00:00Z
-**Window:** 2026-10-26 → 2026-11-02
-**Next run:** 2026-11-09
+**Last run:** 2026-11-09T00:30:00Z
+**Window:** 2026-11-02 → 2026-11-09
+**Next run:** 2026-11-16
 
 ---
 
@@ -15,9 +15,13 @@
 - 2113333859907747871
 - 2115491259381072269
 - 2116222842413142111
+- 2117693181651542387
+- 2118063143167693011
 
 ### @_catwu
 - 2112988751576330487
+- 2117731934340337676
+- 2118137612577968402
 
 ### @alexalbert__
 - 2107912771568554415
@@ -35,11 +39,14 @@
 - simonwillison.net/2026/Oct/20/emudhra-certificates/
 - simonwillison.net/2026/Oct/28/vibe-game-development/
 - simonwillison.net/2026/Oct/31/how-we-took-over-chatgpt-accounts/
+- simonwillison.net/2026/Nov/2/census-bureau-super-intelligence/
+- simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/
 
 ### @karpathy
 - 2109361546505966046
 - 2116957135661945283
 - karpathy.bearblog.dev/hacker-tube/
+- 2119114537442189652
 
 ### @emollick
 - 2108594749305135613
@@ -53,6 +60,8 @@
 - 2116987671939875319
 - 2115209786157412397
 - 2116526543346483419
+- 2118859591798980657
+- 2119140502746308674
 
 ### @swyx
 - latent.space/p/ainews-quasi-riemann-hypothesis-openai
@@ -64,11 +73,13 @@
 - latent.space/p/ainews-anthropic-s1/
 - latent.space/p/ainews-anthropic-ends-coding-interviews-hunger-beats-tenure/
 - latent.space/p/ainews-google-admits-ai-mode-hurts-search-revenue-15-500b-drop-worst-since-2004-ipo-ai-bear-market-c/
+- latent.space/p/ainews-anthropic-ipo-whither-now/
 
 ### @rasbt
 - 2108908657786355788
 - 2111448141119856866
 - magazine.sebastianraschka.com/p/building-reasoning-models
+- 2117637894315626719
 
 ### @levelsio
 - 2109262337500705094
@@ -77,44 +88,46 @@
 - 2110489704009445725
 - 2112944980842946816
 - 2116959423117857026
+- 2117374984192512391
 
 ---
 
 ## Recurring themes (per person)
 
-- **bcherny** — Anthropic product & infrastructure decisions; enterprise adoption case studies; Claude Code feature announcements
-- **_catwu** — Claude product launches and Anthropic research previews; typically quiet between releases
+- **bcherny** — Anthropic product & infrastructure decisions; Claude Code enterprise rollouts; product ergonomics (plugin management, usage limits, subagent costs)
+- **_catwu** — Now at OpenAI leading Core Products; watch for agent UX and control-surface announcements from OpenAI under her leadership
 - **alexalbert__** — Customer/field insights on Claude adoption; mirrors product announcements; tends quiet between events
-- **simonw** — Security/infra events (high volume); vibe-coding experiments and inflection-point essays; model capability benchmarks; weekly link-blogging
-- **karpathy** — Long-form capability explainers; weekend hacks that turn into real tools; goes quiet for weeks then returns with something substantial
-- **emollick** — Evidence-backed AI-at-work claims; book/research output; framing metaphors that spread (capability arcs, economic impact); high volume of reaction posts (filter aggressively)
-- **swyx** — AINews daily roundups (most consistent signal source for macro news); Latent Space podcast and interviews; infrastructure economics; AIE CODE conference pre/post coverage
-- **rasbt** — Deep technical tutorials on reasoning models, RLVR, distillation, hands-on PyTorch; currently on announced break
-- **levelsio** — Solo-dev AI workflows; security hardening as solo operator; creative vibe-coding projects; high volume of lifestyle/politics posts (skip those)
+- **simonw** — Security/infra events (high volume); local-model experiments and capability replication; model capability benchmarks; weekly link-blogging
+- **karpathy** — Long-form capability explainers; weekend hacks that turn into real tools (HackerTube, TristanTube); currently in active build mode
+- **emollick** — Evidence-backed AI-at-work claims; book/research output; framing metaphors that spread; now focused on AI in research and knowledge work, over-verification critique
+- **swyx** — AINews daily roundups; weekly Anthropic IPO coverage (committed); AIE CODE conference (Nov 10–12 SF); Latent Space hit 1M subscribers; Sequoia scout role ended
+- **rasbt** — LLM research distilled into explainers; back from break with "Open October" recap of 10 open model releases; watch for next series announcement
+- **levelsio** — Solo-dev AI workflows; BF1942 WASM port as signature project; creative vibe-coding projects; aggressive infra cost reduction ($300/mo for 20K customers); high volume of lifestyle posts (skip those)
 
 ---
 
 ## Open threads to watch
 
-- **Anthropic IPO (S-1 filed)** — $2T valuation target, 1400% growth, $1B Q2 operating profit. Watch: roadshow dates, institutional reception, valuation debates, and whether $ANT is a buy.
-- **Claude Duet rollout** — research preview waitlist open since Oct 21; no broad access yet. Watch for early user reports and competing proactive-agent launches.
-- **AI Mode vs. Search revenue** — Google disclosed -15% hit from AI Mode. Watch: Q3 earnings call guidance, whether Google walks it back or leans in, competitive moves from Bing/Perplexity.
-- **Anthropic ends coding interviews** — "coding is solved." Watch: which other companies follow; implications for CS education pipeline.
-- **karpathy back in build mode** — HackerTube launched Nov 1. Watch for the next weekend hack.
-- **rasbt's break** — announced short break after Oct 25; watch for new series announcement in November.
-- **PHP "Black October" aftermath** — exploit code in the wild post-patch; watch for breach disclosures.
-- **eMudhra CA trust revocation** — watch Chrome/Firefox trust-removal timeline.
-- **Modal ARR trajectory** — $750M Series D closed; watch $1B ARR milestone.
-- **AIE CODE summit** — Nov 10–12, San Francisco; swyx is organizing; expect coverage on agent tooling and coding benchmarks.
+- **Cat Wu at OpenAI Core Products** — she now leads agent UX for OpenAI; watch how her Claude Code philosophy (trust automation, reduce friction) shapes OpenAI's agent products
+- **Anthropic IPO (S-1 filed, amended)** — swyx weekly coverage committed; roadshow timing unknown; S-1 amended to flag possible "imminently" crossing their ASL RSP threshold due to AI-accelerated progress. Watch: roadshow dates, valuation debates
+- **AIE CODE Nov 10–12 San Francisco** — starts tomorrow; expect swyx + karpathy coverage; local AI track (Ahmad Osman), agent tooling benchmarks
+- **Claude Duet rollout** — still in research preview; watch for early-access expansion post-AIE CODE
+- **karpathy build mode** — TristanTube was 3-minute one-shot; watch for next weekend hack
+- **rasbt's new series** — back from break with Open October recap; watch for new deep-dive series announcement
+- **PHP "Black October" aftermath** — exploit code in the wild; watch for breach disclosures
+- **eMudhra CA trust revocation** — watch Chrome/Firefox trust-removal timeline
+- **Cursor enterprise trajectory** — $1B ARR, 300% QoQ enterprise growth; watch Q1 2027 numbers for confirmation or plateau
+- **Anthropic RSP acceleration threshold** — S-1 amendment flags possible imminent crossing; watch for public statement or policy update
 
 ---
 
-## Notes for next run (2026-11-09)
+## Notes for next run (2026-11-16)
 
-- Follow up on Anthropic S-1 / IPO roadshow news
-- AIE CODE summit Nov 10–12 — expect swyx pre/post coverage; karpathy may appear
-- rasbt: check for return from break / new series announcement
-- Check Claude Duet early-access reports
-- Watch for Google search revenue guidance / CFO commentary
-- Anthropic end of coding interviews: check for other companies following suit
-- emollick: check for Co-Existence media coverage / reviews
+- AIE CODE Nov 10–12 results: key talks, announcements, agent tooling news from swyx and other attendees
+- Anthropic IPO: roadshow timing, valuation debates, institutional reception
+- _catwu: any early signals from OpenAI Core Products under her leadership
+- karpathy: next weekend hack after TristanTube
+- rasbt: new series announcement after Open October recap
+- emollick: follow up on Anthropic research-time study — any reaction or replication from other groups
+- Cursor enterprise growth: any Q3 earnings data or analyst commentary
+- Claude Duet: any early-access expansion post-AIE CODE
