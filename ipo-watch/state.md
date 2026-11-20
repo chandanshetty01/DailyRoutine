@@ -3,25 +3,24 @@
 The routine reads this on start and rewrites it before exit.
 
 ## Last run
-2026-11-19T00:00:00Z (one-hundred-and-ninety-fourth run — Thursday November 19, 2026 trading day; key findings: Anthropic (ANT) DEBUTED TODAY on NASDAQ — priced $83 (above $70–$78 range), 980M Class A shares, $81.3B raise (record US IPO); CBRS Nov 18 confirmed $94.15 (−9.63% — NVDA sell-the-news); NVDA Nov 18 confirmed $150.96 (−2.89% — sell the news); TSLA Nov 18 confirmed $383.72 (+0.95%); ANT first-day close not yet confirmed at run time; predictions logged for Nov 20: CBRS $86–$102 / TSLA $363–$405)
+2026-11-20T00:00:00Z (one-hundred-and-ninety-fifth run — Friday November 20, 2026 trading day; opex Friday; key findings: ANT Anthropic Day 1 close $97.17 (+17% from $83 IPO, opened $111.50); CBRS Nov 19 confirmed $86.96 (−7.64%); TSLA Nov 19 confirmed $374.41 (−2.43%); Nasdaq −2.25%, Dow −1,101 pts (−2.19%), S&P −2.02% on Nov 19 (6-day losing streak); Nscale reportedly considering 2027 delay; predictions logged for Nov 23: CBRS $80–$94 / TSLA $356–$393)
 
 ## Tracked private companies
 | Company | Latest known IPO status | Source | Last checked |
 |---|---|---|---|
-| OpenAI | ~2027 or later; confidential S-1 filed Jun 8; public S-1 not filed; ~$852B val (last round); Goldman/MS underwriters; Brockman "ready in 2027" (Nov 5); Altman confirms 2027 delay citing safety concerns (Nov 15 weekend); no update Nov 18 | _thestar.com.my; prior searches (search-confirmed)_ | 2026-11-16 |
-| Anthropic | **NOW PUBLIC — NASDAQ: ANT; IPO PRICE $83 (ABOVE $70–$78 RANGE); 980M CLASS A SHARES; $81.3B RAISE (RECORD US IPO); DEBUT THU NOV 19, 2026; FIRST-DAY CLOSE NOT YET CONFIRMED**; $1.5T val at IPO price; total raise $81.3B; 7× oversubscribed; NVIDIA ~$10B anchor; Alphabet $10B option; Microsoft/AMD/Broadcom/Micron/TSMC in $26B private placement | _fortune.com; CNBC (search-confirmed Nov 18–19, 2026)_ | 2026-11-19 |
-| SpaceX | PUBLIC as of June 12, 2026. NASDAQ: SPCX. IPO price $135/share; Day 1 close $161.11; ATH intraday $225.64 (Day 5); all-time closing low $107.01 (July 28); **Nov 12 close CONFIRMED $139.94; Nov 13 close CONFIRMED $139.11; Day 160 Nov 19**; Nov 14–19 closes unconfirmed; Google $920M/month compute deal (Oct 2026 – Jun 2029; ~$30B total); Tesla merger advancing — special committees negotiating price/control; Wedbush: delayed to 2027; Reuters: SpaceX mkt cap ~$1.9T, Tesla ~$1.55T; **DEC 8/9 FULL BLOCK EXPIRY (~19 CAL DAYS FROM NOV 19)** | _heygotrade.com; investing.com; seekingalpha.com (search-confirmed Nov 12–19)_ | 2026-11-19 |
-| Databricks | **~H2 2027 IPO** — CEO: "2026 terrible year to go public"; **~$188B val (est.)**; **ARR >$7B run-rate (+80% YoY, Q2 2026)**; no update Nov 18 | _bloomberg.com (prior run)_ | 2026-10-30 |
-| Mistral | **CONFIRMED CLOSED: €3B at $24B valuation (Sep 8, 2026)**; Samsung + PSG Equity + Scaleup Europe co-led; no IPO timeline; no update Nov 18 | _prior run_ | 2026-10-30 |
-| Cerebras | PUBLIC as of May 14, 2026. NASDAQ: CBRS. IPO price $185/share; Day 1 close $311.07 (+68%); Day 133 Thu Nov 19; **Nov 18 close CONFIRMED $94.15 (−9.63% from $104.18; NVDA sell-the-news extended to AI-chip peers)**; day range $93.23–$105.20; UBS cut PT $250→$155 (post-Q3 Nov 13); 44× trailing P/S; 12.8% below 50× P/S floor ($108); lockup fully expired | _MarketBeat; Yahoo Finance; CryptoBriefing (search-confirmed Nov 18–19)_ | 2026-11-19 |
+| OpenAI | ~2027 or later; confidential S-1 filed Jun 8; public S-1 not filed; ~$852B val (last round); Goldman/MS underwriters; Brockman "ready in 2027" (Nov 5); Altman confirms 2027 delay citing safety concerns (Nov 15 weekend); no update Nov 20 | _thestar.com.my; prior searches (search-confirmed)_ | 2026-11-16 |
+| Anthropic | **NOW PUBLIC — NASDAQ: ANT; DAY 2 (NOV 20); IPO PRICE $83 (ABOVE $70–$78 RANGE); 980M CLASS A SHARES; $81.3B RAISE (RECORD US IPO); DEBUT THU NOV 19, 2026; DAY 1 CLOSE $97.17 (+17% FROM IPO; CONFIRMED)**; $1.76T mkt cap at Day 1 close; IPO drew ~$500B in orders (7×); Day 1 open $111.50, peak $115.10, low $92.72; insiders may sell 10% on Day 1; 1.6B shares unlock within 76 days (~Feb 3, 2027); staged ~23 lockup release dates; some founders 1-year lockup | _BNN Bloomberg; invezz.com; Yahoo Finance (search-confirmed Nov 19)_ | 2026-11-20 |
+| SpaceX | PUBLIC as of June 12, 2026. NASDAQ: SPCX. IPO price $135/share; Day 1 close $161.11; ATH intraday $225.64 (Day 5); all-time closing low $107.01 (July 28); **Nov 12 close CONFIRMED $139.94; Nov 13 close CONFIRMED $139.11; Day 161 Nov 20**; Nov 14–20 closes unconfirmed; Google $920M/month compute deal (Oct 2026 – Jun 2029; ~$30B total); Tesla merger advancing — special committees negotiating price/control; Wedbush: delayed to 2027; Reuters: SpaceX mkt cap ~$1.9T, Tesla ~$1.55T; **DEC 8/9 FULL BLOCK EXPIRY (~18 CAL DAYS FROM NOV 20)** | _heygotrade.com; investing.com; seekingalpha.com (search-confirmed Nov 12–19)_ | 2026-11-20 |
+| Databricks | **~H2 2027 IPO** — CEO: "2026 terrible year to go public"; **~$188B val (est.)**; **ARR >$7B run-rate (+80% YoY, Q2 2026)**; no update Nov 20 | _bloomberg.com (prior run)_ | 2026-10-30 |
+| Mistral | **CONFIRMED CLOSED: €3B at $24B valuation (Sep 8, 2026)**; Samsung + PSG Equity + Scaleup Europe co-led; no IPO timeline; no update Nov 20 | _prior run_ | 2026-10-30 |
+| Cerebras | PUBLIC as of May 14, 2026. NASDAQ: CBRS. IPO price $185/share; Day 1 close $311.07 (+68%); Day 134 Fri Nov 20; **Nov 19 close CONFIRMED $86.96 (−7.64% from $94.15; AI-sector selloff, ANT debut, NVDA sell-the-news)**; day range $86.28–$99.25; 40× trailing P/S; 19.1% below 50× P/S floor ($108); lockup fully expired; Nov 18→Nov 19 prediction MISS ($95–$113, actual $86.96) | _MarketBeat; Yahoo Finance (search-confirmed Nov 19)_ | 2026-11-20 |
 
 ## AI / quantum IPOs filed or upcoming
 | Company | Sector | Status | Expected Date | Ticker | Source |
 |---|---|---|---|---|---|
 | OpenAI | AI | ~2027 or later; confidential S-1 filed Jun 8; public S-1 not filed; ~$852B val; Altman confirms 2027 delay | ~2027 or later | TBD | _Bloomberg Law; NYT (search-confirmed)_ |
-| Anthropic | AI | **NOW PUBLIC (NASDAQ: ANT; DEBUTED THU NOV 19, 2026); IPO PRICE $83 (ABOVE $70–$78 RANGE); 980M CLASS A SHARES; $81.3B RAISE (RECORD US IPO); FIRST-DAY CLOSE PENDING** | DEBUTED 2026-11-19 | ANT (NASDAQ) | _fortune.com; CNBC (search-confirmed Nov 18–19)_ |
-| **Nscale** | AI | **S-1/A FILED NOV 12, 2026**; full-stack AI GPU neocloud (London-HQ); NYSE: NSCL; $44.6B Anthropic anchor; $103.4B TCV; **NINE-MONTH REV $307.5M (Q3 ~$167M vs H1 $140.6M)**; $1.69B nine-month net loss; **$5.5B TOTAL DEBT; FILING WARNS NEEDS MORE FINANCING FOR 2027 OBLIGATIONS**; **INVESTOR PUSHBACK CONFIRMED: investors counter $30B ask with $16–$19B**; **MICROSOFT UK DATA CENTER SITE EXIT (power constraints)**; $30–35B target val; GS/JPM/MS lead; targeting listing before Dec 31 2026 (CEO target, **AT RISK**); customer concentration 52%; NO PRICE RANGE IN S-1/A | Targeting before Dec 31 2026 — **AT RISK** | NSCL (NYSE) | _bloomberg.com; letsdatascience.com (search-confirmed Nov 12–18)_ |
-| Iambic Therapeutics | AI (biotech) | DEBUTED NASDAQ OCT 15, 2026 AS IAM; priced $16; Day 1 +16% to $18.50; outside 30-day window | DEBUTED 2026-10-15 | IAM (NASDAQ) | _prior run_ |
+| Anthropic | AI | **NOW PUBLIC (NASDAQ: ANT; DEBUTED THU NOV 19, 2026); DAY 1 CLOSE $97.17 (+17%); $1.76T MKT CAP AT CLOSE** | DEBUTED 2026-11-19 | ANT (NASDAQ) | _BNN Bloomberg; Yahoo Finance (search-confirmed Nov 19)_ |
+| **Nscale** | AI | **S-1/A FILED NOV 12, 2026**; full-stack AI GPU neocloud (London-HQ); NYSE: NSCL; $44.6B Anthropic anchor; $103.4B TCV; nine-month rev $307.5M; $1.69B nine-month net loss; $5.5B total debt; investor pushback at $16–$19B vs $30B target; **REPORTEDLY CONSIDERING 2027 DELAY (CityAM Nov 20)** | **AT RISK / 2027 possible** | NSCL (NYSE) | _bloomberg.com; cityam.com (search-confirmed Nov 19–20)_ |
 | Syntiant | AI | S-1 filed Jul 6; edge AI chips; SYTN; Intel/MS-backed; no roadshow date | Q4 2026 (no firm date) | SYTN | _prior run_ |
 | Lambda | AI / Cloud | Pre-filing; GPU cloud; >$1.5B rev run-rate; MS/JPM/Citi hired; IPO as soon as 2027 | ~H2 2027 | TBD | _Bloomberg Aug 24 (prior run)_ |
 | SoftBank Roze | AI / Robotics | Pre-filing; $100B val target; H2 2026 US IPO target (may slip 2027) | ~H2 2026–2027 | TBD | _prior run_ |
@@ -32,34 +31,35 @@ The routine reads this on start and rewrites it before exit.
 ## Recently completed AI / quantum IPOs (last 30 days)
 | Company | Ticker | IPO Date | IPO Price | Notes |
 |---|---|---|---|---|
-| Anthropic | NASDAQ: ANT | 2026-11-19 | $83/share | 980M Class A; $81.3B raise (record US IPO); Day 1 close PENDING; $1.5T val at IPO price; 7× oversubscribed; NVDA, Alphabet, MSFT, AMD, Broadcom, Micron, TSMC in $26B private placement |
-| SpaceX | NASDAQ: SPCX | 2026-06-12 | $135/share | Day 1 $161.11; ATH $225.64; ATL $107.01; Nov 12 $139.94; Nov 13 $139.11; Day 160 Nov 19; Dec 8/9 block expiry |
-| Quantinuum | NASDAQ: QNT | 2026-06-04 | $60/share | Day 1 $60.38; ATH $86.79; Q3 2026 earnings (Nov 5): rev $9.1M (+233% YoY), gross margin 33.3% (positive first time), FY guidance raised $31–$34M; Nov 13 ~$35.40; Dec lockup ~6 weeks |
-| Cerebras Systems | NASDAQ: CBRS | 2026-05-14 | $185/share | Day 1 $311.07; Day 133 Nov 19; Nov 18 close $94.15 (−9.63%); 44× trailing P/S; 12.8% below 50× P/S floor ($108); lockup fully expired |
+| Anthropic | NASDAQ: ANT | 2026-11-19 | $83/share | 980M Class A; $81.3B raise (record US IPO); Day 1 close $97.17 (+17%); $1.76T mkt cap at close; IPO drew ~$500B orders (7×); insiders 10% on Day 1; 1.6B shares within 76 days |
+| SpaceX | NASDAQ: SPCX | 2026-06-12 | $135/share | Day 1 $161.11; ATH $225.64; ATL $107.01; Nov 12 $139.94; Nov 13 $139.11; Day 161 Nov 20; Dec 8/9 block expiry |
+| Quantinuum | NASDAQ: QNT | 2026-06-04 | $60/share | Day 1 $60.38; ATH $86.79; Q3 2026 earnings (Nov 5): rev $9.1M (+233% YoY), gross margin 33.3%; Nov 13 ~$35.40; Nov 16 ~$32.59; lockup ~Dec 1, 2026 (180d from Jun 4) |
+| Cerebras Systems | NASDAQ: CBRS | 2026-05-14 | $185/share | Day 1 $311.07; Day 134 Nov 20; Nov 19 close $86.96 (−7.64%); 40× trailing P/S; 19.1% below 50× P/S floor ($108); lockup fully expired |
 
 _Prior completed (outside 30-day window): Iambic IAM Oct 15; Horizon Quantum HQ Mar 20 SPAC; Xanadu XNDU Mar 27 SPAC; Infleqtion INFQ Feb 17._
 
 ## 30-day rolling watch items
-1. **ANTHROPIC (ANT) DEBUTED NASDAQ THU NOV 19; IPO PRICE $83 (ABOVE $70–$78 RANGE); 980M CLASS A SHARES; $81.3B RAISE (RECORD US IPO, SURPASSES SPACEX $67B); $1.5T VAL AT IPO PRICE; FIRST-DAY CLOSE PENDING; ANALYST QUIET PERIOD ENDS ~DEC 24**: NVDA ~$10B anchor; Alphabet $10B option; Microsoft/AMD/Broadcom/Micron/TSMC in $26B private placement; Vanda Research: ~$250M retail net buying expected Day 1; Polymarket: 82% chance closes at or below $1.5T mkt cap. UPDATED 2026-11-19.
-2. **NVDA Q3 FY2027 "SELL THE NEWS" (NOV 18): CLOSED $150.96 (−2.89%) DESPITE BLOWOUT Q3 ($115.8B, +103%, $130B Q4 GUIDANCE); JEFFERIES CUT $300→$250; JP MORGAN RAISED $215→$230; DOW +500 (ROTATION) WHILE NASDAQ DRAGGED BY AI/CHIP SELL-OFF; SUCCESSION + CHINA CITED**: AH on Nov 17 was +3.57% to ~$161; reversed on open Nov 18; day range $150.40–$159.70. Colette Kress confirmed as interim CEO; board confirmed no Huang reinstatement. UPDATED 2026-11-19.
-3. **CBRS: DAY 133 THU NOV 19; NOV 18 CONFIRMED $94.15 (−9.63%); 44× TRAILING P/S; 12.8% BELOW 50× P/S FLOOR ($108); NVDA SELL-THE-NEWS EXTENDED TO AI-CHIP PEERS; UBS CUT PT $250→$155 (POST-Q3 NOV 13); LOCKUP FULLY EXPIRED**: Nov 17→Nov 18 prediction $92–$110 → actual $94.15 ✓ HIT (manually confirmed); predictions logged Nov 19→Nov 20: $86–$102 (realized_vol). OpenAI first-tranche delivery behind schedule (MS flagged). UPDATED 2026-11-19.
-4. **TSLA NOV 18 CONFIRMED ~$383.72 (+0.95%); OUTPERFORMED AS DOW ROTATED +500 PTS; BELOW 200D MA ~$387; CYBERCAB ORDERS OPEN (SELECT CUSTOMERS; $29,990 + $299/MONTH; TX/FL; DEC 2026 DELIVERY); SPACEX MERGER COMMITTEES STILL NEGOTIATING**: Dec 3 annual meeting (no merger on ballot; separate vote required). Nov 17→Nov 18 prediction $359–$400 → actual $383.72 ✓ HIT (manually confirmed). Predictions logged Nov 19→Nov 20: $363–$405 (realized_vol). UPDATED 2026-11-19.
-5. **NSCALE: NO PRICE RANGE FILED AS OF NOV 19; CEO DEC 31 TARGET AT RISK; INVESTOR PUSHBACK $16–$19B vs $30B ASK; $5.5B DEBT; 2027 FINANCING WARNING; NINE-MONTH REV $307.5M**: Third Point leads $2.36B convertibles; GS/JPM/MS underwriters; customer concentration 52%. CARRIED 2026-11-19.
-6. **SPCX NOV 12 CONFIRMED $139.94; NOV 13 CONFIRMED $139.11; NOV 14–19 UNCONFIRMED; DEC 8/9 FULL BLOCK EXPIRY (~19 CAL DAYS FROM NOV 19)**: TSLA-SPCX merger advancing per Bloomberg — "possibly as early as December"; Dec 3 annual meeting — no merger on ballot; merger requires separate shareholder vote. UPDATED 2026-11-19.
-7. **QNT QUANTINUUM Q3 2026 EARNINGS (NOV 5): REVENUE $9.1M (+233% YoY; BEAT EST.); GROSS MARGIN 33.3% (POSITIVE FIRST TIME POST-IPO); FY 2026 GUIDANCE RAISED $31–34M; NOV 13 ~$35.40**: Dec lockup ~6 weeks. No major update Nov 19. CARRIED 2026-11-19.
-8. **TESLA-SPACEX MERGER: SPECIAL COMMITTEES FORMED (BOTH BOARDS); STILL NEGOTIATING PRICE/CONTROL; "POSSIBLY AS EARLY AS DECEMBER" (BLOOMBERG NOV 16); DEC 3 ANNUAL MEETING — NO MERGER ON DEC 3 BALLOT; ARK NOV 9: MERGER ANNOUNCEMENT POSSIBLE BEFORE END OF 2026**: Democratic Congress (seated Jan 2027) adds scrutiny; Wedbush: delayed to 2027; Reuters confirms combined mkt cap ~$3.45T (world's largest). CARRIED 2026-11-19.
-9. **INTEL TO ACQUIRE CLASSIQ FOR ~$2.3B (ANNOUNCED OCT 26-28, 2026) — QUANTUM SECTOR'S LARGEST-EVER M&A; CLOSE H1 2027**: Full-stack quantum play. No update Nov 19. CARRIED 2026-11-19.
-10. **CBRS FORECAST ACCURACY (NOTE): 44.4% HIT RATE (30D) — RANGES TOO NARROW IN HIGH-VOL WINDOW; TSLA 66.7% HIT RATE — WELL-CALIBRATED; OVERALL 60.0%; 55 PREDICTIONS OFFICIALLY EVALUATED; 2 ADDITIONAL MANUALLY CONFIRMED (NOV 18 ACTUALS) — CBRS HIT ✓, TSLA HIT ✓**: Many Nov 7–17 predictions still pending official evaluation (yfinance proxy block). Stats improve to CBRS ~50%, TSLA ~70% when manually-confirmed actuals included. UPDATED 2026-11-19.
+1. **ANTHROPIC (ANT) DEBUTED NASDAQ THU NOV 19; DAY 1 CLOSE $97.17 (+17%); IPO DREW ~$500B IN ORDERS; $1.76T MKT CAP AT CLOSE; ANALYST QUIET PERIOD ENDS ~DEC 24, 2026; INSIDERS 10% ON DAY 1; 1.6B SHARES WITHIN 76 DAYS (~FEB 3, 2027)**: Day 1 open $111.50, peak $115.10, low $92.72; Nasdaq −2.25% on debut day failed to ride ANT's coattails. Staged lockup ~23 release dates over year 1; some founders 1-year lockup. UPDATED 2026-11-20.
+2. **NVDA NOV 18 CONFIRMED SELL-THE-NEWS $150.96 (−2.89%); NOV 19 CLOSE UNCONFIRMED (~$147–$155 RANGE; SOURCES DISAGREE); MICHAEL BURRY $1.1B PUT POSITION AGAINST NVDA AND PALANTIR (NOV 19 MOTLEY FOOL)**: Jefferies cut $300→$250; JPM raised $215→$230. Burry warns of AI infrastructure bubble mirroring 1960s computer leasing; cites $176B cumulative depreciation understatement 2026-2028. Watch Nov 23/24 for stabilization or continuation. UPDATED 2026-11-20.
+3. **CBRS: DAY 134 FRI NOV 20; NOV 19 CONFIRMED $86.96 (−7.64%); 40× TRAILING P/S; 19.1% BELOW 50× P/S FLOOR ($108); ALL-TIME CLOSING LOW REMAINS $81.71 (NOV 5); LOCKUP FULLY EXPIRED; NOV 18→NOV 19 PREDICTION MISS ($95–$113, ACTUAL $86.96)**: Management targeting 3× revenue in 2027 (~$2.85B); CS-5 systems readied for 2027 launch (Next Platform Nov 14); MS flagged OpenAI first-tranche delivery behind schedule. Predictions logged Nov 20→Nov 23: CBRS $80–$94 (realized_vol). UPDATED 2026-11-20.
+4. **TSLA NOV 19 CONFIRMED $374.41 (−2.43%); BELOW 200D MA ~$387 (−3.3%; DEEPENED FROM −0.8%); DOW/S&P SELLOFF DRAGGING ALL SECTORS; SPACEX MERGER COMMITTEES STILL NEGOTIATING**: Dec 3 annual meeting (no merger on ballot; separate vote required). Tesla bets $3.3B on Berlin ahead of EU robotaxi rules. Nov 18→Nov 19 prediction HIT ✓ ($359–$401, actual $374.41). Predictions logged Nov 20→Nov 23: TSLA $356–$393. UPDATED 2026-11-20.
+5. **NSCALE: REPORTEDLY CONSIDERING 2027 DELAY (CityAM); PREVIOUSLY CEO TARGETED DEC 31 2026 (AT RISK); INVESTOR PUSHBACK $16–$19B vs $30B ASK; $5.5B DEBT; 2027 FINANCING WARNING; NINE-MONTH REV $307.5M**: Third Point leads $2.36B convertibles; GS/JPM/MS underwriters; customer concentration 52%. If 2027 confirmed, Dec 2026 AI IPO pipeline effectively empty. UPDATED 2026-11-20.
+6. **SPCX NOV 12 CONFIRMED $139.94; NOV 13 CONFIRMED $139.11; NOV 14–20 UNCONFIRMED; DEC 8/9 FULL BLOCK EXPIRY (~18 CAL DAYS FROM NOV 20)**: TSLA-SPCX merger advancing per Bloomberg — "possibly as early as December"; Dec 3 annual meeting — no merger on ballot; merger requires separate shareholder vote; analyst odds 90% (Deepwater). UPDATED 2026-11-20.
+7. **QNT QUANTINUUM Q3 2026 EARNINGS (NOV 5): REVENUE $9.1M (+233% YoY; BEAT EST.); GROSS MARGIN 33.3% (POSITIVE FIRST TIME POST-IPO); FY 2026 GUIDANCE RAISED $31–34M; NOV 16 ~$32.59 (−7.94% FROM NOV 13 $35.40); LOCKUP EXPIRY ~DEC 1, 2026 (~11 DAYS FROM NOV 20)**: Dec lockup represents meaningful supply risk for QNT and quantum sector. Confirm exact lockup date in QNT prospectus. UPDATED 2026-11-20.
+8. **TESLA-SPACEX MERGER: SPECIAL COMMITTEES FORMED (BOTH BOARDS); STILL NEGOTIATING PRICE/CONTROL; "POSSIBLY AS EARLY AS DECEMBER" (BLOOMBERG NOV 16); DEC 3 ANNUAL MEETING — NO MERGER ON DEC 3 BALLOT; ARK NOV 9: MERGER ANNOUNCEMENT POSSIBLE BEFORE END OF 2026**: Democratic Congress (seated Jan 2027) adds scrutiny; Wedbush: delayed to 2027; Reuters confirms combined mkt cap ~$3.45T (world's largest); analyst odds 90% (Deepwater Asset Management). CARRIED 2026-11-20.
+9. **INTEL TO ACQUIRE CLASSIQ FOR ~$2.3B (ANNOUNCED OCT 26-28, 2026) — QUANTUM SECTOR'S LARGEST-EVER M&A; CLOSE H1 2027**: Full-stack quantum play. No update Nov 20. CARRIED 2026-11-20.
+10. **CBRS FORECAST ACCURACY (NOTE): 44.4% HIT RATE (9 SAMPLES, 30D) — RANGES TOO NARROW IN HIGH-VOL WINDOW; TSLA 66.7% HIT RATE — WELL-CALIBRATED; OVERALL 55.6%; 9 PREDICTIONS OFFICIALLY EVALUATED; NOV 18→NOV 19 MANUALLY CONFIRMED: CBRS MISS ✗ ($95–$113, actual $86.96, 8.5% below); TSLA HIT ✓ ($359–$401, actual $374.41, 36.7% into band)**: Many Nov 7–17 predictions still pending official evaluation (yfinance proxy block). UPDATED 2026-11-20.
 
 ## Notes for next run
-- **ANT ANTHROPIC (DEBUTED TODAY NOV 19)**: First-day close not yet confirmed at run time. **CAPTURE: (1) Nov 19 first-day close, (2) day-1 % vs IPO price $83, (3) any CEO/analyst commentary, (4) confirmation of $1.5T+ or below-$1.5T close (Polymarket 82% chance ≤$1.5T)**. Next milestone: analyst quiet period ends ~Day 25 from Nov 19 = ~Wednesday December 24, 2026.
-- **CBRS/TSLA**: Nov 18 closes CONFIRMED ($94.15 / $383.72). Nov 19 closes NOT YET CONFIRMED (session in progress). Capture Nov 19 close. Watch whether CBRS reclaims 50× P/S floor ($108) in coming sessions. Predictions for Nov 20: CBRS $86–$102 / TSLA $363–$405.
-- **NVDA NOV 18 CONFIRMED SELL-THE-NEWS**: $150.96 (−2.89%). Jefferies cut $300→$250; JPM raised $215→$230. Succession uncertainty + China regulatory scrutiny flagged. Watch Nov 19/20 for follow-through or stabilization.
-- **NOV 20 FRIDAY = MONTHLY OPTIONS EXPIRATION (OPEX)**: Third Friday of November. May elevate vol for CBRS and TSLA. Predictions logged: CBRS $86–$102, TSLA $363–$405.
-- **NSCALE**: No price range filed as of Nov 19. If S-1/A with price range files, that's material. Dec 31 target at risk.
-- **SPCX**: Dec 8/9 block expiry approaching (~19 cal days from Nov 19). Watch for merger announcement before Dec 3 annual meeting.
-- **DATE NOTE**: Nov 20 = Friday (monthly opex). Nov 26 = Thursday (Thanksgiving; market closed). Nov 27 = Friday (early market close 1pm ET). Dec 3 = Wednesday (Tesla annual meeting). Dec 8/9 = Monday/Tuesday (SPCX full block expiry). ANT quiet period end = ~Dec 24.
-- **FORECAST AUDIT**: Nov 19 run logged 2 new predictions for Nov 20: CBRS $86–$102, TSLA $363–$405 (realized_vol). Nov 17→Nov 18 manually confirmed: CBRS HIT ✓ ($94.15 in $92–$110), TSLA HIT ✓ ($383.72 in $359–$400). yfinance proxy block continues — official stats still 55 evaluated.
+- **ANT ANTHROPIC (DAY 2 FRI NOV 20 / DAY 3 MON NOV 23)**: Capture Nov 20 (today's) first full session close (session in progress at run time). Day 2 and beyond often more volatile than Day 1. Watch whether ANT holds above $97.17 Day 1 close or pulls back.
+- **CBRS/TSLA**: Nov 20 closes NOT YET CONFIRMED (session in progress). Capture Nov 20 and Nov 23 closes. CBRS near prior support (~$82-87 range); watch whether it approaches ATL $81.71. Nov 20→Nov 23 predictions logged: CBRS $80–$94 / TSLA $356–$393.
+- **NVDA NOV 19 UNCONFIRMED**: Sources disagree ($147-$155 range). Capture confirmed Nov 19 and Nov 20 closes. Michael Burry put position may add negative AI/chip sentiment.
+- **QNT LOCKUP ~DEC 1, 2026**: Confirm exact lockup expiry date from QNT prospectus. Only ~11 trading days away. May add supply pressure.
+- **THANKSGIVING WEEK**: Nov 23 Mon (trading), Nov 24 Tue, Nov 25 Wed (early close?), Nov 26 Thu (MARKET CLOSED), Nov 27 Fri (early close 1pm ET). Short trading week — lighter volume may amplify moves.
+- **NOV 20 OPEX**: Session in progress. Monthly options expiration. May elevate vol.
+- **SPCX DEC 8/9 BLOCK EXPIRY**: ~18 cal days from Nov 20. Watch for merger announcement before or at Tesla Dec 3 annual meeting.
+- **NSCALE 2027 DELAY**: If confirmed with S-1 amendment or withdrawal, Dec 2026 AI IPO pipeline is empty. Monitor EDGAR weekly.
+- **FORECAST AUDIT**: Nov 20 run logged 2 new predictions for Nov 23: CBRS $80–$94, TSLA $356–$393 (realized_vol). yfinance proxy block continues — official stats still 9 evaluated.
 
 ## Buying Window Tracker — anchor data (do not modify lightly)
 
@@ -202,7 +202,8 @@ These are historical anchors used by the Buying Window Tracker section. They are
 - **Day 130 close:** $100.99 CONFIRMED (November 16, 2026; −7.11% from $108.72; broad tech selloff; below 50× P/S floor $108)
 - **Day 131 close:** $104.18 CONFIRMED (November 17, 2026; +3.2% from $100.99; NVDA pre-earnings partial recovery; AH ~$109.50 on NVDA beat)
 - **Day 132 close:** $94.15 CONFIRMED (November 18, 2026; −9.63% from $104.18; NVDA sell-the-news extended to AI-chip peers; Anthropic priced $83 AH same session; day range $93.23–$105.20)
-- **Day 133 close:** PENDING (November 19, 2026; Anthropic ANT debut day; session in progress at run time)
+- **Day 133 close:** $86.96 CONFIRMED (November 19, 2026; −7.64% from $94.15; ANT debut day; Nasdaq −2.25%; AI-sector selloff continues; day range $86.28–$99.25; AH $86.12)
+- **Day 134 close:** PENDING (November 20, 2026; opex Friday; session in progress at run time)
 - **52w low (closing):** $81.71 CONFIRMED (November 5, 2026 — ALL-TIME CLOSING LOW); **all-time intraday low: $77.84 (November 5, 2026)**; ATH intraday: $386.34 (Day 1)
 - **Shares offered:** 30M Class A
 - **IPO gross proceeds:** $5.55B
@@ -211,23 +212,22 @@ These are historical anchors used by the Buying Window Tracker section. They are
 - **FY2026 guidance (Q3 earnings raise):** $940–960M (midpoint $950M; raised from $880–890M Nov 12)
 - **Q4 2026 guidance (Q3 earnings):** $310–330M core; core gross margin 47–49%; core operating margin (1%)–1%
 - **Customer concentration FY2025:** MBZUAI 62% + G42 24% = 86% total
-- **Notable contracts:** $10B OpenAI MRA Jan 2026 (only $74M spent through June — backlog risk; **MS flagged first-tranche delivery behind schedule; returning to schedule H2 2027**); Amazon AWS May 2026; $24.6B total backlog; OpenAI 750MW >$20B deal (Jun 23); AWS multi-year (Jun 23); European 200MW (Jul 9); CS-4 unveiled Aug 18 (3× WSE-3T, 750 PFLOPs); GPT-6.1 Sol Ultrafast on NVIDIA ~300 t/s (Sep 29 — negative); Gimlet Labs multi-silicon (Sep 29); ARK Invest buying confirmed mid-Oct; Microsoft Maia 300 from 2027 (bearish, Oct 12); ICG Advisors raised holdings (Oct 20); TD Cowen cut PT to $175 (Oct 19); ORACLE OCI PARTNERSHIP OCT 27; **CULPER RESEARCH SHORT REPORT OCT 28 — chips 1.5–2.5y; 80% power at rest; depreciation-life extended; OpenAI PV risk ~$13.8B; FELDMAN REBUTTAL NOV 5 (BLOG POST: <0.5% WAFERS DECOMMISSIONED); CULPER PUBLICLY SILENT AS OF NOV 6**; UBS CUT PT $330→$250 (MAINTAIN BUY, NOV 2); **WEDBUSH CUT PT $290→$190 (MAINTAIN OUTPERFORM, pre-earnings, Nov 2026)**; **MS CUT PT $279→$178 (OVERWEIGHT MAINTAINED; FLAGGED OPENAI FIRST-TRANCHE DELIVERY BEHIND SCHEDULE)**; **MICROSOFT CLOUD DEAL (signed Oct 2026; announced Nov 12; revenue Q1 2027; 3rd hyperscaler)**; **MIZUHO CUT PT $300→$240 (NOV 13, 2026)**
+- **Notable contracts:** $10B OpenAI MRA Jan 2026 (only $74M spent through June — backlog risk; **MS flagged first-tranche delivery behind schedule; returning to schedule H2 2027**); Amazon AWS May 2026; $24.6B total backlog; OpenAI 750MW >$20B deal (Jun 23); AWS multi-year (Jun 23); European 200MW (Jul 9); CS-4 unveiled Aug 18 (3× WSE-3T, 750 PFLOPs); GPT-6.1 Sol Ultrafast on NVIDIA ~300 t/s (Sep 29 — negative); Gimlet Labs multi-silicon (Sep 29); ARK Invest buying confirmed mid-Oct; Microsoft Maia 300 from 2027 (bearish, Oct 12); ICG Advisors raised holdings (Oct 20); TD Cowen cut PT to $175 (Oct 19); ORACLE OCI PARTNERSHIP OCT 27; **CULPER RESEARCH SHORT REPORT OCT 28 — chips 1.5–2.5y; 80% power at rest; depreciation-life extended; OpenAI PV risk ~$13.8B; FELDMAN REBUTTAL NOV 5 (BLOG POST: <0.5% WAFERS DECOMMISSIONED); CULPER PUBLICLY SILENT AS OF NOV 6**; UBS CUT PT $330→$250 (MAINTAIN BUY, NOV 2); **WEDBUSH CUT PT $290→$190 (MAINTAIN OUTPERFORM, pre-earnings, Nov 2026)**; **MS CUT PT $279→$178 (OVERWEIGHT MAINTAINED; FLAGGED OPENAI FIRST-TRANCHE DELIVERY BEHIND SCHEDULE)**; **MICROSOFT CLOUD DEAL (signed Oct 2026; announced Nov 12; revenue Q1 2027; 3rd hyperscaler)**; **MIZUHO CUT PT $300→$240 (NOV 13, 2026)**; **CS-5 READIED FOR 2027 LAUNCH; NEW HYPERSCALER BAGGED (NOV 14, NEXT PLATFORM)**; **MANAGEMENT TARGETS 3× REVENUE IN 2027 (~$2.85B)**
 - **Q3 2026 EARNINGS DATE: CONFIRMED NOV 12, 2026 AMC**: Core rev $230.9M (+70% YoY; beat $214.7M consensus); GAAP rev $210.8M (miss vs $214-216M guidance); adj EPS +$0.13 (consensus ~-$0.14; +$0.27 beat); Q4 core guidance $310-330M; FY2026 $940-960M (raised); RPO $26.1B; AH +15% to ~$107-113; Nov 13 close $108.72 (+11.22%)
 - **Analyst coverage:** Wedbush $190 Outperform; UBS $250 Buy; TD Cowen $175; Needham + Rosenblatt $300; Freedom Capital $209; Jefferies Outperform; Mizuho $240 (cut from $300, Nov 13); Citi Buy $320; MS Overweight PT $178 (cut from $279)
 - **Securities investigations (ACTIVE):** Pomerantz, Bronstein Gewirtz, Kaplan Fox, Schall Law, Glancy Prongay, Block & Leviton
 - **Insider selling:** CEO Andrew Feldman: 37,441 shares (Sep 4); CTO Sean Lie: 120K shares (Sep 30); total ~$387.7M over 3 months
 - **Lockup schedule:** Sep 16 (14.6M) ABSORBED; Sep 30 (19.4M) ABSORBED; Oct 14 (19.4M) ABSORBED; Oct 28 (19.4M) ABSORBED; **MAIN LOCKUP: Nov 9 (May 13 count) EXPIRED + Nov 10 (May 14 count) EXPIRED — FULLY EXPIRED**
 - **Short interest (June 30):** 13.53M shares = 16.9% of float
-- **Market cap est. at $104.18:** ~$24.7B
-- **Trailing P/S est. at $104.18:** ~48×; **50× floor: ~$108 (current $104.18 is −3.5% below 50× floor)**; **Fwd P/S est. at $104.18 (new $950M guidance):** ~26×
+- **Market cap est. at $86.96:** ~$20.6B (237M shares)
+- **Trailing P/S est. at $86.96:** ~40×; **50× floor: ~$108 (current $86.96 is −19.1% below 50× floor)**; **Fwd P/S est. at $86.96 (new $950M guidance):** ~21.7×
 - **Reference price zones (trailing P/S):** 50× → ~$108 · 70× → ~$150 · 100× → ~$215 · 150× → ~$323 · 200× → ~$430
 - **Historical analogs:** ARM (−17% by wk 4), KVYO (−22% by mo 1), RDDT (−24% by wk 3), CRWV (−12% by wk 1)
-- **Forecast accuracy (last manually updated Nov 18):**
-  - Nov 5 → Nov 6: CBRS $86–$98 → actual $89.68 → HIT ✓ | TSLA $372–$399 → actual $358.22 → MISS ✗
-  - Many Nov 7–17 predictions still pending evaluation (yfinance proxy block)
-  - Nov 17 → Nov 18: CBRS $92–$110 → PENDING | TSLA $359–$400 → PENDING
-  - Nov 18 → Nov 19: CBRS $95–$113 (logged Nov 18) | TSLA $359–$401 (logged Nov 18)
-  - 30d stats (as of last run, 55 total): CBRS 44.4% hit | TSLA 66.7% hit | 60.0% all-time
+- **Forecast accuracy (last manually updated Nov 20):**
+  - Nov 18 → Nov 19: CBRS $95–$113 → actual $86.96 → MISS ✗ (8.5% below band) | TSLA $359–$401 → actual $374.41 → HIT ✓ (36.7% into band)
+  - Nov 19 → Nov 20: CBRS $86–$102 → PENDING | TSLA $363–$405 → PENDING
+  - Nov 20 → Nov 23: CBRS $80–$94 → LOGGED | TSLA $356–$393 → LOGGED
+  - 30d stats (as of Nov 20 run, 9 total evaluated): CBRS 44.4% hit | TSLA 66.7% hit | 55.6% all-time
 
 ### TSLA — Tesla, Inc.
 - **Classification:** Mature public (NASDAQ since 2010-06-29). Use 52w low/high/200d MA.
@@ -246,43 +246,46 @@ These are historical anchors used by the Buying Window Tracker section. They are
   - **Nov 16: $379.74 CONFIRMED** (−2.69%; range $375.63–$389.80; fell back below 200d MA ~$387)
   - **Nov 17: ~$380.11 CONFIRMED** (+0.10%; held steady despite 4th day of broad market declines; Google Finance)
   - **Nov 18: ~$383.72 CONFIRMED** (+0.95%; outperformed as Dow rotated +500 pts; Cybercab orders opened to select customers at $29,990 + $299/month; held above $380 as AI/tech sold off)
-  - **Nov 19: PENDING** (Anthropic ANT debut session; in progress at run time)
+  - **Nov 19: $374.41 CONFIRMED** (−2.43%; Nasdaq −2.25%; range $370.81–$393.60; AH $369.11; below 200d MA ~$387 by −3.3%)
+  - **Nov 20: PENDING** (opex Friday; session in progress at run time)
 - **Q3 2026 EARNINGS (AMC OCT 21):** Non-GAAP EPS $0.48 (beat $0.45); revenue $28.05B; FSD subs 1.74M (+67% YoY); FCF $1.53B
-- **TESLA-SPACEX MERGER:** Special committees formed (both boards); still negotiating price/control; Dec 3 annual meeting — NO MERGER ON DEC 3 BALLOT; ARK NOV 9: merger announcement possible before end of 2026; Wedbush: timeline 2027+; Reuters: SpaceX ~$1.9T + Tesla ~$1.55T = ~$3.45T combined (world's largest)
+- **TESLA-SPACEX MERGER:** Special committees formed (both boards); still negotiating price/control; Dec 3 annual meeting — NO MERGER ON DEC 3 BALLOT; ARK NOV 9: merger announcement possible before end of 2026; Wedbush: timeline 2027+; Reuters: SpaceX ~$1.9T + Tesla ~$1.55T = ~$3.45T combined (world's largest); analyst odds 90% (Deepwater Asset Management)
 - **MUSK TERAFAB $20B AI-CHIP JOINT VENTURE (TESLA/SPACEX/XAI):** Announced/updated Nov 11; semiconductor manufacturing project in Austin targeting 1TW compute output; raised capital allocation concerns
-- **Trailing P/E at ~$380.11:** ~347× (est.) | **Forward P/E:** ~205× (~$1.85 FY2026 consensus)
+- **TESLA BETS $3.3B ON BERLIN AHEAD OF EU ROBOTAXI RULES (Nov 20):** Major EU robotaxi infrastructure commitment
+- **Trailing P/E at ~$374.41:** ~342× (est.) | **Forward P/E:** ~202× (~$1.85 FY2026 consensus)
+
+### ANT — Anthropic, PBC (frontier LLM lab, Claude)
+- **Classification:** New IPO (Day 1 = November 19, 2026)
+- **IPO price:** $83/share (above $70–$78 range) | **Day 1 open:** $111.50 | **Day 1 close:** $97.17 (+17%) | **Day 1 intraday high:** $115.10 | **Day 1 intraday low:** $92.72
+- **Market cap at close:** ~$1.76T (Day 1) — largest public AI company at debut
+- **Shares:** 980M Class A offered | $81.3B raised (record US IPO, surpasses SPCX $67B)
+- **IPO demand:** ~$500B in orders (7× oversubscribed) | Vanda Research: ~$250M retail net buying Day 1
+- **Lockup structure:** 10% unlocks Day 1; up to 1.6B shares within 76 days (~Feb 3, 2027); staged ~23 dates; some founders 1-year lockup (~Nov 2027)
+- **Analyst quiet period:** ~Day 25 trading = ~Wednesday December 24, 2026
+- **Key investors:** NVDA ~$10B anchor; Alphabet $10B option; Microsoft/AMD/Broadcom/Micron/TSMC in $26B private placement
 
 ### QNT — Quantinuum (trapped-ion quantum hardware + software)
 - **Classification:** New IPO (Day 1 = June 4, 2026)
-- **IPO price:** $60/share | **Day 1 close:** $60.38 | **ATH intraday:** $86.79 (July 14) | **52w range:** ~$29.82–$86.79 | **Lockup:** ~Dec 2026
+- **IPO price:** $60/share | **Day 1 close:** $60.38 | **ATH intraday:** $86.79 (July 14) | **52w range:** ~$28.31–$86.79 | **Lockup:** ~Dec 1, 2026 (180d from Jun 4)
 - **Morgan Stanley Overweight (Oct 2026); PT $68 (cut from $78)**
 - **Intel-Classiq acquisition (Oct 26-28, ~$2.3B)**: Quantum M&A sets new sector valuation benchmark
 - **Q3 2026 EARNINGS (Nov 5, 2026):** Revenue $9.1M (+233% YoY; beat); gross margin 33.3% (positive first time post-IPO); FY 2026 guidance raised to $31–$34M; Nov 6 ~$36.39 (+22%)
-- **Nov 13 close:** ~$35.40 (−5.5% from ~$37.46)
+- **Nov 13 close:** ~$35.40 | **Nov 16 close:** ~$32.59 (−7.94%)
 
 ### SPCX — SpaceX
 - **Classification:** New IPO (Day 1 = June 12, 2026)
 - **IPO price:** $135 | **Day 1 close:** $161.11 | **ATH intraday:** $225.64 (Day 5, June 16) | **All-time closing low:** $107.01 (July 28)
-- **Last confirmed: $139.94 (Nov 12)** — Nov 13–18 closes unconfirmed
-- **Google $920M/month compute deal (Oct 2026 – Jun 2029; ~110K Nvidia GPUs + hardware; ~$30B total)** confirmed from IPO filing disclosure
-- **Tesla-SpaceX merger**: Bloomberg (Nov 16): "possibly as early as December"; special committees still negotiating; merger requires separate shareholder vote (beyond Dec 3 annual meeting); Reuters: SpaceX mkt cap ~$1.9T
-- **DEC 8/9 FULL BLOCK EXPIRY (~20 CAL DAYS FROM NOV 18)**
+- **Last confirmed: $139.11 (Nov 13)** — Nov 14–20 closes unconfirmed
+- **Google $920M/month compute deal (Oct 2026 – Jun 2029; ~$30B total)** confirmed from IPO filing disclosure
+- **Tesla-SpaceX merger**: Bloomberg (Nov 16): "possibly as early as December"; special committees still negotiating; merger requires separate shareholder vote (beyond Dec 3 annual meeting); Reuters: SpaceX mkt cap ~$1.9T; analyst odds 90% (Deepwater)
+- **DEC 8/9 FULL BLOCK EXPIRY (~18 CAL DAYS FROM NOV 20)**
 - **CURSOR $60B ACQUISITION (closed Q3 2026): $8B ARR by year-end (MS)**
-
-### IQMX — IQM Quantum Computers
-- **PIPE price:** $10/ADS | **Day 1 close:** $12.88 | **52w range:** $9.00–$15.10 | **H1 2026:** rev €8.9M; FY guidance $42–47M
 
 ### NVDA — NVIDIA Corporation (AI chips & data center GPUs)
 - **Classification:** Mature public
 - **Jensen Huang resigned as CEO effective Nov 12, 2026** (affair / alleged Chinese spy); CFO Colette Kress named interim CEO; Board confirmed NO Huang reinstatement (Nov 17 earnings call); Harvey C. Jones named board chair
-- **NVDA Nov 17 close:** $155.46 (−0.44%); AH +3.57% to ~$161.01
-- **NVDA Nov 18 close:** $150.96 CONFIRMED (−2.89% from $155.46; "sell the news" after blowout Q3; day range $150.40–$159.70; Jefferies cut PT $300→$250; JP Morgan raised $215→$230; Dow +500 pts rotation; succession + China risks cited)
-- **NVDA Nov 19 close:** PENDING (session in progress at run time)
-- **Q3 FY2027 EARNINGS REPORTED AMC NOV 17 (CONFIRMED):**
-  - Revenue: $115.84B (+103% YoY; beat consensus ~$109B)
-  - GAAP EPS: $2.70 (beat consensus ~$2.47-$2.49)
-  - Data Center revenue: $107.6B (+110% YoY)
-  - **Q4 FY2028 guidance: $130B ±3%** (beat ~$125.3B consensus)
-  - **NEW $150B SHARE BUYBACK AUTHORIZATION**
-  - Roadmap on track (per interim CEO Kress)
-  - Board: No plans to reinstate Huang
+- **NVDA Nov 18 close:** $150.96 CONFIRMED (−2.89% from $155.46; "sell the news" after blowout Q3; Jefferies cut PT $300→$250; JP Morgan raised $215→$230; Dow +500 pts rotation)
+- **NVDA Nov 19 close:** UNCONFIRMED (~$147–$155 range; sources disagree; market −2.25%); AH on Nov 17 was ~$161
+- **NVDA Nov 20 close:** PENDING (session in progress)
+- **Q3 FY2027 EARNINGS REPORTED AMC NOV 17 (CONFIRMED):** Revenue $115.84B (+103% YoY; beat); GAAP EPS $2.70 (beat); Data Center $107.6B (+110%); Q4 guidance $130B ±3%; $150B buyback; succession uncertainty + China cited
+- **MICHAEL BURRY $1.1B PUT POSITION AGAINST NVDA AND PALANTIR (NOV 19 MOTLEY FOOL)**: Burry warns AI infrastructure bubble; cites $176B cumulative depreciation understatement 2026-2028; also short Nebius
