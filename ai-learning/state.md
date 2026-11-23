@@ -1,8 +1,8 @@
 # ai-learning state
 
-**Last run:** 2026-11-16T00:30:00Z
-**Window:** 2026-11-09 → 2026-11-16
-**Next run:** 2026-11-23
+**Last run:** 2026-11-23T00:30:00Z
+**Window:** 2026-11-16 → 2026-11-23
+**Next run:** 2026-11-30
 
 ---
 
@@ -48,6 +48,9 @@
 - simonwillison.net/2026/Nov/10/prompting-claude-fable-52/
 - 2119650353142747181
 - simonwillison.net/2026/Nov/9/details-summary/
+- simonwillison.net/2026/Nov/17/external-sandboxes-for-coding-agents/
+- 2124217876777464269
+- simonwillison.net/2026/Nov/18/daniel-stenberg/
 
 ### @karpathy
 - 2109361546505966046
@@ -72,6 +75,9 @@
 - 2119870150845599972
 - oneusefulthing.org/p/fable-52-and-jagged-agi
 - 2121751565845360769
+- 2123800664845500602
+- 2122664990624641421
+- 2123631539942801732
 
 ### @swyx
 - latent.space/p/ainews-quasi-riemann-hypothesis-openai
@@ -86,6 +92,9 @@
 - latent.space/p/ainews-anthropic-ipo-whither-now/
 - latent.space/p/ainews-jensen-huang-resigns-after-33-years-leading-nvidia/
 - latent.space/p/ainews-the-no-ai-slop-manifesto/
+- latent.space/p/ainews-anthropic-successfully-completes-largest-ipo-in-history-valued-at-1-5t/
+- 2122746401482592549
+- 2124583459356373052
 
 ### @rasbt
 - 2108908657786355788
@@ -94,6 +103,8 @@
 - 2117637894315626719
 - 2121320349837263230
 - magazine.sebastianraschka.com/p/understanding-positional-embeddings
+- 2122721652433715481
+- 2123433827234111659
 
 ### @levelsio
 - 2109262337500705094
@@ -104,43 +115,43 @@
 - 2116959423117857026
 - 2117374984192512391
 - 2120691736657735765
+- 2122807280198463986
 
 ---
 
 ## Recurring themes (per person)
 
-- **bcherny** — Anthropic product & infrastructure decisions; Claude Code enterprise rollouts; product ergonomics (plugin management, usage limits, subscription loyalty features, Fable model resets)
-- **_catwu** — Now at OpenAI leading Core Products; quiet since Nov 5; watch for agent UX and control-surface announcements from OpenAI under her leadership
-- **alexalbert__** — Customer/field insights on Claude adoption; Fable 5.2 workflow tips; mirrors product announcements; now actively sharing model prompting workflows
-- **simonw** — Security/infra events; local-model experiments; model capability benchmarks; practical prompting discoveries; `<details>` PR slop pattern; "This codebase is yours" tip
-- **karpathy** — Long-form capability explainers; weekend hacks (HackerTube, TristanTube); currently quiet — last post Nov 7
-- **emollick** — Evidence-backed AI-at-work claims; Jagged AGI framing; SatBench (63% benchmarks saturated); Primer open educational tool; "powerloom" industrialization metaphor
-- **swyx** — AIE Code Summit wrap-up (biggest event yet); Jensen Huang NVIDIA resignation coverage; No AI Slop Manifesto; Anthropic IPO roadshow coverage; Latent Space 1M subscribers
-- **rasbt** — LLM research distilled into explainers; decision models explosion catalogue (15+ releases, 26% of requests); positional embeddings tutorial; preparing end-of-year architecture trends analysis
-- **levelsio** — Interior AI 3D pivot (video→3D in 3 hours); indie product shipping with AI; VPS cost optimization ($2.50–7/mo vs PaaS); high volume of lifestyle posts (skip those)
+- **bcherny** — Anthropic product & infrastructure; Claude Code enterprise rollouts; product ergonomics. Quiet since Nov 12 (11+ days).
+- **_catwu** — Now at OpenAI leading Core Products; quiet since Nov 5; watch for agent UX and control-surface announcements under her leadership.
+- **alexalbert__** — Customer/field insights on Claude adoption; prompting tips and new-model workflows. Quiet since Nov 12.
+- **simonw** — Security/infra events; practical tool experiments (Datasette Lite rewrite); model capability benchmarks; external sandbox pattern for agents; effort-level tuning on thinking models.
+- **karpathy** — Long-form capability explainers; weekend hacks. Quiet since Nov 7 (16+ days).
+- **emollick** — Evidence-backed AI-at-work claims; Jagged AGI framing; GPT-6.2 Astra early-tester vibe reports; AI+math milestone coverage; single-agent vs multi-agent research; AI scientific communities.
+- **swyx** — AINews dailies; Anthropic IPO coverage; Devin bot multi-agent manager pattern; formal verification as anti-slop tool; OpenAI perplexity metric proposal; Latent Space nearing 1M+ subscribers.
+- **rasbt** — LLM research distilled; LR decay training recipe meta-analysis; Marin Mochi architecture teardown; end-of-year architecture trends roundup still upcoming.
+- **levelsio** — Indie shipping with AI; SaaS existential threat thesis (AGI checkmating niches); AI reply bot blocklist; lifestyle (skip).
 
 ---
 
 ## Open threads to watch
 
-- **Cat Wu at OpenAI Core Products** — quiet since Nov 5; watch for her first agent UX announcements under OpenAI leadership
-- **Anthropic IPO roadshow** — kicked off Nov 10; swyx weekly coverage; watch institutional reception and valuation anchors
-- **NVIDIA post-Jensen** — Colette Kress interim CEO; major open source AI leadership question; watch for board statement on CUDA/compute governance
-- **Claude Meetings** — announced Nov 12 in beta on Team and Enterprise; watch for early-access expansion and feature additions
-- **Cognition/Devin "big launch"** — swyx previewed an embargoed talk at AIE Code (Nov 12) with "big launch next week" teaser; watch week of Nov 17–21
-- **rasbt's end-of-year architecture trends analysis** — explicitly flagged as upcoming; Inkling 2 Small's attention residuals + hybrid attention data are fodder
-- **Decision models reaching 50%+ routing** — 26% per Vercel now; watch for next data point showing whether this plateaus or continues
-- **GTA 6 / "Last Human Game" release** — emollick's framing; watch AI discourse around the launch (week of Nov ~22)
+- **Riemann Hypothesis proof** — Levent Alpöge + Claude proof under expert review by Brian Conrad (months of review); Ravi Vakil confirms "so far looking good"; two independent proofs emerged in one week. Watch for formal peer review acceptance — the story of the year if confirmed.
+- **Jensen Huang / NVIDIA** — Jensen posted open letter saying he would return if the Board decides it's best; active open thread; watch for board statement on return/governance/CUDA open-source.
+- **Devin bots (Cognition)** — launched week of Nov 17; swyx is one of the first hands-on users; watch for broader adoption reports and pricing/team plan details.
+- **Anthropic IPO stabilization** — ANT closed $97.17 on day one; watch for price action stabilization and analyst coverage on compute commitments vs usage-based revenue split.
+- **Cat Wu at OpenAI Core Products** — quiet since Nov 5; watch for her first agent UX announcements under OpenAI leadership.
+- **rasbt's end-of-year architecture trends analysis** — explicitly flagged as upcoming; Marin Mochi 535B, Kolibri-1, and constant-LR + checkpoint-averaging trend are likely fodder.
+- **karpathy** — 16+ days quiet; watch for a weekend hack or capability post.
 
 ---
 
-## Notes for next run (2026-11-23)
+## Notes for next run (2026-11-30)
 
-- Cognition/Devin "big launch" (embargoed, hinted for week of Nov 17–21) — top priority follow-up
-- NVIDIA: Colette Kress first public statements; any board reversal/Jensen reinstatement news
-- Anthropic IPO: institutional roadshow reception, valuation range reports
-- _catwu: any first OpenAI Core Products signal
-- karpathy: has been quiet two weeks; watch for a weekend hack or capability post
-- emollick: GTA 6 launch AI commentary; any Primer adoption data
-- rasbt: end-of-year architecture trends analysis announcement
-- Claude Meetings: early user reports, feature expansion
+- **Riemann proof** — top priority follow-up: has Brian Conrad given a verdict? Has any other expert weighed in?
+- **Jensen Huang** — board decision on return; any operational changes at NVIDIA under Colette Kress.
+- **Devin bots** — swyx's second-week report; adoption by other engineers; pricing/plan details.
+- **Anthropic IPO** — first post-IPO earnings signal; any S-1 follow-up analysis on compute commitments.
+- **bcherny/alexalbert__/karpathy** — all quiet 11–16+ days; watch for any return.
+- **rasbt** — end-of-year architecture roundup may land; constant-LR + checkpoint-averaging trend worth following.
+- **swyx** — formal verification piece + Linear $100M ARR study worth deeper follow-up.
+- **emollick** — GPT-6.2 Astra follow-up; any Primer adoption data; human+AI collaboration framing post-Riemann.
