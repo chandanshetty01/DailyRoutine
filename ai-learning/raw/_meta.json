@@ -1,12 +1,12 @@
 {
-  "last_pull_utc": "2026-11-24T00:00:07.120146+00:00",
+  "last_pull_utc": "2026-11-25T00:00:06.951112+00:00",
   "accounts": {
     "bcherny": {
       "source": "twitterapi.io",
       "errors": null,
-      "total_posts": 145,
+      "total_posts": 146,
       "new_this_pull": 1,
-      "newest_date": "2026-11-23T20:21:12+00:00"
+      "newest_date": "2026-11-24T18:14:56+00:00"
     },
     "_catwu": {
       "source": "twitterapi.io",
@@ -25,9 +25,9 @@
     "simonw": {
       "source": "twitterapi.io, https://simonwillison.net/atom/everything/",
       "errors": null,
-      "total_posts": 332,
-      "new_this_pull": 6,
-      "newest_date": "2026-11-23T23:22:11+00:00"
+      "total_posts": 340,
+      "new_this_pull": 8,
+      "newest_date": "2026-11-24T23:21:01+00:00"
     },
     "karpathy": {
       "source": "twitterapi.io, https://karpathy.bearblog.dev/feed/",
@@ -39,30 +39,30 @@
     "emollick": {
       "source": "twitterapi.io, https://www.oneusefulthing.org/feed",
       "errors": null,
-      "total_posts": 531,
-      "new_this_pull": 4,
-      "newest_date": "2026-11-23T20:56:28+00:00"
+      "total_posts": 537,
+      "new_this_pull": 6,
+      "newest_date": "2026-11-24T22:56:46+00:00"
     },
     "swyx": {
       "source": "twitterapi.io, https://www.latent.space/feed",
       "errors": null,
-      "total_posts": 657,
-      "new_this_pull": 2,
-      "newest_date": "2026-11-23T13:58:03+00:00"
+      "total_posts": 665,
+      "new_this_pull": 8,
+      "newest_date": "2026-11-24T23:29:01+00:00"
     },
     "rasbt": {
       "source": "twitterapi.io, https://magazine.sebastianraschka.com/feed",
       "errors": null,
-      "total_posts": 102,
-      "new_this_pull": 1,
-      "newest_date": "2026-11-23T14:44:17+00:00"
+      "total_posts": 104,
+      "new_this_pull": 2,
+      "newest_date": "2026-11-24T15:27:29+00:00"
     },
     "levelsio": {
       "source": "twitterapi.io",
       "errors": null,
-      "total_posts": 812,
-      "new_this_pull": 15,
-      "newest_date": "2026-11-23T20:47:42+00:00"
+      "total_posts": 825,
+      "new_this_pull": 13,
+      "newest_date": "2026-11-24T19:35:10+00:00"
     }
   }
 }
