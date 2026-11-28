@@ -3,23 +3,23 @@
 The routine reads this on start and rewrites it before exit.
 
 ## Last run
-2026-11-27T00:00:00Z (two-hundred-and-second run — Friday November 27, 2026; Black Friday half-day (1pm ET close); no confirmed Nov 27 closes found; predictions logged for Nov 30: CBRS $81–$99 / TSLA $357–$403; ANT Russell US Dec 11 fast entry confirmed; Nscale Microsoft UK exit found)
+2026-11-28T00:00:00Z (two-hundred-and-third run — Saturday November 28, 2026; non-trading weekend day; Nov 27 closes confirmed: ANT $91.88 (+11%) · CBRS $93.18 (+3.9%) · TSLA $400 (+5.2%); predictions updated for Nov 30: CBRS $84–$103 / TSLA $376–$424; ANT Dec 15 unlock new; Tesla EU FSD December vote confirmed)
 
 ## Tracked private companies
 | Company | Latest known IPO status | Source | Last checked |
 |---|---|---|---|
 | OpenAI | ~2027 or later; confidential S-1 filed Jun 8; public S-1 not filed; ~$852B val (last round); Goldman/MS underwriters; Altman confirms 2027 delay; Brockman confirmed "ready" for 2027 at WSJ Nov 4-5 conference; no update Nov 27 | _thestar.com.my; prior runs_ | 2026-11-05 |
-| Anthropic | **NOW PUBLIC — NASDAQ: ANT; DAY 7 = FRI NOV 27 (HALF-DAY); IPO PRICE $83; 980M CLASS A SHARES; $81.3B RAISE (RECORD US IPO); DEBUT THU NOV 19, 2026; DAY 1 CLOSE $97.17 (+17%); DAY 2 ~$88.91; DAY 3 ~$85.85; DAY 4 ~$79.06 (BELOW $83 IPO PRICE); DAY 5 CLOSE ~$82.79 (NOV 25; BELOW $83 IPO PRICE); DAY 6 MARKET CLOSED (NOV 26 THANKSGIVING); DAY 7 NOV 27 HALF-DAY — NO CONFIRMED CLOSE; MSCI LARGE-CAP INCLUSION NOV 30 (CLOSE) · RUSSELL US DEC 11 · FTSE GLOBAL DEC 21; CANACCORD BUY $135 + OPPENHEIMER OUTPERFORM $150 (NOV 24); OPTIONS ON CBOE SINCE ~NOV 23-24; QUIET PERIOD ~DEC 24; NASDAQ-100 POSSIBLE DEC 21 (RUMORED, UNVERIFIED)** | _research.ftserussell.com; stocktwits.com; prior runs (search-confirmed)_ | 2026-11-27 |
-| SpaceX | PUBLIC as of June 12, 2026. NASDAQ: SPCX. IPO price $135/share; Day 1 close $161.11; ATH intraday $225.64 (Day 5); all-time closing low $107.01 (July 28); **NOV 24 CLOSE $126.21 (−5.4%; BELOW IPO $135; LAST CONFIRMED); NOV 25: FELL TO ~$119.66 AM (−5%) BEFORE PARTIAL RECOVERY (GARY BLACK 247WALLST: TESLA BID COULD PUSH BELOW $100); NO CONFIRMED NOV 25 OR NOV 27 CLOSE; TSLA-SPCX MERGER 5 DIRECTORS + ADVISORS NAMED; MS+GOLDMAN FOR SPCX, EVERCORE FOR TSLA; NO DEAL; BLOOMBERG "AS EARLY AS DECEMBER"; DEC 3 ANNUAL MEETING NO MERGER BALLOT; DEC 8 BLOCK EXPIRY CONFIRMED ~798M SHARES** | _prior runs; FT; 247wallst.com (search-confirmed)_ | 2026-11-27 |
+| Anthropic | **NOW PUBLIC — NASDAQ: ANT; DAY 7 NOV 27 CLOSE CONFIRMED $91.88 (+10.98% — FIRST CLOSE ABOVE $83 IPO PRICE; ARK BUYING); IPO PRICE $83; 980M CLASS A SHARES; $81.3B RAISE (RECORD US IPO); DEBUT THU NOV 19, 2026; DAY 1 CLOSE $97.17 (+17%); DAY 2 ~$88.91; DAY 3 ~$85.85; DAY 4 ~$79.06; DAY 5 ~$82.79; DAY 6 THANKSGIVING CLOSED; MSCI LARGE-CAP INCLUSION NOV 30 (CLOSE, MONDAY) · RUSSELL US DEC 11 · FTSE GLOBAL DEC 21; DEC 15 UNLOCK ~299M SHARES (TECHT CALENDAR; UNVERIFIED EDGAR); CANACCORD BUY $135 + OPPENHEIMER OUTPERFORM $150 (NOV 24); OPTIONS ON CBOE SINCE ~NOV 23-24; QUIET PERIOD ~DEC 24; NASDAQ-100 POSSIBLE DEC 21 (RUMORED, UNVERIFIED)** | _tradingview.com; fool.com; stockanalysis.com; techi.com; prior runs (search-confirmed)_ | 2026-11-28 |
+| SpaceX | PUBLIC as of June 12, 2026. NASDAQ: SPCX. IPO price $135/share; Day 1 close $161.11; ATH intraday $225.64 (Day 5); all-time closing low $107.01 (July 28); **NOV 27 ~$132 (BENZINGA INTRADAY; CLOSE UNCONFIRMED); NOV 24 LAST CONFIRMED CLOSE $126.21 (BELOW IPO $135); TSLA-SPCX MERGER 5 DIRECTORS + ADVISORS NAMED; MS+GOLDMAN FOR SPCX, EVERCORE FOR TSLA; BLOOMBERG "AS EARLY AS DECEMBER"; TECHREPUBLIC: DEC ANNOUNCEMENT POSSIBLE; DEC 3 ANNUAL MEETING NO MERGER BALLOT; DEC 8 BLOCK EXPIRY CONFIRMED ~798M SHARES (SOURCES CONFLICT: WEBULL 342M)** | _tikr.com; techrepublic.com; prior runs (search-confirmed)_ | 2026-11-28 |
 | Databricks | **~H2 2027 IPO** — CEO: "2026 terrible year to go public"; **~$190B val (Aug 2026)**; **ARR >$7B run-rate (+80% YoY, Q2 2026)**; no update Nov 27 | _thenextweb.com; prior runs_ | 2026-10-30 |
 | Mistral | **CONFIRMED CLOSED: €3B at $24B valuation (Sep 8, 2026)**; Samsung + PSG Equity + Scaleup Europe co-led; no IPO timeline; no update Nov 27 | _prior run_ | 2026-10-30 |
-| Cerebras | PUBLIC as of May 14, 2026. NASDAQ: CBRS. IPO price $185/share; Day 1 close $311.07 (+68%); **DAY 138 FRI NOV 27 (HALF-DAY) — NO CONFIRMED CLOSE; LAST CONFIRMED DAY 137 NOV 25 CLOSE ~$89.68 (+1.01%; CNBC/GOOGLE FINANCE CONFIRMED); TRAILING P/S ~41.7×; 16.8% BELOW 50× P/S FLOOR $108; ATL $81.71 (NOV 5); LOCKUP FULLY EXPIRED; PREDICTIONS FOR NOV 30: $81–$99** | _CNBC; Google Finance (search-confirmed Nov 27)_ | 2026-11-27 |
+| Cerebras | PUBLIC as of May 14, 2026. NASDAQ: CBRS. IPO price $185/share; Day 1 close $311.07 (+68%); **DAY 138 NOV 27 CLOSE CONFIRMED ~$93.18 (+3.90% FROM $89.68; BLACK FRIDAY RALLY); TRAILING P/S ~43.3×; 13.7% BELOW 50× P/S FLOOR $108; ATL $81.71 (NOV 5); LOCKUP FULLY EXPIRED; PREDICTIONS FOR NOV 30: $84–$103** | _finance.yahoo.com; cnn.com (search-confirmed Nov 28)_ | 2026-11-28 |
 
 ## AI / quantum IPOs filed or upcoming
 | Company | Sector | Status | Expected Date | Ticker | Source |
 |---|---|---|---|---|---|
 | OpenAI | AI | ~2027 or later; confidential S-1 filed Jun 8; Brockman confirmed "ready" for 2027 | ~2027 or later | TBD | _prior runs_ |
-| Anthropic | AI | **NOW PUBLIC (NASDAQ: ANT; DEBUTED THU NOV 19, 2026); DAY 7 NOV 27 HALF-DAY; LAST CONFIRMED $82.79 (NOV 25); MSCI NOV 30 · RUSSELL US DEC 11 · FTSE DEC 21** | DEBUTED 2026-11-19 | ANT (NASDAQ) | _research.ftserussell.com; prior runs (search-confirmed)_ |
+| Anthropic | AI | **NOW PUBLIC (NASDAQ: ANT; DEBUTED THU NOV 19, 2026); DAY 7 NOV 27 CLOSE $91.88 (CONFIRMED; +11%; FIRST CLOSE ABOVE $83 IPO PRICE; ARK BUYING); DEC 15 UNLOCK ~299M SHARES (TECHT CALENDAR; UNVERIFIED EDGAR); MSCI NOV 30 · RUSSELL US DEC 11 · FTSE DEC 21; QUIET PERIOD ~DEC 24** | DEBUTED 2026-11-19 | ANT (NASDAQ) | _tradingview.com; fool.com; techi.com; prior runs (search-confirmed)_ |
 | **Nscale** | AI | **S-1/A FILED NOV 12, 2026**; full-stack AI GPU neocloud (London-HQ); NYSE: NSCL; $44.6B Anthropic anchor; $103.4B TCV; nine-month rev $307.5M; $5.5B total debt; investor pushback; **THE INFORMATION NOV 24: 50K OF 461K GPUS DEPLOYED; FT NOV 25: NEEDS ADDITIONAL FINANCING FOR 2027 NVIDIA OBLIGATIONS; MICROSOFT EXITED UK (LOUGHTON) DATA CENTER (THENEXTWEB NOV 2026) + OPTED AGAINST EXPANDING TEXAS DEAL; TELEGRAPH: 2027 DELAY UNDER CONSIDERATION; BOERSEN-ZEITUNG: "STICKING WITH IPO"; NO COMPANY CONFIRMATION OF DELAY** | **AT RISK / 2027 possible** | NSCL (NYSE) | _thenextweb.com; computing.co.uk; prior runs (search-confirmed)_ |
 | Syntiant | AI | S-1 filed Jul 6; edge AI chips; SYTN; Intel/MS-backed; Q4 2026 target but no roadshow date | Q4 2026 (no firm date) | SYTN | _thenextweb.com (search-confirmed)_ |
 | Lambda | AI / Cloud | Pre-filing; GPU cloud; >$1.5B rev run-rate; MS/JPM/Citi hired; IPO as soon as 2027 | ~H2 2027 | TBD | _Bloomberg Aug 24 (prior run)_ |
@@ -31,39 +31,41 @@ The routine reads this on start and rewrites it before exit.
 ## Recently completed AI / quantum IPOs (last 30 days)
 | Company | Ticker | IPO Date | IPO Price | Notes |
 |---|---|---|---|---|
-| Anthropic | NASDAQ: ANT | 2026-11-19 | $83/share | 980M Class A; $81.3B raise (record US IPO); Day 1 $97.17 (+17%); Day 2 ~$88.91; Day 3 ~$85.85; Day 4 ~$79.06; Day 5 ~$82.79 (Nov 25; below IPO price); Day 6 Thanksgiving closed; Day 7 Nov 27 half-day — pending; MSCI large-cap Nov 30 · Russell US Dec 11 · FTSE Global Dec 21; Nasdaq-100 possible Dec 21 (rumored); Canaccord $135 Buy + Oppenheimer $150 Outperform; options on Cboe since ~Nov 23-24; quiet period ~Dec 24; 1.6B shares within 76 days (~Feb 3, 2027) |
+| Anthropic | NASDAQ: ANT | 2026-11-19 | $83/share | 980M Class A; $81.3B raise (record US IPO); Day 1 $97.17 (+17%); Day 2 ~$88.91; Day 3 ~$85.85; Day 4 ~$79.06; Day 5 ~$82.79; Day 6 Thanksgiving closed; Day 7 $91.88 (+11%; CONFIRMED — first close above $83 IPO price; ARK buying); Dec 15 unlock ~299M shares (TECHi calendar; unverified EDGAR); MSCI large-cap Nov 30 · Russell US Dec 11 · FTSE Global Dec 21; Nasdaq-100 possible Dec 21 (rumored); Canaccord $135 Buy + Oppenheimer $150 Outperform; options on Cboe since ~Nov 23-24; quiet period ~Dec 24; 1.6B shares within 76 days (~Feb 3, 2027) |
 | SpaceX | NASDAQ: SPCX | 2026-06-12 | $135/share | Day 1 $161.11; ATH $225.64; ATL $107.01; Nov 24 close $126.21 (below IPO $135); Nov 25 AM ~$119.66 (no confirmed close); Dec 8 block expiry ~798M shares; Tesla-SpaceX merger 5-director committee + advisors named |
 | Quantinuum | NASDAQ: QNT | 2026-06-04 | $60/share | Day 1 $60.38; ATH $86.79; Q3 2026 earnings (Nov 5): rev $9.1M (+233% YoY); lockup Dec 1-2, 2026 (verify EDGAR 424B4; Brimind: Dec 2); last confirmed ~$36.55 (Oct 18, down ~39% from $60 IPO) |
-| Cerebras Systems | NASDAQ: CBRS | 2026-05-14 | $185/share | Day 1 $311.07; Day 138 Nov 27 half-day pending; last confirmed Day 137 Nov 25 close ~$89.68 (+1.01%); ~41.7× trailing P/S; ATL $81.71 (Nov 5); lockup fully expired |
+| Cerebras Systems | NASDAQ: CBRS | 2026-05-14 | $185/share | Day 1 $311.07; Day 138 Nov 27 close ~$93.18 CONFIRMED (+3.90%); Day 137 Nov 25 close ~$89.68; ~43.3× trailing P/S; ATL $81.71 (Nov 5); lockup fully expired; Nov 30 prediction $84–$103 logged |
 
 _Prior completed (outside 30-day window): Iambic IAM Oct 15; Horizon Quantum HQ Mar 20 SPAC; Xanadu XNDU Mar 27 SPAC; Infleqtion INFQ Feb 17._
 
 ## 30-day rolling watch items
-1. **ANTHROPIC (ANT): DAY 7 NOV 27 (HALF-DAY; NO CONFIRMED CLOSE); LAST CONFIRMED $82.79 (NOV 25; BELOW $83 IPO PRICE); DOWN ~15% FROM $97.17 DAY 1 CLOSE; THREE INDEX INCLUSIONS IN 25 DAYS: MSCI NOV 30 · RUSSELL US DEC 11 · FTSE GLOBAL DEC 21; NASDAQ-100 POSSIBLE DEC 21 (RUMORED, UNVERIFIED); OPTIONS ON CBOE SINCE ~NOV 23-24; QUIET PERIOD ~DEC 24; 1.6B SHARES ~FEB 3, 2027**: Concentrated institutional demand waves approaching; monitor ANT price ahead of MSCI Nov 30 close for index-fund pre-buying. UPDATED 2026-11-27.
+1. **ANTHROPIC (ANT): DAY 7 NOV 27 CLOSE $91.88 CONFIRMED (+11%; FIRST CLOSE ABOVE $83 IPO PRICE; ARK BUYING); MSCI NOV 30 (CLOSE, MONDAY — 2 DAYS) · RUSSELL US DEC 11 · FTSE GLOBAL DEC 21; DEC 15 UNLOCK ~299M SHARES (TECHT CALENDAR; UNVERIFIED EDGAR); NASDAQ-100 POSSIBLE DEC 21 (RUMORED, UNVERIFIED); OPTIONS ON CBOE SINCE ~NOV 23-24; QUIET PERIOD ~DEC 24; 1.6B SHARES ~FEB 3, 2027**: Three index demand waves within 25 days approaching; Dec 15 unlock potential supply event; ARK buying adds to positive momentum; monitor ANT heading into MSCI Monday. UPDATED 2026-11-28.
 2. **PCE OCT 2026 (RELEASED NOV 25): HEADLINE 3.8% / CORE 3.3% YOY (ABOVE 3.2% CONSENSUS; SECOND CONSECUTIVE ABOVE-CONSENSUS CORE); NEXT PCE DEC 23**: December Fed hike back in view for Dec 8-9 FOMC; pressures high-multiple growth names. UPDATED 2026-11-26.
-3. **TSLA-SPCX MERGER: 5-DIRECTOR SPECIAL COMMITTEES ACTIVE (3 TSLA, 2 SPCX; FT NOV 25); MS+GOLDMAN FOR SPCX, EVERCORE FOR TSLA; NO DEAL; BLOOMBERG "AS EARLY AS DECEMBER" OR EARLY 2027; DEC 3 ANNUAL MEETING NO MERGER BALLOT; DEC 8 SPCX BLOCK EXPIRY ~798M SHARES; TSLA LAST CONFIRMED $380.14 (NOV 25; −1.18%; BELOW 200D MA ~$387)**: Binary announcement event at any point; Tesla shareholder approval requires 50%+ of all outstanding shares. UPDATED 2026-11-27.
-4. **CBRS: DAY 138 NOV 27 (HALF-DAY; NO CONFIRMED CLOSE); LAST CONFIRMED DAY 137 NOV 25 ~$89.68 (+1.01%); TRAILING P/S ~41.7×; 16.8% BELOW 50× P/S FLOOR $108; ATL $81.71 (NOV 5); NASDAQ 100 HIT BEAR THRESHOLD (−20%) NOV 25 INTRADAY; NOV 30 PREDICTION $81–$99 LOGGED; NOV 27 PREDICTION FROM NOV 26 LOG ($81–$99) → ACTUAL CLOSE PENDING**: Management targeting 3× revenue in 2027 (~$2.85B); CS-5 systems readied for 2027. UPDATED 2026-11-27.
-5. **TSLA NOV 25 CLOSE ~$380.14 (−1.18%; FELL TO $364 EARLY AM ON MERGER DOUBTS, RECOVERED); NOV 27 PREDICTION (FROM NOV 26 LOG $357–$403) → ACTUAL CLOSE PENDING; NOV 30 PREDICTION $357–$403 LOGGED**: Below 200d MA ~$387; merger binary event widens practical range. UPDATED 2026-11-27.
+3. **TSLA-SPCX MERGER: 5-DIRECTOR SPECIAL COMMITTEES ACTIVE; MS+GOLDMAN FOR SPCX, EVERCORE FOR TSLA; BLOOMBERG "AS EARLY AS DECEMBER"; TECHREPUBLIC: DEC ANNOUNCEMENT POSSIBLE; DEC 3 ANNUAL MEETING NO MERGER BALLOT; DEC 8 SPCX BLOCK EXPIRY ~798M SHARES; TSLA NOV 27 CLOSE ~$400 CONFIRMED (+5.2%; ABOVE 200D MA ~$387 FOR FIRST TIME SINCE NOV 20)**: Binary announcement event at any point; Tesla shareholder approval requires 50%+ of all outstanding shares. UPDATED 2026-11-28.
+4. **CBRS: DAY 138 NOV 27 CLOSE CONFIRMED ~$93.18 (+3.90%; BLACK FRIDAY RALLY); TRAILING P/S ~43.3×; 13.7% BELOW 50× P/S FLOOR $108; ATL $81.71 (NOV 5); NOV 30 PREDICTION $84–$103 LOGGED (UPDATED FROM $81–$99; NEW BASE $93.18); NOV 26→NOV 27 PREDICTION ($81–$99 → ACTUAL $93.18 ✓ — INFORMAL HIT; YFINANCE UNAVAILABLE FOR FORMAL EVAL)**: Management targeting 3× revenue in 2027 (~$2.85B); CS-5 systems readied for 2027. UPDATED 2026-11-28.
+5. **TSLA NOV 27 CLOSE ~$400 CONFIRMED (+5.22%; RANGE $384.66–$401.18; ABOVE 200D MA ~$387 RECLAIMED); NOV 26→NOV 27 PREDICTION ($357–$403 → ACTUAL $400 ✓ — INFORMAL HIT; YFINANCE UNAVAILABLE); NOV 28→NOV 30 PREDICTION $376–$424 LOGGED; EU FSD DECEMBER TCMV VOTE CONFIRMED (GERMANY); TSLA ANNUAL MEETING DEC 3**: Above 200d MA for first time since Nov 20; merger binary event widens practical range; EU FSD December vote new catalyst. UPDATED 2026-11-28.
 6. **NSCALE: FT NOV 25 NEEDS ADDITIONAL FINANCING FOR 2027 NVIDIA OBLIGATIONS; $3.4B PRE-IPO NOTES SECURED; TELEGRAPH: 2027 DELAY; BOERSEN-ZEITUNG: "STICKING WITH IPO"; MICROSOFT EXITED UK (LOUGHTON) DATA CENTER (THENEXTWEB NOV 2026) + OPTED AGAINST EXPANDING TEXAS DEAL; ONLY 50K OF 461K GPUS DEPLOYED; NO COMPANY CONFIRMATION OF DELAY**: Two confirmed Microsoft exits compound cloud-customer confidence gap. UPDATED 2026-11-27.
 7. **SPCX NOV 24 CLOSE $126.21 (−5.4%; BELOW IPO $135); NOV 25 AM ~$119.66 (−5%+; GARY BLACK WARNS TESLA BID COULD PUSH BELOW $100); NO CONFIRMED NOV 25 OR NOV 27 CLOSE; DEC 8 BLOCK EXPIRY ~798M SHARES; FLOAT COULD TRIPLE**: Bloomberg: deal "as early as December"; Texas AG vows scrutiny. UPDATED 2026-11-27.
 8. **QNT QUANTINUUM LOCKUP EXPIRY DECEMBER 1-2 (BRIMIND: DEC 2 WEDNESDAY; SOME SOURCES: DEC 1 TUESDAY — VERIFY EDGAR 424B4); LAST CONFIRMED PRICE ~$36.55 (OCT 18, 2026; DOWN ~39% FROM $60 IPO); 52W RANGE ~$26.81–$86.79**: Next earnings Feb 4, 2027. UPDATED 2026-11-27.
 9. **INTEL TO ACQUIRE CLASSIQ FOR ~$2.3B (ANNOUNCED OCT 26-28, 2026) — QUANTUM SECTOR'S LARGEST-EVER M&A; CLOSE H1 2027**: Full-stack quantum play; sets sector valuation benchmark. CARRIED 2026-11-27.
-10. **CBRS/TSLA FORECAST ACCURACY (30D): CBRS 44.4% HIT (9 SAMPLES; RANGES TOO NARROW PATTERN); TSLA 66.7% HIT (9 SAMPLES; WELL-CALIBRATED); OVERALL 60% (55 FORMALLY EVALUATED). NOV 26 PREDICTION FOR NOV 27: CBRS $81–$99 | TSLA $357–$403 (BOTH PENDING — NOV 27 HALF-DAY CLOSE UNCONFIRMED). NOV 27 LOGGED FOR NOV 30: CBRS $81–$99 | TSLA $357–$403.**: No systematic biases detected. UPDATED 2026-11-27.
+10. **CBRS/TSLA FORECAST ACCURACY (30D): CBRS 37.5% HIT (8 SAMPLES; RANGES TOO NARROW); TSLA 62.5% HIT (8 SAMPLES; WELL-CALIBRATED); OVERALL 60% (55 FORMALLY EVALUATED). NOV 26→NOV 27: CBRS $81–$99 → $93.18 ✓ | TSLA $357–$403 → $400 ✓ (BOTH INFORMAL HITS; YFINANCE UNAVAILABLE). NOV 28 LOGGED FOR NOV 30: CBRS $84–$103 | TSLA $376–$424.**: No systematic biases detected. UPDATED 2026-11-28.
 
 ## Notes for next run
-- **NEXT TRADING SESSION: MONDAY NOV 30 (DAY 139 CBRS; DAY 8 ANT)**: MSCI large-cap inclusion effective close of Nov 30 for ANT — institutional index-fund buying. Full-day session.
-- **ANT MSCI LARGE-CAP INCLUSION MONDAY NOV 30 (CLOSE)**: Institutional index-buying catalyst; current price ~$82.79 (still below $83 IPO). FTSE Global Dec 21 / Russell US Dec 11 are further demand waves.
-- **ANT RUSSELL US INDEX FAST ENTRY FRIDAY DECEMBER 11 (14 DAYS)**: Confirmed from FTSE Russell index notice (search-confirmed); pending eligibility. NEW — not in prior runs.
-- **ANT NASDAQ-100 POSSIBLE DECEMBER 21 (RUMORED, UNVERIFIED)**: fourweekmba.com title says "could enter Nasdaq-100 on 21 December"; not confirmed by Nasdaq. Monitor for official announcement.
-- **ANT OPTIONS ON CBOE (~NOV 23-24)**: Cboe listed ANT options approximately two trading days after IPO; strong demand reported. Options presence may amplify volatility ahead of MSCI inclusion.
-- **QNT LOCKUP TUESDAY DEC 1 OR WEDNESDAY DEC 2 (4-5 DAYS)**: Stock last ~$36.55 (Oct 18, down ~39% from $60 IPO); verify EDGAR 424B4 for exact date.
-- **TSLA ANNUAL MEETING WEDNESDAY DECEMBER 3 (6 DAYS)**: No merger ballot; merger announcement still possible any session; 5-director committees + advisors engaged.
-- **SPCX DEC 8 BLOCK EXPIRY**: ~798M shares; float potentially tripling; ~11 cal days from Nov 27.
-- **PCE OCT 2026 ACTUAL**: Headline 3.8% / core 3.3% YoY (second consecutive above-consensus); confirmed BEA Nov 25 release. Next PCE Dec 23.
-- **ANT QUIET PERIOD ~DEC 24 (WEDNESDAY)**: ~27 days away from Nov 27. First analyst research unlocks.
-- **FORECAST AUDIT**: Nov 27 run logged 2 new predictions for Nov 30: CBRS $81–$99, TSLA $357–$403 (realized_vol). Nov 26 predictions for Nov 27: both PENDING (half-day close unconfirmed; yfinance unavailable). Rolling 30d (formal): CBRS 44.4%, TSLA 66.7%, overall 60%.
-- **NVDA**: Last confirmed $153.19 (Nov 24); SEC probe ongoing; Huang reinstated Nov 23. No update Nov 27.
-- **NSCALE**: Microsoft exited UK (Loughton) data center — new info from The Next Web. Compounding with Texas exit. No company confirmation of 2027 delay; monitor EDGAR for S-1 amendment.
+- **NEXT TRADING SESSION: MONDAY NOV 30 (DAY 139 CBRS; DAY 8 ANT; MSCI ANT LARGE-CAP INCLUSION EFFECTIVE CLOSE)**: Full-day session; first confirmed institutional index-fund buying in ANT. 
+- **NOV 27 CLOSES CONFIRMED**: ANT $91.88 (+11%; first close above $83 IPO price) · CBRS $93.18 (+3.90%) · TSLA $400 (+5.22%; above 200d MA $387).
+- **ANT MSCI LARGE-CAP INCLUSION MONDAY NOV 30 (CLOSE)**: Institutional index-buying catalyst; current price $91.88. Russell US Dec 11 and FTSE Global Dec 21 are further demand waves.
+- **ANT DEC 15 UNLOCK ~299M SHARES (TECHT CALENDAR; UNVERIFIED EDGAR)**: New this run; first confirmed staged lockup tranche date. Verify against Anthropic 424B4 on EDGAR before flagging as confirmed.
+- **ANT RUSSELL US INDEX FAST ENTRY FRIDAY DECEMBER 11 (13 DAYS)**: Confirmed from FTSE Russell index notice; pending eligibility.
+- **ANT NASDAQ-100 POSSIBLE DECEMBER 21 (RUMORED, UNVERIFIED)**: fourweekmba.com only; not confirmed by Nasdaq.
+- **QNT LOCKUP TUESDAY DEC 1 OR WEDNESDAY DEC 2 (3-4 DAYS)**: Stock last ~$36.55 (Oct 18, down ~39% from $60 IPO); verify EDGAR 424B4 for exact date.
+- **TSLA ANNUAL MEETING WEDNESDAY DECEMBER 3 (5 DAYS)**: No merger ballot; merger announcement possible any session; Dec 8 FOMC also looms.
+- **SPCX DEC 8 BLOCK EXPIRY**: ~798M shares (TIKR; sources conflict — Webull says 342M); float increases significantly; ~10 cal days from Nov 28.
+- **TSLA EU FSD DECEMBER VOTE**: Germany confirmed TCMV committee vote in December; France opposes; needs 15 of 27 EU states. Not yet scheduled to specific date within December.
+- **ANT QUIET PERIOD ~DEC 24 (WEDNESDAY)**: ~26 days from Nov 28. First analyst research unlocks.
+- **FORECAST AUDIT**: Nov 28 run logged 2 new predictions for Nov 30: CBRS $84–$103, TSLA $376–$424 (realized_vol; updated from higher Nov 27 closes). Nov 26→Nov 27 predictions appear hits (CBRS $81–$99→$93.18 ✓; TSLA $357–$403→$400 ✓; informal; yfinance unavailable). Rolling 30d (formal): CBRS 37.5%, TSLA 62.5%, overall 60%.
+- **NVDA**: Last confirmed $153.19 (Nov 24); SEC probe ongoing; Huang reinstated Nov 23. No confirmed Nov 27 close found.
+- **NSCALE**: Two confirmed Microsoft exits (UK + Texas). No company confirmation of 2027 delay; monitor EDGAR for S-1 amendment.
+- **PCE OCT 2026**: Headline 3.8% / core 3.3% YoY (second consecutive above-consensus). Next PCE Dec 23. December FOMC Dec 8-9.
 
 ## Buying Window Tracker — anchor data (do not modify lightly)
 
@@ -211,7 +213,7 @@ These are historical anchors used by the Buying Window Tracker section. They are
 - **Day 135 close:** $100.03 CONFIRMED (November 23, 2026; +18.0% from $82.67; NVDA-LED AI RELIEF RALLY — JENSEN HUANG REINSTATED CEO; Nasdaq +6.51%; GuruFocus confirmed)
 - **Day 136 close:** $88.78 CONFIRMED (November 24, 2026; −9.9% from $100.03; Yahoo Finance/CNBC confirmed; day range $86.00–$96.78; vol ~10.2M)
 - **Day 137 close:** ~$89.68 CONFIRMED (November 25, 2026; +1.01% from $88.78; CNBC/Google Finance confirmed; day range $80.86–$90.31; Dell Q3 AI blowout positive catalyst; PCE Oct 3.3% core above consensus slight headwind)
-- **Day 138 close:** PENDING (November 27, 2026 — half-day 1pm ET close; predictions $81–$99 from Nov 26 log; Nov 30 prediction $81–$99 logged)
+- **Day 138 close:** ~$93.18 CONFIRMED (November 27, 2026 — half-day 1pm ET close; +3.90% from $89.68; Black Friday AI rally; no company-specific catalyst; CNN confirmed close)
 - **52w low (closing):** $81.71 CONFIRMED (November 5, 2026 — ALL-TIME CLOSING LOW); **all-time intraday low: $77.84 (November 5, 2026)**; ATH intraday: $386.34 (Day 1)
 - **Shares offered:** 30M Class A
 - **IPO gross proceeds:** $5.55B
@@ -227,14 +229,14 @@ These are historical anchors used by the Buying Window Tracker section. They are
 - **Insider selling:** CEO Andrew Feldman: 37,441 shares (Sep 4); CTO Sean Lie: 120K shares (Sep 30); total ~$387.7M over 3 months
 - **Lockup schedule:** Sep 16 (14.6M) ABSORBED; Sep 30 (19.4M) ABSORBED; Oct 14 (19.4M) ABSORBED; Oct 28 (19.4M) ABSORBED; **MAIN LOCKUP: Nov 9 (May 13 count) EXPIRED + Nov 10 (May 14 count) EXPIRED — FULLY EXPIRED**
 - **Short interest (June 30):** 13.53M shares = 16.9% of float
-- **Market cap est. at $89.68:** ~$21.3B (237M shares)
-- **Trailing P/S est. at $89.68:** ~41.7×; **50× floor: ~$108 (current $89.68 is −16.8% below 50× floor)**; **Fwd P/S est. at $89.68 (new $950M guidance):** ~22.4×
+- **Market cap est. at $93.18:** ~$22.1B (237M shares)
+- **Trailing P/S est. at $93.18:** ~43.3×; **50× floor: ~$108 (current $93.18 is −13.7% below 50× floor)**; **Fwd P/S est. at $93.18 (new $950M guidance):** ~23.2×
 - **Reference price zones (trailing P/S):** 50× → ~$108 · 70× → ~$150 · 100× → ~$215 · 150× → ~$323 · 200× → ~$430
 - **Historical analogs:** ARM (−17% by wk 4), KVYO (−22% by mo 1), RDDT (−24% by wk 3), CRWV (−12% by wk 1)
-- **Forecast accuracy (last updated Nov 27):**
-  - Nov 26 → Nov 27: CBRS $81–$99 | TSLA $357–$403 (BOTH PENDING — NOV 27 HALF-DAY CLOSE UNCONFIRMED)
-  - Nov 27 → Nov 30: CBRS $81–$99 LOGGED | TSLA $357–$403 LOGGED
-  - 30d formal stats (forecast_audit.py, 55 evaluated): CBRS 44.4% hit (9 samples; too-narrow) | TSLA 66.7% hit (9 samples; well-calibrated) | overall 60%
+- **Forecast accuracy (last updated Nov 28):**
+  - Nov 26 → Nov 27: CBRS $81–$99 → actual $93.18 ✓ (INFORMAL HIT; yfinance unavailable) | TSLA $357–$403 → actual ~$400 ✓ (INFORMAL HIT; yfinance unavailable)
+  - Nov 28 → Nov 30: CBRS $84–$103 LOGGED | TSLA $376–$424 LOGGED (updated from confirmed $93.18 / $400 closes)
+  - 30d formal stats (forecast_audit.py, 55 evaluated): CBRS 37.5% hit (8 samples; too-narrow) | TSLA 62.5% hit (8 samples; well-calibrated) | overall 60%
 
 ### TSLA — Tesla, Inc.
 - **Classification:** Mature public (NASDAQ since 2010-06-29). Use 52w low/high/200d MA.
@@ -258,7 +260,7 @@ These are historical anchors used by the Buying Window Tracker section. They are
   - **Nov 23: $385.46 CONFIRMED** (+11.46%; FSD v15 rollout + NVDA-led AI rally)
   - **Nov 24: $384.68 CONFIRMED** (−0.20% from $385.46)
   - **Nov 25: ~$380.14 CONFIRMED** (−1.18% from $384.68; AH $383.23 +0.81%; fell to ~$364 intraday AM on merger doubts then recovered)
-  - **Nov 27 (Friday, half-day 1pm ET): PENDING** (predictions $357–$403 logged from Nov 26; Nov 30 prediction $357–$403 logged)
+  - **Nov 27 (Friday, half-day 1pm ET): ~$400 CONFIRMED** (+5.22% from $380.14; range $384.66–$401.18; reclaimed above 200d MA ~$387 for first time since Nov 20; broad market Black Friday rally + SpaceX merger advance; Nov 30 prediction $376–$424 logged)
 - **Q3 2026 EARNINGS (AMC OCT 21):** Non-GAAP EPS $0.48 (beat $0.45); revenue $28.05B; FSD subs 1.74M (+67% YoY); FCF $1.53B
 - **TESLA-SPACEX MERGER:** 5-director special committees now active (3 Tesla, 2 SpaceX per FT Nov 25); Morgan Stanley + Goldman advising SpaceX; Evercore advising Tesla; Bloomberg: "as soon as December" or possibly 2027; Dec 3 annual meeting — NO MERGER ON DEC 3 BALLOT; Reuters: SpaceX ~$1.9T + Tesla ~$1.55T = ~$3.45T combined; analyst odds 90% (Deepwater); merger requires majority of all outstanding TSLA shares; Texas AG vows scrutiny
 - **FSD V15:** Launched for early access owners November 22-23, 2026
@@ -275,7 +277,7 @@ These are historical anchors used by the Buying Window Tracker section. They are
 - **Day 4 close:** ~$79.06 CONFIRMED (November 24, 2026; BELOW $83 IPO PRICE)
 - **Day 5 close:** ~$82.79 CONFIRMED (November 25, 2026; +1.08% from prior close; below $83 IPO price)
 - **Day 6:** MARKET CLOSED (November 26, 2026 — Thanksgiving)
-- **Day 7:** PENDING (November 27, 2026 — Friday, half-day 1pm ET)
+- **Day 7 close:** $91.88 CONFIRMED (November 27, 2026; +10.98% from $82.79; first confirmed close above $83 IPO price; ARK Invest continued buying; Black Friday half-day session)
 - **MSCI large-cap inclusion:** Effective November 30, 2026 close | **FTSE Global Equity Index Series:** Effective December 21, 2026 | **Russell US index fast entry:** Effective December 11, 2026 (FTSE Russell notice; pending eligibility) | **Nasdaq-100:** Possible December 21 (rumored, unverified)
 - **Options on Cboe:** Since approximately November 23-24, 2026 (two trading days after IPO; strong demand reported)
 - **New analysts Nov 24:** Canaccord Genuity Buy $135 | Oppenheimer Outperform $150
